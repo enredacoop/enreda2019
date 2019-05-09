@@ -1,0 +1,43 @@
+<template>
+  <!-- header -->
+  <header>
+    <!-- Navigation -->
+    <nav class="navbar navbar-custom" role="navigation">
+      <div class="container topnav">
+        <div class="navbar-header">
+          <button
+            type="button"
+            class="navbar-toggle"
+            data-toggle="collapse"
+            data-target="#bs-example-navbar-collapse-1"
+          >
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand topnav" href="/">
+            <img height="45px" src="~/assets/images/logo.png" />
+          </a>
+        </div>
+        <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li>
+              <a href="/cooperativa">Cooperativa</a>
+            </li>
+            <li>
+              <a href="/lineas">Líneas</a>
+            </li>
+            <li>
+              <a href="/trabajos">Trabajos</a>
+            </li>
+            <li>
+              <a href="http://blog.enreda.coop" target="_blank">Blog</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+  <!-- end header -->
+</template>

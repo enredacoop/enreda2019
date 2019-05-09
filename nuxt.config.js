@@ -1,3 +1,4 @@
+import webpack from 'webpack'
 import pkg from './package'
 
 export default {
@@ -13,7 +14,14 @@ export default {
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: pkg.description }
     ],
-    link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }]
+    link: [
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        rel: 'stylesheet',
+        href:
+          'http://fonts.googleapis.com/css?family=Open+Sans:300,400,700,300italic,400italic,700italic'
+      }
+    ]
   },
 
   /*
@@ -24,7 +32,13 @@ export default {
   /*
    ** Global CSS
    */
-  css: [],
+  css: [
+    '@/assets/css/example.css',
+    { src: '@/assets/less/colors.less', lang: 'less' },
+    { src: '@/assets/less/main.less', lang: 'less' },
+    { src: '@/assets/less/mixins.less', lang: 'less' },
+    { src: '@/assets/less/sizes.less', lang: 'less' }
+  ],
 
   /*
    ** Plugins to load before mounting the App
@@ -36,7 +50,28 @@ export default {
    */
   modules: [
     // Doc: https://bootstrap-vue.js.org/docs/
-    'bootstrap-vue/nuxt'
+    'bootstrap-vue/nuxt',
+    [
+      'nuxt-fontawesome',
+      {
+        imports: [
+          {
+            set: '@fortawesome/free-solid-svg-icons',
+            icons: ['fas']
+          },
+          {
+            set: '@fortawesome/free-brands-svg-icons',
+            icons: ['fab']
+          }
+        ]
+      }
+    ],
+    [
+      '@nuxtjs/google-analytics',
+      {
+        id: ''
+      }
+    ]
   ],
 
   /*
@@ -46,6 +81,17 @@ export default {
     /*
      ** You can extend webpack config here
      */
+    vendor: ['jquery', 'bootstrap'],
+    plugins: [
+      new webpack.ProvidePlugin({
+        $: 'jquery',
+        jQuery: 'jquery',
+        'window.jQuery': 'jquery'
+      })
+    ],
+    loaders: {
+      less: { javascriptEnabled: true }
+    },
     extend(config, ctx) {
       // Run ESLint on save
       if (ctx.isDev && ctx.isClient) {

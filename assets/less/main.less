@@ -1,0 +1,2033 @@
+@import "colors.less";
+@import "mixins.less";
+@import "sizes.less";
+
+/********** GENERAL **********/
+@font: 'Open Sans';
+
+body,
+html {
+    width: 100%;
+    height: 100%;
+    font-family: @font, sans-serif;
+}
+
+::-moz-selection { color: @white_color; background-color: @primary_color; }
+::selection { color: @white_color; background-color: @primary_color; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+.text-primary {
+  color: @primary_color;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.label-custom-primary {
+  background-color: @primary_color;
+  color: @lightgrey_color;
+}
+.label-custom-secondary {
+  background-color: @secondary_color;
+  color: @lightgrey_color;
+}
+
+.wrapper {
+  padding-top: 70px;
+}
+  #cooperative.wrapper {
+    padding-top: 20px;
+  }
+
+.wrapper-content {
+  padding: 100px 0px 100px 0px;
+}
+
+section {
+  padding: 40px 0;
+}
+
+img.center {
+  display: block;
+  margin: 0 auto;
+}
+
+.vcenter {
+  display: inline-block;
+  vertical-align: middle;
+  float: none;
+}
+
+
+/********** HEADER **********/
+
+header {
+  .navbar-custom {
+    font-size: 16px;
+    background-color: @dark_color;
+    color: @clean_color;
+    border-radius: 0px;
+    box-shadow: 0px 0px 13px #000;
+    margin-bottom: -20px;
+    padding: 15px 0;
+
+    ul.navbar-nav {
+      margin-top: 7px;
+    }
+    
+    a {
+      font-weight: bolder;
+      color: @clean_color;
+      font-size: 13px;
+      padding: 10px;
+      margin: 0 10px;
+      transition: all ease .3s;
+
+      &:focus {
+        color: @clean_color;
+        background: none;
+        outline: none;
+      }
+
+      &:hover, &:active {
+        color: @dark_color;
+        background-color: @white_color;
+        border-radius: 3px;
+      }
+
+      &.topnav {
+        background: none;
+        &:hover {
+          background: none;
+        }
+      }
+    }
+    a.navbar-brand {
+      padding: 0px;
+    }
+
+    button {
+      span {
+        background-color: @clean_color;
+      }
+    }
+    
+    @media(max-width:767px) {
+      .navbar-collapse {
+        top: 17px;
+        position: relative;
+      }
+
+      ul.navbar-nav li {
+        margin: 10px;
+
+        a {
+          padding: 15px;
+        }
+      }
+    }
+  }
+}
+
+/**** LEGAL ***/
+
+#legal {
+  background: #e9e2e2;
+}
+
+#legal .wrapper-content{
+      padding: 100px 0px 0px 0px;
+}
+
+/********** HOME **********/
+
+#home-claim {
+
+  background-image: url('~@~@/assets/images/banner_main_extra.jpg');
+  background-color: @primary_color;
+  background-size: cover;
+
+  .claim {
+    
+    color: #f8f8f8;
+    /* text-shadow: 2px 2px 3px rgba(0,0,0,0.6); */
+    height: 100%;
+    position: relative;
+    padding-top: 60%;
+    text-transform: uppercase;
+
+    h2 {
+      font-size: 3.5em;
+      .title-letter-spacing;
+    }
+
+  }
+}
+
+#home-blog {
+
+  background-color: @lightgrey_color;
+  padding-bottom: 75px;
+
+  #home-blog-title {
+    h2 {
+      color: @dark_color;
+      font-size: 28px;
+      margin-top: 15px;
+      margin-bottom: 45px;
+    }
+  }
+
+  #home-blog-items {
+    
+    .itemnews {
+      background-color: @white_color;
+      border: 6px solid @clean_color;
+      min-height: 250px;
+      padding: 15px 30px 15px 15px;
+      margin-bottom: 15px;
+
+      a {
+        text-transform: uppercase;
+        color: @dark_color;
+        font-weight: 700;
+        font-size: 1.5em;
+        &:hover {
+          color: @dark_color;
+        }
+      }
+      small {
+        text-transform: uppercase;
+        font-size: 0.8em;
+        color: lighten(@dark_color, 20%);
+      }
+    }
+    #loading-blog-items {
+      p {
+        font-style: italic;
+        font-size: 2em;
+        color: lighten(@dark_color, 20%);
+      }
+    }
+  }
+
+  #home-blog-subscribe {
+    margin-top: 30px;
+    h3 {
+      color: @dark_color;
+      font-size: 22px;
+      font-style: italic;
+      font-weight: 700;
+      margin-bottom: 15px;
+    }
+    input.email {
+      background: transparent none repeat scroll 0% 0%;
+      color: @dark_color;
+      border: 0px;
+      border-bottom: 1px solid @dark_color;
+      border-radius: 0px;
+      -moz-border-radius: 0px;
+      -webkit-border-radius: 0px;
+      font-weight: bold;
+      &::-webkit-input-placeholder {
+        color: lighten(@dark_color, 30%);
+        font-style: italic;
+        font-weight: normal;
+      }
+      &::-moz-placeholder {
+        color: lighten(@dark_color, 30%);
+        font-style: italic;
+        font-weight: normal;
+      }
+      &:focus {
+        box-shadow: 0 0 0;
+        -webkit-box-shadow: 0 0 0;
+        -moz-box-shadow: 0 0 0;
+        outline: none;
+      }
+    }
+    input.button {
+      color: @lightgrey_color;
+      background-color: @dark_color;
+      border-color: @lightgrey_color;
+      font-weight: bold;
+    }
+  }
+
+}
+
+#home-quote {
+  .gradient (to left, @primary_color,  @secondary_color);
+  color: @lightgrey_color;
+  .quotesymbol {
+    color: darken(@secondary_color, 15%);
+  }
+  .quotetext {
+    font-size: 2em;
+  }
+  .quoteauthor {
+    font-size: 1.3em;
+  }
+}
+
+#home-days {
+  .gradient (to left, @primary_color,  @secondary_color);
+  color: @lightgrey_color;
+  .daysnumber {
+    font-size: 7em;
+    font-weight: bold;
+    .title-letter-spacing;
+    padding-right: 40px;
+  }
+  .daystext {
+    font-size: 2em;
+  }
+}
+
+@media(max-width:991px) {
+  #home-claim {
+    background-position: center;
+    .claim {
+      text-align: center;
+      height: 100%;
+      position: relative;
+      padding-top: 40%;
+      padding-bottom: 15%;
+      h2 {
+        font-size: 2.5em;
+      }
+    }
+  }
+}
+
+@media(max-width:767px) {
+  #home-days {
+    .daysnumber {
+      text-align: center;
+      paddding-right: 0;
+    }
+    .daystext {
+      text-align: center;
+    }
+  }
+}
+
+
+
+/********** COOPERATIVE **********/
+
+#cooperative {
+  
+  section {
+    
+    h2.section-heading {
+      font-size: 40px;
+      margin-top: 0;
+      margin-bottom: 15px;
+      .title-letter-spacing;
+    }
+    
+    h3.section-subheading {
+      font-size: 16px;
+      text-transform: none;
+      font-style: italic;
+      font-weight: 400;
+      margin-bottom: 75px;
+    }
+    
+    .principle-heading {
+      margin: 15px 0;
+      text-transform: none;
+      font-size: 1.4em;
+    }
+
+    .team-member {
+      text-align: center;
+      margin-bottom: 50px;
+      img {
+        margin: 0 auto;
+        border: 7px solid white;
+        height: 200px;
+      }
+      h4 {
+        margin-top: 25px;
+        margin-bottom: 0;
+        text-transform: none;
+      }
+      p {
+        margin-top: 0;
+      }
+      .social-buttons {
+        height: 20px;
+        li {
+          a {
+            color: @primary_color;
+            &:hover {
+              color: @primary_color;
+            }
+          }
+        }
+      }
+    }
+  .officename {
+      a {
+          color: @black_color;
+          a:hover, a:link, a:visited {
+              color: @black_color;
+          }
+      }
+  }
+  }
+
+  #intro {
+    padding-top: 60px;
+    .title {
+      background: @dark_color;
+    }
+    .description {
+      background: @primary_color;
+      color: @clean_color;
+      font-size: 1.5em;
+      padding: 50px 15px 30px 15px;
+      height: 240px;
+    }
+  }
+
+  #team {
+    .gradient(top, @lightgrey_color, @clean_color);
+  }
+
+  #offices {
+  }
+
+  #partof {
+    background-color: @primary_color;
+    color: @dark_color;
+    h5 {
+      color: @white_color;
+      font-size: 3em;
+      text-transform: uppercase;
+    }
+    p {
+      font-size: 1.3em;
+      a {
+        font-weight: bold;
+        color: @dark_color;
+      }
+    }
+  }
+
+  #network {
+    background: lighten(@dark_color, 5%);
+
+    img {
+      position: absolute;
+      margin-top: -40px;
+      width: 50%;
+    }
+    
+    h2.section-heading {
+      color: @clean_color;
+    }
+    
+    h3.section-subheading {
+      color: @lightgrey_color;
+    }
+
+    a {
+
+      .node {
+        background-color: lighten(@dark_color, 8%);
+        text-align: center;
+        padding: 5px;
+        margin-bottom: 15px;
+        color: @lightgrey_color;
+        height: 300px;
+      }
+      
+      &:hover {
+        text-decoration: none;
+        .node {
+          background-color: lighten(@dark_color, 12%);
+          h3 {
+            color: @primary_color;
+          }
+        }
+      }
+
+    }
+
+  }
+
+}
+
+@media(min-width:768px) {
+  #cooperative {
+    section {
+      padding: 80px 0px;
+    }
+    #network {
+      img {
+        margin-top: -80px;
+      }
+    }
+  }
+}
+
+@media(min-width:1000px) {
+  #cooperative {
+    #intro {
+      .description {
+        background: @primary_color url('~@/assets/images/cooperative/banner_corp.png') no-repeat top left; 
+      }
+    }
+  }
+}
+
+
+
+
+/********** LINES **********/
+
+#lines {
+
+  background: @lightgrey_color;
+  padding-top: 120px;
+
+  .section-heading {
+    h2 {
+      font-size: 40px;
+      margin-top: 15px;;
+      margin-bottom: 15px;
+      .title-letter-spacing;
+    }
+    h3 {
+      font-size: 16px;
+      text-transform: none;
+      font-style: italic;
+      font-weight: 400;
+      margin-bottom: 75px;
+    }
+  }
+
+  a.jump {
+
+    text-decoration: none;
+
+    .container {
+      border: 10px solid @clean_color;
+      margin-bottom: 30px;
+    }
+
+    .line {
+      .image, .title {
+        height: 300px;
+      }
+    }
+
+    .line.economia-social {
+      .image {
+        background: url('~@/assets/images/lines/banner_economiasocial_intro.png') no-repeat top left;
+      }
+    }
+    .line.transparencia-participacion {
+      .image {
+        background: url('~@/assets/images/lines/banner_transparenciaparticipacion_intro.png') no-repeat top left;
+      }
+    }
+    .line.innovacion-social {
+      .image {
+        background: url('~@/assets/images/lines/banner_innovacionsocial_intro.png') no-repeat top center;
+      }
+    }
+    .line.comunicacion {
+      .image {
+        background: url('~@/assets/images/lines/banner_comunicacion_intro.png') no-repeat top left;
+      }
+    }
+
+    .line {
+
+      background: @clean_color;
+      
+      text-align: center;
+      color: @clean_color;
+
+      .title {
+
+        background-color: @primary_color;
+        padding-top: 100px;
+
+        h2 {
+          margin: 0;
+          font-size: 3em;
+        }
+
+      }
+
+    }
+
+  }
+
+  a.jump:hover {
+    .line {
+      .message {
+        background-color: @secondary_color;
+      }
+    }
+  }
+
+}
+
+@media(max-width:767px) {
+  #lines {
+    a {
+      .line {
+        .image {
+          height: 120px;
+        }
+        .title {
+          padding-top: 50px;
+          height: 120px;
+          h2 {
+            font-size: 1.8em;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+/********** LINE **********/
+
+p.lead {
+    font-size: 18px;
+    font-weight: 400;
+}
+
+#line {
+
+  .intro-header {
+    padding-bottom: 50px;
+    text-align: center;
+    color: @clean_color;
+    background: @dark_color;
+    background-size: cover;
+
+    .intro-message {
+
+      position: relative;
+      padding-top: 20%;
+      padding-bottom: 20%;
+
+      h1 {
+        margin: 0;
+        text-shadow: 2px 2px 3px rgba(0,0,0,1);
+        font-size: 4em;
+        text-transform: uppercase;
+      }
+
+      .intro-divider {
+        width: 400px;
+        border-top: 1px solid #f8f8f8;
+        border-bottom: 1px solid rgba(0,0,0,1);
+      }
+
+      h3 {
+        font-weight: 400;
+        text-shadow: 2px 2px 3px rgba(0,0,0,1);
+      }
+
+    }
+
+  }
+
+  .intro-header.economia-social {
+    background: url('~@/assets/images/lines/banner_economiasocial_large.png') no-repeat center center;
+  }
+  .intro-header.transparencia-participacion {
+    background: url('~@/assets/images/lines/banner_transparenciaparticipacion_large.png') no-repeat center center;
+  }
+  .intro-header.innovacion-social {
+    background: url('~@/assets/images/lines/banner_innovacionsocial_large.png') no-repeat center center;
+  }
+  .intro-header.comunicacion {
+    background: url('~@/assets/images/lines/banner_comunicacion_large.png') no-repeat center center;
+  }
+  .intro-header.cookies {
+    background-color: @primary_color;
+
+  }
+
+  .main-message {
+    padding: 50px 0;
+    background-color: @black_color;
+    color: @clean_color;
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .works-line {
+    padding: 50px 0;
+    background-color: @dark_color;
+    color: @clean_color;
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .services-line {
+    padding: 50px 0;
+    background-color: @primary_color;
+    color: @clean_color;
+    font-size: 18px;
+    font-weight: 400;
+  
+    ul {
+      list-style: none;
+      li {
+        padding-bottom: 20px;
+        .title {
+          font-weight: bold;
+        }
+      }
+    }
+
+  }
+
+  .content-section-a {
+      padding: 50px 0;
+      background-color: #f8f8f8;
+  }
+
+  .content-section-b {
+      padding: 50px 0;
+      border-top: 1px solid #e7e7e7;
+      border-bottom: 1px solid #e7e7e7;
+  }
+
+  .section-heading {
+      margin-bottom: 30px;
+      .title-letter-spacing;
+  }
+
+  .section-heading-spacer {
+      float: left;
+      width: 200px;
+      border-top: 6px solid @primary_color;
+  }
+
+  .call {
+      
+      padding: 100px 0;
+      color: @clean_color;
+      background: @dark_color;
+      background-size: cover;
+
+      h2 {
+        margin: 0;
+        text-shadow: 2px 2px 3px rgba(0,0,0,1);
+        font-size: 3em;
+      }
+
+      ul {
+        margin-bottom: 0;
+      }
+
+      .call-social-buttons {
+        float: right;
+        margin-top: 0;
+
+        .btn-custom {
+          color: @clean_color;
+          background-color: @dark_color;
+          border-color: @black_color;
+          &:hover, &:active, &:visited {
+            color: @clean_color;
+            background-color: @black_color;
+          }
+        }
+
+      }
+
+      .network-name {
+        text-transform: uppercase;
+        font-size: 14px;
+        font-weight: 400;
+        letter-spacing: 2px;
+      }
+  }
+
+  .call.economia-social {
+    background: url('~@/assets/images/lines/banner_economiasocial_small.png') no-repeat center center;
+  }
+  .call.transparencia-participacion {
+    background: url('~@/assets/images/lines/banner_transparenciaparticipacion_small.png') no-repeat center center;
+  }
+  .call.innovacion-social {
+    background: url('~@/assets/images/lines/banner_innovacionsocial_small.png') no-repeat center center;
+  }
+  .call.comunicacion {
+    background: url('~@/assets/images/lines/banner_comunicacion_small.png') no-repeat center center;
+  }
+
+}
+
+
+@media(max-width:767px) {
+  #line {
+
+    .intro-header {
+
+      .intro-message {
+        padding-bottom: 15%;
+
+        h1 {
+         font-size: 3em;
+        }
+
+        .intro-divider {
+          width: 100%;
+        }
+
+      }
+    }
+
+    .call {
+
+      h2 {
+
+        margin: 0;
+        text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
+        font-size: 3em;
+      
+      }
+
+      ul.call-social-buttons {
+        li {
+          display: block;
+          margin-bottom: 20px;
+          padding: 0;
+
+          &:last-child {
+            margin-bottom: 0;
+          }
+        }
+      }
+
+    }
+
+  }
+
+}
+
+@media(max-width:1199px) {
+  #line {
+    .call {
+      ul.call-social-buttons {
+        float: left;
+        margin-top: 15px;
+      }
+    }
+  }
+}
+
+
+/********** COOKIES ********/
+.cookies-wrapper {
+    border-top: 1px solid #4b5c66;
+    padding: 30px;
+    width: 100%;
+    background: @dark_color;
+    position: fixed;
+    bottom: 0;
+    left: 0;  
+  .btn {
+    margin-left: 15px;
+    background-color: @primary_color;
+    color: @white_color;
+    border: none;
+
+    &:hover {
+      background: @primary_color_hover;
+    }
+  }
+  a {
+    color: @primary_color;
+  }
+}
+
+/********** SERVICES **********/
+
+#services {
+  li.title{
+    font-weight: bold;
+  }
+}
+
+
+/********** WORKS **********/
+
+#works {
+
+  background: @lightgrey_color;
+  padding-top: 120px;
+
+  .section-heading {
+    h2 {
+      font-size: 40px;
+      margin-top: 15px;
+      margin-bottom: 15px;
+    }
+    h3 {
+      font-size: 16px;
+      text-transform: none;
+      font-style: italic;
+      font-weight: 400;
+      margin-bottom: 75px;
+    }
+    h4 {
+      font-size: 24px;
+      font-weight: 700;
+    }
+  }
+
+  .work.tipi {
+    background-color: @tipi_color;
+    img {
+      width: 360px;
+      padding-top: 15px;
+      padding-right: 50px;
+      padding-left: 1px;
+    }
+    .title {
+      background-color: darken(@tipi_color, 5%);
+      color: make-contrast(@tipi_color);
+    }
+  }
+  .work.lacentralcoop {
+    background-color: @lacentralcoop_color;
+    img {
+      width: 250px;
+      padding-top: 40px;
+    }
+    .title {
+      background-color: darken(@lacentralcoop_color, 5%);
+      color: make-contrast(@lacentralcoop_color);
+    }
+  }
+
+  .work.somoscoop {
+    background-color: @somoscoop_color;
+    img {
+      width: 200px;
+    }
+    .title {
+      background-color: darken(@somoscoop_color, 5%);
+      color: make-contrast(@somoscoop_color);
+    }
+  }
+
+  .work.enlaorbita {
+    background-color: @enlaorbita_color;
+    img {
+      width: 250px;
+      padding-top: 50px;
+    }
+    .title {
+      background-color: darken(@enlaorbita_color, 5%);
+      color: make-contrast(@enlaorbita_color);
+    }
+  }
+
+  .work.socialtocrowd {
+    background-color: @socialtocrowd_color;
+    img {
+      width: 250px;
+      padding-top: 40px;
+    }
+    .title {
+      background-color: darken(@socialtocrowd_color, 5%);
+      color: make-contrast(@socialtocrowd_color);
+    }
+  }
+
+  .work.transparenciapresupuestaria {
+    background-color: @transparenciapresupuestaria_color;
+    img {
+      width: 250px;
+      padding-top: 40px;
+    }
+    .title {
+      background-color: darken(@transparenciapresupuestaria_color, 5%);
+      color: make-contrast(@transparenciapresupuestaria_color);
+    }
+  }
+  .work.clic {
+    background-color: @clic_color;
+    img {
+      width: 200px;
+    }
+    .title {
+      background-color: darken(@clic_color, 5%);
+      color: make-contrast(@clic_color);
+    }
+  }
+  .work.conilhospeda {
+    background-color: @conilhospeda_color;
+    img {
+      width: 230px;
+      padding-top: 25px;
+    }
+    .title {
+      background-color: darken(@conilhospeda_color, 5%);
+      color: make-contrast(@conilhospeda_color);
+    }
+  }
+  .work.poletika {
+    background-color: @poletika_color;
+    img {
+      width: 300px;
+    }
+    .title {
+      background-color: darken(@poletika_color, 5%);
+      color: make-contrast(@poletika_color);
+    }
+  }
+  .work.idea {
+    background-color: @white_color;
+    color: @dark_color;
+    .text {
+      padding: 20px 0px 20px 0px;
+    }
+  }
+  .work.icas {
+    background-color: @icas_color;
+    img {
+      width: 300px;
+      padding-top: 20px;
+    }
+    .title {
+      background-color: darken(@icas_color, 5%);
+      color: make-contrast(@icas_color);
+    }
+  }
+  .work.festivalcine {
+    background-color: @festivalcine_color;
+    img {
+      height: 130%;
+      padding-top: 0px;
+    }
+    .title {
+      background-color: darken(@festivalcine_color, 5%);
+      color: make-contrast(@festivalcine_color);
+    }
+  }
+  .work.aytoelpuerto {
+    background-color: @aytoelpuerto_color;
+    img {
+      width: 200px;
+      padding-top: 20px;
+      -webkit-filter: grayscale(100%) brightness(100%);
+      filter: grayscale(100%) brightness(1000%);
+    }
+    .title {
+      background-color: darken(@aytoelpuerto_color, 5%);
+      color: make-contrast(@aytoelpuerto_color);
+    }
+  }
+  .work.decideoviedo {
+    background-color: @decideoviedo_color;
+    img {
+      width: 200px;
+      padding-top: 45px;
+      -webkit-filter: grayscale(100%) brightness(100%);
+      filter: grayscale(100%) brightness(1000%);
+    }
+    .title {
+      background-color: darken(@decideoviedo_color, 5%);
+      color: make-contrast(@decideoviedo_color);
+    }
+  }
+  .work.decidearcos {
+    background-color: @decidearcos_color;
+    img {
+      width: 300px;
+      padding-top: 2em;
+      -webkit-filter: grayscale(100%) brightness(100%);
+      filter: grayscale(100%) brightness(1000%);
+    }
+    .title {
+      background-color: darken(@decidearcos_color, 5%);
+      color: make-contrast(@decidearcos_color);
+    }
+  }
+  .work.decidesantiago {
+    background-color: @decidesantiago_color;
+    img {
+      padding-top: 0;
+      width: 110px;
+      -webkit-filter: grayscale(100%) brightness(100%);
+      filter: grayscale(100%) brightness(1000%);
+    }
+    .title {
+      background-color: darken(@decidesantiago_color, 5%);
+      color: make-contrast(@decidesantiago_color);
+    }
+  }  
+  .work.decidecadiz {
+    background-color: @decidecadiz_color;
+    padding-top: 45px;
+    img {
+      /*width: 200px;
+      padding-top: 45px;*/
+      -webkit-filter: grayscale(100%) brightness(100%);
+      filter: grayscale(100%) brightness(1000%);
+    }
+    .title {
+      background-color: darken(@decidecadiz_color, 5%);
+      color: make-contrast(@decidecadiz_color);
+    }
+  }
+  .work.foroparticipacion {
+    background-color: white;
+    img {
+      width: 200px;
+      padding-top: 20px;
+    }
+    .title {
+      background-color: darken(@foroparticipacion_color, 5%);
+      color: make-contrast(@foroparticipacion_color);
+    }
+    
+  }
+  .work.dipuparticipacioncadiz {
+    background-color: @dipuparticipacioncadiz_color;
+    img {
+      width: 200px;
+      padding-top: 30px;
+      -webkit-filter: grayscale(100%) brightness(100%);
+      filter: grayscale(100%) brightness(1000%);
+    }
+    .title {
+      background-color: darken(@dipuparticipacioncadiz_color, 5%);
+      color: make-contrast(@dipuparticipacioncadiz_color);
+    }
+  }
+  .work.aytoparticipacioncadiz {
+    background-color: @aytoparticipacioncadiz_color;
+    padding-top: 30px;
+     img {
+      width: 200px;
+      padding-top: 45px;
+      font-style: italic;
+      font-size: 2em;
+    }
+    .title {
+      background-color: darken(@aytoparticipacioncadiz_color, 5%);
+      color: make-contrast(@aytoparticipacioncadiz_color);
+    }
+  }
+  .work.formacionleyparticipacion {
+    background-color: @formacionleyparticipacion_color;
+    padding-top: 30px;
+    img {
+      width: 200px;
+      font-size: 2em;
+    }
+    .title {
+      background-color: darken(@formacionleyparticipacion_color, 5%);
+      color: make-contrast(@formacionleyparticipacion_color);
+    }
+  }
+  .work.sistemaparticipacion {
+    background-color: @sistemaparticipacion_color;
+    padding-top: 30px;
+    img {
+      width: 200px;
+      padding-top: 45px;
+      font-style: italic;
+      font-size: 2em;
+    }
+    .title {
+      background-color: darken(@sistemaparticipacion_color, 5%);
+      color: make-contrast(@sistemaparticipacion_color);
+    }
+  }
+  .work.ciudadamable {
+    background-color: @ciudadamable_color;
+    img {
+      width: 200px;
+      padding-top: 45px;
+    }
+    .title {
+      background-color: darken(@ciudadamable_color, 5%);
+      color: make-contrast(@ciudadamable_color);
+    }
+  }
+  .work.presupuestomarbella {
+    background-color: @presupuestomarbella_color;
+    img {
+      width: 220px;
+      padding-top: 30px;
+    }
+    .title {
+      background-color: darken(@presupuestomarbella_color, 5%);
+      color: make-contrast(@presupuestomarbella_color);
+    }
+  }
+  .work.presupuestomijas {
+    background-color: @presupuestomijas_color;
+    img {
+      padding-top: 10px;
+      height: 160px;
+      width: auto;
+    }
+    .title {
+      background-color: darken(@presupuestomijas_color, 5%);
+      color: make-contrast(@presupuestomijas_color);
+    }
+  }
+  .work.planintervencion {
+    background-color: @planintervencion_color;
+    img {
+      width: 220px;
+      padding-top: 30px;
+      -webkit-filter: grayscale(100%) brightness(100%);
+      filter: grayscale(100%) brightness(1000%);
+    }
+    .title {
+      background-color: darken(@planintervencion_color, 5%);
+      color: make-contrast(@planintervencion_color);
+    }
+  }
+
+  .work.presupuestotarifa {
+    background-color: @presupuestotarifa_color;
+    img {
+      width: 200px;
+      padding-top: 25px;
+    }
+    .title {
+      background-color: darken(@presupuestotarifa_color, 5%);
+      color: make-contrast(@presupuestotarifa_color);
+    }
+  }
+  a {
+    
+    text-decoration: none;
+    /*font-size: 2em;*/
+    .work {
+
+      background: @clean_color;
+      border: 10px solid @clean_color;
+      margin-bottom: 30px;
+      text-align: center;
+      color: @clean_color;
+      height: 150px;
+
+      img {
+        padding: 40px 10px 40px 10px;
+      }
+
+    }
+  }
+  a:hover {
+    .work {
+      box-shadow: 0 0 13px rgba(0,0,0,.33);
+    }
+  }
+
+}
+
+
+
+
+/********** WORK **********/
+
+#work {
+
+  &.wrapper {
+    padding-top: 0px;
+  }
+
+  section {
+    padding: 80px 0px;
+    padding-top: 150px;
+  }
+  
+  #info {
+    p {
+      font-size: 1.5em;
+    }
+  }
+  #keys {
+    .key {
+      font-size: 1.5em;
+      padding-top: 5px;
+    }
+  }
+  #metrics {
+    .metric {
+      .text {
+        font-size: 1.5em;
+        font-weight: 400;
+      }
+      .value {
+        font-size: 3em;
+        font-weight: 700;
+      }
+    }
+    .metricsinfo {
+      padding-top: 30px;
+      font-style: italic;
+    }
+  }
+  #technologies {
+    .title {
+      font-size: 3em;
+      font-weight: 700;
+    }
+    a {
+      img {
+        padding-bottom: 15px;
+        width: 50px;
+        height: 50px;
+        object-fit: contain;
+
+        &.white {
+          -webkit-filter: grayscale(100%) brightness(100%);
+          filter: grayscale(100%) brightness(1000%);
+        }
+      }
+      font-style: italic;
+      color: @lightgrey_color;
+      &:hover, &:visited {
+        text-decoration: none;
+        color: @lightgrey_color;
+      }
+
+      h6 {
+        margin-block-start: 5px;
+        margin-block-end: 35px;
+      }
+    }
+  }
+  #client {
+    .title {
+      font-size: 3em;
+      font-weight: 700;
+    }
+    a.name {
+      font-size: 1.5em;
+      font-weight: 700;
+      color: @dark_color;
+      &:hover, &:active {
+        color: @dark_color;
+      }
+    }
+    .description {
+      font-size: 1.2em;
+    }
+    .year {
+      font-size: 1.2em;
+    }
+  }
+  #media {
+    padding: 50px 0;
+    font-size: 18px;
+    font-weight: 400;
+  }
+
+  .media > img{
+    padding:20px 0;
+    max-width: 200px;
+    max-height: 100px;
+  }
+
+  #media h4{
+    color: @dark_color;
+  }
+
+  #call {
+    .row {
+      padding-bottom: 40px;
+      h4 {
+        font-style: italic;
+        font-size: 2.5em;
+      }
+    }
+  }
+}
+#work.tipi {
+  .make-contrast(@tipi_color);
+  .work_styling(@tipi_color);
+  #intro {
+    .logo {
+      img {
+        width: 300px;
+        padding-top: 50px;
+      }
+    }
+  }
+  #info {
+    .btn {
+      .make-contrast(@tipi_color);
+      .make-contrast-border-button(@tipi_color);
+      background-color: transparent;
+      font-weight: bold;
+    }
+  }
+}
+
+#work.lacentralcoop {
+  .make-contrast(@lacentralcoop_color);
+  .work_styling(@lacentralcoop_color);
+  #intro {
+    .logo {
+      img {
+        width: 300px;
+        padding-top: 50px;
+      }
+    }
+  }
+  #info {
+    .btn {
+      .make-contrast(@lacentralcoop_color);
+      .make-contrast-border-button(@lacentralcoop_color);
+      background-color: transparent;
+      font-weight: bold;
+    }
+  }
+}
+
+#work.somoscoop {
+  .make-contrast(@somoscoop_color);
+  .work_styling(@somoscoop_color);
+  #intro {
+    .logo {
+      img {
+        width: 300px;
+        padding-top: 50px;
+      }
+    }
+  }
+  #info {
+    .btn {
+      .make-contrast(@somoscoop_color);
+      .make-contrast-border-button(@somoscoop_color);
+      background-color: transparent;
+      font-weight: bold;
+    }
+  }
+}
+
+#work.enlaorbita {
+  .make-contrast(@enlaorbita_color);
+  .work_styling(@enlaorbita_color);
+  #intro {
+    .logo {
+      img {
+        width: 300px;
+        padding-top: 50px;
+      }
+    }
+  }
+  #info {
+    .btn {
+      .make-contrast(@enlaorbita_color);
+      .make-contrast-border-button(@enlaorbita_color);
+      background-color: transparent;
+      font-weight: bold;
+    }
+  }
+}
+
+#work.socialtocrowd {
+  .make-contrast(@socialtocrowd_color);
+  .work_styling(@socialtocrowd_color);
+  #intro {
+    .logo {
+      img {
+        width: 300px;
+        padding-top: 50px;
+      }
+    }
+  }
+  #info {
+    .btn {
+      .make-contrast(@socialtocrowd_color);
+      .make-contrast-border-button(@socialtocrowd_color);
+      background-color: transparent;
+      font-weight: bold;
+    }
+  }
+}
+
+#work.transparenciapresupuestaria {
+  .make-contrast(@transparenciapresupuestaria_color);
+  .work_styling(@transparenciapresupuestaria_color);
+  #intro {
+    .logo {
+      img {
+        width: 300px;
+        padding-top: 50px;
+      }
+    }
+  }
+  #info {
+    .btn {
+      .make-contrast(@transparenciapresupuestaria_color);
+      .make-contrast-border-button(@transparenciapresupuestaria_color);
+      background-color: transparent;
+      font-weight: bold;
+    }
+  }
+}
+
+#work.clic {
+  .make-contrast(@clic_color);
+  .work_styling(@clic_color);
+  #intro {
+    .logo {
+      img {
+        width: 300px;
+        padding-top: 50px;      }
+    }
+  }
+  #info {
+    .btn {
+      .make-contrast(@clic_color);
+      .make-contrast-border-button(@clic_color);
+      background-color: transparent;
+      font-weight: bold;
+    }
+  }
+}
+
+#work.conilhospeda {
+  .make-contrast(@conilhospeda_color);
+  .work_styling(@conilhospeda_color);
+  #intro {
+    .logo {
+      img {
+        width: 300px;
+        padding-top: 50px;      }
+    }
+  }
+  #info {
+    .btn {
+      .make-contrast(@conilhospeda_color);
+      .make-contrast-border-button(@conilhospeda_color);
+      background-color: transparent;
+      font-weight: bold;
+    }
+  }
+}
+
+#work.poletika {
+  .make-contrast(@poletika_color);
+  .work_styling(@poletika_color);
+  #intro {
+    .logo {
+      img {
+        width: 300px;
+        padding-top: 50px;      }
+    }
+  }
+  #info {
+    .btn {
+      .make-contrast(@poletika_color);
+      .make-contrast-border-button(@poletika_color);
+      background-color: transparent;
+      font-weight: bold;
+    }
+  }
+}
+
+#work.icas {
+  .make-contrast(@icas_color);
+  .work_styling(@icas_color);
+  #intro {
+    .logo {
+      img {
+        width: 300px;
+        padding-top: 50px;      }
+    }
+  }
+  #info {
+    .btn {
+      .make-contrast(@icas_color);
+      .make-contrast-border-button(@icas_color);
+      background-color: transparent;
+      font-weight: bold;
+    }
+  }
+}
+
+#work.festivalcine {
+  .make-contrast(@festivalcine_color);
+  .work_styling(@festivalcine_color);
+  #intro {
+    background: #171717;
+    .logo {
+      img {
+        width: 300px;
+        padding-top: 50px;      }
+    }
+  }
+  #info {
+    .btn {
+      .make-contrast(@festivalcine_color);
+      .make-contrast-border-button(@festivalcine_color);
+      background-color: transparent;
+      font-weight: bold;
+    }
+  }
+}
+
+#work.aytoelpuerto {
+  .make-contrast(@aytoelpuerto_color);
+  .work_styling(@aytoelpuerto_color);
+  #intro {
+    .logo {
+      img {
+        width: 300px;
+        -webkit-filter: grayscale(100%) brightness(100%);
+        filter: grayscale(100%) brightness(1000%);
+        padding-top: 50px;
+      }
+    }
+  }
+  #info {
+    .btn {
+      .make-contrast(@aytoelpuerto_color);
+      .make-contrast-border-button(@aytoelpuerto_color);
+      background-color: transparent;
+      font-weight: bold;
+    }
+  }
+}
+
+#work.decideoviedo {
+  .make-contrast(@decideoviedo_color);
+  .work_styling(@decideoviedo_color);
+  #intro {
+    .logo {
+      img {
+        width: 300px;
+        padding-top: 50px;      }
+    }
+  }
+  #info {
+    .btn {
+      .make-contrast(@decideoviedo_color);
+      .make-contrast-border-button(@decideoviedo_color);
+      background-color: transparent;
+      font-weight: bold;
+    }
+  }
+}
+
+#work.decidearcos {
+  .make-contrast(@decidearcos_color);
+  .work_styling(@decidearcos_color);
+  #intro {
+    .logo {
+      img {
+        width: 300px;
+        padding-top: 50px;      }
+    }
+  }
+  #info {
+    .btn {
+      .make-contrast(@decidearcos_color);
+      .make-contrast-border-button(@decidearcos_color);
+      background-color: transparent;
+      font-weight: bold;
+    }
+  }
+}
+
+#work.decidecadiz {
+  .make-contrast(@decidecadiz_color);
+  .work_styling(@decidecadiz_color);
+  #intro {
+    .logo {
+      img {
+        width: 300px;
+        padding-top: 50px;      
+      }
+    }
+  }
+  #info {
+    .btn {
+      .make-contrast(@decidecadiz_color);
+      .make-contrast-border-button(@decidecadiz_color);
+      background-color: transparent;
+      font-weight: bold;
+    }
+  }
+}
+
+#work.decidesantiago {
+  .make-contrast(@decidesantiago_color);
+  .work_styling(@decidesantiago_color);
+  #intro {
+    .logo {
+      img {
+        height: 150px;
+        padding-top: 50px;
+      }
+    }
+  }
+  #info {
+    .btn {
+      .make-contrast(@decidesantiago_color);
+      .make-contrast-border-button(@decidesantiago_color);
+      background-color: transparent;
+      font-weight: bold;
+    }
+  }
+}
+
+#work.foroparticipacion {
+  .make-contrast(@foroparticipacion_color);
+  .work_styling(@foroparticipacion_color);
+  #intro {
+    .logo {
+      img {
+        width: 250px;
+        padding-top: 50px;
+      }
+    }
+  }
+  #info {
+    .btn {
+      .make-contrast(@foroparticipacion_color);
+      .make-contrast-border-button(@foroparticipacion_color);
+      background-color: transparent;
+      font-weight: bold;
+    }
+  }
+  #metrics .metric .value{
+    color: grey;
+  }
+}
+
+#work.dipuparticipacioncadiz {
+  .make-contrast(@dipuparticipacioncadiz_color);
+  .work_styling(@dipuparticipacioncadiz_color);
+  #intro {
+    .logo {
+      img {
+        height: 160px;
+        width: auto;
+        -webkit-filter: grayscale(100%) brightness(100%);
+        filter: grayscale(100%) brightness(1000%);
+        padding-top: 50px;
+      }
+    }
+  }
+  #info {
+    .btn {
+      .make-contrast(@dipuparticipacioncadiz_color);
+      .make-contrast-border-button(@dipuparticipacioncadiz_color);
+      background-color: transparent;
+      font-weight: bold;
+    }
+  }
+}
+
+#work.aytoparticipacioncadiz {
+  .make-contrast(@aytoparticipacioncadiz_color);
+  .work_styling(@aytoparticipacioncadiz_color);
+  #intro {
+    .logo {
+      img {
+        height: 110px;
+        width: auto;
+        padding-top: 50px;
+      }
+    }
+  }
+  #info {
+    .btn {
+      .make-contrast(@aytoparticipacioncadiz_color);
+      .make-contrast-border-button(@aytoparticipacioncadiz_color);
+      background-color: transparent;
+      font-weight: bold;
+    }
+  }
+}
+
+#work.formacionleyparticipacion {
+  .make-contrast(@formacionleyparticipacion_color);
+  .work_styling(@formacionleyparticipacion_color);
+  #intro {
+    .logo {
+      img {
+        height: 110px;
+        width: auto;
+        padding-top: 50px;
+      }
+    }
+  }
+  #info {
+    .btn {
+      .make-contrast(@formacionleyparticipacion_color);
+      .make-contrast-border-button(@formacionleyparticipacion_color);
+      background-color: transparent;
+      font-weight: bold;
+    }
+  }
+}
+
+#work.sistemaparticipacion {
+  .make-contrast(@sistemaparticipacion_color);
+  .work_styling(@sistemaparticipacion_color);
+  #intro {
+    .logo {
+      img {
+        height: 110px;
+        width: auto;
+        padding-top: 50px;
+      }
+    }
+  }
+  #info {
+    .btn {
+      .make-contrast(@sistemaparticipacion_color);
+      .make-contrast-border-button(@sistemaparticipacion_color);
+      background-color: transparent;
+      font-weight: bold;
+    }
+  }
+}
+
+#work.ciudadamable {
+  .make-contrast(@ciudadamable_color);
+  .work_styling(@ciudadamable_color);
+  #intro {
+    .logo {
+      img {
+        padding-top: 50px;
+        width: auto;
+      }
+    }
+  }
+  #info {
+    .btn {
+      .make-contrast(@ciudadamable_color);
+      .make-contrast-border-button(@ciudadamable_color);
+      background-color: transparent;
+      font-weight: bold;
+    }
+  }
+}
+
+#work.presupuestomarbella {
+  .make-contrast(@presupuestomarbella_color);
+  .work_styling(@presupuestomarbella_color);
+  #intro {
+    .logo {
+      img {
+        height: 130px;
+        width: auto;
+        padding-top: 50px;
+      }
+    }
+  }
+  #info {
+    .btn {
+      .make-contrast(@presupuestomarbella_color);
+      .make-contrast-border-button(@presupuestomarbella_color);
+      background-color: transparent;
+      font-weight: bold;
+    }
+  }
+}
+
+#work.presupuestomijas {
+  .make-contrast(@presupuestomijas_color);
+  .work_styling(@presupuestomijas_color);
+  #intro {
+    .logo {
+      img {
+        height: 180px;
+        width: auto;
+        padding-top: 50px;
+      }
+    }
+  }
+  #info {
+    .btn {
+      .make-contrast(@presupuestomijas_color);
+      .make-contrast-border-button(@presupuestomijas_color);
+      background-color: transparent;
+      font-weight: bold;
+    }
+  }
+}
+
+#work.planintervencion {
+  .make-contrast(@planintervencion_color);
+  .work_styling(@planintervencion_color);
+  #intro {
+    .logo {
+      img {
+        height: 150px;
+        width: auto;
+        -webkit-filter: grayscale(100%) brightness(100%);
+        filter: grayscale(100%) brightness(1000%);
+        padding-top: 55px;
+      }
+    }
+  }
+  #info {
+    .btn {
+      .make-contrast(@planintervencion_color);
+      .make-contrast-border-button(@planintervencion_color);
+      background-color: transparent;
+      font-weight: bold;
+    }
+  }
+}
+
+#work.presupuestotarifa {
+  .make-contrast(@presupuestotarifa_color);
+  .work_styling(@presupuestotarifa_color);
+  #intro {
+    .logo {
+      img {
+        height: 130px;
+        width: auto;
+        padding-top: 50px;
+      }
+    }
+  }
+  #info {
+    .btn {
+      .make-contrast(@presupuestotarifa_color);
+      .make-contrast-border-button(@presupuestotarifa_color);
+      background-color: transparent;
+      font-weight: bold;
+    }
+  }
+}
+
+@media(max-width:767px) {
+  #work {
+    section {
+      padding: 40px 0px;
+    }
+    #keys {
+      .key {
+        padding-bottom: 30px;
+      }
+    }
+    #metrics {
+      .metric {
+        padding-bottom: 30px;
+      }
+    }
+  }
+}
+
+
+/********** PREFOOTER **********/
+
+#prefooter {
+    padding: 30px 0;
+    background-color: @dark_color;
+    color: @clean_color;
+    img {
+        padding-top: 20px;
+    }
+    a {
+        color: @primary_color;
+        font-weight: bold;
+        font-size: 1.2em;
+        &:hover, &:link, &:visited {
+            color: @primary_color;
+        }
+    }
+    strong {
+        a {
+            color: @clean_color;
+            &:hover, &:link, &:visited {
+                color: @clean_color;
+            }
+        }
+    }
+    .separator {
+        padding: 30px 0;
+        border-bottom: 2px solid lighten(@dark_color, 10%);
+    }
+}
+
+
+/********** FOOTER **********/
+
+footer {
+    padding: 30px 0;
+    background-color: @dark_color;
+    color: @clean_color;
+    /* .box-shadow(0px, -3px, 3px, 0.7); */
+
+    .row {
+
+      li {
+        a {
+          color: @clean_color;
+          &:hover {
+            color: @white_color;
+            text-decoration: underline;
+          }
+        }
+      }
+
+      .contacts {
+        .contact {
+          font-size: 1.5em;
+          font-weight: bold;
+          color: @clean_color;
+
+          a {
+            &:hover {
+              text-decoration: none;
+            }
+          }
+
+          a.sn {
+            color: @primary_color;
+            &:hover {
+              color: @secondary_color;
+            }
+          }
+        }
+        .contact.md {
+          font-size: 1.1em;
+          font-weight: normal;
+        }
+      }
+
+    
+    }
+
+
+}
+
+p.copyright {
+    margin: 15px 0 0;
+}
