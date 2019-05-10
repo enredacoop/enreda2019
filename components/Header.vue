@@ -1,43 +1,31 @@
+<i18n>
+{
+  "es": {
+    "home": "Inicio",
+    "cooperative": "Cooperativa",
+    "projects": "Proyectos",
+    "blog": "Blog"
+  },
+  "en": {
+    "home": "Home",
+    "cooperative": "Cooperative",
+    "projects": "Projects",
+    "blog": "Blog"
+  }
+}
+</i18n>
+
 <template>
-  <!-- header -->
   <header>
-    <!-- Navigation -->
-    <nav class="navbar navbar-custom" role="navigation">
-      <div class="container topnav">
-        <div class="navbar-header">
-          <button
-            type="button"
-            class="navbar-toggle"
-            data-toggle="collapse"
-            data-target="#bs-example-navbar-collapse-1"
-          >
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand topnav" href="/">
-            <img height="45px" src="~/assets/images/logo.png" />
-          </a>
-        </div>
-        <div id="bs-example-navbar-collapse-1" class="collapse navbar-collapse">
-          <ul class="nav navbar-nav navbar-right">
-            <li>
-              <a href="/cooperativa">Cooperativa</a>
-            </li>
-            <li>
-              <a href="/lineas">Líneas</a>
-            </li>
-            <li>
-              <a href="/trabajos">Trabajos</a>
-            </li>
-            <li>
-              <a href="http://blog.enreda.coop" target="_blank">Blog</a>
-            </li>
-          </ul>
-        </div>
-      </div>
+    <nav>
+      <nuxt-link :to="localePath('index')">{{ $t('home') }}</nuxt-link>
+      <nuxt-link :to="localePath('cooperative')">{{
+        $t('cooperative')
+      }}</nuxt-link>
+      <nuxt-link :to="localePath('projects')">{{ $t('projects') }}</nuxt-link>
+      <a href="http://blog.enreda.coop" about="_blank">{{ $t('blog') }}</a>
+      <nuxt-link :to="switchLocalePath('es')">Español</nuxt-link>
+      <nuxt-link :to="switchLocalePath('en')">English</nuxt-link>
     </nav>
   </header>
-  <!-- end header -->
 </template>
