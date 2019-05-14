@@ -43,7 +43,10 @@ export default {
   /*
    ** Plugins to load before mounting the App
    */
-  plugins: [],
+  plugins: [
+    { src: '~/plugins/jquery.rss.js', ssr: false },
+    { src: '~/plugins/app.js', ssr: false }
+  ],
 
   /*
    ** Nuxt.js modules
@@ -69,7 +72,7 @@ export default {
     [
       '@nuxtjs/google-analytics',
       {
-        id: ''
+        id: '33'
       }
     ],
     [
