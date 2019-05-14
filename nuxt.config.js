@@ -72,7 +72,7 @@ export default {
     [
       '@nuxtjs/google-analytics',
       {
-        id: '33'
+        id: '333'
       }
     ],
     [
@@ -105,6 +105,7 @@ export default {
       new webpack.ProvidePlugin({
         $: 'jquery',
         jQuery: 'jquery',
+        jquery: 'jquery',
         'window.jQuery': 'jquery'
       })
     ],

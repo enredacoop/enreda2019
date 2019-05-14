@@ -1,8 +1,46 @@
+/*-----------------------------------------------------------------------------------
+
+    Author: Carlos Campos Cuesta
+    Email:  carcamcue@gmail.com
+    Author web: ENREDA
+    Version: 0.0.1
+
+-----------------------------------------------------------------------------------*/
+/* ----------------------------------------------------------------
+
+    Table Of Content
+        
+    00. Imports
+    01. Basics
+    02. Texts
+    03. Blocks
+    04. Header
+    05. Footer
+    06. Blog page
+    07. Cooperative page
+    08. Lines page
+    09. Work page
+    10. Work page parts
+    11. Images
+    12. Lists
+    13. Paddings
+    14. Margins
+    15. Buttons
+    16. Cards
+ 
+---------------------------------------------------------------- */
+/* ----------------------------------------------------------------
+    [ 00. Imports ]
+-----------------------------------------------------------------*/
 @import "colors.less";
 @import "mixins.less";
 @import "sizes.less";
 
-/********** GENERAL **********/
+
+
+/* ----------------------------------------------------------------
+    [ 01. Basics ]
+-----------------------------------------------------------------*/
 @font: 'Open Sans';
 
 body,
@@ -14,33 +52,6 @@ html {
 
 ::-moz-selection { color: @white_color; background-color: @primary_color; }
 ::selection { color: @white_color; background-color: @primary_color; }
-
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-  font-weight: 700;
-}
-
-.text-primary {
-  color: @primary_color;
-}
-
-.text-right {
-  text-align: right;
-}
-
-.label-custom-primary {
-  background-color: @primary_color;
-  color: @lightgrey_color;
-}
-.label-custom-secondary {
-  background-color: @secondary_color;
-  color: @lightgrey_color;
-}
-
 .wrapper {
   padding-top: 70px;
 }
@@ -56,11 +67,6 @@ section {
   padding: 40px 0;
 }
 
-img.center {
-  display: block;
-  margin: 0 auto;
-}
-
 .vcenter {
   display: inline-block;
   vertical-align: middle;
@@ -68,42 +74,192 @@ img.center {
 }
 
 
-/********** HEADER **********/
 
+/* ----------------------------------------------------------------
+    [ 02. Texts ]
+-----------------------------------------------------------------*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+.text-primary {
+  color: @primary_color;
+}
+.text-right {
+  text-align: right;
+}
+.label-custom-primary {
+  background-color: @primary_color;
+  color: @lightgrey_color;
+}
+.label-custom-secondary {
+  background-color: @secondary_color;
+  color: @lightgrey_color;
+}
+
+
+
+/* ----------------------------------------------------------------
+    [ 03. Blocks ]
+-----------------------------------------------------------------*/
+/**** LEGAL ***/
+#legal {
+  background: #e9e2e2;
+}
+#legal .wrapper-content{
+      padding: 100px 0px 0px 0px;
+}
+/********** HOME **********/
+#home-claim {
+
+  background-image: url('~@~@/assets/images/banner_main_extra.jpg');
+  background-color: @primary_color;
+  background-size: cover;
+
+  .claim {
+    color: #f8f8f8;
+    /* text-shadow: 2px 2px 3px rgba(0,0,0,0.6); */
+    height: 100%;
+    position: relative;
+    padding: 30% 0px;
+    text-transform: uppercase;
+
+    h2 {
+      font-size: 3.5em;
+      background: @primary_color_trans;
+      padding: 10px;
+      .title-letter-spacing;
+    }
+
+  }
+}
+
+@media(max-width:991px) {
+  #home-claim {
+    background-position: center;
+    .claim {
+      height: 100%;
+      position: relative;
+      padding: 50% 0px;
+      h2 {
+        font-size: 2.5em;
+      }
+    }
+  }
+}
+/********** COOKIES ********/
+.cookies-wrapper {
+  display: none;
+  border-top: 1px solid #4b5c66;
+  padding: 30px;
+  width: 100%;
+  background: @dark_color;
+  position: fixed;
+  bottom: 0;
+  left: 0;  
+  .btn {
+    margin-left: 15px;
+    background-color: @primary_color;
+    color: @white_color;
+    border: none;
+
+    &:hover {
+      background: @primary_color_hover;
+    }
+  }
+  a {
+    color: @primary_color;
+  }
+}
+/********** SERVICES **********/
+#services {
+  li.title{
+    font-weight: bold;
+  }
+}
+
+
+
+/* ----------------------------------------------------------------
+    [ 04. Header ]
+-----------------------------------------------------------------*/
 header {
-  .navbar-custom {
+  .navbar {
+    position: fixed;
+    width: 100%;
     font-size: 16px;
-    background-color: @dark_color;
-    color: @clean_color;
+    background-color: transparent !important;
+    color: @black_color;
     border-radius: 0px;
-    box-shadow: 0px 0px 13px #000;
+    /*box-shadow: 0px 0px 13px #000;*/
     margin-bottom: -20px;
     padding: 15px 0;
+    padding-top: 0px;
+    z-index: 999;
+    height: 105px;
+    -moz-transition: all ease .3s;
+    -webkit-transition: all ease .3s;
+    transition: all ease .3s;
+
+    .navbar-toggler {
+      background: @white_color;
+      margin-right: 10px;
+      width: 30px;
+      height: 30px;
+
+      .navbar-toggler-icon {
+        width: 19px;
+        height: 19px;
+        left: -7px;
+        top: -1px;
+        position: relative;
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    a.navbar-brand:hover {
+      background-color: transparent;
+    }
+    #navbar-brand-logo {
+      height: 75px;
+      -moz-transition: all ease .3s;
+      -webkit-transition: all ease .3s;
+      transition: all ease .3s;
+    }
 
     ul.navbar-nav {
       margin-top: 7px;
+
+      li.nav-item {
+        margin: 0px 10px;
+      }
     }
     
-    a {
+    a, a.nav-link {
       font-weight: bolder;
-      color: @clean_color;
       font-size: 13px;
       padding: 10px;
-      margin: 0 10px;
+      margin: 0;
       transition: all ease .3s;
+      color: @white_color !important;
 
       &:focus {
-        color: @clean_color;
+        color: inherit;
         background: none;
         outline: none;
       }
-
       &:hover, &:active {
-        color: @dark_color;
+        color: @black_color !important;
         background-color: @white_color;
         border-radius: 3px;
       }
-
       &.topnav {
         background: none;
         &:hover {
@@ -112,19 +268,36 @@ header {
       }
     }
     a.navbar-brand {
-      padding: 0px;
+      padding: 10px;
     }
-
     button {
       span {
         background-color: @clean_color;
       }
     }
+    .dropdown-menu {
+      border: 0px;
+      a {
+        color: #000 !important;
+      }
+    }
+    .languages {
+      border-left: 1px solid rgba(255,255,255,.13);
+      margin-left: 20px !important;
+      padding-left: 30px;
+    }
     
-    @media(max-width:767px) {
+    @media(max-width:991px) {
       .navbar-collapse {
-        top: 17px;
+        top: 15px;
         position: relative;
+        background: @white_color;
+      }
+      .navbar-collapse.show a.nav-link {
+        color: @black_color !important;
+      }
+      &.sticky .navbar-collapse {
+        top: -5px !important;
       }
 
       ul.navbar-nav li {
@@ -134,47 +307,129 @@ header {
           padding: 15px;
         }
       }
+      .languages {
+        border-left: 0px;
+        margin: 10px !important;
+        padding-left: 0px;
+      }
+    }
+
+    &.sticky {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      height: 60px;
+      -moz-transition: all ease .3s;
+      -webkit-transition: all ease .3s;
+      transition: all ease .3s;
+      background: @white_color !important;
+
+      #navbar-brand-logo.sticky {
+        height: 30px;
+        -moz-transition: all ease .3s;
+        -webkit-transition: all ease .3s;
+        transition: all ease .3s;
+      }
+
+      .nav-item:hover a.nav-link {
+        background: @black_color !important;
+        color: @white_color !important;
+      }
+      a, a.nav-link {
+        color: @black_color !important;
+      }
+    }
+    &.sticky + .content {
+      padding-top: 102px;
     }
   }
 }
 
-/**** LEGAL ***/
 
-#legal {
-  background: #e9e2e2;
-}
 
-#legal .wrapper-content{
-      padding: 100px 0px 0px 0px;
-}
-
-/********** HOME **********/
-
-#home-claim {
-
-  background-image: url('~@~@/assets/images/banner_main_extra.jpg');
-  background-color: @primary_color;
-  background-size: cover;
-
-  .claim {
-    
-    color: #f8f8f8;
-    /* text-shadow: 2px 2px 3px rgba(0,0,0,0.6); */
-    height: 100%;
-    position: relative;
-    padding-top: 60%;
-    text-transform: uppercase;
-
-    h2 {
-      font-size: 3.5em;
-      .title-letter-spacing;
-    }
-
+/* ----------------------------------------------------------------
+    [ 05. Footer ]
+-----------------------------------------------------------------*/
+/********** PREFOOTER **********/
+#prefooter {
+  padding: 30px 0;
+  background-color: @dark_color;
+  color: @clean_color;
+  img {
+      padding-top: 20px;
+  }
+  a {
+      color: @primary_color;
+      font-weight: bold;
+      font-size: 1.2em;
+      &:hover, &:link, &:visited {
+          color: @primary_color;
+      }
+  }
+  strong {
+      a {
+          color: @clean_color;
+          &:hover, &:link, &:visited {
+              color: @clean_color;
+          }
+      }
+  }
+  .separator {
+      padding: 30px 0;
+      border-bottom: 2px solid lighten(@dark_color, 10%);
   }
 }
 
+/********** FOOTER **********/
+footer {
+  padding: 30px 0;
+  background-color: @dark_color;
+  color: @clean_color;
+  /* .box-shadow(0px, -3px, 3px, 0.7); */
+  .row {
+    li {
+      a {
+        color: @clean_color;
+        &:hover {
+          color: @white_color;
+          text-decoration: underline;
+        }
+      }
+    }
+    .contacts {
+      .contact {
+        font-size: 18px;
+        font-weight: bold;
+        color: @clean_color;
+        a {
+          &:hover {
+            text-decoration: none;
+          }
+        }
+        a.sn {
+          color: @primary_color;
+          &:hover {
+            color: @secondary_color;
+          }
+        }
+      }
+      .contact.md {
+        font-size: 15px;
+        font-weight: normal;
+      }
+    }
+  }
+}
+p.copyright {
+  margin: 15px 0 0;
+}
+
+
+
+/* ----------------------------------------------------------------
+    [ 06. Blog page ]
+-----------------------------------------------------------------*/
 #home-blog {
-
   background-color: @lightgrey_color;
   padding-bottom: 75px;
 
@@ -262,11 +517,10 @@ header {
       font-weight: bold;
     }
   }
-
 }
 
 #home-quote {
-  .gradient (to left, @primary_color,  @secondary_color);
+  .gradient(to left, @primary_color,  @secondary_color);
   color: @lightgrey_color;
   .quotesymbol {
     color: darken(@secondary_color, 15%);
@@ -280,7 +534,7 @@ header {
 }
 
 #home-days {
-  .gradient (to left, @primary_color,  @secondary_color);
+  .gradient(to left, @primary_color,  @secondary_color);
   color: @lightgrey_color;
   .daysnumber {
     font-size: 7em;
@@ -293,27 +547,11 @@ header {
   }
 }
 
-@media(max-width:991px) {
-  #home-claim {
-    background-position: center;
-    .claim {
-      text-align: center;
-      height: 100%;
-      position: relative;
-      padding-top: 40%;
-      padding-bottom: 15%;
-      h2 {
-        font-size: 2.5em;
-      }
-    }
-  }
-}
-
 @media(max-width:767px) {
   #home-days {
     .daysnumber {
       text-align: center;
-      paddding-right: 0;
+      padding-right: 0;
     }
     .daystext {
       text-align: center;
@@ -323,19 +561,17 @@ header {
 
 
 
-/********** COOPERATIVE **********/
-
+/* ----------------------------------------------------------------
+    [ 07. Cooperative page ]
+-----------------------------------------------------------------*/
 #cooperative {
-  
   section {
-    
     h2.section-heading {
       font-size: 40px;
       margin-top: 0;
       margin-bottom: 15px;
       .title-letter-spacing;
     }
-    
     h3.section-subheading {
       font-size: 16px;
       text-transform: none;
@@ -343,13 +579,11 @@ header {
       font-weight: 400;
       margin-bottom: 75px;
     }
-    
     .principle-heading {
       margin: 15px 0;
       text-transform: none;
       font-size: 1.4em;
     }
-
     .team-member {
       text-align: center;
       margin-bottom: 50px;
@@ -378,14 +612,14 @@ header {
         }
       }
     }
-  .officename {
-      a {
-          color: @black_color;
-          a:hover, a:link, a:visited {
-              color: @black_color;
-          }
-      }
-  }
+    .officename {
+        a {
+            color: @black_color;
+            a:hover, a:link, a:visited {
+                color: @black_color;
+            }
+        }
+    }
   }
 
   #intro {
@@ -403,10 +637,11 @@ header {
   }
 
   #team {
-    .gradient(top, @lightgrey_color, @clean_color);
+    .gradient(to top, @lightgrey_color, @clean_color);
   }
 
   #offices {
+    color: inherit;
   }
 
   #partof {
@@ -444,7 +679,6 @@ header {
     }
 
     a {
-
       .node {
         background-color: lighten(@dark_color, 8%);
         text-align: center;
@@ -467,7 +701,6 @@ header {
     }
 
   }
-
 }
 
 @media(min-width:768px) {
@@ -495,9 +728,9 @@ header {
 
 
 
-
-/********** LINES **********/
-
+/* ----------------------------------------------------------------
+    [ 08. Lines page ]
+-----------------------------------------------------------------*/
 #lines {
 
   background: @lightgrey_color;
@@ -607,17 +840,13 @@ header {
   }
 }
 
-
-
-/********** LINE **********/
-
+/********** LINE SINGLE **********/
 p.lead {
     font-size: 18px;
     font-weight: 400;
 }
 
 #line {
-
   .intro-header {
     padding-bottom: 50px;
     text-align: center;
@@ -626,7 +855,6 @@ p.lead {
     background-size: cover;
 
     .intro-message {
-
       position: relative;
       padding-top: 20%;
       padding-bottom: 20%;
@@ -648,9 +876,7 @@ p.lead {
         font-weight: 400;
         text-shadow: 2px 2px 3px rgba(0,0,0,1);
       }
-
     }
-
   }
 
   .intro-header.economia-social {
@@ -667,7 +893,6 @@ p.lead {
   }
   .intro-header.cookies {
     background-color: @primary_color;
-
   }
 
   .main-message {
@@ -702,70 +927,63 @@ p.lead {
         }
       }
     }
-
   }
-
   .content-section-a {
-      padding: 50px 0;
-      background-color: #f8f8f8;
+    padding: 50px 0;
+    background-color: #f8f8f8;
   }
-
   .content-section-b {
-      padding: 50px 0;
-      border-top: 1px solid #e7e7e7;
-      border-bottom: 1px solid #e7e7e7;
+    padding: 50px 0;
+    border-top: 1px solid #e7e7e7;
+    border-bottom: 1px solid #e7e7e7;
   }
-
   .section-heading {
-      margin-bottom: 30px;
-      .title-letter-spacing;
+    margin-bottom: 30px;
+    .title-letter-spacing;
   }
-
   .section-heading-spacer {
-      float: left;
-      width: 200px;
-      border-top: 6px solid @primary_color;
+    float: left;
+    width: 200px;
+    border-top: 6px solid @primary_color;
   }
 
   .call {
-      
-      padding: 100px 0;
-      color: @clean_color;
-      background: @dark_color;
-      background-size: cover;
+    padding: 100px 0;
+    color: @clean_color;
+    background: @dark_color;
+    background-size: cover;
 
-      h2 {
-        margin: 0;
-        text-shadow: 2px 2px 3px rgba(0,0,0,1);
-        font-size: 3em;
-      }
+    h2 {
+      margin: 0;
+      text-shadow: 2px 2px 3px rgba(0,0,0,1);
+      font-size: 3em;
+    }
 
-      ul {
-        margin-bottom: 0;
-      }
+    ul {
+      margin-bottom: 0;
+    }
 
-      .call-social-buttons {
-        float: right;
-        margin-top: 0;
+    .call-social-buttons {
+      float: right;
+      margin-top: 0;
 
-        .btn-custom {
+      .btn-custom {
+        color: @clean_color;
+        background-color: @dark_color;
+        border-color: @black_color;
+        &:hover, &:active, &:visited {
           color: @clean_color;
-          background-color: @dark_color;
-          border-color: @black_color;
-          &:hover, &:active, &:visited {
-            color: @clean_color;
-            background-color: @black_color;
-          }
+          background-color: @black_color;
         }
-
       }
+    }
 
-      .network-name {
-        text-transform: uppercase;
-        font-size: 14px;
-        font-weight: 400;
-        letter-spacing: 2px;
-      }
+    .network-name {
+      text-transform: uppercase;
+      font-size: 14px;
+      font-weight: 400;
+      letter-spacing: 2px;
+    }
   }
 
   .call.economia-social {
@@ -780,15 +998,11 @@ p.lead {
   .call.comunicacion {
     background: url('~@/assets/images/lines/banner_comunicacion_small.png') no-repeat center center;
   }
-
 }
-
 
 @media(max-width:767px) {
   #line {
-
     .intro-header {
-
       .intro-message {
         padding-bottom: 15%;
 
@@ -799,18 +1013,14 @@ p.lead {
         .intro-divider {
           width: 100%;
         }
-
       }
     }
 
     .call {
-
       h2 {
-
         margin: 0;
         text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
         font-size: 3em;
-      
       }
 
       ul.call-social-buttons {
@@ -824,11 +1034,8 @@ p.lead {
           }
         }
       }
-
     }
-
   }
-
 }
 
 @media(max-width:1199px) {
@@ -843,43 +1050,12 @@ p.lead {
 }
 
 
-/********** COOKIES ********/
-.cookies-wrapper {
-    border-top: 1px solid #4b5c66;
-    padding: 30px;
-    width: 100%;
-    background: @dark_color;
-    position: fixed;
-    bottom: 0;
-    left: 0;  
-  .btn {
-    margin-left: 15px;
-    background-color: @primary_color;
-    color: @white_color;
-    border: none;
 
-    &:hover {
-      background: @primary_color_hover;
-    }
-  }
-  a {
-    color: @primary_color;
-  }
-}
-
-/********** SERVICES **********/
-
-#services {
-  li.title{
-    font-weight: bold;
-  }
-}
-
-
+/* ----------------------------------------------------------------
+    [ 09. Works page ]
+-----------------------------------------------------------------*/
 /********** WORKS **********/
-
 #works {
-
   background: @lightgrey_color;
   padding-top: 120px;
 
@@ -1252,9 +1428,10 @@ p.lead {
 
 
 
-
+/* ----------------------------------------------------------------
+    [ 10. Works page parts ]
+-----------------------------------------------------------------*/
 /********** WORK **********/
-
 #work {
 
   &.wrapper {
@@ -1945,89 +2122,90 @@ p.lead {
 }
 
 
-/********** PREFOOTER **********/
+/* ----------------------------------------------------------------
+    [ 11. Images ]
+-----------------------------------------------------------------*/
+img.center {
+  display: block;
+  margin: 0 auto;
+}
 
-#prefooter {
-    padding: 30px 0;
-    background-color: @dark_color;
-    color: @clean_color;
+
+/* ----------------------------------------------------------------
+    [ 12. Lists ]
+-----------------------------------------------------------------*/
+ul.list-inline {
+  li {
+    display: inline-block;
+  }
+}
+
+
+/* ----------------------------------------------------------------
+    [ 13. Paddings ]
+-----------------------------------------------------------------*/
+.pt-120 { padding-top: 120px;}
+.pb-120 { padding-bottom: 120px;}
+.ptb-120 {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+
+/* ----------------------------------------------------------------
+    [ 14. Margins ]
+-----------------------------------------------------------------*/
+
+
+
+/* ----------------------------------------------------------------
+    [ 15. Buttons ]
+-----------------------------------------------------------------*/
+.btn-hidden {
+  opacity: 0;;
+}
+
+
+
+/* ----------------------------------------------------------------
+    [ 16. Cards ]
+-----------------------------------------------------------------*/
+.card-deck .card {
+  margin: 0 auto;
+  border: 0px;
+}
+.card {
+  margin-bottom: 15px !important;
+  margin-top: 15px !important;
+  min-width: 250px;
+  max-width: 250px;
+
+  img {
+    -webkit-transition: all .8s ease;
+    -moz-transition: all .8s ease;
+    -ms-transition: all .8s ease;
+    -o-transition: all .8s ease;
+    transition: all .8s ease;
+  }
+
+  &:hover {
+    h4 {
+      color: @primary_color;
+    }
     img {
-        padding-top: 20px;
+      -ms-transform: scale(1.05);
+      -moz-transform: scale(1.05);
+      -webkit-transform: scale(1.05);
+      -o-transform: scale(1.05);
+      transform: scale(1.05);
+      box-shadow: 0px 0px 33px 13px @black_color_trans;
     }
-    a {
-        color: @primary_color;
-        font-weight: bold;
-        font-size: 1.2em;
-        &:hover, &:link, &:visited {
-            color: @primary_color;
-        }
-    }
-    strong {
-        a {
-            color: @clean_color;
-            &:hover, &:link, &:visited {
-                color: @clean_color;
-            }
-        }
-    }
-    .separator {
-        padding: 30px 0;
-        border-bottom: 2px solid lighten(@dark_color, 10%);
-    }
+  }
 }
-
-
-/********** FOOTER **********/
-
-footer {
-    padding: 30px 0;
-    background-color: @dark_color;
-    color: @clean_color;
-    /* .box-shadow(0px, -3px, 3px, 0.7); */
-
-    .row {
-
-      li {
-        a {
-          color: @clean_color;
-          &:hover {
-            color: @white_color;
-            text-decoration: underline;
-          }
-        }
-      }
-
-      .contacts {
-        .contact {
-          font-size: 1.5em;
-          font-weight: bold;
-          color: @clean_color;
-
-          a {
-            &:hover {
-              text-decoration: none;
-            }
-          }
-
-          a.sn {
-            color: @primary_color;
-            &:hover {
-              color: @secondary_color;
-            }
-          }
-        }
-        .contact.md {
-          font-size: 1.1em;
-          font-weight: normal;
-        }
-      }
-
-    
-    }
-
-
+.card-img-top {
+  height: 150px;
+  object-fit: cover;
 }
-
-p.copyright {
-    margin: 15px 0 0;
+.card.img-contain img {
+  object-fit: contain;
 }
