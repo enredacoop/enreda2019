@@ -5,10 +5,9 @@ import Vue from 'vue'
 import BootstrapVue from 'bootstrap-vue'
 import VueMoment from 'vue-moment'
 import moment from 'moment'
+import isotope from 'vueisotope'
 
-Vue.use(BootstrapVue, VueMoment, {
-  moment
-})
+Vue.use(BootstrapVue, VueMoment, moment, isotope)
 
 $(function() {
   const oneDay = 24 * 60 * 60 * 1000
