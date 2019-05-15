@@ -90,7 +90,8 @@ export default {
         ],
         defaultLocale: 'es'
       }
-    ]
+    ],
+    'cookie-universal-nuxt'
   ],
 
   /*
@@ -105,6 +106,7 @@ export default {
       new webpack.ProvidePlugin({
         $: 'jquery',
         jQuery: 'jquery',
+        jquery: 'jquery',
         'window.jQuery': 'jquery'
       })
     ],

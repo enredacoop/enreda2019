@@ -91,20 +91,18 @@
         </div>
       </div>
     </div>
-    <section class="cookies-wrapper">
-      <div class="col-sm-12 text-center">
-        Las cookies nos ayudan a proporcionar nuestros servicios. Usando
-        nuestros servicios, está de acuerdo con nuestro uso de cookies.
-        <a href="/cookies">Aprender más</a>
-        <a href="#" class="btn btn-primary">Aceptar</a>
-      </div>
-    </section>
+    <Cookie />
   </footer>
   <!-- end footer -->
 </template>
 
 <script>
+import Cookie from '~/components/Cookie.vue'
+
 export default {
+  components: {
+    Cookie
+  },
   data() {
     return {
       footer: {
