@@ -3,7 +3,7 @@
     <div id="home-claim" class="wrapper">
       <div class="container">
         <div class="row">
-          <div class="col-md-8 col-sm-12 col-xs-12">
+          <div class="col-md-12 col-sm-12 col-xs-12 text-center">
             <div class="claim wow fadeInLeft">
               <h2>{{ data.claim }}</h2>
             </div>
@@ -11,6 +11,7 @@
         </div>
       </div>
     </div>
+    <Services />
     <div id="home-blog" class="wrapper">
       <div id="home-blog-title" class="container wow pulse">
         <div class="row">
@@ -100,11 +101,15 @@
 </template>
 
 <script>
+import Services from '~/components/Services.vue'
 export default {
+  components: {
+    Services
+  },
   data() {
     return {
       data: {
-        claim: 'Tecnología para la Transformación Social EDITADA',
+        claim: 'Tecnología para la Transformación Social',
         newstitle: 'Nuestras últimas noticias',
         newssubscribe: 'Mantente informada/o',
         quotetext: 'You affect the world by what you browse.',
