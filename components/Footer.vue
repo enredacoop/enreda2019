@@ -1,6 +1,7 @@
 <template>
   <!-- footer -->
   <footer>
+    <Newsletter />
     <div class="container">
       <div class="row">
         <div class="col-md-4">
@@ -69,7 +70,7 @@
           <br />
           <img
             src="~/assets/images/coop.png"
-            class="pull-right"
+            class="pull-right img-white"
             width="150px"
             alt="Logo de la identidad de las cooperativas"
           />
@@ -98,9 +99,11 @@
 
 <script>
 import Cookie from '~/components/Cookie.vue'
+import Newsletter from '~/components/Newsletter.vue'
 
 export default {
   components: {
+    Newsletter,
     Cookie
   },
   data() {

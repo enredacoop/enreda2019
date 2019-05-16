@@ -24,9 +24,26 @@ $('#home-blog-items').rss(
   'http://blog.enreda.coop/rss/',
   {
     limit: 3,
-    layoutTemplate: '<div class="row">{entries}</div>',
-    entryTemplate:
-      '<div class="col-md-4"><div class="itemnews"><a href="{url}" target="_blank">{title}</a><br/><small>{date}</small><!--<br/><span class="label label-custom-secondary">tag</span>--></div></div>',
+    layoutTemplate: '<div class="row block-news">{entries}</div>',
+    entryTemplate: `
+        <div class="card bg-dark text-white">
+          {teaserImage}
+          <div class="card-img-overlay">
+            <a href="{url}"><h5 class="card-title">{title}</h5></a>
+            <small>{date}</small>
+            <a href="{url}" class="btn btn-hidden stretched-link"></a>
+          </div>
+        </div>
+
+        <!--div class="card">
+          <div class="card-body">
+            {teaserImage}
+            <h4>{title}</h4>
+            <small>{date}</small>
+            <a href="{url}" class="btn btn-hidden stretched-link"></a>
+          </div>
+        </div-->
+      `,
     // formats the date with moment.js (optional)
     // default: 'dddd MMM Do'
     // valid values: see http://momentjs.com/docs/#/displaying/

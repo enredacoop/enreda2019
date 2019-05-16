@@ -27,6 +27,9 @@
     14. Margins
     15. Buttons
     16. Cards
+    17. Backgrounds
+    18. Grid
+    19. Effects
  
 ---------------------------------------------------------------- */
 /* ----------------------------------------------------------------
@@ -42,6 +45,8 @@
     [ 01. Basics ]
 -----------------------------------------------------------------*/
 @font: 'Open Sans';
+::-moz-selection { color: @white_color; background-color: @primary_color; }
+::selection { color: @white_color; background-color: @primary_color; }
 
 body,
 html {
@@ -49,9 +54,6 @@ html {
     height: 100%;
     font-family: @font, sans-serif;
 }
-
-::-moz-selection { color: @white_color; background-color: @primary_color; }
-::selection { color: @white_color; background-color: @primary_color; }
 .wrapper {
   padding-top: 70px;
 }
@@ -73,6 +75,14 @@ section {
   float: none;
 }
 
+.pull-right {
+  float: initial;
+}
+@media(min-width:991px) {
+  .pull-right {
+    float: right;
+  }
+}
 
 
 /* ----------------------------------------------------------------
@@ -100,7 +110,6 @@ h6 {
   background-color: @secondary_color;
   color: @lightgrey_color;
 }
-
 
 
 /* ----------------------------------------------------------------
@@ -135,6 +144,117 @@ h6 {
       .title-letter-spacing;
     }
 
+  }
+}
+
+.block-consul {
+  margin-bottom: 120px;
+  margin-top: 120px;
+  border: 1px solid rgba(68,63,63,.12);
+  background: transparent;
+
+  .btn-primary {
+    margin: 50px 50px 0px 0px;
+    background-color: @primary_color;
+    color: @white_color;
+    &:hover {
+      background-color: @primary_color_hover !important;
+      border-color: @primary_color_hover !important;
+    }
+  }
+}
+
+.block-news {
+  .card:first-child {
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    margin-bottom: 60px;
+    max-height: 350px;
+  }
+  .card {
+    display: block;
+    max-width: calc(50% - 60px);
+    margin: 30px;
+    border: 0px;
+    overflow: hidden;
+    .card-title, small {
+      position: absolute;
+      //position: relative;
+      z-index: 3;
+    }
+    .card-title {
+      bottom: 25px;
+      margin-right: 30px;
+    }
+    small {
+      bottom: 10px;
+      background: @primary_color_trans;
+      padding: 1px 5px;
+    }
+    a, a:hover {
+      color: @white_color;
+      text-decoration: none;
+    }
+  }
+  img {
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
+  }
+  .card-img-overlay {
+    padding: 30px;
+    &::before {
+      background-color: rgba(0,0,0,.50);
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      content: '';
+      pointer-events: none;
+    }
+  }
+  .card:hover, .card:first-child:hover {
+    img {
+     /* -ms-transform: scale(1);
+      -moz-transform: scale(1);
+      -webkit-transform: scale(1);
+      -o-transform: scale(1);
+      transform: scale(1);*/
+    }
+    .card-img-overlay::before {
+      background-color: rgba(0,0,0,.33);
+    }
+  }
+  /* Noticias Cargando */
+  &.loading {
+    .card:first-child {
+      background-color: @white_color;
+      height: 350px;
+      width: 100%;
+    max-width: 100%;
+    }
+    .card {
+      background-color: @white_color;
+      height: 250px;
+      width: calc(50% - 60px);
+      .card-title, small {
+        background-color: @lightgrey_color;
+        display: block;
+        height: 30px;
+        width: 30%;
+      }
+      small {
+        height: 20px;
+        width: 15%;
+      }
+    }
+    .card-img-overlay::before {
+      background-color: transparent;
+    }
   }
 }
 
@@ -178,6 +298,16 @@ h6 {
 /********** SERVICES **********/
 #services {
   li.title{
+    font-weight: bold;
+  }
+}
+
+div.counter {
+  text-align: center;
+  .number {
+    font-size: 50px;
+    display: block;
+    text-align: center;
     font-weight: bold;
   }
 }
@@ -350,42 +480,33 @@ header {
 /* ----------------------------------------------------------------
     [ 05. Footer ]
 -----------------------------------------------------------------*/
-/********** PREFOOTER **********/
-#prefooter {
-  padding: 30px 0;
-  background-color: @dark_color;
-  color: @clean_color;
-  img {
-      padding-top: 20px;
-  }
-  a {
-      color: @primary_color;
-      font-weight: bold;
-      font-size: 1.2em;
-      &:hover, &:link, &:visited {
-          color: @primary_color;
-      }
-  }
-  strong {
-      a {
-          color: @clean_color;
-          &:hover, &:link, &:visited {
-              color: @clean_color;
-          }
-      }
-  }
-  .separator {
-      padding: 30px 0;
-      border-bottom: 2px solid lighten(@dark_color, 10%);
-  }
-}
-
-/********** FOOTER **********/
 footer {
-  padding: 30px 0;
-  background-color: @dark_color;
+  padding-bottom: 30px;
+  background-color: @black_color;
   color: @clean_color;
-  /* .box-shadow(0px, -3px, 3px, 0.7); */
+
+  div.wrapper-newsletter {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    margin-bottom: 120px;
+    background-color: @white_color_20;
+
+    input[type="email"] {
+      background: @black_color_33;
+      border: 0px;
+      color: @white_color;
+      padding: 8px 15px;
+      display: inline-block;
+      outline: none;
+      vertical-align: middle;
+
+      &:focus {
+        /*background: @white_color;
+        color: @black_color;*/
+      }
+    }
+  }
+
   .row {
     li {
       a {
@@ -436,7 +557,7 @@ p.copyright {
   #home-blog-title {
     h2 {
       color: @dark_color;
-      font-size: 28px;
+      font-size: 30px;
       margin-top: 15px;
       margin-bottom: 45px;
     }
@@ -469,7 +590,7 @@ p.copyright {
     #loading-blog-items {
       p {
         font-style: italic;
-        font-size: 2em;
+        font-size: 18px;
         color: lighten(@dark_color, 20%);
       }
     }
@@ -2129,6 +2250,23 @@ img.center {
   display: block;
   margin: 0 auto;
 }
+.logo_consul {
+  width: 100%;
+  max-width: 250px;
+  //filter: contrast(0) brightness(100);
+}
+@media (min-width: 992px) {
+  .logo_consul {
+    float: right;
+    top: -35px;
+    right: 60px;
+    position: relative;
+  }
+}
+
+.img-white {
+  filter: contrast(0) brightness(100);
+}
 
 
 /* ----------------------------------------------------------------
@@ -2164,6 +2302,17 @@ ul.list-inline {
 .btn-hidden {
   opacity: 0;;
 }
+.btn-primary {
+  background: @white_color;
+  border-color: @white_color;
+  color: @black_color;
+
+  &:hover, &:active, &:focus, &:active:focus {
+    background-color: @primary_color !important;
+    border-color: @primary_color !important;
+    box-shadow: none !important;
+  }
+}
 
 
 
@@ -2177,8 +2326,8 @@ ul.list-inline {
 .card {
   margin-bottom: 15px !important;
   margin-top: 15px !important;
-  min-width: 250px;
-  max-width: 250px;
+  min-width: 290px;
+  max-width: 290px;
 
   img {
     -webkit-transition: all .8s ease;
@@ -2198,7 +2347,6 @@ ul.list-inline {
       -webkit-transform: scale(1.05);
       -o-transform: scale(1.05);
       transform: scale(1.05);
-      box-shadow: 0px 0px 33px 13px @black_color_trans;
     }
   }
 }
@@ -2208,4 +2356,59 @@ ul.list-inline {
 }
 .card.img-contain img {
   object-fit: contain;
+}
+
+
+/* ----------------------------------------------------------------
+    [ 17. Backgrounds ]
+-----------------------------------------------------------------*/
+
+
+
+/* ----------------------------------------------------------------
+    [ 18. Grid ]
+-----------------------------------------------------------------*/
+@media (min-width: 576px) {
+  .container {
+      max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+      max-width: 768px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+      max-width: 992px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+      max-width: 1280px;
+  }
+}
+
+
+/* ----------------------------------------------------------------
+    [ 19. Effects ]
+-----------------------------------------------------------------*/
+.loading {
+  -webkit-animation-name: loading;
+  -webkit-animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+  animation-name: loading;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+}
+@-webkit-keyframes loading { 
+  0% { opacity: 0.1; }
+  50% { opacity: .8; }
+  100% { opacity: 0.1; }
+}
+
+@keyframes loading {
+  0% { opacity: 0.1; }
+  50% { opacity: .8; }
+  100% { opacity: 0.1; }
 }
