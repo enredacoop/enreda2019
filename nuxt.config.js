@@ -45,7 +45,8 @@ export default {
    */
   plugins: [
     { src: '~/plugins/jquery.rss.js', ssr: false },
-    { src: '~/plugins/app.js', ssr: false }
+    { src: '~/plugins/app.js', ssr: false },
+    { src: '~/plugins/vue-isotope', ssr: false }
   ],
 
   /*

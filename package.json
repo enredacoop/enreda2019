@@ -25,6 +25,7 @@
     "cookie-universal-nuxt": "^2.0.14",
     "cookies": "^0.7.3",
     "cross-env": "^5.2.0",
+    "isotope-layout": "^3.0.6",
     "jquery": "^3.4.1",
     "less": "^3.9.0",
     "less-loader": "^5.0.0",
@@ -35,6 +36,7 @@
     "vue-cookie-law": "^1.10.0",
     "vue-cookies": "^1.5.13",
     "vue-moment": "^4.0.0",
+    "vueisotope": "^3.1.2",
     "yaml-loader": "^0.5.0"
   },
   "devDependencies": {

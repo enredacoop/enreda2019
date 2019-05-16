@@ -25,7 +25,7 @@
   <!-- header -->
   <header>
     <b-navbar id="e-navbar" toggleable="lg" variant="info">
-      <b-navbar-brand href="#" to="localePath('index')">
+      <b-navbar-brand href="#" :to="localePath('index')">
         <img
           id="navbar-brand-logo"
           src="~/assets/images/logo_enreda.png"
