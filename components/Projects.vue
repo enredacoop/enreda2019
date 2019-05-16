@@ -9,7 +9,15 @@
     "participacion": "Participación",
     "ayuntamiento": "Ayuntamientos",
     "reglamento": "Reglamento",
-    "intervencion": "Intervención"
+    "intervencion": "Intervención",
+    "analisisdatos": "Análisis de datos",
+    "desarrolloproducto": "Desarollo de producto",
+    "economiasocial": "Economía social",
+    "innovacionsocial": "Innovación social",
+    "desarrollotecnologico": "Desarrollo tecnológico",
+    "formacion": "Formación",
+    "participaciondigital": "Participación digital",
+    "planificacion": "Planificación"
   },
   "en": {
     "projects": "Projects",
@@ -20,7 +28,15 @@
     "participacion": "Participación",
     "ayuntamiento": "Ayuntamientos",
     "reglamento": "Reglamento",
-    "intervencion": "Intervención"
+    "intervencion": "Intervención",
+    "analisisdatos": "Análisis de datos",
+    "desarrolloproducto": "Desarollo de producto",
+    "economiasocial": "Economía social",
+    "innovacionsocial": "Innovación social",
+    "desarrollotecnologico": "Desarrollo tecnológico",
+    "formacion": "Formación",
+    "participaciondigital": "Participación digital",
+    "planificacion": "Planificación"
   }
 }
 </i18n>
@@ -33,7 +49,7 @@
         <div class="button-group">
           <button
             v-for="(val, key) in option.getFilterData"
-            :key="val"
+            :key="key"
             class="button"
             :class="[key === filterOption ? 'is-checked' : '']"
             @click="filter(key)"
@@ -119,6 +135,30 @@ export default {
           },
           intervencion: function(el) {
             return el.category.includes('intervencion')
+          },
+          analisisdatos: function(el) {
+            return el.category.includes('analisisdatos')
+          },
+          desarrolloproducto: function(el) {
+            return el.category.includes('desarrolloproducto')
+          },
+          economiasocial: function(el) {
+            return el.category.includes('economiasocial')
+          },
+          innovacionsocial: function(el) {
+            return el.category.includes('innovacionsocial')
+          },
+          desarrollotecnologico: function(el) {
+            return el.category.includes('desarrollotecnologico')
+          },
+          formacion: function(el) {
+            return el.category.includes('formacion')
+          },
+          participaciondigital: function(el) {
+            return el.category.includes('participaciondigital')
+          },
+          planificacion: function(el) {
+            return el.category.includes('planificacion')
           }
         }
       },
@@ -128,15 +168,7 @@ export default {
           logo: 'logo-consul-elpuerto.png',
           class: 'aytoelpuerto',
           url: '/trabajos/consul-puerto-santa-maria',
-          category: [
-            'consul',
-            'presuspuestoparticipativo',
-            'transparencia',
-            'participacion',
-            'ayuntamiento',
-            'reglamento',
-            'intervencion'
-          ],
+          category: ['consul', 'participacion', 'ayuntamiento'],
           favourite: false
         },
         {
@@ -144,31 +176,15 @@ export default {
           logo: 'logo-ayto-oviedo.png',
           class: 'decideoviedo',
           url: '/trabajos/consul-oviedo',
-          category: [
-            'consul',
-            'presuspuestoparticipativo',
-            'transparencia',
-            'participacion',
-            'ayuntamiento',
-            'reglamento',
-            'intervencion'
-          ],
-          favourite: false
+          category: ['consul', 'participacion', 'ayuntamiento'],
+          favourite: true
         },
         {
           title: 'Consul - Arcos de la Frontera',
           logo: 'logo-ayto-arcos.png',
           class: 'decidearcos',
           url: '/trabajos/consul-arcos-frontera',
-          category: [
-            'consul',
-            'presuspuestoparticipativo',
-            'transparencia',
-            'participacion',
-            'ayuntamiento',
-            'reglamento',
-            'intervencion'
-          ],
+          category: ['consul', 'participacion', 'ayuntamiento'],
           favourite: false
         },
         {
@@ -176,31 +192,15 @@ export default {
           logo: 'logo-ayto-santiago.png',
           class: 'decidesantiago',
           url: '/trabajos/consul-santiago',
-          category: [
-            'consul',
-            'presuspuestoparticipativo',
-            'transparencia',
-            'participacion',
-            'ayuntamiento',
-            'reglamento',
-            'intervencion'
-          ],
-          favourite: true
+          category: ['consul', 'participacion', 'ayuntamiento'],
+          favourite: false
         },
         {
           title: 'decide.cadiz.es',
           logo: '',
           class: 'decidecadiz',
           url: '/trabajos/consul-cadiz',
-          category: [
-            'consul',
-            'presuspuestoparticipativo',
-            'transparencia',
-            'participacion',
-            'ayuntamiento',
-            'reglamento',
-            'intervencion'
-          ],
+          category: ['consul', 'participacion', 'ayuntamiento'],
           favourite: false
         },
         {
@@ -208,31 +208,15 @@ export default {
           logo: 'logo-tipi.png',
           class: 'tipi',
           url: '/trabajos/tipi-ciudadano',
-          category: [
-            'consul',
-            'presuspuestoparticipativo',
-            'transparencia',
-            'participacion',
-            'ayuntamiento',
-            'reglamento',
-            'intervencion'
-          ],
-          favourite: false
+          category: ['transparencia', 'analisisdatos'],
+          favourite: true
         },
         {
           title: 'LaCentral.coop',
           logo: 'logo-lacentralcoop.png',
           class: 'lacentralcoop',
           url: '/trabajos/lacentralcoop',
-          category: [
-            'consul',
-            'presuspuestoparticipativo',
-            'transparencia',
-            'participacion',
-            'ayuntamiento',
-            'reglamento',
-            'intervencion'
-          ],
+          category: ['desarrolloproducto', 'economiasocial'],
           favourite: false
         },
         {
@@ -240,15 +224,7 @@ export default {
           logo: 'logo-somoscoop.png',
           class: 'somoscoop',
           url: '/trabajos/somoscoop',
-          category: [
-            'consul',
-            'presuspuestoparticipativo',
-            'transparencia',
-            'participacion',
-            'ayuntamiento',
-            'reglamento',
-            'intervencion'
-          ],
+          category: ['economiasocial', 'desarrolloproducto'],
           favourite: false
         },
         {
@@ -256,15 +232,7 @@ export default {
           logo: 'logo-poletika.png',
           class: 'poletika',
           url: '/trabajos/poletika',
-          category: [
-            'consul',
-            'presuspuestoparticipativo',
-            'transparencia',
-            'participacion',
-            'ayuntamiento',
-            'reglamento',
-            'intervencion'
-          ],
+          category: ['transparencia'],
           favourite: false
         },
         {
@@ -272,15 +240,7 @@ export default {
           logo: 'logo-stc.png',
           class: 'socialtocrowd',
           url: '/trabajos/socialtocrowd',
-          category: [
-            'consul',
-            'presuspuestoparticipativo',
-            'transparencia',
-            'participacion',
-            'ayuntamiento',
-            'reglamento',
-            'intervencion'
-          ],
+          category: ['innovacionsocial', 'desarrolloproducto'],
           favourite: false
         },
         {
@@ -288,15 +248,7 @@ export default {
           logo: 'logo-tp.png',
           class: 'transparenciapresupuestaria',
           url: '/trabajos/transparencia-presupuestaria',
-          category: [
-            'consul',
-            'presuspuestoparticipativo',
-            'transparencia',
-            'participacion',
-            'ayuntamiento',
-            'reglamento',
-            'intervencion'
-          ],
+          category: ['desarrolloproducto', 'transparencia'],
           favourite: false
         },
         {
@@ -304,15 +256,7 @@ export default {
           logo: 'logo-cervantes.png',
           class: 'clic',
           url: '/trabajos/clic-cervantes',
-          category: [
-            'consul',
-            'presuspuestoparticipativo',
-            'transparencia',
-            'participacion',
-            'ayuntamiento',
-            'reglamento',
-            'intervencion'
-          ],
+          category: ['desarrollotecnologico'],
           favourite: false
         },
         {
@@ -321,13 +265,9 @@ export default {
           class: 'conilhospeda',
           url: '/trabajos/conil-hospeda',
           category: [
-            'consul',
-            'presuspuestoparticipativo',
-            'transparencia',
-            'participacion',
-            'ayuntamiento',
-            'reglamento',
-            'intervencion'
+            'desarrolloproducto',
+            'economiasocial',
+            'desarrollotecnologico'
           ],
           favourite: false
         },
@@ -336,15 +276,7 @@ export default {
           logo: 'logo-elo.png',
           class: 'enlaorbita',
           url: '/trabajos/enlaorbita',
-          category: [
-            'consul',
-            'presuspuestoparticipativo',
-            'transparencia',
-            'participacion',
-            'ayuntamiento',
-            'reglamento',
-            'intervencion'
-          ],
+          category: ['desarrolloproducto', 'desarrollotecnologico'],
           favourite: false
         },
         {
@@ -352,15 +284,7 @@ export default {
           logo: 'logo-icas.png',
           class: 'icas',
           url: '/trabajos/icas',
-          category: [
-            'consul',
-            'presuspuestoparticipativo',
-            'transparencia',
-            'participacion',
-            'ayuntamiento',
-            'reglamento',
-            'intervencion'
-          ],
+          category: ['desarrollotecnologico'],
           favourite: false
         },
         {
@@ -368,16 +292,8 @@ export default {
           logo: 'logo-festivalcine.png',
           class: 'festivalcine',
           url: '/trabajos/festivalcine',
-          category: [
-            'consul',
-            'presuspuestoparticipativo',
-            'transparencia',
-            'participacion',
-            'ayuntamiento',
-            'reglamento',
-            'intervencion'
-          ],
-          favourite: true
+          category: ['desarrollotecnologico'],
+          favourite: false
         },
         {
           title: 'Foro Andaluz de Gobiernos Locales y Procesos Participativos',
@@ -385,12 +301,8 @@ export default {
           class: 'foroparticipacion',
           url: '/trabajos/foro-participacion/',
           category: [
-            'consul',
             'presuspuestoparticipativo',
-            'transparencia',
             'participacion',
-            'ayuntamiento',
-            'reglamento',
             'intervencion'
           ],
           favourite: false
@@ -400,15 +312,7 @@ export default {
           logo: 'logo-diputacion-cadiz.png',
           class: 'dipuparticipacioncadiz',
           url: '/trabajos/dipu-participacion-cadiz',
-          category: [
-            'consul',
-            'presuspuestoparticipativo',
-            'transparencia',
-            'participacion',
-            'ayuntamiento',
-            'reglamento',
-            'intervencion'
-          ],
+          category: ['transparencia', 'participacion', 'reglamento'],
           favourite: false
         },
         {
@@ -416,15 +320,7 @@ export default {
           logo: '',
           class: 'aytoparticipacioncadiz',
           url: '/trabajos/ayto-participacion-cadiz',
-          category: [
-            'consul',
-            'presuspuestoparticipativo',
-            'transparencia',
-            'participacion',
-            'ayuntamiento',
-            'reglamento',
-            'intervencion'
-          ],
+          category: ['transparencia', 'participacion', 'reglamento'],
           favourite: false
         },
         {
@@ -432,15 +328,7 @@ export default {
           logo: '',
           class: 'formacionleyparticipacion',
           url: '/trabajos/formacion-ley-participacion',
-          category: [
-            'consul',
-            'presuspuestoparticipativo',
-            'transparencia',
-            'participacion',
-            'ayuntamiento',
-            'reglamento',
-            'intervencion'
-          ],
+          category: ['formacion', 'participacion'],
           favourite: false
         },
         {
@@ -448,16 +336,8 @@ export default {
           logo: '',
           class: 'sistemaparticipacion',
           url: '/trabajos/sistema-participacion',
-          category: [
-            'consul',
-            'presuspuestoparticipativo',
-            'transparencia',
-            'participacion',
-            'ayuntamiento',
-            'reglamento',
-            'intervencion'
-          ],
-          favourite: false
+          category: ['consul', 'participacion', 'participaciondigital'],
+          favourite: true
         },
         {
           title: 'Participación para la planificación urbanística',
@@ -465,15 +345,12 @@ export default {
           class: 'ciudadamable',
           url: '/trabajos/ciudad-amable',
           category: [
-            'consul',
-            'presuspuestoparticipativo',
-            'transparencia',
             'participacion',
             'ayuntamiento',
-            'reglamento',
-            'intervencion'
+            'intervencion',
+            'planificacion'
           ],
-          favourite: true
+          favourite: false
         },
         {
           title: 'Presupuesto Participativos de Marbella',
@@ -481,13 +358,9 @@ export default {
           class: 'presupuestomarbella',
           url: '/trabajos/presupuesto-marbella',
           category: [
-            'consul',
             'presuspuestoparticipativo',
-            'transparencia',
             'participacion',
-            'ayuntamiento',
-            'reglamento',
-            'intervencion'
+            'ayuntamiento'
           ],
           favourite: false
         },
@@ -499,11 +372,8 @@ export default {
           category: [
             'consul',
             'presuspuestoparticipativo',
-            'transparencia',
             'participacion',
-            'ayuntamiento',
-            'reglamento',
-            'intervencion'
+            'ayuntamiento'
           ],
           favourite: false
         },
@@ -513,15 +383,12 @@ export default {
           class: 'planintervencion',
           url: '/trabajos/plan-intervencion',
           category: [
-            'consul',
-            'presuspuestoparticipativo',
-            'transparencia',
             'participacion',
             'ayuntamiento',
-            'reglamento',
-            'intervencion'
+            'intervencion',
+            'planificacion'
           ],
-          favourite: true
+          favourite: false
         },
         {
           title: 'Presupuesto Participativo de Tarifa',
@@ -529,13 +396,9 @@ export default {
           class: 'presupuestotarifa',
           url: '/trabajos/presupuesto-tarifa',
           category: [
-            'consul',
             'presuspuestoparticipativo',
-            'transparencia',
             'participacion',
-            'ayuntamiento',
-            'reglamento',
-            'intervencion'
+            'ayuntamiento'
           ],
           favourite: false
         }
