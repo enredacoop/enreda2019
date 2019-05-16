@@ -91,17 +91,17 @@
         </div>
       </div>
     </div>
-    <Cookie />
+    <Cookies />
   </footer>
   <!-- end footer -->
 </template>
 
 <script>
-import Cookie from '~/components/Cookie.vue'
+import Cookies from '~/components/Cookies.vue'
 
 export default {
   components: {
-    Cookie
+    Cookies
   },
   data() {
     return {
