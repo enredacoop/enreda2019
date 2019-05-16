@@ -9,15 +9,6 @@ import isotope from 'vueisotope'
 
 Vue.use(BootstrapVue, VueMoment, moment, isotope)
 
-$(function() {
-  const oneDay = 24 * 60 * 60 * 1000
-  const firstDate = new Date(2008, 2, 21)
-  const secondDate = Date.now()
-  $('.daysnumber').html(
-    Math.round(Math.abs((firstDate.getTime() - secondDate) / oneDay))
-  )
-})
-
 // RSS
 $('#home-blog-items').rss(
   'http://blog.enreda.coop/rss/',
@@ -33,15 +24,6 @@ $('#home-blog-items').rss(
             <a href="{url}" class="btn btn-hidden stretched-link"></a>
           </div>
         </div>
-
-        <!--div class="card">
-          <div class="card-body">
-            {teaserImage}
-            <h4>{title}</h4>
-            <small>{date}</small>
-            <a href="{url}" class="btn btn-hidden stretched-link"></a>
-          </div>
-        </div-->
       `,
     // formats the date with moment.js (optional)
     // default: 'dddd MMM Do'
