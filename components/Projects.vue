@@ -74,7 +74,14 @@
           :key="index"
           :class="[work.category] + ' col-xs-12 col-sm-6 col-lg-4'"
         >
-          <a href="#" :alt="work.title" :title="work.title">
+          <nuxt-link
+            :to="
+              localePath({
+                name: 'projects-slug',
+                params: { slug: work.url }
+              })
+            "
+          >
             <div :key="work.name" :class="'work ' + work.class">
               <b-img
                 v-if="work.logo != ''"
@@ -83,7 +90,7 @@
               />
               <h4 v-else>{{ work.title }}</h4>
             </div>
-          </a>
+          </nuxt-link>
         </div>
       </isotope>
     </b-container>
@@ -167,7 +174,7 @@ export default {
           title: 'Consul - El Puerto de Santa María',
           logo: 'logo-consul-elpuerto.png',
           class: 'aytoelpuerto',
-          url: '/trabajos/consul-puerto-santa-maria',
+          url: 'consul-puerto-santa-maria',
           category: ['consul', 'participacion', 'ayuntamiento'],
           favourite: false
         },
@@ -175,7 +182,7 @@ export default {
           title: 'Consul - Oviedo',
           logo: 'logo-ayto-oviedo.png',
           class: 'decideoviedo',
-          url: '/trabajos/consul-oviedo',
+          url: 'consul-oviedo',
           category: ['consul', 'participacion', 'ayuntamiento'],
           favourite: true
         },
@@ -183,7 +190,7 @@ export default {
           title: 'Consul - Arcos de la Frontera',
           logo: 'logo-ayto-arcos.png',
           class: 'decidearcos',
-          url: '/trabajos/consul-arcos-frontera',
+          url: 'consul-arcos-frontera',
           category: ['consul', 'participacion', 'ayuntamiento'],
           favourite: false
         },
@@ -191,7 +198,7 @@ export default {
           title: 'Consul - Santiago de Compostela',
           logo: 'logo-ayto-santiago.png',
           class: 'decidesantiago',
-          url: '/trabajos/consul-santiago',
+          url: 'consul-santiago',
           category: ['consul', 'participacion', 'ayuntamiento'],
           favourite: false
         },
@@ -199,7 +206,7 @@ export default {
           title: 'decide.cadiz.es',
           logo: '',
           class: 'decidecadiz',
-          url: '/trabajos/consul-cadiz',
+          url: 'consul-cadiz',
           category: ['consul', 'participacion', 'ayuntamiento'],
           favourite: false
         },
@@ -207,7 +214,7 @@ export default {
           title: 'TIPI Ciudadano',
           logo: 'logo-tipi.png',
           class: 'tipi',
-          url: '/trabajos/tipi-ciudadano',
+          url: 'tipi-ciudadano',
           category: ['transparencia', 'analisisdatos'],
           favourite: true
         },
@@ -215,7 +222,7 @@ export default {
           title: 'LaCentral.coop',
           logo: 'logo-lacentralcoop.png',
           class: 'lacentralcoop',
-          url: '/trabajos/lacentralcoop',
+          url: 'lacentralcoop',
           category: ['desarrolloproducto', 'economiasocial'],
           favourite: false
         },
@@ -223,7 +230,7 @@ export default {
           title: 'Somos.coop',
           logo: 'logo-somoscoop.png',
           class: 'somoscoop',
-          url: '/trabajos/somoscoop',
+          url: 'somoscoop',
           category: ['economiasocial', 'desarrolloproducto'],
           favourite: false
         },
@@ -231,7 +238,7 @@ export default {
           title: 'Poletika',
           logo: 'logo-poletika.png',
           class: 'poletika',
-          url: '/trabajos/poletika',
+          url: 'poletika',
           category: ['transparencia'],
           favourite: false
         },
@@ -239,7 +246,7 @@ export default {
           title: 'Social to Crowd',
           logo: 'logo-stc.png',
           class: 'socialtocrowd',
-          url: '/trabajos/socialtocrowd',
+          url: 'socialtocrowd',
           category: ['innovacionsocial', 'desarrolloproducto'],
           favourite: false
         },
@@ -247,7 +254,7 @@ export default {
           title: 'Transparencia Presupuestaria',
           logo: 'logo-tp.png',
           class: 'transparenciapresupuestaria',
-          url: '/trabajos/transparencia-presupuestaria',
+          url: 'transparencia-presupuestaria',
           category: ['desarrolloproducto', 'transparencia'],
           favourite: false
         },
@@ -255,7 +262,7 @@ export default {
           title: 'CLIC Cervantes',
           logo: 'logo-cervantes.png',
           class: 'clic',
-          url: '/trabajos/clic-cervantes',
+          url: 'clic-cervantes',
           category: ['desarrollotecnologico'],
           favourite: false
         },
@@ -263,7 +270,7 @@ export default {
           title: 'Conil Hospeda',
           logo: 'logo-conilhospeda.svg',
           class: 'conilhospeda',
-          url: '/trabajos/conil-hospeda',
+          url: 'conil-hospeda',
           category: [
             'desarrolloproducto',
             'economiasocial',
@@ -275,7 +282,7 @@ export default {
           title: 'En la Órbita',
           logo: 'logo-elo.png',
           class: 'enlaorbita',
-          url: '/trabajos/enlaorbita',
+          url: 'enlaorbita',
           category: ['desarrolloproducto', 'desarrollotecnologico'],
           favourite: false
         },
@@ -283,7 +290,7 @@ export default {
           title: 'ICAS',
           logo: 'logo-icas.png',
           class: 'icas',
-          url: '/trabajos/icas',
+          url: 'icas',
           category: ['desarrollotecnologico'],
           favourite: false
         },
@@ -291,7 +298,7 @@ export default {
           title: 'Festival de Sevilla de Cine',
           logo: 'logo-festivalcine.png',
           class: 'festivalcine',
-          url: '/trabajos/festivalcine',
+          url: 'festivalcine',
           category: ['desarrollotecnologico'],
           favourite: false
         },
@@ -299,7 +306,7 @@ export default {
           title: 'Foro Andaluz de Gobiernos Locales y Procesos Participativos',
           logo: 'logo-foro-participacion.png',
           class: 'foroparticipacion',
-          url: '/trabajos/foro-participacion/',
+          url: 'foro-participacion/',
           category: [
             'presuspuestoparticipativo',
             'participacion',
@@ -311,7 +318,7 @@ export default {
           title: 'Reglamento de Participación de la Diputación de Cádiz',
           logo: 'logo-diputacion-cadiz.png',
           class: 'dipuparticipacioncadiz',
-          url: '/trabajos/dipu-participacion-cadiz',
+          url: 'dipu-participacion-cadiz',
           category: ['transparencia', 'participacion', 'reglamento'],
           favourite: false
         },
@@ -319,7 +326,7 @@ export default {
           title: 'Reglamento de Participación del Ayuntamiento de Cádiz',
           logo: '',
           class: 'aytoparticipacioncadiz',
-          url: '/trabajos/ayto-participacion-cadiz',
+          url: 'ayto-participacion-cadiz',
           category: ['transparencia', 'participacion', 'reglamento'],
           favourite: false
         },
@@ -327,7 +334,7 @@ export default {
           title: 'Formación sobre la Ley Andaluza de Participación',
           logo: '',
           class: 'formacionleyparticipacion',
-          url: '/trabajos/formacion-ley-participacion',
+          url: 'formacion-ley-participacion',
           category: ['formacion', 'participacion'],
           favourite: false
         },
@@ -335,7 +342,7 @@ export default {
           title: 'Sistema Público de Participación Digital de Andalucía',
           logo: '',
           class: 'sistemaparticipacion',
-          url: '/trabajos/sistema-participacion',
+          url: 'sistema-participacion',
           category: ['consul', 'participacion', 'participaciondigital'],
           favourite: true
         },
@@ -343,7 +350,7 @@ export default {
           title: 'Participación para la planificación urbanística',
           logo: 'logo-ayto-rota.png',
           class: 'ciudadamable',
-          url: '/trabajos/ciudad-amable',
+          url: 'ciudad-amable',
           category: [
             'participacion',
             'ayuntamiento',
@@ -356,7 +363,7 @@ export default {
           title: 'Presupuesto Participativos de Marbella',
           logo: 'logo_marbella.png',
           class: 'presupuestomarbella',
-          url: '/trabajos/presupuesto-marbella',
+          url: 'presupuesto-marbella',
           category: [
             'presuspuestoparticipativo',
             'participacion',
@@ -368,7 +375,7 @@ export default {
           title: 'Presupuesto Participativos de Mijas',
           logo: 'logo-ayto-mijas.png',
           class: 'presupuestomijas',
-          url: '/trabajos/presupuesto-mijas',
+          url: 'presupuesto-mijas',
           category: [
             'consul',
             'presuspuestoparticipativo',
@@ -381,7 +388,7 @@ export default {
           title: 'Plan de intervención',
           logo: 'logo-ayto-coria.png',
           class: 'planintervencion',
-          url: '/trabajos/plan-intervencion',
+          url: 'plan-intervencion',
           category: [
             'participacion',
             'ayuntamiento',
@@ -394,7 +401,7 @@ export default {
           title: 'Presupuesto Participativo de Tarifa',
           logo: 'logo-ayto-tarifa.png',
           class: 'presupuestotarifa',
-          url: '/trabajos/presupuesto-tarifa',
+          url: 'presupuesto-tarifa',
           category: [
             'presuspuestoparticipativo',
             'participacion',
