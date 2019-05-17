@@ -1,14 +1,11 @@
 import webpack from 'webpack'
 import pkg from './package'
 
-const routerBase =
-  process.env.DEPLOY_ENV === 'GH_PAGES'
-    ? {
-        router: {
-          base: '/'
-        }
-      }
-    : {}
+const routerBase = {
+  router: {
+    base: '/enreda2019/'
+  }
+}
 
 export default {
   mode: 'universal',
