@@ -5,7 +5,7 @@ const routerBase =
   process.env.DEPLOY_ENV === 'GH_PAGES'
     ? {
         router: {
-          base: '/enreda2019/'
+          base: '/'
         }
       }
     : {}
