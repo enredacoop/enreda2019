@@ -1,6 +1,15 @@
 import webpack from 'webpack'
 import pkg from './package'
 
+const routerBase =
+  process.env.DEPLOY_ENV === 'GH_PAGES'
+    ? {
+        router: {
+          base: '/enreda2019/'
+        }
+      }
+    : {}
+
 export default {
   mode: 'universal',
 
@@ -130,5 +139,6 @@ export default {
         loader: ['@kazupon/vue-i18n-loader', 'yaml-loader']
       })
     }
-  }
+  },
+  routerBase
 }
