@@ -142,6 +142,87 @@
           </div>
         </div>
       </section>
+      <section id="offices">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 text-center">
+              <h2 class="section-heading">{{ offices.title }}</h2>
+              <h3 class="section-subheading text-muted"></h3>
+            </div>
+          </div>
+          <div class="row text-center">
+            <div
+              v-for="(place, index) in offices.places"
+              :key="index"
+              class="col-sm-3 col-xs-6"
+            >
+              <h3 class="city">{{ place.city }}</h3>
+              <template v-if="place.othercontact != ''">
+                <h5 class="officename">
+                  <a :href="'mailto:' + place.othercontact" target="_blank">{{
+                    place.othercontact
+                  }}</a>
+                </h5>
+              </template>
+              <template v-else>
+                <h5 class="officename">
+                  <a :href="place.officeurl" target="_blank">{{
+                    place.officename
+                  }}</a>
+                </h5>
+                <p v-if="place.address != ''" class="text-muted">
+                  {{ place.address }}
+                  <br />
+                  {{ place.zipcode }}, {{ place.city }}
+                </p>
+              </template>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="partof">
+        <div class="container">
+          <div class="row">
+            <div id="join" class="col-sm-3 col-sm-offset-2 text-center">
+              <h5>{{ join.title }}</h5>
+              <p v-html="join.description"></p>
+            </div>
+            <div id="collaborate" class="col-sm-3 col-sm-offset-2 text-center">
+              <h5>{{ collaborate.title }}</h5>
+              <p v-html="collaborate.description"></p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="network">
+        <img src="/assets/images/cooperative/banner_network.png" />
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 text-center">
+              <h2 class="section-heading">{{ network.title }}</h2>
+              <h3 class="section-subheading text-muted">
+                {{ network.subtitle }}
+              </h3>
+            </div>
+          </div>
+          <div class="row">
+            <div
+              v-for="(node, index) in network.nodes"
+              :key="index"
+              class="col-md-3"
+            >
+              <a :href="node.url" target="_blank">
+                <div class="node">
+                  <h3>{{ node.name }}</h3>
+                  <p>{{ node.description }}</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   </div>
 </template>
@@ -333,6 +414,123 @@ export default {
             linkedin: '',
             github: '',
             role: 'Colaborador'
+          }
+        ]
+      },
+      offices: {
+        title: 'Dónde estamos',
+        places: [
+          {
+            city: 'Sevilla',
+            address: 'Avda. República Argentina 25 Planta 9',
+            zipcode: '41011',
+            officename: 'Espacio RES',
+            officeurl: 'http://espaciores.org',
+            othercontact: ''
+          },
+          {
+            city: 'Huelva',
+            address: '',
+            zipcode: '',
+            officename: 'Desatando SociaLab',
+            officeurl: 'http://desatando.org',
+            othercontact: ''
+          },
+          {
+            city: 'Malaga',
+            address: 'Trinidad Grund 7, 1º derecha',
+            zipcode: '29001',
+            officename: 'malaga@enreda.coop',
+            officeurl: '',
+            othercontact: ''
+          },
+          {
+            city: 'Madrid',
+            address: '',
+            zipcode: '',
+            officename: '',
+            officeurl: '',
+            othercontact: 'madrid@enreda.coop'
+          }
+        ]
+      },
+
+      join: {
+        title: 'Únete',
+        description:
+          "Si quieres trabajar con nosotras, y desarrollar tu empleabilidad haciendo lo que más te gusta, <a href='mailto:info@enreda.coop' target='_blank'>ponte en contacto con nosotras</a>.",
+        contact: 'Escríbenos',
+        url: 'mailto:info@enreda.coop'
+      },
+
+      collaborate: {
+        title: 'Colabora',
+        description:
+          "Si quieres colaborar en proyectos de transformación social, puedes hacerlo a través de <a href='https://www.loomio.org/g/VcGPxekv/socialinn' target='_blank'> nuestro correo electrónico o redes sociales</a>, un espacio de creación colectiva enfocado a la innovación social.",
+        contact: 'Deseo participar',
+        url: ''
+      },
+
+      network: {
+        title: 'Motivaciones de trabajar en red',
+        subtitle:
+          'Colaborar, cooperar y trabajar con otras organizaciones facilita el cumplimiento de nuestros objetivos y fines; así como intercambiar experiencias; aprender colectivamente; y apoyar otros proyectos con los que nos sentimos identificadas.',
+        nodes: [
+          {
+            name: 'Fiare',
+            logo: '',
+            description:
+              'Banca ética y cooperativa constituida como herramienta al servicio de la transformación social a través de la financiación de proyectos de la economía social y solidaria y la promoción de una cultura de la intermediación financiera, bajo los principios de la transparencia, la participación, la democracia y el crédito como derecho.',
+            url: 'http://www.fiarebancaetica.coop'
+          },
+          {
+            name: 'Coop57',
+            logo: '',
+            description:
+              ' Cooperativa de servicios financieros éticos y solidarios que tiene como objetivo principal, contribuir a la transformación social en positivo de nuestra economía y de nuestra sociedad.',
+            url: 'http://www.coop57.coop'
+          },
+          {
+            name: 'REAS',
+            logo: '',
+            description:
+              'Red de Redes de Economía Alternativa y Solidaria, compuesta por más de trescientas entidades que nos agrupamos en redes territoriales y sectoriales.',
+            url: 'http://www.economiasolidaria.org'
+          },
+          {
+            name: 'MS Sevilla',
+            logo: '',
+            description:
+              'Red de producción, distribución y consumo de bienes y servicios con criterios éticos, democráticos, ecológicos y solidarios.El objetivo de esta red es cubrir una parte significativa de las necesidades de sus participantes y desconectar, tanto como sea posible, la economía solidaria de la economía capitalista.',
+            url: 'http://mercadosocialsevilla.org'
+          },
+          {
+            name: 'Andalibre',
+            logo: '',
+            description:
+              'Empresas de Software Libre de Andalucía. Agrupación de proveedores de soluciones informáticas basadas en las tecnologías disruptivas del software libre y los estándares abiertos.',
+            url: 'http://www.andalibre.org'
+          },
+          {
+            name: 'Openkratio',
+            logo: '',
+            description:
+              'Asociación en pro de la transparencia de las administraciones públcas y la participación de la ciudadanía en el trabajo de las mismas.',
+            url: 'http://openkratio.org'
+          },
+          {
+            name: 'Faecta',
+            logo: '',
+            description:
+              'Federación Andaluza de Empresas Cooperativas de Trabajo Asociado.',
+            url: 'http://www.faecta.coop'
+          },
+          {
+            name: 'Som Connexió',
+            logo: '',
+            description:
+              'Cooperativa de consumo de productos de telecomunicaciones',
+            url: 'https://eticom.coop/es/'
           }
         ]
       }

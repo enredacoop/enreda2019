@@ -7,7 +7,7 @@
         <div class="col-md-4">
           <ul class="contacts list-unstyled">
             <li class="contact">
-              <a class="contact" href="mailto: footer.email">
+              <a class="contact" :href="'mailto:' + footer.email">
                 {{ footer.email }}
               </a>
             </li>
