@@ -43,7 +43,7 @@
           <b-nav-item href="#" :to="localePath('projects')">{{
             $t('projects')
           }}</b-nav-item>
-          <b-nav-item href="http://blog.enreda.coop" about="_blank">{{
+          <b-nav-item href="http://blog.enreda.coop" target="_blank">{{
             $t('blog')
           }}</b-nav-item>
           <b-nav-item-dropdown :text="$t('lang')" right class="languages">

@@ -1,150 +1,158 @@
+<i18n>
+{
+  "es": {
+    "cooperative": "Cooperativa",
+  },
+  "en": {
+    "cooperative": "Cooperative",
+  }
+}
+</i18n>
+
 <template>
-  <div id="cooperative" class="wrapper">
-    <section id="intro">
-      <div style="padding:0 15px;">
-        <div class="row">
-          <div class="col-md-3 text-center title">
-            <img
-              :src="'~/assets/images/cooperative/' + logo"
-              alt="Logo de Enreda"
-              width="240px"
-            />
-          </div>
-          <div class="col-md-9 description">
-            <div class="row">
-              <div class="col-md-6 col-md-offset-5 col-sm-12 text-center">
-                {{ intro }}
-              </div>
-            </div>
-          </div>
+  <div class="cooperative">
+    <PageClaim :title="$t('cooperative')" />
+    <div class="row bg-light">
+      <div class="container">
+        <div class="col-md-12 text-center">
+          <h2 class="slogan">{{ intro }}</h2>
         </div>
       </div>
-    </section>
+    </div>
 
-    <section id="principles">
-      <div class="container">
-        <div class="row">
-          <div class="col-sm-12 text-center">
-            <h2 class="section-heading">{{ principles.title }}</h2>
-            <h3 class="section-subheading text-muted">
-              {{ principles.subtitle }}
-            </h3>
+    <div id="cooperative" class="wrapper">
+      <section id="principles">
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 text-center">
+              <h2 class="section-heading">{{ principles.title }}</h2>
+              <h3 class="section-subheading text-muted">
+                {{ principles.subtitle }}
+              </h3>
+            </div>
           </div>
-        </div>
-        <div class="row text-center">
-          <div class="col-sm-4">
+          <div class="row text-center">
             <div
               v-for="(item, index) in principles.items"
               :key="index"
               class="col-sm-4"
               :v-if="principles.items != null"
             >
-              <span class="fa-stack fa-4x">
-                <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                <i :class="'fa ' + item.icon + 'fa-stack-1x fa-inverse'"></i>
-              </span>
+              <font-awesome-layers class="fa-6x">
+                <font-awesome-icon icon="circle" class="primary" />
+                <font-awesome-icon
+                  :icon="[item.icon_prefix, item.icon]"
+                  transform="shrink-6"
+                  class="white"
+                />
+              </font-awesome-layers>
               <h3 class="principle-heading">{{ item.title }}</h3>
               <p class="text-muted">{{ item.description }}</p>
             </div>
           </div>
         </div>
-      </div>
-    </section>
+      </section>
 
-    <section id="team">
-      <div class="container-fluid">
-        <div class="row">
-          <div class="col-sm-12 text-center">
-            <h2 class="section-heading">{{ team.title }}</h2>
-            <h3 class="section-subheading text-muted">
-              {{ team.subtitle }}
-            </h3>
+      <section id="team">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-sm-12 text-center">
+              <h2 class="section-heading">{{ team.title }}</h2>
+              <h3 class="section-subheading text-muted">
+                {{ team.subtitle }}
+              </h3>
+            </div>
           </div>
-        </div>
-        <div class="row">
-          <div
-            v-for="(people, index) in team.people"
-            :key="index"
-            class="col-lg-3 col-sm-4 col-xs-12"
-            :v-if="team.people != null"
-          >
-            <div class="team-member">
-              <img
-                :src="getImgUrl(people.photo)"
-                class="img-responsive img-circle"
-                :alt="'Foto de ' + people.name"
-                width="200"
-                height="200"
-              />
-              <h4>{{ people.name }}</h4>
-              <p class="text-muted">{{ people.position }}</p>
-              <p>
-                <span class="label label-custom-primary">{{
-                  people.role
-                }}</span>
-              </p>
-              <ul class="list-inline social-buttons">
-                <li :v-if="people.web != null">
-                  <a
-                    :href="people.web"
-                    target="_blank"
-                    :title="'web de ' + people.name"
-                  >
-                    <i class="fa fa-external-link-square"></i>
-                  </a>
-                </li>
-                <li :v-if="people.email != null">
-                  <a
-                    :href="'mailto:' + people.email"
-                    target="_blank"
-                    :title="people.email"
-                  >
-                    <i class="fa fa-envelope"></i>
-                  </a>
-                </li>
-                <li :v-if="people.twitter != null">
-                  <a
-                    :href="'https://twitter.com/' + people.twitter"
-                    target="_blank"
-                    :title="'Twitter de' + people.name"
-                  >
-                    <i class="fa fa-twitter"></i>
-                  </a>
-                </li>
-                <li :v-if="people.linkedin != null">
-                  <a
-                    :href="people.linkedin"
-                    target="_blank"
-                    :title="'Linkedin de ' + people.name"
-                  >
-                    <i class="fa fa-linkedin"></i>
-                  </a>
-                </li>
-                <li :v-if="people.github != null">
-                  <a
-                    :href="'https://github.com/' + people.github"
-                    target="_blank"
-                    :title="'Github de ' + people.name"
-                  >
-                    <i class="fa fa-github"></i>
-                  </a>
-                </li>
-              </ul>
+          <div class="row">
+            <div
+              v-for="(people, index) in team.people"
+              :key="index"
+              class="col-lg-3 col-sm-4 col-xs-12"
+              :v-if="team.people != null"
+            >
+              <div class="team-member">
+                <img
+                  :src="getImgUrl(people.photo)"
+                  class="img-responsive img-circle"
+                  :alt="'Foto de ' + people.name"
+                  width="200"
+                  height="200"
+                />
+                <h4>{{ people.name }}</h4>
+                <p class="text-muted">{{ people.position }}</p>
+                <p>
+                  <span class="label label-custom-primary">{{
+                    people.role
+                  }}</span>
+                </p>
+                <ul class="list-inline social-buttons">
+                  <li :v-if="people.web != null">
+                    <a
+                      :href="people.web"
+                      target="_blank"
+                      :title="'web de ' + people.name"
+                    >
+                      <i class="fa fa-external-link-square"></i>
+                    </a>
+                  </li>
+                  <li :v-if="people.email != null">
+                    <a
+                      :href="'mailto:' + people.email"
+                      target="_blank"
+                      :title="people.email"
+                    >
+                      <i class="fa fa-envelope"></i>
+                    </a>
+                  </li>
+                  <li :v-if="people.twitter != null">
+                    <a
+                      :href="'https://twitter.com/' + people.twitter"
+                      target="_blank"
+                      :title="'Twitter de' + people.name"
+                    >
+                      <i class="fa fa-twitter"></i>
+                    </a>
+                  </li>
+                  <li :v-if="people.linkedin != null">
+                    <a
+                      :href="people.linkedin"
+                      target="_blank"
+                      :title="'Linkedin de ' + people.name"
+                    >
+                      <i class="fa fa-linkedin"></i>
+                    </a>
+                  </li>
+                  <li :v-if="people.github != null">
+                    <a
+                      :href="'https://github.com/' + people.github"
+                      target="_blank"
+                      :title="'Github de ' + people.name"
+                    >
+                      <i class="fa fa-github"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-8 col-sm-offset-2 text-center">
+              <p class="large text-muted"></p>
             </div>
           </div>
         </div>
-        <div class="row">
-          <div class="col-sm-8 col-sm-offset-2 text-center">
-            <p class="large text-muted"></p>
-          </div>
-        </div>
-      </div>
-    </section>
+      </section>
+    </div>
   </div>
 </template>
 
 <script>
+import PageClaim from '~/components/PageClaim.vue'
+
 export default {
+  components: {
+    PageClaim
+  },
   data() {
     return {
       logo: '300x300fondogriscompleto.png',
@@ -160,19 +168,22 @@ export default {
             title: 'Cooperativismo',
             description:
               'Creemos en el valor social y democrático de las empresas. Mejor cooperar que competir.',
-            icon: 'fa-puzzle-piece'
+            icon_prefix: 'fas',
+            icon: 'puzzle-piece'
           },
           {
             title: 'Libertad tecnológica',
             description:
               'Apostamos por el Software Libre y la libertad tecnológica en todos los ámbitos.',
-            icon: 'fa-unlock'
+            icon_prefix: 'fas',
+            icon: 'unlock'
           },
           {
             title: 'Compromiso social',
             description:
               'Todas y todos podemos y debemos ser parte del cambio social para mejorar el mundo en el que vivimos. Desde lo local hacia lo global.',
-            icon: 'fa-undo'
+            icon_prefix: 'fas',
+            icon: 'undo'
           }
         ]
       },
