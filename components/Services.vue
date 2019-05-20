@@ -74,7 +74,10 @@
         img-alt="Image"
         img-top
       >
-        <a href="#" class="btn btn-hidden stretched-link"></a>
+        <nuxt-link
+          :to="localePath('contact')"
+          class="btn btn-hidden stretched-link"
+        ></nuxt-link>
       </b-card>
     </b-card-group>
   </div>
