@@ -7,7 +7,15 @@
         img-alt="Image"
         img-top
       >
-        <a href="#" class="btn btn-hidden stretched-link"></a>
+        <nuxt-link
+          class="btn btn-hidden stretched-link"
+          :to="
+            localePath({
+              name: 'services-slug',
+              params: { slug: 'participaciondigital' }
+            })
+          "
+        ></nuxt-link>
       </b-card>
 
       <b-card
@@ -18,7 +26,15 @@
         img-alt="Image"
         img-top
       >
-        <a href="#" class="btn btn-hidden stretched-link"></a>
+        <nuxt-link
+          class="btn btn-hidden stretched-link"
+          :to="
+            localePath({
+              name: 'services-slug',
+              params: { slug: 'participacionciudadana' }
+            })
+          "
+        ></nuxt-link>
       </b-card>
 
       <b-card
@@ -27,7 +43,15 @@
         img-alt="Image"
         img-top
       >
-        <a href="#" class="btn btn-hidden stretched-link"></a>
+        <nuxt-link
+          class="btn btn-hidden stretched-link"
+          :to="
+            localePath({
+              name: 'services-slug',
+              params: { slug: 'disenodesarrolloproducto' }
+            })
+          "
+        ></nuxt-link>
       </b-card>
 
       <b-card
@@ -36,7 +60,11 @@
         img-alt="Image"
         img-top
       >
-        <a href="#" class="btn btn-hidden stretched-link"></a>
+        <a
+          href="http://lynxanalytica.com/"
+          target="_blank"
+          class="btn btn-hidden stretched-link"
+        ></a>
       </b-card>
 
       <b-card
@@ -45,7 +73,15 @@
         img-alt="Image"
         img-top
       >
-        <a href="#" class="btn btn-hidden stretched-link"></a>
+        <nuxt-link
+          class="btn btn-hidden stretched-link"
+          :to="
+            localePath({
+              name: 'services-slug',
+              params: { slug: 'transparencia' }
+            })
+          "
+        ></nuxt-link>
       </b-card>
 
       <b-card
@@ -55,7 +91,11 @@
         img-top
         class="img-contain"
       >
-        <a href="#" class="btn btn-hidden stretched-link"></a>
+        <a
+          href="http://edusi.eu/"
+          target="_blank"
+          class="btn btn-hidden stretched-link"
+        ></a>
       </b-card>
 
       <b-card
@@ -65,7 +105,11 @@
         img-top
         class="img-contain"
       >
-        <a href="#" class="btn btn-hidden stretched-link"></a>
+        <a
+          href="http://lynxanalytica.com/"
+          target="_blank"
+          class="btn btn-hidden stretched-link"
+        ></a>
       </b-card>
 
       <b-card
