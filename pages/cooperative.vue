@@ -12,7 +12,7 @@
 <template>
   <div class="cooperative">
     <PageClaim :title="$t('cooperative')" />
-    <div class="row bg-light">
+    <div class="row bg-light m-0">
       <div class="container">
         <div class="col-md-12 text-center">
           <h2 class="slogan">{{ intro }}</h2>
@@ -54,7 +54,7 @@
       </section>
 
       <section id="team">
-        <div class="container-fluid">
+        <div class="container">
           <div class="row">
             <div class="col-sm-12 text-center">
               <h2 class="section-heading">{{ team.title }}</h2>
@@ -150,7 +150,7 @@
               <h3 class="section-subheading text-muted"></h3>
             </div>
           </div>
-          <div class="row text-center">
+          <div class="row text-center justify-content-center">
             <div
               v-for="(place, index) in offices.places"
               :key="index"
@@ -181,21 +181,6 @@
         </div>
       </section>
 
-      <section id="partof">
-        <div class="container">
-          <div class="row">
-            <div id="join" class="col-sm-3 col-sm-offset-2 text-center">
-              <h5>{{ join.title }}</h5>
-              <p v-html="join.description"></p>
-            </div>
-            <div id="collaborate" class="col-sm-3 col-sm-offset-2 text-center">
-              <h5>{{ collaborate.title }}</h5>
-              <p v-html="collaborate.description"></p>
-            </div>
-          </div>
-        </div>
-      </section>
-
       <section id="network">
         <img src="/assets/images/cooperative/banner_network.png" />
         <div class="container">
@@ -211,7 +196,7 @@
             <div
               v-for="(node, index) in network.nodes"
               :key="index"
-              class="col-md-3"
+              class="col-sm-12 col-md-4 col-lg-3"
             >
               <a :href="node.url" target="_blank">
                 <div class="node">
@@ -219,6 +204,24 @@
                   <p>{{ node.description }}</p>
                 </div>
               </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="partof">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div id="join" class="col-sm-12 col-md-4 col-lg-4 text-center">
+              <h5>{{ join.title }}</h5>
+              <p v-html="join.description"></p>
+            </div>
+            <div
+              id="collaborate"
+              class="col-sm-12 col-md-4 col-lg-4 text-center"
+            >
+              <h5>{{ collaborate.title }}</h5>
+              <p v-html="collaborate.description"></p>
             </div>
           </div>
         </div>
@@ -394,17 +397,6 @@ export default {
             role: 'Colaboradora'
           },
           {
-            name: 'Quique Ruíz',
-            position: ' ',
-            photo: 'user_placeholder.png',
-            email: 'quique@enreda.coop',
-            web: 'http://www.systerminal.com',
-            twitter: 'quiqueruizna',
-            linkedin: '',
-            github: 'joseenrique',
-            role: 'Colaborador'
-          },
-          {
             name: 'Javier Moreno',
             position: ' ',
             photo: 'user_placeholder.png',
@@ -426,14 +418,6 @@ export default {
             zipcode: '41011',
             officename: 'Espacio RES',
             officeurl: 'http://espaciores.org',
-            othercontact: ''
-          },
-          {
-            city: 'Huelva',
-            address: '',
-            zipcode: '',
-            officename: 'Desatando SociaLab',
-            officeurl: 'http://desatando.org',
             othercontact: ''
           },
           {

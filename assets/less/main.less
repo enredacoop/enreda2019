@@ -533,7 +533,6 @@ footer {
   div.wrapper-newsletter {
     padding-top: 30px;
     padding-bottom: 30px;
-    margin-top: 50px;
 
     input[type="email"] {
       background: @white_color;
@@ -768,6 +767,7 @@ p.copyright {
         margin: 0 auto;
         border: 7px solid white;
         height: 200px;
+        border-radius: 15px;
       }
       h4 {
         margin-top: 25px;
@@ -823,15 +823,16 @@ p.copyright {
   }
 
   #partof {
-    background-color: @primary_color;
-    color: @dark_color;
+    background-color: @white_color;
+    color: @black_color;
+    margin-top: 30px;
     h5 {
-      color: @white_color;
+      color: @black_color;
       font-size: 3em;
       text-transform: uppercase;
     }
     p {
-      font-size: 1.3em;
+      font-size: 15px;
       a {
         font-weight: bold;
         color: @dark_color;
@@ -840,7 +841,7 @@ p.copyright {
   }
 
   #network {
-    background: lighten(@dark_color, 5%);
+    background: @lightgrey_color;
 
     img {
       position: absolute;
@@ -849,7 +850,7 @@ p.copyright {
     }
     
     h2.section-heading {
-      color: @clean_color;
+      color: @black_color;
     }
     
     h3.section-subheading {
@@ -858,18 +859,21 @@ p.copyright {
 
     a {
       .node {
-        background-color: lighten(@dark_color, 8%);
+        background-color: @clean_color;
         text-align: center;
         padding: 5px;
-        margin-bottom: 15px;
-        color: @lightgrey_color;
-        height: 300px;
+        margin-bottom: 30px;
+        color: @black_color;
+        min-height: 300px;
+        padding: 15px;
+        font-size: 15px;
+        border-radius: 3px;
       }
       
       &:hover {
         text-decoration: none;
         .node {
-          background-color: lighten(@dark_color, 12%);
+          background-color: @white_color;
           h3 {
             color: @primary_color;
           }
@@ -2406,7 +2410,9 @@ ul.list-inline {
 /* ----------------------------------------------------------------
     [ 14. Margins ]
 -----------------------------------------------------------------*/
-
+.m-0 {
+  margin: 0;
+}
 
 
 /* ----------------------------------------------------------------
