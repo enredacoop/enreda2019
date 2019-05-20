@@ -3,6 +3,7 @@
     <HomeClaim />
     <Services />
     <Consul />
+    <Clients />
     <News />
     <Counters />
   </div>
@@ -14,6 +15,7 @@ import Consul from '~/components/Consul.vue'
 import Counters from '~/components/Counters.vue'
 import News from '~/components/News.vue'
 import HomeClaim from '~/components/HomeClaim.vue'
+import Clients from '~/components/Clients.vue'
 
 export default {
   components: {
@@ -21,7 +23,8 @@ export default {
     Consul,
     Counters,
     News,
-    HomeClaim
+    HomeClaim,
+    Clients
   }
 }
 </script>

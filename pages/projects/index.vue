@@ -10,15 +10,20 @@
 </i18n>
 
 <template>
-  <Projects />
+  <div>
+    <PageClaim :title="$t('projects')" />
+    <Projects />
+  </div>
 </template>
 
 <script>
 import Projects from '~/components/Projects'
+import PageClaim from '~/components/PageClaim'
 
 export default {
   components: {
-    Projects
+    Projects,
+    PageClaim
   },
   nuxtI18n: {
     paths: {

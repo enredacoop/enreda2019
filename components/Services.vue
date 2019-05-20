@@ -1,133 +1,146 @@
 <template>
   <div class="container ptb-120">
-    <b-card-group deck>
-      <b-card
-        title="Participación Digital"
-        :img-src="require('~/assets/images/services/participacion_digital.jpg')"
-        img-alt="Image"
-        img-top
-      >
-        <nuxt-link
-          class="btn btn-hidden stretched-link"
-          :to="
-            localePath({
-              name: 'services-slug',
-              params: { slug: 'participaciondigital' }
-            })
-          "
-        ></nuxt-link>
-      </b-card>
-
-      <b-card
-        title="Participación Ciudadana"
-        :img-src="
-          require('~/assets/images/services/participacion_ciudadana.jpg')
-        "
-        img-alt="Image"
-        img-top
-      >
-        <nuxt-link
-          class="btn btn-hidden stretched-link"
-          :to="
-            localePath({
-              name: 'services-slug',
-              params: { slug: 'participacionciudadana' }
-            })
-          "
-        ></nuxt-link>
-      </b-card>
-
-      <b-card
-        title="Diseño y desarrollo de productos"
-        :img-src="require('~/assets/images/services/diseno_desarrollo.jpg')"
-        img-alt="Image"
-        img-top
-      >
-        <nuxt-link
-          class="btn btn-hidden stretched-link"
-          :to="
-            localePath({
-              name: 'services-slug',
-              params: { slug: 'disenodesarrolloproducto' }
-            })
-          "
-        ></nuxt-link>
-      </b-card>
-
-      <b-card
-        title="Analítica - Big data"
-        :img-src="require('~/assets/images/services/big_data.jpg')"
-        img-alt="Image"
-        img-top
-      >
-        <nuxt-link
-          class="btn btn-hidden stretched-link"
-          :to="
-            localePath({
-              name: 'services-slug',
-              params: { slug: 'analitica-bigdata' }
-            })
-          "
-        ></nuxt-link>
-      </b-card>
-
-      <b-card
-        title="Transparencia"
-        :img-src="require('~/assets/images/services/transparencia.jpg')"
-        img-alt="Image"
-        img-top
-      >
-        <nuxt-link
-          class="btn btn-hidden stretched-link"
-          :to="
-            localePath({
-              name: 'services-slug',
-              params: { slug: 'transparencia' }
-            })
-          "
-        ></nuxt-link>
-      </b-card>
-
-      <b-card
-        title="edusi"
-        :img-src="require('~/assets/images/services/edusi.png')"
-        img-alt="Image"
-        img-top
-        class="img-contain"
-      >
-        <a
-          href="http://edusi.eu/"
-          target="_blank"
-          class="btn btn-hidden stretched-link"
-        ></a>
-      </b-card>
-
-      <b-card
-        title="LynxAnalytica"
-        :img-src="require('~/assets/images/services/lynx_analytica.png')"
-        img-alt="Image"
-        img-top
-        class="img-contain"
-      >
-        <a
-          href="http://lynxanalytica.com/"
-          target="_blank"
-          class="btn btn-hidden stretched-link"
-        ></a>
-      </b-card>
-
-      <b-card
-        title="Contáctanos"
-        :img-src="require('~/assets/images/services/contactanos.jpg')"
-        img-alt="Image"
-        img-top
-      >
-        <nuxt-link
-          :to="localePath('contact')"
-          class="btn btn-hidden stretched-link"
-        ></nuxt-link>
-      </b-card>
-    </b-card-group>
+    <div class="card-deck">
+      <div class="card">
+        <div class="card-icon">
+          <font-awesome-icon
+            :icon="['fas', 'mobile-alt']"
+            transform="shrink-6"
+            class="black"
+          />
+        </div>
+        <div class="card-body">
+          <h5 class="card-title text-center">Participación Digital</h5>
+          <nuxt-link
+            class="btn btn-hidden stretched-link"
+            :to="
+              localePath({
+                name: 'services-slug',
+                params: { slug: 'participaciondigital' }
+              })
+            "
+          ></nuxt-link>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-icon">
+          <font-awesome-icon
+            :icon="['fas', 'hands-helping']"
+            transform="shrink-6"
+            class="black"
+          />
+        </div>
+        <div class="card-body">
+          <h5 class="card-title text-center">Participación Ciudadana</h5>
+          <nuxt-link
+            class="btn btn-hidden stretched-link"
+            :to="
+              localePath({
+                name: 'services-slug',
+                params: { slug: 'participacionciudadana' }
+              })
+            "
+          ></nuxt-link>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-icon">
+          <font-awesome-icon
+            :icon="['fas', 'code']"
+            transform="shrink-6"
+            class="black"
+          />
+        </div>
+        <div class="card-body">
+          <h5 class="card-title text-center">
+            Diseño y desarrollo de productos
+          </h5>
+          <nuxt-link
+            class="btn btn-hidden stretched-link"
+            :to="
+              localePath({
+                name: 'services-slug',
+                params: { slug: 'disenodesarrolloproducto' }
+              })
+            "
+          ></nuxt-link>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-icon">
+          <font-awesome-icon
+            :icon="['fas', 'chart-line']"
+            transform="shrink-6"
+            class="black"
+          />
+        </div>
+        <div class="card-body">
+          <h5 class="card-title text-center">Analítica - Big data</h5>
+          <nuxt-link
+            class="btn btn-hidden stretched-link"
+            :to="
+              localePath({
+                name: 'services-slug',
+                params: { slug: 'analitica-bigdata' }
+              })
+            "
+          ></nuxt-link>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-icon">
+          <font-awesome-icon
+            :icon="['fas', 'door-open']"
+            transform="shrink-6"
+            class="black"
+          />
+        </div>
+        <div class="card-body">
+          <h5 class="card-title text-center">Transparencia</h5>
+          <nuxt-link
+            class="btn btn-hidden stretched-link"
+            :to="
+              localePath({
+                name: 'services-slug',
+                params: { slug: 'transparencia' }
+              })
+            "
+          ></nuxt-link>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-image text-center">
+          <img
+            :src="require('~/assets/images/services/edusi.png')"
+            class="edusi"
+          />
+        </div>
+        <div class="card-body">
+          <h5 class="card-title text-center">edusi</h5>
+          <a
+            href="http://edusi.eu/"
+            target="_blank"
+            class="btn btn-hidden stretched-link"
+          ></a>
+        </div>
+      </div>
+      <div class="card">
+        <div class="card-icon">
+          <font-awesome-icon
+            :icon="['fas', 'phone']"
+            transform="shrink-6"
+            class="black"
+          />
+        </div>
+        <div class="card-body">
+          <h5 class="card-title text-center">Contáctanos</h5>
+          <nuxt-link
+            :to="localePath('contact')"
+            class="btn btn-hidden stretched-link"
+          ></nuxt-link>
+        </div>
+      </div>
+    </div>
   </div>
 </template>
 
