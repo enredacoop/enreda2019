@@ -60,11 +60,15 @@
         img-alt="Image"
         img-top
       >
-        <a
-          href="http://lynxanalytica.com/"
-          target="_blank"
+        <nuxt-link
           class="btn btn-hidden stretched-link"
-        ></a>
+          :to="
+            localePath({
+              name: 'services-slug',
+              params: { slug: 'analitica-bigdata' }
+            })
+          "
+        ></nuxt-link>
       </b-card>
 
       <b-card

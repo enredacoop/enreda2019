@@ -208,6 +208,27 @@ export default {
               body: 'Compara y comprende desde lo visual.'
             }
           ]
+        },
+        {
+          id: 'analitica-bigdata',
+          title: 'Analitica - Big data',
+          subtitle: 'Analitica - Big data',
+          class: 'analitica-bigdata',
+          description: '',
+          logo: 'services/big_data.jpg',
+          url: 'http://lynxanalytica.com/',
+          images: [
+            {
+              url: 'services/lynx_analytica.png'
+            }
+          ],
+          texts: [
+            {
+              title: 'Lynx Analytica',
+              body:
+                'Esta herramienta de geomarketing electoral, desarrollada por Lynx Analytica, te ofrece la información y las capacidades del Big Data para microsegmentar y geolocalizar a cualquier público que busques. Millones de datos analizados y optimizados para ser usados de forma sencilla, y ayudarte a anticipar el comportamiento político de cualquier territorio. Con esta herramienta podrás diseñar una campaña más eficiente y persuasiva, priorizar los territorios donde tendrás más éxito, microsegmentar tus mensajes según los públicos, encontrar a esos públicos allí donde viven y conseguir, en definitiva, mejorar tus resultados electorales a la vez que reduces costes. Pasa de decisiones basadas en la intuición a decisiones guiadas por la información y adelántate a tus competidores.'
+            }
+          ]
         }
       ]
     }
