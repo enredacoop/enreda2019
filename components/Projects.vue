@@ -45,19 +45,21 @@
   <div id="works" class="wrapper-content">
     <b-container>
       <div>
-        <h1>{{ $t('projects') }}</h1>
-        <div class="button-group">
-          <button
-            v-for="(val, key) in option.getFilterData"
-            :key="key"
-            class="button"
-            :class="[key === filterOption ? 'is-checked' : '']"
-            @click="filter(key)"
-          >
-            {{ $t(key) }}
-          </button>
+        <div class="button-group text-center">
+          <b-dropdown id="dropdown-filter" text="Aplicar filtro" class="m-md-2">
+            <b-dropdown-item
+              v-for="(val, key) in option.getFilterData"
+              :key="key"
+              class="button"
+              :class="[key === filterOption ? 'selected' : '']"
+              @click="filter(key)"
+            >
+              {{ $t(key) }}
+            </b-dropdown-item>
+          </b-dropdown>
         </div>
       </div>
+      <hr />
 
       <isotope
         id="root_isotope1"
@@ -72,7 +74,7 @@
         <div
           v-for="(work, index) in orderedWorks"
           :key="index"
-          :class="[work.category] + ' col-xs-12 col-sm-6 col-lg-4'"
+          :class="[work.category] + ' col-xs-12 col-sm-12 col-lg-4'"
         >
           <nuxt-link
             :to="
@@ -82,13 +84,28 @@
               })
             "
           >
-            <div :key="work.name" :class="'work ' + work.class">
-              <b-img
-                v-if="work.logo != ''"
-                :src="getImageUrl(work.logo)"
-                :alt="work.title"
-              />
-              <h4 v-else>{{ work.title }}</h4>
+            <div
+              :key="work.name"
+              class="work"
+              :class="
+                work.favourite === true
+                  ? 'highlighted ' + work.class
+                  : work.class
+              "
+            >
+              <div class="work-header">
+                <b-img
+                  v-if="work.logo != ''"
+                  :src="getImageUrl(work.logo)"
+                  :alt="work.title"
+                />
+                <h4 v-else>{{ work.title }}</h4>
+              </div>
+              <div class="work-body">
+                <div class="work-title">
+                  {{ work.title }}
+                </div>
+              </div>
             </div>
           </nuxt-link>
         </div>
@@ -116,6 +133,9 @@ export default {
       selected: null,
       sortOption: 'original-order',
       filterOption: 'show all',
+      cellsByRow: {
+        rowHeight: 270
+      },
       option: {
         itemSelector: '.element-item',
         getFilterData: {

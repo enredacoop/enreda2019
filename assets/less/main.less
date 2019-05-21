@@ -30,6 +30,9 @@
     17. Backgrounds
     18. Grid
     19. Effects
+    20. Contact page
+    21. Clients
+    22. Cooperative page
  
 ---------------------------------------------------------------- */
 /* ----------------------------------------------------------------
@@ -96,15 +99,19 @@ h5,
 h6 {
   font-weight: 700;
 }
-.text-primary {
+.text-primary, .primary {
   color: @primary_color;
+}
+.text-white, .white {
+  color: @white_color;
 }
 .text-right {
   text-align: right;
 }
 .label-custom-primary {
   background-color: @primary_color;
-  color: @lightgrey_color;
+  color: @white_color;
+  padding: 3px 10px;
 }
 .label-custom-secondary {
   background-color: @secondary_color;
@@ -123,18 +130,21 @@ h6 {
       padding: 100px 0px 0px 0px;
 }
 /********** HOME **********/
-#home-claim {
+#home-claim, #page-claim {
 
-  background-image: url('~@~@/assets/images/banner_main_extra.jpg');
+  background-image: url('~@~@/assets/images/banner_main_extra.jpeg');
   background-color: @primary_color;
   background-size: cover;
+  background-position: center -60px;
+  background-repeat: no-repeat;
 
   .claim {
     color: #f8f8f8;
     /* text-shadow: 2px 2px 3px rgba(0,0,0,0.6); */
     height: 100%;
     position: relative;
-    padding: 30% 0px;
+    padding: 20% 0px;
+    padding-top: 20%;
     text-transform: uppercase;
 
     h2 {
@@ -144,18 +154,36 @@ h6 {
       .title-letter-spacing;
     }
 
+    #type-header {
+      font-size: 25px;
+      margin-top: 150px;
+      text-transform: initial;
+    }
+
+  }
+}
+#page-claim {
+  height: 250px;
+  background-position: center -60px;
+  .claim {
+    padding-top: 60px;
+    h2 {
+      font-size: 30px;
+      width: 60%;
+      margin: 0 auto;
+    }
   }
 }
 
 .block-consul {
   margin-bottom: 120px;
-  margin-top: 120px;
   border: 1px solid rgba(68,63,63,.12);
-  background: transparent;
+  background: @lightgrey_color;
 
   .btn-primary {
     margin: 50px 50px 0px 0px;
     background-color: @primary_color;
+    border-color: @primary_color;
     color: @white_color;
     &:hover {
       background-color: @primary_color_hover !important;
@@ -232,17 +260,17 @@ h6 {
   /* Noticias Cargando */
   &.loading {
     .card:first-child {
-      background-color: @white_color;
+      background-color: @lightgrey_color;
       height: 350px;
       width: 100%;
     max-width: 100%;
     }
     .card {
-      background-color: @white_color;
+      background-color: @lightgrey_color;
       height: 250px;
       width: calc(50% - 60px);
       .card-title, small {
-        background-color: @lightgrey_color;
+        background-color: @white_color;
         display: block;
         height: 30px;
         width: 30%;
@@ -294,13 +322,15 @@ h6 {
 /********** COOKIES ********/
 .cookies-wrapper {
   display: none;
-  border-top: 1px solid #4b5c66;
   padding: 30px;
   width: 100%;
-  background: @dark_color;
+  background: @black_color;
+  color: @white_color;
   position: fixed;
   bottom: 0;
-  left: 0;  
+  left: 0;
+  font-size: 15px;
+  z-index: 9999;
   .btn {
     margin-left: 15px;
     background-color: @primary_color;
@@ -308,7 +338,7 @@ h6 {
     border: none;
 
     &:hover {
-      background: @primary_color_hover;
+      background: @primary_color_hover !important;
     }
   }
   a {
@@ -349,7 +379,7 @@ header {
     margin-bottom: -20px;
     padding: 15px 0;
     padding-top: 0px;
-    z-index: 999;
+    z-index: 9999;
     height: 105px;
     -moz-transition: all ease .3s;
     -webkit-transition: all ease .3s;
@@ -466,6 +496,7 @@ header {
 
     &.sticky {
       position: fixed;
+      z-index: 9999;
       top: 0;
       width: 100%;
       height: 60px;
@@ -502,19 +533,17 @@ header {
 -----------------------------------------------------------------*/
 footer {
   padding-bottom: 30px;
-  background-color: @black_color;
-  color: @clean_color;
+  background-color: @lightgrey_color;
+  color: @black_color;
 
   div.wrapper-newsletter {
     padding-top: 30px;
     padding-bottom: 30px;
-    margin-bottom: 120px;
-    background-color: @white_color_20;
 
     input[type="email"] {
-      background: @black_color_33;
+      background: @white_color;
       border: 0px;
-      color: @white_color;
+      color: @black_color;
       padding: 8px 15px;
       display: inline-block;
       outline: none;
@@ -525,14 +554,24 @@ footer {
         color: @black_color;*/
       }
     }
+    .btn-primary {
+      background-color: @primary_color;
+      border-color: @primary_color;
+      color: @white_color;
+      &:hover {
+        background-color: @primary_color_hover !important;
+        border-color: @primary_color_hover !important;
+      }
+    }
   }
 
   .row {
     li {
       a {
-        color: @clean_color;
+        color: @black_color;
+        font-size: 15px;
         &:hover {
-          color: @white_color;
+          color: @primary_color;
           text-decoration: underline;
         }
       }
@@ -541,7 +580,7 @@ footer {
       .contact {
         font-size: 18px;
         font-weight: bold;
-        color: @clean_color;
+        color: @black_color;
         a {
           &:hover {
             text-decoration: none;
@@ -571,8 +610,9 @@ p.copyright {
     [ 06. Blog page ]
 -----------------------------------------------------------------*/
 #home-blog {
-  background-color: @lightgrey_color;
+  //background-color: @lightgrey_color;
   padding-bottom: 75px;
+  padding-top: 120px;
 
   #home-blog-title {
     h2 {
@@ -675,11 +715,12 @@ p.copyright {
 }
 
 #home-days {
-  .gradient(to left, @primary_color,  @secondary_color);
-  color: @lightgrey_color;
+  .gradient(to left, @lightgrey_color,  @clean_color);
+  color: @black_color;
   .daysnumber, h2 {
     font-size: 50px;
     font-weight: bold;
+    color: @primary_color;
     .title-letter-spacing;
     padding-right: 40px;
   }
@@ -708,7 +749,7 @@ p.copyright {
 #cooperative {
   section {
     h2.section-heading {
-      font-size: 40px;
+      font-size: 30px;
       margin-top: 0;
       margin-bottom: 15px;
       .title-letter-spacing;
@@ -732,11 +773,13 @@ p.copyright {
         margin: 0 auto;
         border: 7px solid white;
         height: 200px;
+        border-radius: 15px;
       }
       h4 {
         margin-top: 25px;
         margin-bottom: 0;
         text-transform: none;
+        font-size: 20px;
       }
       p {
         margin-top: 0;
@@ -778,7 +821,7 @@ p.copyright {
   }
 
   #team {
-    .gradient(to top, @lightgrey_color, @clean_color);
+    //.gradient(to top, @lightgrey_color, @clean_color);
   }
 
   #offices {
@@ -786,15 +829,16 @@ p.copyright {
   }
 
   #partof {
-    background-color: @primary_color;
-    color: @dark_color;
+    background-color: @white_color;
+    color: @black_color;
+    margin-top: 30px;
     h5 {
-      color: @white_color;
+      color: @black_color;
       font-size: 3em;
       text-transform: uppercase;
     }
     p {
-      font-size: 1.3em;
+      font-size: 15px;
       a {
         font-weight: bold;
         color: @dark_color;
@@ -803,7 +847,7 @@ p.copyright {
   }
 
   #network {
-    background: lighten(@dark_color, 5%);
+    background: @lightgrey_color;
 
     img {
       position: absolute;
@@ -812,7 +856,7 @@ p.copyright {
     }
     
     h2.section-heading {
-      color: @clean_color;
+      color: @black_color;
     }
     
     h3.section-subheading {
@@ -821,18 +865,21 @@ p.copyright {
 
     a {
       .node {
-        background-color: lighten(@dark_color, 8%);
+        background-color: @clean_color;
         text-align: center;
         padding: 5px;
-        margin-bottom: 15px;
-        color: @lightgrey_color;
-        height: 300px;
+        margin-bottom: 30px;
+        color: @black_color;
+        min-height: 300px;
+        padding: 15px;
+        font-size: 15px;
+        border-radius: 3px;
       }
       
       &:hover {
         text-decoration: none;
         .node {
-          background-color: lighten(@dark_color, 12%);
+          background-color: @white_color;
           h3 {
             color: @primary_color;
           }
@@ -1197,8 +1244,33 @@ p.lead {
 -----------------------------------------------------------------*/
 /********** WORKS **********/
 #works {
-  background: @lightgrey_color;
-  padding-top: 120px;
+  // background: @lightgrey_color;
+  padding-top: 30px;
+
+  .button-group {
+    .dropdown {
+      button {
+        background-color: @white_color;
+        border-color: @white_color;
+        color: @black_color;
+        border-radius: 0px;
+        &:hover, &:focus {
+          background-color: @lightgrey_color;
+          border-color: @lightgrey_color;
+          color: @dark_color;
+          box-shadow: none;
+        }
+      }
+    }
+  }
+  #dropdown-filter {
+    .button.selected, .button.selected a:hover, .button a:active {
+      background: @lightgrey_color;
+    }
+    .button a:hover {
+      color: @primary_color;
+    }
+  }
 
   .section-heading {
     h2 {
@@ -1219,7 +1291,37 @@ p.lead {
     }
   }
 
-  .work.tipi {
+  .work {
+
+    .work-header {
+      height: 150px;
+    }
+    .work-body {
+      //background: @black_color;
+      color: @black_color;
+      text-align: left;
+      .work-title {
+        margin-top: 10px;
+        font-size: 18px;
+        font-weight: 700;
+        margin-left: 10px;
+      }
+    }
+    &.highlighted::before {
+      content: ' ';
+      background: @lightgrey_color;
+      display: block;
+      position: absolute;
+      height: 15px;
+      width: 15px;
+      border-radius: 100%;
+      top: 10px;
+      right: 25px;
+      z-index: 9;
+    }
+  }
+
+  .work.tipi .work-header {
     background-color: @tipi_color;
     img {
       width: 360px;
@@ -1232,7 +1334,7 @@ p.lead {
       color: make-contrast(@tipi_color);
     }
   }
-  .work.lacentralcoop {
+  .work.lacentralcoop .work-header {
     background-color: @lacentralcoop_color;
     img {
       width: 250px;
@@ -1244,7 +1346,7 @@ p.lead {
     }
   }
 
-  .work.somoscoop {
+  .work.somoscoop .work-header {
     background-color: @somoscoop_color;
     img {
       width: 200px;
@@ -1255,7 +1357,7 @@ p.lead {
     }
   }
 
-  .work.enlaorbita {
+  .work.enlaorbita .work-header {
     background-color: @enlaorbita_color;
     img {
       width: 250px;
@@ -1267,7 +1369,7 @@ p.lead {
     }
   }
 
-  .work.socialtocrowd {
+  .work.socialtocrowd .work-header {
     background-color: @socialtocrowd_color;
     img {
       width: 250px;
@@ -1279,7 +1381,7 @@ p.lead {
     }
   }
 
-  .work.transparenciapresupuestaria {
+  .work.transparenciapresupuestaria .work-header {
     background-color: @transparenciapresupuestaria_color;
     img {
       width: 250px;
@@ -1290,7 +1392,7 @@ p.lead {
       color: make-contrast(@transparenciapresupuestaria_color);
     }
   }
-  .work.clic {
+  .work.clic .work-header {
     background-color: @clic_color;
     img {
       width: 200px;
@@ -1300,7 +1402,7 @@ p.lead {
       color: make-contrast(@clic_color);
     }
   }
-  .work.conilhospeda {
+  .work.conilhospeda .work-header {
     background-color: @conilhospeda_color;
     img {
       width: 230px;
@@ -1311,7 +1413,7 @@ p.lead {
       color: make-contrast(@conilhospeda_color);
     }
   }
-  .work.poletika {
+  .work.poletika .work-header {
     background-color: @poletika_color;
     img {
       width: 300px;
@@ -1321,14 +1423,14 @@ p.lead {
       color: make-contrast(@poletika_color);
     }
   }
-  .work.idea {
+  .work.idea .work-header {
     background-color: @white_color;
     color: @dark_color;
     .text {
       padding: 20px 0px 20px 0px;
     }
   }
-  .work.icas {
+  .work.icas .work-header {
     background-color: @icas_color;
     img {
       width: 300px;
@@ -1339,7 +1441,7 @@ p.lead {
       color: make-contrast(@icas_color);
     }
   }
-  .work.festivalcine {
+  .work.festivalcine .work-header {
     background-color: @festivalcine_color;
     img {
       height: 130%;
@@ -1350,7 +1452,7 @@ p.lead {
       color: make-contrast(@festivalcine_color);
     }
   }
-  .work.aytoelpuerto {
+  .work.aytoelpuerto .work-header {
     background-color: @aytoelpuerto_color;
     img {
       width: 200px;
@@ -1363,7 +1465,7 @@ p.lead {
       color: make-contrast(@aytoelpuerto_color);
     }
   }
-  .work.decideoviedo {
+  .work.decideoviedo .work-header {
     background-color: @decideoviedo_color;
     img {
       width: 200px;
@@ -1376,7 +1478,7 @@ p.lead {
       color: make-contrast(@decideoviedo_color);
     }
   }
-  .work.decidearcos {
+  .work.decidearcos .work-header {
     background-color: @decidearcos_color;
     img {
       width: 300px;
@@ -1389,7 +1491,7 @@ p.lead {
       color: make-contrast(@decidearcos_color);
     }
   }
-  .work.decidesantiago {
+  .work.decidesantiago .work-header {
     background-color: @decidesantiago_color;
     img {
       padding-top: 0;
@@ -1402,7 +1504,7 @@ p.lead {
       color: make-contrast(@decidesantiago_color);
     }
   }  
-  .work.decidecadiz {
+  .work.decidecadiz .work-header {
     background-color: @decidecadiz_color;
     padding-top: 45px;
     img {
@@ -1416,7 +1518,7 @@ p.lead {
       color: make-contrast(@decidecadiz_color);
     }
   }
-  .work.foroparticipacion {
+  .work.foroparticipacion .work-header {
     background-color: white;
     img {
       width: 200px;
@@ -1428,7 +1530,7 @@ p.lead {
     }
     
   }
-  .work.dipuparticipacioncadiz {
+  .work.dipuparticipacioncadiz .work-header {
     background-color: @dipuparticipacioncadiz_color;
     img {
       width: 200px;
@@ -1441,7 +1543,7 @@ p.lead {
       color: make-contrast(@dipuparticipacioncadiz_color);
     }
   }
-  .work.aytoparticipacioncadiz {
+  .work.aytoparticipacioncadiz .work-header {
     background-color: @aytoparticipacioncadiz_color;
     padding-top: 30px;
      img {
@@ -1455,7 +1557,7 @@ p.lead {
       color: make-contrast(@aytoparticipacioncadiz_color);
     }
   }
-  .work.formacionleyparticipacion {
+  .work.formacionleyparticipacion .work-header {
     background-color: @formacionleyparticipacion_color;
     padding-top: 30px;
     img {
@@ -1467,7 +1569,7 @@ p.lead {
       color: make-contrast(@formacionleyparticipacion_color);
     }
   }
-  .work.sistemaparticipacion {
+  .work.sistemaparticipacion .work-header {
     background-color: @sistemaparticipacion_color;
     padding-top: 30px;
     img {
@@ -1481,7 +1583,7 @@ p.lead {
       color: make-contrast(@sistemaparticipacion_color);
     }
   }
-  .work.ciudadamable {
+  .work.ciudadamable .work-header {
     background-color: @ciudadamable_color;
     img {
       width: 200px;
@@ -1492,7 +1594,7 @@ p.lead {
       color: make-contrast(@ciudadamable_color);
     }
   }
-  .work.presupuestomarbella {
+  .work.presupuestomarbella .work-header {
     background-color: @presupuestomarbella_color;
     img {
       width: 220px;
@@ -1503,7 +1605,7 @@ p.lead {
       color: make-contrast(@presupuestomarbella_color);
     }
   }
-  .work.presupuestomijas {
+  .work.presupuestomijas .work-header {
     background-color: @presupuestomijas_color;
     img {
       padding-top: 10px;
@@ -1515,7 +1617,7 @@ p.lead {
       color: make-contrast(@presupuestomijas_color);
     }
   }
-  .work.planintervencion {
+  .work.planintervencion .work-header {
     background-color: @planintervencion_color;
     img {
       width: 220px;
@@ -1529,7 +1631,7 @@ p.lead {
     }
   }
 
-  .work.presupuestotarifa {
+  .work.presupuestotarifa .work-header {
     background-color: @presupuestotarifa_color;
     img {
       width: 200px;
@@ -1541,27 +1643,25 @@ p.lead {
     }
   }
   a {
-    
     text-decoration: none;
     /*font-size: 2em;*/
     .work {
-
       background: @clean_color;
-      border: 10px solid @clean_color;
-      margin-bottom: 30px;
+      //border: 10px solid @clean_color;
+      margin-bottom: 50px;
       text-align: center;
       color: @clean_color;
-      height: 150px;
-
+      height: 250px;
+      border: 1px solid @lightgrey_color;
+      border-radius: 3px;
       img {
         padding: 40px 10px 40px 10px;
       }
-
     }
   }
   a:hover {
-    .work {
-      box-shadow: 0 0 13px rgba(0,0,0,.33);
+    .work-header, .work-body {
+      opacity: 0.75;
     }
   }
 
@@ -2287,6 +2387,9 @@ img.center {
 .img-white {
   filter: contrast(0) brightness(100);
 }
+.img-black {
+  filter: contrast(0) brightness(0);
+}
 
 
 /* ----------------------------------------------------------------
@@ -2313,7 +2416,9 @@ ul.list-inline {
 /* ----------------------------------------------------------------
     [ 14. Margins ]
 -----------------------------------------------------------------*/
-
+.m-0 {
+  margin: 0;
+}
 
 
 /* ----------------------------------------------------------------
@@ -2349,7 +2454,33 @@ ul.list-inline {
   min-width: 290px;
   max-width: 290px;
 
-  img {
+  .card-icon {
+    height: 150px;
+    font-size: 100px;
+    text-align: center;
+  }
+  .card-image {
+    position: relative;
+    height: 150px;
+    img {
+      height: 150px;
+      margin: 0 auto;
+    }
+    img.lynx {
+      position: absolute;
+      height: 75px;
+      bottom: 25%;
+      left: calc(25% + 30px);
+    }
+    img.edusi {
+      position: absolute;
+      height: 75px;
+      bottom: 25%;
+      left: calc(25% + 35px);
+    }
+  }
+
+  img, .card-icon {
     -webkit-transition: all .8s ease;
     -moz-transition: all .8s ease;
     -ms-transition: all .8s ease;
@@ -2358,10 +2489,10 @@ ul.list-inline {
   }
 
   &:hover {
-    h4 {
+    h5 {
       color: @primary_color;
     }
-    img {
+    img, .card-icon {
       -ms-transform: scale(1.05);
       -moz-transform: scale(1.05);
       -webkit-transform: scale(1.05);
@@ -2374,7 +2505,7 @@ ul.list-inline {
   height: 150px;
   object-fit: cover;
 }
-.card.img-contain img {
+.card-image img {
   object-fit: contain;
 }
 
@@ -2382,7 +2513,9 @@ ul.list-inline {
 /* ----------------------------------------------------------------
     [ 17. Backgrounds ]
 -----------------------------------------------------------------*/
-
+.bg-light {
+  background: @lightgrey_color;
+}
 
 
 /* ----------------------------------------------------------------
@@ -2422,13 +2555,135 @@ ul.list-inline {
   animation-iteration-count: infinite;
 }
 @-webkit-keyframes loading { 
-  0% { opacity: 0.1; }
-  50% { opacity: .8; }
-  100% { opacity: 0.1; }
+  0% { opacity: 0.6; }
+  50% { opacity: 1; }
+  100% { opacity: 0.6; }
 }
 
 @keyframes loading {
-  0% { opacity: 0.1; }
-  50% { opacity: .8; }
-  100% { opacity: 0.1; }
+  0% { opacity: 0.6; }
+  50% { opacity: 1; }
+  100% { opacity: 0.6; }
+}
+
+
+/* ----------------------------------------------------------------
+    [ 20. Contact page ]
+-----------------------------------------------------------------*/
+
+.contact-form {
+	font-family: 16px;
+	margin: 0 auto;
+	max-width: 600px;
+	width: 100%;
+}
+
+.contact-form .separator {
+	border-bottom: solid 1px #ccc;
+	margin-bottom: 15px;
+}
+
+.contact-form .form {
+	display: flex;
+	flex-direction: column;
+	font-size: 16px;
+}
+
+.contact-form_title {
+	color: #333;
+	text-align: left;
+	font-size: 28px;
+}
+
+.contact-form input[type="email"],
+.contact-form input[type="text"],
+.contact-form textarea {
+	border: solid 1px #e8e8e8;
+	font-family: 'Roboto', sans-serif;
+	padding: 10px 7px;
+	margin-bottom: 15px;
+	outline: none;
+}
+
+.contact-form textarea {
+	resize: none;
+}
+
+.contact-form .button {
+	background: #da552f;
+	border: solid 1px #da552f;
+	color: white;
+	cursor: pointer;
+	padding: 10px 50px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.contact-form .button:hover {
+	background: #ea532a;
+	border: solid 1px #ea532a;
+}
+
+.contact-form input[type="email"],
+.contact-form input[type="text"],
+.contact-form textarea,
+.contact-form .button {
+	font-size: 15px;
+  border-radius: 3px;
+}
+
+/* ----------------------------------------------------------------
+    [ 21. Clients ]
+-----------------------------------------------------------------*/
+.clients {
+  .wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    .client {
+      display: flex;
+      width: 16.66%;
+      height: 190px;
+      align-items: center;
+      justify-content: center;
+      border-width: 1px;
+      border-color: @lightgrey_color;
+      border-style: solid;
+      .logo {
+        flex: 0 0 auto;
+        transform: scale(0.5);
+        max-width: none;
+      }
+      &.contact {
+        background-color: @primary_color;
+        border-color: @primary_color;
+        text-align: center;
+        p {
+          font-size: 18px;
+          line-height: 22px;
+          color: @white_color;
+          font-weight: bold;
+        }
+        .btn {
+          display: block;
+          max-width: 100px; 
+          margin: 0 auto;
+          margin-top: 15px;
+          &:hover {
+            background: @lightgrey_color !important;
+            color: @black_color !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+
+.cooperative {
+  .slogan {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    font-weight: normal;
+    font-size: 30px;
+  }
 }

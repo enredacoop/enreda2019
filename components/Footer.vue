@@ -7,7 +7,7 @@
         <div class="col-md-4">
           <ul class="contacts list-unstyled">
             <li class="contact">
-              <a class="contact" href="mailto: footer.email">
+              <a class="contact" :href="'mailto:' + footer.email">
                 {{ footer.email }}
               </a>
             </li>
@@ -25,20 +25,28 @@
             </li>
             <li class="contact">
               <a class="sn" href="http://twitter.com/enreda" target="_blank">
-                <span class="fa-stack">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
-                </span>
+                <font-awesome-layers class="fa-2x">
+                  <font-awesome-icon icon="circle" class="primary" />
+                  <font-awesome-icon
+                    :icon="['fab', 'twitter']"
+                    transform="shrink-6"
+                    class="white"
+                  />
+                </font-awesome-layers>
               </a>
               <a
                 class="sn"
                 href="https://www.facebook.com/enreda.coop"
                 target="_blank"
               >
-                <span class="fa-stack">
-                  <i class="fa fa-circle fa-stack-2x"></i>
-                  <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
-                </span>
+                <font-awesome-layers class="fa-2x">
+                  <font-awesome-icon icon="circle" class="primary" />
+                  <font-awesome-icon
+                    :icon="['fab', 'facebook-f']"
+                    transform="shrink-6"
+                    class="white"
+                  />
+                </font-awesome-layers>
               </a>
             </li>
           </ul>
@@ -70,7 +78,7 @@
           <br />
           <img
             src="~/assets/images/coop.png"
-            class="pull-right img-white"
+            class="pull-right img-black"
             width="150px"
             alt="Logo de la identidad de las cooperativas"
           />

@@ -1,12 +1,12 @@
 <template>
-  <div id="work" :class="post.class + ' wrapper'">
+  <div id="work" :class="project.class + ' wrapper'">
     <section id="intro">
       <div class="container">
         <div class="row">
           <div class="col-xs-12 text-center logo wow pulse">
             <img
-              :src="'~/assets/images/works/' + post.logo"
-              :alt="post.title"
+              :src="require('~/assets/images/works/' + project.logo)"
+              :alt="project.title"
             />
           </div>
         </div>
@@ -16,18 +16,18 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-6 wow fadeInLeft">
-            <h2>{{ post.subtitle }}</h2>
+            <h2>{{ project.subtitle }}</h2>
             <hr />
-            <p>{{ post.description }}</p>
-            <template v-if="post.url != ''">
+            <p>{{ project.description }}</p>
+            <template v-if="project.url != ''">
               <br />
               <p>
-                <a :href="post.url" class="btn btn-default" target="_blank"
+                <a :href="project.url" class="btn btn-default" target="_blank"
                   ><i class="fa fa-binoculars"></i> Ver en vivo</a
                 >
                 <a
-                  v-if="post.sourcecode != ''"
-                  :href="post.sourcecode"
+                  v-if="project.sourcecode != ''"
+                  :href="project.sourcecode"
                   class="btn btn-default"
                   target="_blank"
                   ><i class="fa fa-github"></i> Código fuente</a
@@ -35,10 +35,10 @@
               </p>
             </template>
           </div>
-          <template v-if="post.screenshot != ''">
+          <template v-if="project.screenshot != ''">
             <div class="col-sm-6 text-center wow fadeInRight">
               <img
-                :src="'~/assets/images/works/' + post.screenshot"
+                :src="'~/assets/images/works/' + project.screenshot"
                 alt=" "
                 height="400"
                 class="img-responsive"
@@ -48,12 +48,12 @@
         </div>
       </div>
     </section>
-    <template v-if="post.keys != ''">
+    <template v-if="project.keys != ''">
       <section id="keys">
         <div class="container">
           <div class="row">
             <div
-              v-for="(key, index) in post.keys"
+              v-for="(key, index) in project.keys"
               :key="index"
               class="col-sm-4 wow pulse"
             >
@@ -63,12 +63,12 @@
         </div>
       </section>
     </template>
-    <template v-if="post.metricsinfo != ''">
+    <template v-if="project.metricsinfo != ''">
       <section id="metrics">
         <div class="container">
           <div class="row text-center">
             <div
-              v-for="(metric, index) in post.metrics"
+              v-for="(metric, index) in project.metrics"
               :key="index"
               class="col-sm-4 wow fadeInDown"
             >
@@ -83,13 +83,13 @@
             <div
               class="col-sm-6 col-sm-offset-3 col-xs-12 text-center metricsinfo wow fadeIn"
             >
-              <small>{{ post.metricsinfo }}</small>
+              <small>{{ project.metricsinfo }}</small>
             </div>
           </div>
         </div>
       </section>
     </template>
-    <template v-if="post.technologies != ''">
+    <template v-if="project.technologies != ''">
       <section id="technologies">
         <div class="container">
           <div class="row">
@@ -99,7 +99,7 @@
             <div class="col-sm-6 wow fadeInRight">
               <div class="row">
                 <div
-                  v-for="(technology, index) in post.technologies"
+                  v-for="(technology, index) in project.technologies"
                   :key="index"
                   class="col-sm-3 text-center"
                 >
@@ -123,7 +123,7 @@
         </div>
       </section>
     </template>
-    <template v-if="post.own == 'no'">
+    <template v-if="project.own == 'no'">
       <section id="client">
         <div class="container">
           <div class="row">
@@ -131,14 +131,14 @@
               <h6 class="title">CLIENTE</h6>
             </div>
             <div class="col-sm-6 text-center wow fadeInRight">
-              <a class="name" :href="post.clienturl" target="_blank">{{
-                post.clientname
+              <a class="name" :href="project.clienturl" target="_blank">{{
+                project.clientname
               }}</a>
               <br />
-              <span class="description">{{ post.clientdescription }}</span>
+              <span class="description">{{ project.clientdescription }}</span>
               <br />
               <span class="year"
-                ><i class="fa fa-calendar"></i> {{ post.clientyear }}</span
+                ><i class="fa fa-calendar"></i> {{ project.clientyear }}</span
               >
               <br />
             </div>
@@ -146,7 +146,7 @@
         </div>
       </section>
     </template>
-    <template v-if="post.media.length > 0">
+    <template v-if="project.media.length > 0">
       <section id="media" class="media-line">
         <div class="section-heading">
           <div class="container wow fadeInUp">
@@ -160,7 +160,7 @@
         <div class="container wow fadeInUp">
           <div class="row">
             <div
-              v-for="(media, index) in post.media"
+              v-for="(media, index) in project.media"
               :key="index"
               class="col-sm-3"
             >
@@ -182,12 +182,12 @@
         </div>
       </section>
     </template>
-    <template v-if="post.calltoaction.call != ''">
+    <template v-if="project.calltoaction.call != ''">
       <section id="call">
         <div class="container">
           <div class="row">
             <div class="col-sm-12 text-center wow fadeInUp">
-              <h4>{{ post.calltoaction.call }}</h4>
+              <h4>{{ project.calltoaction.call }}</h4>
             </div>
           </div>
         </div>
@@ -201,7 +201,7 @@ export default {
   data() {
     return {
       slug: this.$route.params.slug,
-      posts: [
+      projects: [
         {
           id: 'tipi-ciudadano',
           title: 'TIPI Ciudadano',
@@ -1940,8 +1940,8 @@ export default {
     }
   },
   computed: {
-    post() {
-      return this.posts.find(post => post.id === this.slug)
+    project() {
+      return this.projects.find(project => project.id === this.slug)
     }
   },
   nuxtI18n: {

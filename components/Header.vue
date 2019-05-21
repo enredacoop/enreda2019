@@ -43,20 +43,21 @@
           <b-nav-item href="#" :to="localePath('projects')">{{
             $t('projects')
           }}</b-nav-item>
-          <b-nav-item href="http://blog.enreda.coop" about="_blank">{{
+          <b-nav-item href="http://blog.enreda.coop" target="_blank">{{
             $t('blog')
           }}</b-nav-item>
-          <b-nav-item-dropdown :text="$t('lang')" right class="languages">
-            <b-dropdown-item
-              :v-if="$t('lang') != 'Español'"
-              href="#"
-              :to="switchLocalePath('es')"
-              >{{ $t('spanish') }}</b-dropdown-item
-            >
-            <b-dropdown-item href="#" :to="switchLocalePath('en')">{{
-              $t('english')
-            }}</b-dropdown-item>
-          </b-nav-item-dropdown>
+          <b-nav-item
+            v-for="locale in availableLocales"
+            :key="locale"
+            :to="switchLocalePath(locale)"
+          >
+            <template v-if="locale == 'es'">
+              {{ $t('spanish') }}
+            </template>
+            <template v-else>
+              {{ $t('english') }}
+            </template>
+          </b-nav-item>
         </b-navbar-nav>
       </b-collapse>
     </b-navbar>
@@ -95,6 +96,11 @@ export default {
           require('~/assets/images/logo_enreda.png')
         )
       }
+    }
+  },
+  computed: {
+    availableLocales() {
+      return this.$i18n.availableLocales.filter(i => i !== this.$i18n.locale)
     }
   }
 }
