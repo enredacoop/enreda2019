@@ -45,6 +45,42 @@
         </div>
       </section>
     </template>
+    <div
+      v-for="(work, index) in todos"
+      :key="index"
+      :class="[work.category] + ' col-xs-12 col-sm-12 col-lg-4'"
+    >
+      <nuxt-link
+        :to="
+          localePath({
+            name: 'projects-slug',
+            params: { slug: work.url }
+          })
+        "
+      >
+        <div
+          :key="work.name"
+          class="work"
+          :class="
+            work.favourite === true ? 'highlighted ' + work.class : work.class
+          "
+        >
+          <div class="work-header">
+            <!-- <b-img
+              v-if="work.logo != ''"
+              :src="getImageUrlAUX(work.logo)"
+              :alt="work.title"
+            /> -->
+            <!-- <h4 v-else>{{ work.title }}</h4> -->
+          </div>
+          <div class="work-body">
+            <div class="work-title">
+              {{ work.title }}
+            </div>
+          </div>
+        </div>
+      </nuxt-link>
+    </div>
   </div>
 </template>
 
@@ -236,6 +272,16 @@ export default {
   computed: {
     service() {
       return this.services.find(service => service.id === this.slug)
+    },
+    todos() {
+      const res = this.$store.state.projects.works.find(project =>
+        project.category.includes(this.slug)
+      )
+      if (typeof res === 'object') {
+        return [res]
+      } else {
+        return res
+      }
     }
   },
   nuxtI18n: {
@@ -247,6 +293,9 @@ export default {
   methods: {
     getImageUrl(imageId) {
       return require(`~/assets/images/${imageId}`)
+    },
+    getImageUrlAUX(imageId) {
+      return require(`~/assets/images/works/${imageId}`)
     }
   }
 }
