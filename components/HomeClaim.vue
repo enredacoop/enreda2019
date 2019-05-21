@@ -41,12 +41,12 @@ export default {
       .delete(100)
       .pause(1300)
       .type('Participa en las decisiones de tu ciudad')
-      .pause(1750)
+      .pause(550)
       .delete(6)
       .type('<b>ciudad</b>')
       .pause(1500)
       .delete(100)
-      .pause(1000)
+      .pause(500)
       .type('Consulta los presupuestos de tu ayuntamiento')
       .pause(1600)
       .delete(15)
@@ -66,7 +66,7 @@ export default {
     setTimeout(() => {
       myTypeItInstance.reset()
       myTypeItInstance.go()
-    }, 60000)
+    }, 6000)
 
     /*
         'Participa en las decisiones de tu ciudad',
