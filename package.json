@@ -33,6 +33,7 @@
     "nuxt": "^2.4.0",
     "nuxt-fontawesome": "^0.4.0",
     "nuxt-i18n": "^5.12.1",
+    "typeit": "^6.0.3",
     "vue-cookie-law": "^1.10.0",
     "vue-cookies": "^1.5.13",
     "vue-moment": "^4.0.0",
