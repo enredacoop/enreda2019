@@ -152,7 +152,7 @@ export default {
           subtitle: 'Diseño y desarrollo de productos',
           class: 'disenodesarrolloproducto',
           description: '',
-          logo: '',
+          logo: 'services/diseno_desarrollo.jpg',
           url: '',
           images: [
             {
