@@ -66,7 +66,7 @@ export default {
     setTimeout(() => {
       myTypeItInstance.reset()
       myTypeItInstance.go()
-    }, 6000)
+    }, 60000)
 
     /*
         'Participa en las decisiones de tu ciudad',

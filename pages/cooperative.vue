@@ -11,7 +11,7 @@
 
 <template>
   <div class="cooperative">
-    <PageClaim :title="$t('cooperative')" />
+    <PageClaim :title="$t('cooperative')" background="bg_1" />
     <div class="row bg-light m-0">
       <div class="container">
         <div class="col-md-12 text-center">

@@ -19,7 +19,7 @@
     06. Blog page
     07. Cooperative page
     08. Lines page
-    09. Work page
+    09. Works page
     10. Work page parts
     11. Images
     12. Lists
@@ -97,7 +97,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-weight: 700;
+  font-weight: normal;
 }
 .text-primary, .primary {
   color: @primary_color;
@@ -118,6 +118,12 @@ h6 {
   color: @lightgrey_color;
 }
 
+.section-heading {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: normal;
+}
+
 
 /* ----------------------------------------------------------------
     [ 03. Blocks ]
@@ -133,7 +139,7 @@ h6 {
 #home-claim, #page-claim {
 
   background-image: url('~@~@/assets/images/banner_main_extra.jpeg');
-  background-color: @primary_color;
+  background-color: @white_color;
   background-size: cover;
   background-position: center -60px;
   background-repeat: no-repeat;
@@ -171,7 +177,16 @@ h6 {
       font-size: 30px;
       width: 60%;
       margin: 0 auto;
+      display: inline;
+      padding: 10px 30px;
     }
+  }
+  &.bg_none {
+    background: @lightgrey_color;
+  }
+  &.bg_1 {
+    background-image: url('~@~@/assets/images/bg_1.jpeg');
+    background-position: center center;
   }
 }
 
@@ -179,6 +194,10 @@ h6 {
   margin-bottom: 120px;
   border: 1px solid rgba(68,63,63,.12);
   background: @lightgrey_color;
+
+  .subtitle {
+    font-size: 22px;
+  }
 
   .btn-primary {
     margin: 50px 50px 0px 0px;
@@ -621,6 +640,8 @@ p.copyright {
       font-size: 30px;
       margin-top: 15px;
       margin-bottom: 45px;
+      text-transform: uppercase;
+      font-weight: normal;
     }
   }
 
@@ -754,6 +775,8 @@ p.copyright {
       margin-top: 0;
       margin-bottom: 15px;
       .title-letter-spacing;
+      text-transform: uppercase;
+      font-weight: normal;
     }
     h3.section-subheading {
       font-size: 16px;
@@ -1671,18 +1694,71 @@ p.lead {
 
 
 /* ----------------------------------------------------------------
-    [ 10. Works page parts ]
+    [ 10. Work page parts ]
 -----------------------------------------------------------------*/
 /********** WORK **********/
 #work {
+  #intro {
+    height: 250px;
+    padding-top: 110px;
+  }
+  #data {
+    color: @black_color;
+    .client {
+      a {
+        font-size: 20px;
+        color: @black_color;
+      }
+      .description {
+        color: @dark_color;
+      }
+    }
+    .screenshot {
+      margin-top: 10px;
+      img {
+        margin: 0 auto;      }
+    }
+    .buttons {
+      .btn-primary {
+        background: @lightgrey_color;
+        &:hover {
+          background: @dark_color !important;
+          border-color: @dark_color !important;
+          color: @lightgrey_color;
+        }
+      }
+    }
+    .project-description {
+      max-width: 600px;
+      width: 100%;
+      margin: 0 auto;
+      margin-top: 50px;
+      margin-bottom: 50px;
+      font-size: 22px;
+    }
+    #media {
+      .section-heading {
+        margin-bottom: 20px;
+      }
+    }
+    .technologies {
+      padding: 50px 0px;
+      .badge.badge-primary {
+        background: @lightgrey_color;
+        font-size: 17px;
+        margin: 5px;
+        color: @black_color;
+        font-weight: normal;
+        &:hover {
+          background: @dark_color;
+          color: @lightgrey_color;
+        }
+      }
+    }
+  }
 
   &.wrapper {
     padding-top: 0px;
-  }
-
-  section {
-    padding: 80px 0px;
-    padding-top: 150px;
   }
   
   #info {
@@ -2452,8 +2528,8 @@ ul.list-inline {
 .card {
   margin-bottom: 15px !important;
   margin-top: 15px !important;
-  min-width: 290px;
-  max-width: 290px;
+  min-width: 325px;
+  max-width: 325px;
 
   .card-icon {
     height: 150px;
@@ -2637,12 +2713,13 @@ ul.list-inline {
     [ 21. Clients ]
 -----------------------------------------------------------------*/
 .clients {
+  max-width: calc(100% - 30px);
   .wrapper {
     display: flex;
     flex-wrap: wrap;
     .client {
       display: flex;
-      width: 16.66%;
+      width: 48.66%;
       height: 190px;
       align-items: center;
       justify-content: center;
@@ -2674,6 +2751,26 @@ ul.list-inline {
             color: @black_color !important;
           }
         }
+      }
+    }
+    @media (min-width: 576px) {
+      .client {
+        width: 48.66%;
+      }
+    }
+    @media (min-width: 768px) {
+      .client {
+        width: 24.66%;
+      }
+    }
+    @media (min-width: 992px) {
+      .client {
+        width: 16.66%;
+      }
+    }
+    @media (min-width: 1200px) {
+      .client {
+        width: 16.66%;
       }
     }
   }

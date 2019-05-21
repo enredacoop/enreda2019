@@ -1,13 +1,13 @@
 <template>
   <div id="home-blog" class="wrapper">
-    <div id="home-blog-title" class="container wow pulse">
+    <div id="home-blog-title" class="container">
       <div class="row">
         <div class="col-12 text-center">
           <h2>{{ data.newstitle }}</h2>
         </div>
       </div>
     </div>
-    <div id="home-blog-items" class="container wow pulse">
+    <div id="home-blog-items" class="container">
       <!-- load RSS feeds via JS -->
       <template v-if="data.dataReady">
         <div class="row block-news">

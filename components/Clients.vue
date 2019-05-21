@@ -1,5 +1,10 @@
 <template>
-  <div id="clients" class="clients">
+  <div id="clients" class="wrapper clients">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2 class="section-heading">Clientes</h2>
+      </div>
+    </div>
     <div class="container">
       <div class="wrapper">
         <div class="client">

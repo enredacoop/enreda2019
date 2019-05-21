@@ -1,5 +1,10 @@
 <template>
   <div class="container ptb-120">
+    <div class="row">
+      <div class="col-12 text-center">
+        <h2 class="section-heading">Servicios</h2>
+      </div>
+    </div>
     <div class="card-deck">
       <div class="card">
         <div class="card-icon">
@@ -122,22 +127,6 @@
             target="_blank"
             class="btn btn-hidden stretched-link"
           ></a>
-        </div>
-      </div>
-      <div class="card">
-        <div class="card-icon">
-          <font-awesome-icon
-            :icon="['fas', 'phone']"
-            transform="shrink-6"
-            class="black"
-          />
-        </div>
-        <div class="card-body">
-          <h5 class="card-title text-center">Contáctanos</h5>
-          <nuxt-link
-            :to="localePath('contact')"
-            class="btn btn-hidden stretched-link"
-          ></nuxt-link>
         </div>
       </div>
     </div>

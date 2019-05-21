@@ -1,5 +1,5 @@
 <template>
-  <div id="page-claim" class="wrapper">
+  <div id="page-claim" :class="'wrapper ' + background">
     <div class="container">
       <div class="row">
         <div class="col-md-12 col-sm-12 col-xs-12 text-center">
@@ -15,7 +15,8 @@
 <script>
 export default {
   props: {
-    title: { type: String, default: 'ENREDA' }
+    title: { type: String, default: 'ENREDA' },
+    background: { type: String, default: '' }
   }
 }
 </script>

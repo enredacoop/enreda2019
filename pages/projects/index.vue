@@ -11,7 +11,7 @@
 
 <template>
   <div>
-    <PageClaim :title="$t('projects')" />
+    <PageClaim :title="$t('projects')" background="bg_1" />
     <Projects />
   </div>
 </template>
