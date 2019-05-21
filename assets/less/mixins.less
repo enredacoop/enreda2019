@@ -45,19 +45,19 @@
   }
   #intro {
     background-color: @ref_color;
+    color: @white_color;
   }
   #info {
     background-color: darken(@ref_color, 5%);
   }
   #keys {
-    background-color: @lightgrey_color;
-    color: @dark_color;
+    color: @black_color;
     .key {
       .make-border-top(@ref_color, 6px);
     }
   }
   #metrics {
-    background-color: @clean_color;
+    .gradient(to left, @lightgrey_color,  @clean_color);
     color: @dark_color;
     .metric {
       .text {
@@ -76,7 +76,12 @@
     color: @dark_color;
   }
   #call {
-    background-color: @ref_color;
+    padding: 35px 0px 120px 0px;
+    h4 {
+      background: @ref_color;
+      color: @white_color;
+      padding: 10px 15px;
+    }
   }
 }
 

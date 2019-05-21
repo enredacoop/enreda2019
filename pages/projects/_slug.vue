@@ -17,21 +17,25 @@
         <div class="container">
           <div class="row justify-content-center">
             <div class="col-12 text-center">
-              <div class="client">
-                <a class="name" :href="project.clienturl" target="_blank">{{
-                  project.clientname
-                }}</a>
-                <br />
-                <span class="description">{{ project.clientdescription }}</span>
-                <br />
-                <span class="year"
-                  ><font-awesome-icon
-                    :icon="['fas', 'calendar']"
-                    transform="shrink-6"
-                  />
-                  {{ project.clientyear }}</span
-                >
-              </div>
+              <template v-if="project.own == 'no' || project.own == ''">
+                <div class="client">
+                  <a class="name" :href="project.clienturl" target="_blank">{{
+                    project.clientname
+                  }}</a>
+                  <br />
+                  <span class="description">{{
+                    project.clientdescription
+                  }}</span>
+                  <br />
+                  <span class="year"
+                    ><font-awesome-icon
+                      :icon="['fas', 'calendar']"
+                      transform="shrink-6"
+                    />
+                    {{ project.clientyear }}</span
+                  >
+                </div>
+              </template>
             </div>
             <div class="col-12">
               <div class="screenshot text-center">
@@ -110,24 +114,52 @@
                 </section>
               </template>
             </div>
-            <div class="col-12 text-center">
-              <div class="technologies">
-                <h4 class="section-heading">Technologies</h4>
-                <a
-                  v-for="(technology, index) in project.technologies"
-                  :key="index"
-                  target="_blank"
-                  :href="technology.url"
-                >
-                  <span class="badge badge-primary">
-                    {{ technology.technology }}
-                  </span>
-                </a>
+            <template v-if="project.technologies != ''">
+              <div class="col-12 text-center">
+                <div class="technologies">
+                  <h4 class="section-heading">Technologies</h4>
+                  <a
+                    v-for="(technology, index) in project.technologies"
+                    :key="index"
+                    target="_blank"
+                    :href="technology.url"
+                  >
+                    <span class="badge badge-primary">
+                      {{ technology.technology }}
+                    </span>
+                  </a>
+                </div>
               </div>
-            </div>
+            </template>
           </div>
         </div>
       </section>
+      <template v-if="project.keys != ''">
+        <section id="keys">
+          <div class="container">
+            <div class="row">
+              <div
+                v-for="(key, index) in project.keys"
+                :key="index"
+                class="col-sm-4 wow pulse"
+              >
+                <div class="key">{{ key.key }}</div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </template>
+      <template v-if="project.calltoaction.call != ''">
+        <section id="call">
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-12 text-center">
+                <h4>{{ project.calltoaction.call }}</h4>
+              </div>
+            </div>
+          </div>
+        </section>
+      </template>
       <template v-if="project.metricsinfo != ''">
         <section id="metrics">
           <div class="container">
@@ -135,7 +167,7 @@
               <div
                 v-for="(metric, index) in project.metrics"
                 :key="index"
-                class="col-sm-4 wow fadeInDown"
+                class="col-sm-4"
               >
                 <h4 class="metric">
                   <span class="value">{{ metric.value }}</span>
@@ -145,9 +177,7 @@
               </div>
             </div>
             <div class="row">
-              <div
-                class="col-sm-6 col-sm-offset-3 col-xs-12 text-center metricsinfo wow fadeIn"
-              >
+              <div class="col-12 text-center metricsinfo">
                 <small>{{ project.metricsinfo }}</small>
               </div>
             </div>
@@ -1694,7 +1724,7 @@ export default {
           clienturl: 'https://juntadeandalucia.es/',
           clientyear: '2018',
           calltoaction: {
-            call: '.'
+            call: ''
           }
         },
         {

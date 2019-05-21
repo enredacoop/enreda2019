@@ -57,6 +57,7 @@
               {{ $t(key) }}
             </b-dropdown-item>
           </b-dropdown>
+          <span id="filter-selected" class="primary"></span>
         </div>
       </div>
       <hr />
@@ -436,6 +437,12 @@ export default {
     orderedWorks: function() {
       return _.orderBy(this.works, 'favourite').reverse()
     }
+  },
+  mounted() {
+    $('#dropdown-filter ul li').on('click', function() {
+      const filter = this.firstElementChild.innerText
+      $('#filter-selected')[0].innerText = filter
+    })
   },
   methods: {
     filter: function(key) {

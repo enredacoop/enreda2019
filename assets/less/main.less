@@ -188,6 +188,10 @@ h6 {
     background-image: url('~@~@/assets/images/bg_1.jpeg');
     background-position: center center;
   }
+  &.bg_2 {
+    background-image: url('~@~@/assets/images/bg_2.png');
+    background-position: center center;
+  }
 }
 
 .block-consul {
@@ -1714,9 +1718,13 @@ p.lead {
       }
     }
     .screenshot {
-      margin-top: 10px;
+      margin-top: 20px;
+      margin-bottom: 20px;
       img {
-        margin: 0 auto;      }
+        margin: 0 auto;
+        width: 100%;
+        max-width: 600px;
+      }
     }
     .buttons {
       .btn-primary {
@@ -1756,7 +1764,6 @@ p.lead {
       }
     }
   }
-
   &.wrapper {
     padding-top: 0px;
   }
@@ -1768,24 +1775,23 @@ p.lead {
   }
   #keys {
     .key {
-      font-size: 1.5em;
+      font-size: 20px;
       padding-top: 5px;
     }
   }
   #metrics {
     .metric {
       .text {
-        font-size: 1.5em;
-        font-weight: 400;
+        font-size: 28px;
       }
       .value {
-        font-size: 3em;
-        font-weight: 700;
+        font-size: 45px;
       }
     }
     .metricsinfo {
       padding-top: 30px;
       font-style: italic;
+      color: @dark_color;
     }
   }
   #technologies {
@@ -1842,583 +1848,93 @@ p.lead {
     padding: 50px 0;
     font-size: 18px;
     font-weight: 400;
-  }
-
-  .media > img{
-    padding:20px 0;
-    max-width: 200px;
-    max-height: 100px;
-  }
-
-  #media h4{
-    color: @dark_color;
-  }
-
-  #call {
-    .row {
-      padding-bottom: 40px;
-      h4 {
-        font-style: italic;
-        font-size: 2.5em;
-      }
+    img{
+      padding:20px 0;
+      max-width: 200px;
+      max-height: 100px;
+    }
+    h4{
+      color: @dark_color;
     }
   }
 }
 #work.tipi {
-  .make-contrast(@tipi_color);
   .work_styling(@tipi_color);
-  #intro {
-    .logo {
-      img {
-        width: 300px;
-        padding-top: 50px;
-      }
-    }
-  }
-  #info {
-    .btn {
-      .make-contrast(@tipi_color);
-      .make-contrast-border-button(@tipi_color);
-      background-color: transparent;
-      font-weight: bold;
-    }
-  }
 }
-
 #work.lacentralcoop {
-  .make-contrast(@lacentralcoop_color);
   .work_styling(@lacentralcoop_color);
-  #intro {
-    .logo {
-      img {
-        width: 300px;
-        padding-top: 50px;
-      }
-    }
-  }
-  #info {
-    .btn {
-      .make-contrast(@lacentralcoop_color);
-      .make-contrast-border-button(@lacentralcoop_color);
-      background-color: transparent;
-      font-weight: bold;
-    }
-  }
 }
-
 #work.somoscoop {
-  .make-contrast(@somoscoop_color);
   .work_styling(@somoscoop_color);
-  #intro {
-    .logo {
-      img {
-        width: 300px;
-        padding-top: 50px;
-      }
-    }
-  }
-  #info {
-    .btn {
-      .make-contrast(@somoscoop_color);
-      .make-contrast-border-button(@somoscoop_color);
-      background-color: transparent;
-      font-weight: bold;
-    }
-  }
 }
-
 #work.enlaorbita {
-  .make-contrast(@enlaorbita_color);
   .work_styling(@enlaorbita_color);
-  #intro {
-    .logo {
-      img {
-        width: 300px;
-        padding-top: 50px;
-      }
-    }
-  }
-  #info {
-    .btn {
-      .make-contrast(@enlaorbita_color);
-      .make-contrast-border-button(@enlaorbita_color);
-      background-color: transparent;
-      font-weight: bold;
-    }
-  }
 }
-
 #work.socialtocrowd {
-  .make-contrast(@socialtocrowd_color);
   .work_styling(@socialtocrowd_color);
-  #intro {
-    .logo {
-      img {
-        width: 300px;
-        padding-top: 50px;
-      }
-    }
-  }
-  #info {
-    .btn {
-      .make-contrast(@socialtocrowd_color);
-      .make-contrast-border-button(@socialtocrowd_color);
-      background-color: transparent;
-      font-weight: bold;
-    }
-  }
 }
-
 #work.transparenciapresupuestaria {
-  .make-contrast(@transparenciapresupuestaria_color);
   .work_styling(@transparenciapresupuestaria_color);
-  #intro {
-    .logo {
-      img {
-        width: 300px;
-        padding-top: 50px;
-      }
-    }
-  }
-  #info {
-    .btn {
-      .make-contrast(@transparenciapresupuestaria_color);
-      .make-contrast-border-button(@transparenciapresupuestaria_color);
-      background-color: transparent;
-      font-weight: bold;
-    }
-  }
 }
-
 #work.clic {
-  .make-contrast(@clic_color);
   .work_styling(@clic_color);
-  #intro {
-    .logo {
-      img {
-        width: 300px;
-        padding-top: 50px;      }
-    }
-  }
-  #info {
-    .btn {
-      .make-contrast(@clic_color);
-      .make-contrast-border-button(@clic_color);
-      background-color: transparent;
-      font-weight: bold;
-    }
-  }
 }
-
 #work.conilhospeda {
-  .make-contrast(@conilhospeda_color);
   .work_styling(@conilhospeda_color);
-  #intro {
-    .logo {
-      img {
-        width: 300px;
-        padding-top: 50px;      }
-    }
-  }
-  #info {
-    .btn {
-      .make-contrast(@conilhospeda_color);
-      .make-contrast-border-button(@conilhospeda_color);
-      background-color: transparent;
-      font-weight: bold;
-    }
-  }
 }
-
 #work.poletika {
-  .make-contrast(@poletika_color);
   .work_styling(@poletika_color);
-  #intro {
-    .logo {
-      img {
-        width: 300px;
-        padding-top: 50px;      }
-    }
-  }
-  #info {
-    .btn {
-      .make-contrast(@poletika_color);
-      .make-contrast-border-button(@poletika_color);
-      background-color: transparent;
-      font-weight: bold;
-    }
-  }
 }
-
 #work.icas {
-  .make-contrast(@icas_color);
   .work_styling(@icas_color);
-  #intro {
-    .logo {
-      img {
-        width: 300px;
-        padding-top: 50px;      }
-    }
-  }
-  #info {
-    .btn {
-      .make-contrast(@icas_color);
-      .make-contrast-border-button(@icas_color);
-      background-color: transparent;
-      font-weight: bold;
-    }
-  }
 }
-
 #work.festivalcine {
-  .make-contrast(@festivalcine_color);
   .work_styling(@festivalcine_color);
-  #intro {
-    background: #171717;
-    .logo {
-      img {
-        width: 300px;
-        padding-top: 50px;      }
-    }
-  }
-  #info {
-    .btn {
-      .make-contrast(@festivalcine_color);
-      .make-contrast-border-button(@festivalcine_color);
-      background-color: transparent;
-      font-weight: bold;
-    }
-  }
 }
-
 #work.aytoelpuerto {
-  .make-contrast(@aytoelpuerto_color);
   .work_styling(@aytoelpuerto_color);
-  #intro {
-    .logo {
-      img {
-        width: 300px;
-        -webkit-filter: grayscale(100%) brightness(100%);
-        filter: grayscale(100%) brightness(1000%);
-        padding-top: 50px;
-      }
-    }
-  }
-  #info {
-    .btn {
-      .make-contrast(@aytoelpuerto_color);
-      .make-contrast-border-button(@aytoelpuerto_color);
-      background-color: transparent;
-      font-weight: bold;
-    }
-  }
 }
-
 #work.decideoviedo {
-  .make-contrast(@decideoviedo_color);
   .work_styling(@decideoviedo_color);
-  #intro {
-    .logo {
-      img {
-        width: 300px;
-        padding-top: 50px;      }
-    }
-  }
-  #info {
-    .btn {
-      .make-contrast(@decideoviedo_color);
-      .make-contrast-border-button(@decideoviedo_color);
-      background-color: transparent;
-      font-weight: bold;
-    }
-  }
 }
-
 #work.decidearcos {
-  .make-contrast(@decidearcos_color);
   .work_styling(@decidearcos_color);
-  #intro {
-    .logo {
-      img {
-        width: 300px;
-        padding-top: 50px;      }
-    }
-  }
-  #info {
-    .btn {
-      .make-contrast(@decidearcos_color);
-      .make-contrast-border-button(@decidearcos_color);
-      background-color: transparent;
-      font-weight: bold;
-    }
-  }
 }
-
 #work.decidecadiz {
-  .make-contrast(@decidecadiz_color);
   .work_styling(@decidecadiz_color);
-  #intro {
-    .logo {
-      img {
-        width: 300px;
-        padding-top: 50px;      
-      }
-    }
-  }
-  #info {
-    .btn {
-      .make-contrast(@decidecadiz_color);
-      .make-contrast-border-button(@decidecadiz_color);
-      background-color: transparent;
-      font-weight: bold;
-    }
-  }
 }
-
 #work.decidesantiago {
-  .make-contrast(@decidesantiago_color);
   .work_styling(@decidesantiago_color);
-  #intro {
-    .logo {
-      img {
-        height: 150px;
-        padding-top: 50px;
-      }
-    }
-  }
-  #info {
-    .btn {
-      .make-contrast(@decidesantiago_color);
-      .make-contrast-border-button(@decidesantiago_color);
-      background-color: transparent;
-      font-weight: bold;
-    }
-  }
 }
-
 #work.foroparticipacion {
-  .make-contrast(@foroparticipacion_color);
   .work_styling(@foroparticipacion_color);
-  #intro {
-    .logo {
-      img {
-        width: 250px;
-        padding-top: 50px;
-      }
-    }
-  }
-  #info {
-    .btn {
-      .make-contrast(@foroparticipacion_color);
-      .make-contrast-border-button(@foroparticipacion_color);
-      background-color: transparent;
-      font-weight: bold;
-    }
-  }
-  #metrics .metric .value{
-    color: grey;
-  }
 }
-
 #work.dipuparticipacioncadiz {
-  .make-contrast(@dipuparticipacioncadiz_color);
   .work_styling(@dipuparticipacioncadiz_color);
-  #intro {
-    .logo {
-      img {
-        height: 160px;
-        width: auto;
-        -webkit-filter: grayscale(100%) brightness(100%);
-        filter: grayscale(100%) brightness(1000%);
-        padding-top: 50px;
-      }
-    }
-  }
-  #info {
-    .btn {
-      .make-contrast(@dipuparticipacioncadiz_color);
-      .make-contrast-border-button(@dipuparticipacioncadiz_color);
-      background-color: transparent;
-      font-weight: bold;
-    }
-  }
 }
-
 #work.aytoparticipacioncadiz {
-  .make-contrast(@aytoparticipacioncadiz_color);
   .work_styling(@aytoparticipacioncadiz_color);
-  #intro {
-    .logo {
-      img {
-        height: 110px;
-        width: auto;
-        padding-top: 50px;
-      }
-    }
-  }
-  #info {
-    .btn {
-      .make-contrast(@aytoparticipacioncadiz_color);
-      .make-contrast-border-button(@aytoparticipacioncadiz_color);
-      background-color: transparent;
-      font-weight: bold;
-    }
-  }
 }
-
 #work.formacionleyparticipacion {
-  .make-contrast(@formacionleyparticipacion_color);
   .work_styling(@formacionleyparticipacion_color);
-  #intro {
-    .logo {
-      img {
-        height: 110px;
-        width: auto;
-        padding-top: 50px;
-      }
-    }
-  }
-  #info {
-    .btn {
-      .make-contrast(@formacionleyparticipacion_color);
-      .make-contrast-border-button(@formacionleyparticipacion_color);
-      background-color: transparent;
-      font-weight: bold;
-    }
-  }
 }
-
 #work.sistemaparticipacion {
-  .make-contrast(@sistemaparticipacion_color);
   .work_styling(@sistemaparticipacion_color);
-  #intro {
-    .logo {
-      img {
-        height: 110px;
-        width: auto;
-        padding-top: 50px;
-      }
-    }
-  }
-  #info {
-    .btn {
-      .make-contrast(@sistemaparticipacion_color);
-      .make-contrast-border-button(@sistemaparticipacion_color);
-      background-color: transparent;
-      font-weight: bold;
-    }
-  }
 }
-
 #work.ciudadamable {
-  .make-contrast(@ciudadamable_color);
   .work_styling(@ciudadamable_color);
-  #intro {
-    .logo {
-      img {
-        padding-top: 50px;
-        width: auto;
-      }
-    }
-  }
-  #info {
-    .btn {
-      .make-contrast(@ciudadamable_color);
-      .make-contrast-border-button(@ciudadamable_color);
-      background-color: transparent;
-      font-weight: bold;
-    }
-  }
 }
-
 #work.presupuestomarbella {
-  .make-contrast(@presupuestomarbella_color);
   .work_styling(@presupuestomarbella_color);
-  #intro {
-    .logo {
-      img {
-        height: 130px;
-        width: auto;
-        padding-top: 50px;
-      }
-    }
-  }
-  #info {
-    .btn {
-      .make-contrast(@presupuestomarbella_color);
-      .make-contrast-border-button(@presupuestomarbella_color);
-      background-color: transparent;
-      font-weight: bold;
-    }
-  }
 }
-
 #work.presupuestomijas {
-  .make-contrast(@presupuestomijas_color);
   .work_styling(@presupuestomijas_color);
-  #intro {
-    .logo {
-      img {
-        height: 180px;
-        width: auto;
-        padding-top: 50px;
-      }
-    }
-  }
-  #info {
-    .btn {
-      .make-contrast(@presupuestomijas_color);
-      .make-contrast-border-button(@presupuestomijas_color);
-      background-color: transparent;
-      font-weight: bold;
-    }
-  }
 }
-
 #work.planintervencion {
-  .make-contrast(@planintervencion_color);
   .work_styling(@planintervencion_color);
-  #intro {
-    .logo {
-      img {
-        height: 150px;
-        width: auto;
-        -webkit-filter: grayscale(100%) brightness(100%);
-        filter: grayscale(100%) brightness(1000%);
-        padding-top: 55px;
-      }
-    }
-  }
-  #info {
-    .btn {
-      .make-contrast(@planintervencion_color);
-      .make-contrast-border-button(@planintervencion_color);
-      background-color: transparent;
-      font-weight: bold;
-    }
-  }
 }
-
 #work.presupuestotarifa {
-  .make-contrast(@presupuestotarifa_color);
   .work_styling(@presupuestotarifa_color);
-  #intro {
-    .logo {
-      img {
-        height: 130px;
-        width: auto;
-        padding-top: 50px;
-      }
-    }
-  }
-  #info {
-    .btn {
-      .make-contrast(@presupuestotarifa_color);
-      .make-contrast-border-button(@presupuestotarifa_color);
-      background-color: transparent;
-      font-weight: bold;
-    }
-  }
 }
 
 @media(max-width:767px) {
@@ -2495,6 +2011,10 @@ ul.list-inline {
 -----------------------------------------------------------------*/
 .m-0 {
   margin: 0;
+}
+.mbt-120 {
+  margin-top: 120px;
+  margin-bottom: 120px;
 }
 
 
@@ -2777,6 +2297,9 @@ ul.list-inline {
 }
 
 
+/* ----------------------------------------------------------------
+    [ 22. Cooperative page ]
+-----------------------------------------------------------------*/
 .cooperative {
   .slogan {
     padding-top: 120px;

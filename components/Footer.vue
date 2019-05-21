@@ -54,15 +54,11 @@
         <div class="col-md-8">
           <ul class="list-inline pull-right">
             <li>
-              <a href="/cooperativa">Cooperativa</a>
+              <a :href="localePath('cooperative')">Cooperativa</a>
             </li>
             <li class="footer-menu-divider">|</li>
             <li>
-              <a href="/lineas">Líneas</a>
-            </li>
-            <li class="footer-menu-divider">|</li>
-            <li>
-              <a href="/trabajos">Trabajos</a>
+              <a :href="localePath('projects')">Proyectos</a>
             </li>
             <li class="footer-menu-divider">|</li>
             <li>

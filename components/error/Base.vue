@@ -1,9 +1,9 @@
 <template>
   <div class="">
     <PageClaim :title="error" />
-    <div class="row bg-light m-0">
+    <div class="row m-0">
       <div class="container">
-        <div class="col-md-12 text-center">
+        <div class="col-md-12 text-center mbt-120">
           <h2>{{ oops }}</h2>
           <h3>{{ message }}</h3>
         </div>
