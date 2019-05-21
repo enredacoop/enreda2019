@@ -47,8 +47,8 @@ export default {
    ** Plugins to load before mounting the App
    */
   plugins: [
-    { src: '~/plugins/jquery.rss.js', ssr: false },
-    { src: '~/plugins/app.js', ssr: false },
+    { src: '~/plugins/vue-moment.js', ssr: false },
+    { src: '~/plugins/vue-bootstrap.js', ssr: false },
     { src: '~/plugins/vue-isotope', ssr: false }
   ],
 
@@ -95,7 +95,8 @@ export default {
         defaultLocale: 'es'
       }
     ],
-    'cookie-universal-nuxt'
+    'cookie-universal-nuxt',
+    '@nuxtjs/moment'
   ],
 
   /*
@@ -105,7 +106,6 @@ export default {
     /*
      ** You can extend webpack config here
      */
-    vendor: ['jquery', 'bootstrap'],
     plugins: [
       new webpack.ProvidePlugin({
         $: 'jquery',
