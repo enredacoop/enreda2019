@@ -81,7 +81,7 @@
         <div
           v-for="(work, index) in orderedWorks"
           :key="index"
-          :class="[work.category] + ' col-xs-12 col-sm-12 col-lg-4'"
+          :class="[work.category] + ' col-xs-12 col-sm-6 col-lg-4'"
         >
           <nuxt-link
             :to="

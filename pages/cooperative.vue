@@ -69,7 +69,6 @@
     "join_up_description": "If you want to work with us, and develop your employability by doing what you like most, <a href='mailto:info@enreda.coop' target='_blank'>get in touch with us</a>.",
     "collaborate_title": "Collaborate",
     "collaborate_description": "If you want to collaborate in social transformation projects, you can do it through <a href='https://www.loomio.org/g/VcGPxekv/socialinn' target='_blank'> our email or social networks</a>, a collective creation space focused on social innovation.",
-  
   }
 }
 </i18n>
