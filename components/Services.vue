@@ -20,8 +20,7 @@
             class="btn btn-hidden stretched-link"
             :to="
               localePath({
-                name: 'services-slug',
-                params: { slug: 'participaciondigital' }
+                name: 'services-participaciondigital'
               })
             "
           ></nuxt-link>
@@ -41,8 +40,7 @@
             class="btn btn-hidden stretched-link"
             :to="
               localePath({
-                name: 'services-slug',
-                params: { slug: 'participacionciudadana' }
+                name: 'services-participacionciudadana'
               })
             "
           ></nuxt-link>
@@ -64,8 +62,7 @@
             class="btn btn-hidden stretched-link"
             :to="
               localePath({
-                name: 'services-slug',
-                params: { slug: 'disenodesarrolloproducto' }
+                name: 'services-disenodesarrolloproducto'
               })
             "
           ></nuxt-link>
@@ -85,8 +82,7 @@
             class="btn btn-hidden stretched-link"
             :to="
               localePath({
-                name: 'services-slug',
-                params: { slug: 'analitica-bigdata' }
+                name: 'services-analitica-bigdata'
               })
             "
           ></nuxt-link>
@@ -106,8 +102,7 @@
             class="btn btn-hidden stretched-link"
             :to="
               localePath({
-                name: 'services-slug',
-                params: { slug: 'transparencia' }
+                name: 'services-transparencia'
               })
             "
           ></nuxt-link>
