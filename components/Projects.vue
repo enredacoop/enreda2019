@@ -199,7 +199,7 @@ export default {
   },
   computed: {
     orderedWorks: function() {
-      return _.orderBy(this.$store.state.data.works, 'favourite').reverse()
+      return _.orderBy(this.$store.state.works.items, 'favourite').reverse()
     }
   },
   mounted() {

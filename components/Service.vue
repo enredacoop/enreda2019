@@ -91,19 +91,24 @@ export default {
   },
   computed: {
     service() {
-      return this.$store.state.data.services.find(
-        service => service.id === this.slug
-      )
+      if (this.$i18n.locale === 'es') {
+        return this.$store.state.es.services.items.find(
+          service => service.id === this.slug
+        )
+      } else {
+        return this.$store.state.en.services.items.find(
+          service => service.id === this.slug
+        )
+      }
     },
     projects() {
-      const res = this.$store.state.data.works.find(project =>
-        project.category.includes(this.slug)
+      const res = []
+      res.push(
+        this.$store.state.works.items.find(work =>
+          work.category.includes(this.slug)
+        )
       )
-      if (typeof res === 'object') {
-        return [res]
-      } else {
-        return res
-      }
+      return res
     }
   },
   methods: {

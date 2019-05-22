@@ -198,9 +198,15 @@ export default {
   },
   computed: {
     project() {
-      return this.$store.state.data.projects.find(
-        project => project.id === this.slug
-      )
+      if (this.$i18n.locale === 'es') {
+        return this.$store.state.es.projects.items.find(
+          service => service.id === this.slug
+        )
+      } else {
+        return this.$store.state.en.projects.items.find(
+          service => service.id === this.slug
+        )
+      }
     }
   }
 }
