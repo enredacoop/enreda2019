@@ -3,7 +3,7 @@ import pkg from './package'
 
 export default {
   router: {
-    base: '/enreda2019/'
+    base: '/'
   },
   mode: 'universal',
 
