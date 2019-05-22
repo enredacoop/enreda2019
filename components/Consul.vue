@@ -1,10 +1,24 @@
+<i18n>
+{
+  "es": {
+    "title": "proyectos realizados con Consul",
+    "subtitle": "Software libre para la participación ciudadana.",
+    "button": "Solicita tu presupuesto"
+  },
+  "en": {
+    "title": "projects carried out with Consul",
+    "subtitle": "Free software for citizen participation.",
+    "button": "Request your budget"
+  }
+}
+</i18n>
 <template>
   <div class="container">
     <div>
       <b-jumbotron class="block-consul">
-        <h2><b>13</b> proyectos realizados con Consul</h2>
-        <p class="subtitle">Software libre para la participación ciudadana.</p>
-        <b-button variant="primary" href="#">SOLICITA TU PRESUPUESTO</b-button>
+        <h2><b>13</b> {{ $t('title') }}</h2>
+        <p class="subtitle">{{ $t('subtitle') }}</p>
+        <b-button variant="primary" href="#">{{ $t('button') }}</b-button>
         <img
           src="~/assets/images/logo_consul.png"
           alt="Consul"

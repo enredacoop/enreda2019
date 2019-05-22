@@ -1,8 +1,30 @@
+<i18n>
+{
+  "es": {
+    "services": "Servicios",
+    "service_1": "Participación Digital",
+    "service_2": "Participación Ciudadana",
+    "service_3": "Diseño y Desarrollo de Productos",
+    "service_4": "Analítica - Big Data",
+    "service_5": "Transparencia",
+    "service_6": "Edusi",
+  },
+  "en": {
+    "services": "Services",
+    "service_1": "Digital Participation",
+    "service_2": "Citizen Participation",
+    "service_3": "Design and Development of Products",
+    "service_4": "Analytic - Big Data",
+    "service_5": "Transparency",
+    "service_6": "Edusi",
+  }
+}
+</i18n>
 <template>
   <div class="container ptb-120">
     <div class="row">
       <div class="col-12 text-center">
-        <h2 class="section-heading">Servicios</h2>
+        <h2 class="section-heading">{{ $t('services') }}</h2>
       </div>
     </div>
     <div class="card-deck">
@@ -15,7 +37,7 @@
           />
         </div>
         <div class="card-body">
-          <h5 class="card-title text-center">Participación Digital</h5>
+          <h5 class="card-title text-center">{{ $t('service_1') }}</h5>
           <nuxt-link
             class="btn btn-hidden stretched-link"
             :to="
@@ -35,7 +57,7 @@
           />
         </div>
         <div class="card-body">
-          <h5 class="card-title text-center">Participación Ciudadana</h5>
+          <h5 class="card-title text-center">{{ $t('service_2') }}</h5>
           <nuxt-link
             class="btn btn-hidden stretched-link"
             :to="
@@ -56,7 +78,7 @@
         </div>
         <div class="card-body">
           <h5 class="card-title text-center">
-            Diseño y desarrollo de productos
+            {{ $t('service_3') }}
           </h5>
           <nuxt-link
             class="btn btn-hidden stretched-link"
@@ -77,7 +99,7 @@
           />
         </div>
         <div class="card-body">
-          <h5 class="card-title text-center">Analítica - Big data</h5>
+          <h5 class="card-title text-center">{{ $t('service_4') }}</h5>
           <nuxt-link
             class="btn btn-hidden stretched-link"
             :to="
@@ -97,7 +119,7 @@
           />
         </div>
         <div class="card-body">
-          <h5 class="card-title text-center">Transparencia</h5>
+          <h5 class="card-title text-center">{{ $t('service_5') }}</h5>
           <nuxt-link
             class="btn btn-hidden stretched-link"
             :to="
@@ -116,7 +138,7 @@
           />
         </div>
         <div class="card-body">
-          <h5 class="card-title text-center">edusi</h5>
+          <h5 class="card-title text-center">{{ $t('service_6') }}</h5>
           <a
             href="http://edusi.eu/"
             target="_blank"

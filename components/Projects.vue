@@ -2,6 +2,7 @@
 {
   "es": {
     "projects": "Proyectos",
+    "apply_filter": "Aplicar filtro",
     "show all": "Mostrar todos",
     "consul": "Consul",
     "presuspuestoparticipativo": "Presupuestos participativos",
@@ -21,22 +22,23 @@
   },
   "en": {
     "projects": "Projects",
-    "show all": "Mostrar todos",
+    "apply_filter": "Apply filter",
+    "show all": "Show all",
     "consul": "Consul",
-    "presuspuestoparticipativo": "Presupuestos participativos",
-    "transparencia": "Transparencia",
-    "participacion": "Participación",
-    "ayuntamiento": "Ayuntamientos",
-    "reglamento": "Reglamento",
-    "intervencion": "Intervención",
-    "analisisdatos": "Análisis de datos",
-    "desarrolloproducto": "Desarollo de producto",
-    "economiasocial": "Economía social",
-    "innovacionsocial": "Innovación social",
-    "desarrollotecnologico": "Desarrollo tecnológico",
-    "formacion": "Formación",
-    "participaciondigital": "Participación digital",
-    "planificacion": "Planificación"
+    "presuspuestoparticipativo": "Participatory budgets",
+    "transparencia": "Transparency",
+    "participacion": "Participation",
+    "ayuntamiento": "City Councils",
+    "reglamento": "Regulation",
+    "intervencion": "Intervention",
+    "analisisdatos": "Analysis of data",
+    "desarrolloproducto": "Product development",
+    "economiasocial": "Social economy",
+    "innovacionsocial": "Social innovation",
+    "desarrollotecnologico": "Technological development",
+    "formacion": "Training",
+    "participaciondigital": "Digital participation",
+    "planificacion": "Planning"
   }
 }
 </i18n>
@@ -46,7 +48,11 @@
     <b-container>
       <div>
         <div class="button-group text-center">
-          <b-dropdown id="dropdown-filter" text="Aplicar filtro" class="m-md-2">
+          <b-dropdown
+            id="dropdown-filter"
+            :text="$t('apply_filter')"
+            class="m-md-2"
+          >
             <b-dropdown-item
               v-for="(val, key) in option.getFilterData"
               :key="key"

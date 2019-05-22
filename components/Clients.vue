@@ -1,8 +1,22 @@
+<i18n>
+{
+  "es": {
+    "title": "Clientes",
+    "title_caption": "¿Pensando en un proyecto?",
+    "button": "Contacta"
+  },
+  "en": {
+    "title": "Clients",
+    "title_caption": "Thinking about a project?",
+    "button": "Contact"
+  }
+}
+</i18n>
 <template>
   <div id="clients" class="wrapper clients">
     <div class="row">
       <div class="col-12 text-center">
-        <h2 class="section-heading">Clientes</h2>
+        <h2 class="section-heading">{{ $t('title') }}</h2>
       </div>
     </div>
     <div class="container">
@@ -309,8 +323,8 @@
         </div>
         <div class="client contact">
           <p>
-            ¿Pensando en un proyecto?
-            <a href="#" class="btn btn-primary">Contacta</a>
+            {{ $t('title_caption') }}
+            <a href="#" class="btn btn-primary">{{ $t('button') }}</a>
           </p>
         </div>
       </div>

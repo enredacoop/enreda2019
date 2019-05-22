@@ -1,9 +1,19 @@
+<i18n>
+{
+  "es": {
+    "title": "Nuestra últimas noticias"
+  },
+  "en": {
+    "title": "Our latest news",
+  }
+}
+</i18n>
 <template>
   <div id="home-blog" class="wrapper">
     <div id="home-blog-title" class="container">
       <div class="row">
         <div class="col-12 text-center">
-          <h2>{{ data.newstitle }}</h2>
+          <h2>{{ $t('title') }}</h2>
         </div>
       </div>
     </div>
@@ -68,8 +78,6 @@ export default {
   data() {
     return {
       data: {
-        newstitle: 'Nuestras últimas noticias',
-
         feeds: [],
         dataReady: false
       }

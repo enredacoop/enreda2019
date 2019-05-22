@@ -1,10 +1,20 @@
+<i18n>
+{
+  "es": {
+    "claim": "Tecnología para la Transformación Social"
+  },
+  "en": {
+    "claim": "Technology for Social Transformation"
+  }
+}
+</i18n>
 <template>
   <div id="home-claim" class="wrapper">
     <div class="container">
       <div class="row">
         <div class="col-md-12 col-sm-12 col-xs-12 text-center">
           <div class="claim wow fadeInLeft">
-            <h2>{{ data.claim }}</h2>
+            <h2>{{ $t('claim') }}</h2>
             <div id="type-header"></div>
           </div>
         </div>
@@ -16,13 +26,6 @@
 <script>
 import TypeIt from 'typeit'
 export default {
-  data() {
-    return {
-      data: {
-        claim: 'Tecnología para la Transformación Social'
-      }
-    }
-  },
   mounted() {
     const myTypeItInstance = new TypeIt('#type-header')
       .options({

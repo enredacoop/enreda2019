@@ -1,17 +1,82 @@
 <i18n>
 {
   "es": {
-    "cooperative": "Cooperativa",
+    "title": "Cooperativa",
+    "slogan": "En ENREDA tenemos una mirada distinta de la realidad, de la tecnología y de la tecnología y de la comunicación; y eso suele ser el primer paso para poder transformar las cosas.",
+    "beginnings_title": "Nuestros principios",
+    "beginnings_subtitle": "...y si no te gustan, son los únicos que orgullosamente tenemos.", 
+    "beginnings_1_title": "Cooperativismo",
+    "beginnings_1_description": "Creemos en el valor social y democrático de las empresas. Mejor cooperar que competir.",
+    "beginnings_2_title": "Libertad tecnológica",
+    "beginnings_2_description": "Apostamos por el Software Libre y la libertad tecnológica en todos los ámbitos.",
+    "beginnings_3_title": "Compromiso social",
+    "beginnings_3_description": "Todas y todos podemos y debemos ser parte del cambio social para mejorar el mundo en el que vivimos. Desde lo local hacia lo global.",
+    "team_title": "Equipo",
+    "team_subtitle": "Las personas como centro de toda actividad empresarial.",
+    "partner": "Socio",
+    "trabajador": "Trabajador",
+    "trabajadora": "Trabajadora",
+    "becario": "Becario",
+    "colaborador": "Colaborador",
+    "colaboradora": "Colaboradora",
+    "where_are_title": "Dónde estamos",
+    "motivations_title": "Motivaciones de trabajar en red",
+    "motivations_subtitle": "Colaborar, cooperar y trabajar con otras organizaciones facilita el cumplimiento de nuestros objetivos y fines; así como intercambiar experiencias; aprender colectivamente; y apoyar otros proyectos con los que nos sentimos identificadas.",
+    "motivations_fiare":"Banca ética y cooperativa constituida como herramienta al servicio de la transformación social a través de la financiación de proyectos de la economía social y solidaria y la promoción de una cultura de la intermediación financiera, bajo los principios de la transparencia, la participación, la democracia y el crédito como derecho.",
+    "motivations_coop57": "Cooperativa de servicios financieros éticos y solidarios que tiene como objetivo principal, contribuir a la transformación social en positivo de nuestra economía y de nuestra sociedad.",
+    "motivations_reas": "Red de Redes de Economía Alternativa y Solidaria, compuesta por más de trescientas entidades que nos agrupamos en redes territoriales y sectoriales.",
+    "motivations_mssevilla": "Red de producción, distribución y consumo de bienes y servicios con criterios éticos, democráticos, ecológicos y solidarios. El objetivo de esta red es cubrir una parte significativa de las necesidades de sus participantes y desconectar, tanto como sea posible, la economía solidaria de la economía capitalista.",
+    "motivations_andalibre": "Empresas de Software Libre de Andalucía. Agrupación de proveedores de soluciones informáticas basadas en las tecnologías disruptivas del software libre y los estándares abiertos.",
+    "motivations_openkratio": "Asociación en pro de la transparencia de las administraciones públicas y la participación de la ciudadanía en el trabajo de las mismas.",
+    "motivations_faecta": "Federación Andaluza de Empresas Cooperativas de Trabajo Asociado.",
+    "motivations_somconnexio": "Cooperativa de consumo de productos de telecomunicaciones.",
+    "join_up_title": "Únete",
+    "join_up_description": "Si quieres trabajar con nosotras, y desarrollar tu empleabilidad haciendo lo que más te gusta, <a href='mailto:info@enreda.coop' target='_blank'>ponte en contacto con nosotras</a>.",
+    "collaborate_title": "Colabora",
+    "collaborate_description": "Si quieres colaborar en proyectos de transformación social, puedes hacerlo a través de <a href='https://www.loomio.org/g/VcGPxekv/socialinn' target='_blank'> nuestro correo electrónico o redes sociales</a>, un espacio de creación colectiva enfocado a la innovación social.",
   },
   "en": {
-    "cooperative": "Cooperative",
+    "title": "Cooperative",
+    "slogan": "In ENREDA we have a different view of reality, of technology and of technology and communication; and that is usually the first step to be able to transform things.",
+    "beginnings_title": "Our beginnings",
+    "beginnings_subtitle": "... and if you do not like them, they are the only ones we proudly have.",
+    "beginnings_1_title": "Cooperativism",
+    "beginnings_1_description": "We believe in the social and democratic value of companies. Better to cooperate than to compete.",
+    "beginnings_2_title": "Technological freedom",
+    "beginnings_2_description": "We bet on Free Software and technological freedom in all areas.",
+    "beginnings_3_title": "Social commitment",
+    "beginnings_3_description": "All of us can and must be part of the social change to improve the world in which we live. From the local to the global.",
+    "team_title": "Team",
+    "team_subtitle": "People as the center of all business activity.",
+    "partner": "Partner",
+    "trabajador": "Employee",
+    "trabajadora": "Employee",
+    "becario": "Scholar",
+    "colaborador": "Collaborator",
+    "colaboradora": "Collaborator",
+    "where_are_title": "Where we are",
+    "motivations_title": "Motivations of working in a network",
+    "motivations_subtitle": "Collaborating, cooperating and working with other organizations facilitates the fulfillment of our objectives and goals; as well as exchange experiences; learn collectively; and support other projects with which we feel identified.",
+    "motivations_fiare":"Ethical and cooperative banking constituted as a tool at the service of social transformation through the financing of projects of the social and solidarity economy and the promotion of a culture of financial intermediation, under the principles of transparency, participation, democracy and Credit as a right.",
+    "motivations_coop57": "Cooperative of ethical and solidarity financial services whose main objective is to contribute to the positive social transformation of our economy and our society.",
+    "motivations_reas": "Network of Alternative and Solidarity Economy Networks, composed of more than three hundred entities grouped into territorial and sectorial networks.",
+    "motivations_mssevilla": "Network of production, distribution and consumption of goods and services with ethical, democratic, ecological and solidarity criteria. The objective of this network is to cover a significant part of the needs of its participants and disconnect, as much as possible, the solidarity economy of the capitalist economy.",
+    "motivations_andalibre": "Free Software Companies of Andalusia. Grouping of IT solution providers based on disruptive technologies of free software and open standards.",
+    "motivations_openkratio": "Association for the transparency of public administrations and the participation of citizens in their work.",
+    "motivations_faecta": "Andalusian Federation of Cooperatives of Associated Work.",
+    "motivations_somconnexio": "Telecomunications Products Consumer Cooperative.",
+    "join_up_title": "Join up",
+    "join_up_description": "If you want to work with us, and develop your employability by doing what you like most, <a href='mailto:info@enreda.coop' target='_blank'>get in touch with us</a>.",
+    "collaborate_title": "Collaborate",
+    "collaborate_description": "If you want to collaborate in social transformation projects, you can do it through <a href='https://www.loomio.org/g/VcGPxekv/socialinn' target='_blank'> our email or social networks</a>, a collective creation space focused on social innovation.",
+  
   }
 }
 </i18n>
 
 <template>
   <div class="cooperative">
-    <PageClaim :title="$t('cooperative')" background="bg_1" />
+    <PageClaim :title="$t('title')" background="bg_1" />
     <div class="row bg-light m-0">
       <div class="container">
         <div class="col-md-12 text-center">
@@ -154,7 +219,7 @@
             <div
               v-for="(place, index) in offices.places"
               :key="index"
-              class="col-sm-3 col-xs-6"
+              class="col-sm-12 col-md-3 col-lg-3"
             >
               <h3 class="city">{{ place.city }}</h3>
               <template v-if="place.othercontact != ''">
@@ -241,39 +306,34 @@ export default {
     return {
       logo: '300x300fondogriscompleto.png',
       claim: 'Tecnología para la Transformación Social',
-      intro:
-        'En ENREDA tenemos una mirada distinta de la realidad, de la tecnología y de la comunicación; y eso suele ser el primer paso para poder transformar las cosas.',
+      intro: this.$i18n.t('slogan'),
       principles: {
-        title: 'Nuestros principios',
-        subtitle:
-          '...y si no te gustan, son los únicos que orgullosamente tenemos.',
+        title: this.$i18n.t('beginnings_title'),
+        subtitle: this.$i18n.t('beginnings_subtitle'),
         items: [
           {
-            title: 'Cooperativismo',
-            description:
-              'Creemos en el valor social y democrático de las empresas. Mejor cooperar que competir.',
+            title: this.$i18n.t('beginnings_title'),
+            description: this.$i18n.t('beginnings_1_description'),
             icon_prefix: 'fas',
             icon: 'puzzle-piece'
           },
           {
-            title: 'Libertad tecnológica',
-            description:
-              'Apostamos por el Software Libre y la libertad tecnológica en todos los ámbitos.',
+            title: this.$i18n.t('beginnings_2_title'),
+            description: this.$i18n.t('beginnings_2_description'),
             icon_prefix: 'fas',
             icon: 'unlock'
           },
           {
-            title: 'Compromiso social',
-            description:
-              'Todas y todos podemos y debemos ser parte del cambio social para mejorar el mundo en el que vivimos. Desde lo local hacia lo global.',
+            title: this.$i18n.t('beginnings_3_title'),
+            description: this.$i18n.t('beginnings_3_description'),
             icon_prefix: 'fas',
             icon: 'undo'
           }
         ]
       },
       team: {
-        title: 'Equipo',
-        subtitle: 'Las personas como centro de toda actividad empresarial.',
+        title: this.$i18n.t('team_title'),
+        subtitle: this.$i18n.t('team_subtitle'),
         people: [
           {
             name: 'Pablo García',
@@ -284,7 +344,7 @@ export default {
             twitter: 'pablov2',
             linkedin: '',
             github: 'pablovg2',
-            role: 'Socio'
+            role: this.$i18n.t('partner')
           },
           {
             name: 'José Rubén Garrido',
@@ -295,7 +355,7 @@ export default {
             twitter: 'joserubengar',
             linkedin: '',
             github: '',
-            role: 'Socio'
+            role: this.$i18n.t('partner')
           },
           {
             name: 'David Aurusa',
@@ -306,7 +366,7 @@ export default {
             twitter: 'aurusa',
             linkedin: '',
             github: '',
-            role: 'Socio'
+            role: this.$i18n.t('partner')
           },
           {
             name: 'Lucía Cano',
@@ -317,7 +377,7 @@ export default {
             twitter: '',
             linkedin: '',
             github: '',
-            role: 'Trabajadora'
+            role: this.$i18n.t('trabajadora')
           },
           {
             name: 'Arantza Lozano',
@@ -328,7 +388,7 @@ export default {
             twitter: '',
             linkedin: '',
             github: '',
-            role: 'Trabajadora'
+            role: this.$i18n.t('trabajadora')
           },
           {
             name: 'Alejandro Rodríguez',
@@ -339,7 +399,7 @@ export default {
             twitter: '',
             linkedin: 'https://www.linkedin.com/in/alerodrom/',
             github: 'alerodrom',
-            role: 'Trabajador'
+            role: this.$i18n.t('trabajador')
           },
           {
             name: 'Carlos Campos',
@@ -350,7 +410,7 @@ export default {
             twitter: '',
             linkedin: 'https://www.linkedin.com/in/carcamcue/',
             github: 'carcamcue',
-            role: 'Trabajador'
+            role: this.$i18n.t('trabajador')
           },
           {
             name: 'Manuel Barbadillo',
@@ -361,7 +421,7 @@ export default {
             twitter: '',
             linkedin: '',
             github: '',
-            role: 'Becario'
+            role: this.$i18n.t('becario')
           },
           {
             name: 'Azahara Martín',
@@ -372,7 +432,7 @@ export default {
             twitter: '4everAza',
             linkedin: '',
             github: '',
-            role: 'Trabajadora'
+            role: this.$i18n.t('trabajadora')
           },
           {
             name: 'Patricia García',
@@ -383,7 +443,7 @@ export default {
             twitter: '',
             linkedin: '',
             github: '',
-            role: 'Colaboradora'
+            role: this.$i18n.t('colaboradora')
           },
           {
             name: 'Soledad Maldonado',
@@ -394,7 +454,7 @@ export default {
             twitter: 'solemalpe',
             linkedin: '',
             github: '',
-            role: 'Colaboradora'
+            role: this.$i18n.t('colaboradora')
           },
           {
             name: 'Javier Moreno',
@@ -405,12 +465,12 @@ export default {
             twitter: 'javimoga',
             linkedin: '',
             github: '',
-            role: 'Colaborador'
+            role: this.$i18n.t('colaborador')
           }
         ]
       },
       offices: {
-        title: 'Dónde estamos',
+        title: this.$i18n.t('where_are_title'),
         places: [
           {
             city: 'Sevilla',
@@ -440,80 +500,69 @@ export default {
       },
 
       join: {
-        title: 'Únete',
-        description:
-          "Si quieres trabajar con nosotras, y desarrollar tu empleabilidad haciendo lo que más te gusta, <a href='mailto:info@enreda.coop' target='_blank'>ponte en contacto con nosotras</a>.",
+        title: this.$i18n.t('join_up_title'),
+        description: this.$i18n.t('join_up_description'),
         contact: 'Escríbenos',
         url: 'mailto:info@enreda.coop'
       },
 
       collaborate: {
-        title: 'Colabora',
-        description:
-          "Si quieres colaborar en proyectos de transformación social, puedes hacerlo a través de <a href='https://www.loomio.org/g/VcGPxekv/socialinn' target='_blank'> nuestro correo electrónico o redes sociales</a>, un espacio de creación colectiva enfocado a la innovación social.",
+        title: this.$i18n.t('collaborate_title'),
+        description: this.$i18n.t('collaborate_description'),
         contact: 'Deseo participar',
         url: ''
       },
 
       network: {
-        title: 'Motivaciones de trabajar en red',
-        subtitle:
-          'Colaborar, cooperar y trabajar con otras organizaciones facilita el cumplimiento de nuestros objetivos y fines; así como intercambiar experiencias; aprender colectivamente; y apoyar otros proyectos con los que nos sentimos identificadas.',
+        title: this.$i18n.t('motivations_title'),
+        subtitle: this.$i18n.t('motivations_subtitle'),
         nodes: [
           {
             name: 'Fiare',
             logo: '',
-            description:
-              'Banca ética y cooperativa constituida como herramienta al servicio de la transformación social a través de la financiación de proyectos de la economía social y solidaria y la promoción de una cultura de la intermediación financiera, bajo los principios de la transparencia, la participación, la democracia y el crédito como derecho.',
+            description: this.$i18n.t('motivations_fiare'),
             url: 'http://www.fiarebancaetica.coop'
           },
           {
             name: 'Coop57',
             logo: '',
-            description:
-              ' Cooperativa de servicios financieros éticos y solidarios que tiene como objetivo principal, contribuir a la transformación social en positivo de nuestra economía y de nuestra sociedad.',
+            description: this.$i18n.t('motivations_coop57'),
             url: 'http://www.coop57.coop'
           },
           {
             name: 'REAS',
             logo: '',
-            description:
-              'Red de Redes de Economía Alternativa y Solidaria, compuesta por más de trescientas entidades que nos agrupamos en redes territoriales y sectoriales.',
+            description: this.$i18n.t('motivations_reas'),
             url: 'http://www.economiasolidaria.org'
           },
           {
             name: 'MS Sevilla',
             logo: '',
-            description:
-              'Red de producción, distribución y consumo de bienes y servicios con criterios éticos, democráticos, ecológicos y solidarios.El objetivo de esta red es cubrir una parte significativa de las necesidades de sus participantes y desconectar, tanto como sea posible, la economía solidaria de la economía capitalista.',
+            description: this.$i18n.t('motivations_mssevilla'),
             url: 'http://mercadosocialsevilla.org'
           },
           {
             name: 'Andalibre',
             logo: '',
-            description:
-              'Empresas de Software Libre de Andalucía. Agrupación de proveedores de soluciones informáticas basadas en las tecnologías disruptivas del software libre y los estándares abiertos.',
+            description: this.$i18n.t('motivations_andalibre'),
             url: 'http://www.andalibre.org'
           },
           {
             name: 'Openkratio',
             logo: '',
-            description:
-              'Asociación en pro de la transparencia de las administraciones públcas y la participación de la ciudadanía en el trabajo de las mismas.',
+            description: this.$i18n.t('motivations_openkratio'),
             url: 'http://openkratio.org'
           },
           {
             name: 'Faecta',
             logo: '',
-            description:
-              'Federación Andaluza de Empresas Cooperativas de Trabajo Asociado.',
+            description: this.$i18n.t('motivations_faecta'),
             url: 'http://www.faecta.coop'
           },
           {
             name: 'Som Connexió',
             logo: '',
-            description:
-              'Cooperativa de consumo de productos de telecomunicaciones',
+            description: this.$i18n.t('motivations_somconnexio'),
             url: 'https://eticom.coop/es/'
           }
         ]

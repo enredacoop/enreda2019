@@ -1,3 +1,17 @@
+<i18n>
+{
+  "es": {
+    "counter_1": "días contribuyendo, desde la economía social y solidaria, a transformar la realidad social",
+    "counter_2": "proyectos realizados",
+    "counter_3": "administraciones públicas han contado con nuestros servicios"
+  },
+  "en": {
+    "counter_1": "days contributing, from the social and solidarity economy, to transform the social reality",
+    "counter_2": "fulfilled projects",
+    "counter_3": "public administrations have had our services"
+  }
+}
+</i18n>
 <template>
   <div id="home-days" class="wrapper-content">
     <div class="container">
@@ -6,22 +20,21 @@
           <div class="counter">
             <h2 class="count-title daysnumber"></h2>
             <p class="count-text ">
-              días contribuyendo, desde la economía social y solidaria, a
-              transformar la realidad social.
+              {{ $t('counter_1') }}
             </p>
           </div>
         </div>
         <div class="col-xs-12 col-sm-4">
           <div class="counter">
             <h2 class="count-title">+ 50</h2>
-            <p class="count-text ">proyectos realizados</p>
+            <p class="count-text ">{{ $t('counter_2') }}</p>
           </div>
         </div>
         <div class="col-xs-12 col-sm-4">
           <div class="counter">
             <h2 class="count-title">+ 30</h2>
             <p class="count-text ">
-              administraciones públicas han contado con nuestros servicios
+              {{ $t('counter_3') }}
             </p>
           </div>
         </div>

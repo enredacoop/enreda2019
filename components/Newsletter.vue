@@ -1,9 +1,23 @@
+<i18n>
+{
+  "es": {
+    "title": "Mantente informada/o",
+    "button": "Suscribirme",
+    "placeholder": "Introduce tu correo..."
+  },
+  "en": {
+    "title": "Stay up to date",
+    "button": "Subscribe",
+    "placeholder": "Enter your email..."
+  }
+}
+</i18n>
 <template>
   <div class="wrapper-newsletter bg-black">
     <div class="container">
       <div class="row">
         <div class="col-12 text-left">
-          <h4 class="d-inline-block">{{ data.newssubscribe }}</h4>
+          <h4 class="d-inline-block">{{ $t('title') }}</h4>
           <form
             id="mc-embedded-subscribe-form"
             action="//enreda.us3.list-manage.com/subscribe/post?u=279b072f7731d3c44289c5ffd&amp;id=f695e4a4d6"
@@ -31,13 +45,13 @@
                 type="email"
                 value
                 name="EMAIL"
-                placeholder="Introduce tu correo..."
+                :placeholder="$t('placeholder')"
                 class="required email"
               />
               <input
                 id="mc-embedded-subscribe"
                 type="submit"
-                value="Suscribirme"
+                :value="$t('button')"
                 name="subscribe"
                 class="button btn btn-primary"
               />
@@ -50,13 +64,5 @@
 </template>
 
 <script>
-export default {
-  data() {
-    return {
-      data: {
-        newssubscribe: 'Mantente informada/o'
-      }
-    }
-  }
-}
+export default {}
 </script>

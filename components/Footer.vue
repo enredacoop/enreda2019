@@ -1,3 +1,23 @@
+<i18n>
+{
+  "es": {
+    "site_name": "ENREDA Cooperativa",
+    "copyleft": "Creative Commons, Algunos Derechos Reservados",
+    "cooperative": "Cooperativa",
+    "projects": "Proyectos",
+    "blog": "Blog",
+    "legal_warning": "Aviso legal",
+  },
+  "en": {
+    "site_name": "ENREDA Cooperative",
+    "copyleft": "Creative Commons, Some Rights Reserved",
+    "cooperative": "Cooperative",
+    "projects": "Projects",
+    "blog": "Blog",
+    "legal_warning": "Legal warning",
+  }
+}
+</i18n>
 <template>
   <!-- footer -->
   <footer>
@@ -54,20 +74,22 @@
         <div class="col-md-8">
           <ul class="list-inline pull-right">
             <li>
-              <a :href="localePath('cooperative')">Cooperativa</a>
+              <a :href="localePath('cooperative')">{{ $t('cooperative') }}</a>
             </li>
             <li class="footer-menu-divider">|</li>
             <li>
-              <a :href="localePath('projects')">Proyectos</a>
+              <a :href="localePath('projects')">{{ $t('projects') }}</a>
             </li>
             <li class="footer-menu-divider">|</li>
             <li>
-              <a href="http://blog.enreda.coop" target="_blank">Blog</a>
+              <a href="http://blog.enreda.coop" target="_blank">
+                {{ $t('blog') }}
+              </a>
             </li>
             <li class="footer-menu-divider">|</li>
             <li></li>
             <li>
-              <a href="/legal">Aviso legal</a>
+              <a href="/legal">{{ $t('legal_warning') }}</a>
             </li>
           </ul>
           <br />
@@ -89,9 +111,9 @@
               alt="Logo de Enreda"
               width="50px"
             />
-            <strong>{{ footer.current_year }}, {{ footer.site_name }}</strong>
+            <strong>{{ footer.current_year }}, {{ $t('site_name') }}</strong>
             <br />
-            {{ footer.copyleft }}
+            {{ $t('copyleft') }}
           </p>
         </div>
       </div>
@@ -113,10 +135,8 @@ export default {
   data() {
     return {
       footer: {
-        site_name: 'ENREDA Cooperativa',
         site_name_short: 'Enreda',
         current_year: '2019',
-        copyleft: 'Creative Commons, Algunos Derechos Reservados',
         google_analytics: 'UA-18017706-1',
         phone: '+34 954 32 35 05',
         email: 'info@enreda.coop',
