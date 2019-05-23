@@ -79,7 +79,7 @@
     <div class="row bg-light m-0">
       <div class="container">
         <div class="col-md-12 text-center">
-          <h2 class="slogan">{{ intro }}</h2>
+          <h2 class="slogan">{{ $t('slogan') }}</h2>
         </div>
       </div>
     </div>
@@ -89,9 +89,9 @@
         <div class="container">
           <div class="row">
             <div class="col-sm-12 text-center">
-              <h2 class="section-heading">{{ principles.title }}</h2>
+              <h2 class="section-heading">{{ $t('beginnings_title') }}</h2>
               <h3 class="section-subheading text-muted">
-                {{ principles.subtitle }}
+                {{ $t('beginnings_subtitle') }}
               </h3>
             </div>
           </div>
@@ -110,8 +110,8 @@
                   class="white"
                 />
               </font-awesome-layers>
-              <h3 class="principle-heading">{{ item.title }}</h3>
-              <p class="text-muted">{{ item.description }}</p>
+              <h3 class="principle-heading">{{ $t(item.title) }}</h3>
+              <p class="text-muted">{{ $t(item.description) }}</p>
             </div>
           </div>
         </div>
@@ -121,9 +121,9 @@
         <div class="container">
           <div class="row">
             <div class="col-sm-12 text-center">
-              <h2 class="section-heading">{{ team.title }}</h2>
+              <h2 class="section-heading">{{ $t('team_title') }}</h2>
               <h3 class="section-subheading text-muted">
-                {{ team.subtitle }}
+                {{ $t('team_subtitle') }}
               </h3>
             </div>
           </div>
@@ -146,7 +146,7 @@
                 <p class="text-muted">{{ people.position }}</p>
                 <p>
                   <span class="label label-custom-primary">{{
-                    people.role
+                    $t(people.role)
                   }}</span>
                 </p>
                 <ul class="list-inline social-buttons">
@@ -210,7 +210,7 @@
         <div class="container">
           <div class="row">
             <div class="col-sm-12 text-center">
-              <h2 class="section-heading">{{ offices.title }}</h2>
+              <h2 class="section-heading">{{ $t('where_are_title') }}</h2>
               <h3 class="section-subheading text-muted"></h3>
             </div>
           </div>
@@ -228,31 +228,28 @@
                   }}</a>
                 </h5>
               </template>
-              <template v-else>
-                <h5 class="officename">
-                  <a :href="place.officeurl" target="_blank">{{
-                    place.officename
-                  }}</a>
-                </h5>
-                <p v-if="place.address != ''" class="text-muted">
-                  {{ place.address }}
-                  <br />
-                  {{ place.zipcode }}, {{ place.city }}
-                </p>
-              </template>
+              <h5 class="officename">
+                <a :href="place.officeurl" target="_blank">{{
+                  place.officename
+                }}</a>
+              </h5>
+              <p v-if="place.address != ''" class="text-muted">
+                {{ place.address }}
+                <br />
+                {{ place.zipcode }}, {{ place.city }}
+              </p>
             </div>
           </div>
         </div>
       </section>
 
       <section id="network">
-        <img src="/assets/images/cooperative/banner_network.png" />
         <div class="container">
           <div class="row">
             <div class="col-sm-12 text-center">
-              <h2 class="section-heading">{{ network.title }}</h2>
+              <h2 class="section-heading">{{ $t('motivations_title') }}</h2>
               <h3 class="section-subheading text-muted">
-                {{ network.subtitle }}
+                {{ $t('motivations_subtitle') }}
               </h3>
             </div>
           </div>
@@ -265,7 +262,7 @@
               <a :href="node.url" target="_blank">
                 <div class="node">
                   <h3>{{ node.name }}</h3>
-                  <p>{{ node.description }}</p>
+                  <p>{{ $t(node.description) }}</p>
                 </div>
               </a>
             </div>
@@ -277,15 +274,15 @@
         <div class="container">
           <div class="row justify-content-center">
             <div id="join" class="col-sm-12 col-md-4 col-lg-4 text-center">
-              <h5>{{ join.title }}</h5>
-              <p v-html="join.description"></p>
+              <h5>{{ $t('join_up_title') }}</h5>
+              <p v-html="$t('join_up_description')"></p>
             </div>
             <div
               id="collaborate"
               class="col-sm-12 col-md-4 col-lg-4 text-center"
             >
-              <h5>{{ collaborate.title }}</h5>
-              <p v-html="collaborate.description"></p>
+              <h5>{{ $t('collaborate_title') }}</h5>
+              <p v-html="$t('collaborate_description')"></p>
             </div>
           </div>
         </div>
@@ -303,36 +300,29 @@ export default {
   },
   data() {
     return {
-      logo: '300x300fondogriscompleto.png',
-      claim: 'Tecnología para la Transformación Social',
-      intro: this.$i18n.t('slogan'),
       principles: {
-        title: this.$i18n.t('beginnings_title'),
-        subtitle: this.$i18n.t('beginnings_subtitle'),
         items: [
           {
-            title: this.$i18n.t('beginnings_title'),
-            description: this.$i18n.t('beginnings_1_description'),
+            title: 'beginnings_1_title',
+            description: 'beginnings_1_description',
             icon_prefix: 'fas',
             icon: 'puzzle-piece'
           },
           {
-            title: this.$i18n.t('beginnings_2_title'),
-            description: this.$i18n.t('beginnings_2_description'),
+            title: 'beginnings_2_title',
+            description: 'beginnings_2_description',
             icon_prefix: 'fas',
             icon: 'unlock'
           },
           {
-            title: this.$i18n.t('beginnings_3_title'),
-            description: this.$i18n.t('beginnings_3_description'),
+            title: 'beginnings_3_title',
+            description: 'beginnings_3_description',
             icon_prefix: 'fas',
             icon: 'undo'
           }
         ]
       },
       team: {
-        title: this.$i18n.t('team_title'),
-        subtitle: this.$i18n.t('team_subtitle'),
         people: [
           {
             name: 'Pablo García',
@@ -343,7 +333,7 @@ export default {
             twitter: 'pablov2',
             linkedin: '',
             github: 'pablovg2',
-            role: this.$i18n.t('partner')
+            role: 'partner'
           },
           {
             name: 'José Rubén Garrido',
@@ -354,7 +344,7 @@ export default {
             twitter: 'joserubengar',
             linkedin: '',
             github: '',
-            role: this.$i18n.t('partner')
+            role: 'partner'
           },
           {
             name: 'David Aurusa',
@@ -365,7 +355,7 @@ export default {
             twitter: 'aurusa',
             linkedin: '',
             github: '',
-            role: this.$i18n.t('partner')
+            role: 'partner'
           },
           {
             name: 'Lucía Cano',
@@ -376,7 +366,7 @@ export default {
             twitter: '',
             linkedin: '',
             github: '',
-            role: this.$i18n.t('trabajadora')
+            role: 'trabajadora'
           },
           {
             name: 'Arantza Lozano',
@@ -387,7 +377,7 @@ export default {
             twitter: '',
             linkedin: '',
             github: '',
-            role: this.$i18n.t('trabajadora')
+            role: 'trabajadora'
           },
           {
             name: 'Alejandro Rodríguez',
@@ -398,7 +388,7 @@ export default {
             twitter: '',
             linkedin: 'https://www.linkedin.com/in/alerodrom/',
             github: 'alerodrom',
-            role: this.$i18n.t('trabajador')
+            role: 'trabajador'
           },
           {
             name: 'Carlos Campos',
@@ -409,7 +399,7 @@ export default {
             twitter: '',
             linkedin: 'https://www.linkedin.com/in/carcamcue/',
             github: 'carcamcue',
-            role: this.$i18n.t('trabajador')
+            role: 'trabajador'
           },
           {
             name: 'Manuel Barbadillo',
@@ -420,7 +410,7 @@ export default {
             twitter: '',
             linkedin: '',
             github: '',
-            role: this.$i18n.t('becario')
+            role: 'becario'
           },
           {
             name: 'Azahara Martín',
@@ -431,7 +421,7 @@ export default {
             twitter: '4everAza',
             linkedin: '',
             github: '',
-            role: this.$i18n.t('trabajadora')
+            role: 'trabajadora'
           },
           {
             name: 'Patricia García',
@@ -442,7 +432,7 @@ export default {
             twitter: '',
             linkedin: '',
             github: '',
-            role: this.$i18n.t('colaboradora')
+            role: 'colaboradora'
           },
           {
             name: 'Soledad Maldonado',
@@ -453,7 +443,7 @@ export default {
             twitter: 'solemalpe',
             linkedin: '',
             github: '',
-            role: this.$i18n.t('colaboradora')
+            role: 'colaboradora'
           },
           {
             name: 'Javier Moreno',
@@ -464,12 +454,11 @@ export default {
             twitter: 'javimoga',
             linkedin: '',
             github: '',
-            role: this.$i18n.t('colaborador')
+            role: 'colaborador'
           }
         ]
       },
       offices: {
-        title: this.$i18n.t('where_are_title'),
         places: [
           {
             city: 'Sevilla',
@@ -483,9 +472,9 @@ export default {
             city: 'Malaga',
             address: 'Trinidad Grund 7, 1º derecha',
             zipcode: '29001',
-            officename: 'malaga@enreda.coop',
+            officename: '',
             officeurl: '',
-            othercontact: ''
+            othercontact: 'malaga@enreda.coop'
           },
           {
             city: 'Madrid',
@@ -497,71 +486,54 @@ export default {
           }
         ]
       },
-
-      join: {
-        title: this.$i18n.t('join_up_title'),
-        description: this.$i18n.t('join_up_description'),
-        contact: 'Escríbenos',
-        url: 'mailto:info@enreda.coop'
-      },
-
-      collaborate: {
-        title: this.$i18n.t('collaborate_title'),
-        description: this.$i18n.t('collaborate_description'),
-        contact: 'Deseo participar',
-        url: ''
-      },
-
       network: {
-        title: this.$i18n.t('motivations_title'),
-        subtitle: this.$i18n.t('motivations_subtitle'),
         nodes: [
           {
             name: 'Fiare',
             logo: '',
-            description: this.$i18n.t('motivations_fiare'),
+            description: 'motivations_fiare',
             url: 'http://www.fiarebancaetica.coop'
           },
           {
             name: 'Coop57',
             logo: '',
-            description: this.$i18n.t('motivations_coop57'),
+            description: 'motivations_coop57',
             url: 'http://www.coop57.coop'
           },
           {
             name: 'REAS',
             logo: '',
-            description: this.$i18n.t('motivations_reas'),
+            description: 'motivations_reas',
             url: 'http://www.economiasolidaria.org'
           },
           {
             name: 'MS Sevilla',
             logo: '',
-            description: this.$i18n.t('motivations_mssevilla'),
+            description: 'motivations_mssevilla',
             url: 'http://mercadosocialsevilla.org'
           },
           {
             name: 'Andalibre',
             logo: '',
-            description: this.$i18n.t('motivations_andalibre'),
+            description: 'motivations_andalibre',
             url: 'http://www.andalibre.org'
           },
           {
             name: 'Openkratio',
             logo: '',
-            description: this.$i18n.t('motivations_openkratio'),
+            description: 'motivations_openkratio',
             url: 'http://openkratio.org'
           },
           {
             name: 'Faecta',
             logo: '',
-            description: this.$i18n.t('motivations_faecta'),
+            description: 'motivations_faecta',
             url: 'http://www.faecta.coop'
           },
           {
             name: 'Som Connexió',
             logo: '',
-            description: this.$i18n.t('motivations_somconnexio'),
+            description: 'motivations_somconnexio',
             url: 'https://eticom.coop/es/'
           }
         ]
