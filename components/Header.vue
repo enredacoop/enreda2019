@@ -7,7 +7,14 @@
     "blog": "Blog",
     "lang": "Español",
     "spanish": "Español",
-    "english": "English"
+    "english": "English",
+    "services": "Servicios",
+    "service_1": "Participación Digital",
+    "service_2": "Participación Ciudadana",
+    "service_3": "Diseño y Desarrollo de Productos",
+    "service_4": "Analítica - Big Data",
+    "service_5": "Transparencia",
+    "service_6": "Edusi",
   },
   "en": {
     "home": "Home",
@@ -16,7 +23,15 @@
     "blog": "Blog",
     "lang": "English",
     "spanish": "Español",
-    "english": "English"
+    "english": "English",
+    "services": "Services",
+    "service_1": "Digital Participation",
+    "service_2": "Citizen Participation",
+    "service_3": "Design and Development of Products",
+    "service_4": "Analytic - Big Data",
+    "service_5": "Transparency",
+    "service_6": "Edusi",
+
   }
 }
 </i18n>
@@ -43,6 +58,52 @@
           <b-nav-item href="#" :to="localePath('projects')">{{
             $t('projects')
           }}</b-nav-item>
+          <b-nav-item-dropdown :text="$t('services')" right>
+            <b-dropdown-item
+              :to="
+                localePath({
+                  name: 'services-participaciondigital'
+                })
+              "
+              >{{ $t('service_1') }}</b-dropdown-item
+            >
+            <b-dropdown-item
+              :to="
+                localePath({
+                  name: 'services-participacionciudadana'
+                })
+              "
+              >{{ $t('service_2') }}</b-dropdown-item
+            >
+
+            <b-dropdown-item
+              :to="
+                localePath({
+                  name: 'services-disenodesarrolloproducto'
+                })
+              "
+              >{{ $t('service_3') }}</b-dropdown-item
+            >
+            <b-dropdown-item
+              :to="
+                localePath({
+                  name: 'services-analitica-bigdata'
+                })
+              "
+              >{{ $t('service_4') }}</b-dropdown-item
+            >
+            <b-dropdown-item
+              :to="
+                localePath({
+                  name: 'services-transparencia'
+                })
+              "
+              >{{ $t('service_5') }}</b-dropdown-item
+            >
+            <b-dropdown-item href="http://edusi.eu/">{{
+              $t('service_6')
+            }}</b-dropdown-item>
+          </b-nav-item-dropdown>
           <b-nav-item href="http://blog.enreda.coop" target="_blank">{{
             $t('blog')
           }}</b-nav-item>

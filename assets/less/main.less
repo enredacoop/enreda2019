@@ -445,6 +445,30 @@ header {
 
       li.nav-item {
         margin: 0px 10px;
+        .dropdown button {
+          background: transparent;
+          font-size: 13px;
+          font-weight: bold;
+          border: 0px;
+          box-shadow: none;
+          padding: 0px;
+        }
+        .dropdown-menu {
+          border: 1px solid rgba(68, 63, 63, 0.12);
+          a {
+            color: #000 !important;
+          }
+          li:hover a {
+            background-color: @lightgrey_color;
+          }
+        }
+        &.dropdown.show {
+          background-color: @white_color;
+          border-radius: 3px;
+          a {
+            color: @black_color !important;
+          }
+        }
       }
     }
     
@@ -465,6 +489,9 @@ header {
         color: @black_color !important;
         background-color: @white_color;
         border-radius: 3px;
+        .dropdown button {
+          color: @black_color !important;
+        }
       }
       &.topnav {
         background: none;
@@ -479,12 +506,6 @@ header {
     button {
       span {
         background-color: @clean_color;
-      }
-    }
-    .dropdown-menu {
-      border: 0px;
-      a {
-        color: #000 !important;
       }
     }
     .languages {
@@ -538,11 +559,19 @@ header {
         -webkit-transition: all ease .3s;
         transition: all ease .3s;
       }
-
+      .dropdown {
+        button {
+          color: @black_color;
+        }
+      }
       .nav-item:hover a.nav-link {
         background: @black_color !important;
         color: @white_color !important;
+        .dropdown button {
+          color: @white_color !important;
+        }
       }
+      
       a, a.nav-link {
         color: @black_color !important;
       }
