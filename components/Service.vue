@@ -121,12 +121,36 @@ export default {
       }
     },
     projects() {
+      const tags = []
       const res = []
-      res.push(
-        this.$store.state.works.items.find(work =>
-          work.category.includes(this.slug)
+      const newThis = this
+      switch (this.slug) {
+        case 'participaciondigital':
+          tags.push('participaciondigital')
+          tags.push('consul')
+          break
+        case 'participacionciudadana':
+          tags.push('participacion')
+          tags.push('reglamento')
+          tags.push('intervencion')
+          break
+        case 'disenodesarrolloproducto':
+          tags.push('desarrolloproducto')
+          break
+        case 'analitica-bigdata':
+          tags.push('analisisdatos')
+          break
+        case 'transparencia':
+          tags.push('transparencia')
+          break
+      }
+      tags.forEach(function(element) {
+        res.push(
+          newThis.$store.state.works.items.find(work =>
+            work.category.includes(element)
+          )
         )
-      )
+      })
       return res
     }
   },

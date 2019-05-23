@@ -12,7 +12,7 @@
             :icon="['fas', 'mobile-alt']"
             transform="shrink-6"
             class="black"
-          />º
+          />
         </div>
         <div class="card-body">
           <h5 class="card-title text-center">{{ $t('services.service_1') }}</h5>
