@@ -13,7 +13,7 @@
 </template>
 
 <script>
-import PageClaim from '~/components/PageClaim.vue'
+import PageClaim from '~/components/layout/PageClaim.vue'
 
 export default {
   components: {

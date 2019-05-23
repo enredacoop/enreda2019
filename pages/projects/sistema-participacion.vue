@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import Project from '~/components/Project.vue'
+import Project from '~/components/project/Project.vue'
 
 export default {
   components: {

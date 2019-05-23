@@ -10,12 +10,12 @@
 </template>
 
 <script>
-import Services from '~/components/Services.vue'
-import Consul from '~/components/Consul.vue'
-import Counters from '~/components/Counters.vue'
-import News from '~/components/News.vue'
-import HomeClaim from '~/components/HomeClaim.vue'
-import Clients from '~/components/Clients.vue'
+import Services from '~/components/service/Services.vue'
+import Consul from '~/components/layout/Consul.vue'
+import Counters from '~/components/layout/Counters.vue'
+import News from '~/components/layout/News.vue'
+import HomeClaim from '~/components/layout/HomeClaim.vue'
+import Clients from '~/components/layout/Clients.vue'
 
 export default {
   components: {

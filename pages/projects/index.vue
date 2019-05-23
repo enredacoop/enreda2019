@@ -17,8 +17,8 @@
 </template>
 
 <script>
-import Projects from '~/components/Projects'
-import PageClaim from '~/components/PageClaim'
+import Projects from '~/components/project/Projects.vue'
+import PageClaim from '~/components/layout/PageClaim.vue'
 
 export default {
   components: {

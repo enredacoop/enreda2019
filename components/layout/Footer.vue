@@ -124,8 +124,8 @@
 </template>
 
 <script>
-import Cookies from '~/components/Cookies.vue'
-import Newsletter from '~/components/Newsletter.vue'
+import Cookies from '~/components/layout/Cookies.vue'
+import Newsletter from '~/components/layout/Newsletter.vue'
 
 export default {
   components: {

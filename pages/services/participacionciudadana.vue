@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import Service from '~/components/Service.vue'
+import Service from '~/components/service/Service.vue'
 
 export default {
   components: {
