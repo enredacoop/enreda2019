@@ -70,11 +70,6 @@ export default {
       myTypeItInstance.reset()
       myTypeItInstance.go()
     }, 60000)
-
-    /*
-        'Participa en las decisiones de tu ciudad',
-        'Consulta los presupuestos de tu ayuntamiento',
-        'Lanza propuestas ciudadanas' */
   }
 }
 </script>

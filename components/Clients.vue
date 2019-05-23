@@ -2,12 +2,10 @@
 {
   "es": {
     "title": "Clientes",
-    "title_caption": "¿Pensando en un proyecto?",
     "button": "Contacta"
   },
   "en": {
     "title": "Clients",
-    "title_caption": "Thinking about a project?",
     "button": "Contact"
   }
 }
@@ -22,308 +20,139 @@
     <div class="container">
       <div class="wrapper">
         <div class="client">
+          <img class="logo" src="~/assets/images/clients/junta_andalucia.png" />
+        </div>
+        <div class="client">
           <img
             class="logo"
-            src="https://geographica.com/wp-content/uploads/2018/12/mastercard.png"
+            src="~/assets/images/clients/comunidad_madrid.png"
           />
         </div>
         <div class="client">
           <img
             class="logo"
-            src="https://geographica.com/wp-content/uploads/2016/06/G16_logo-telefonica.png"
+            src="~/assets/images/clients/ayuntamiento_sevilla.png"
           />
         </div>
         <div class="client">
           <img
             class="logo"
-            src="https://geographica.com/wp-content/uploads/2018/03/cliente-vodafone.png"
+            src="~/assets/images/clients/ayuntamiento_santiago.png"
           />
         </div>
         <div class="client">
           <img
             class="logo"
-            src="https://geographica.com/wp-content/uploads/2018/12/repsol.png"
+            src="~/assets/images/clients/ayuntamiento_valencia.png"
           />
         </div>
         <div class="client">
           <img
             class="logo"
-            src="https://geographica.com/wp-content/uploads/2017/07/G16_logo-cepsa.png"
+            src="~/assets/images/clients/ayuntamiento_oviedo.png"
+          />
+        </div>
+        <div class="client">
+          <img class="logo" src="~/assets/images/clients/oxfan_intermon.png" />
+        </div>
+        <div class="client">
+          <img class="logo" src="~/assets/images/clients/poletika.png" />
+        </div>
+        <div class="client">
+          <img
+            class="logo"
+            src="~/assets/images/clients/instituto_cervantes.png"
+          />
+        </div>
+        <div class="client">
+          <img class="logo" src="~/assets/images/clients/aneca.png" />
+        </div>
+        <div class="client">
+          <img class="logo" src="~/assets/images/clients/cje.png" />
+        </div>
+        <div class="client">
+          <img class="logo" src="~/assets/images/clients/agencia_idea.png" />
+        </div>
+        <div class="client">
+          <img class="logo" src="~/assets/images/clients/medialab_ugr.png" />
+        </div>
+        <div class="client">
+          <img
+            class="logo"
+            src="~/assets/images/clients/universidad_la_laguna.png"
+          />
+        </div>
+        <div class="client">
+          <img class="logo" src="~/assets/images/clients/som_energia.png" />
+        </div>
+        <div class="client">
+          <img class="logo" src="~/assets/images/clients/famp.png" />
+        </div>
+        <div class="client">
+          <img class="logo" src="~/assets/images/clients/ciecode.png" />
+        </div>
+        <div class="client">
+          <img class="logo" src="~/assets/images/clients/innoves.png" />
+        </div>
+        <div class="client">
+          <img class="logo" src="~/assets/images/clients/faecta.png" />
+        </div>
+        <div class="client">
+          <img class="logo" src="~/assets/images/clients/famsi.png" />
+        </div>
+        <div class="client">
+          <img class="logo" src="~/assets/images/clients/reas.png" />
+        </div>
+        <div class="client">
+          <img
+            class="logo"
+            src="~/assets/images/clients/ayuntamiento_cordoba.png"
           />
         </div>
         <div class="client">
           <img
             class="logo"
-            src="https://geographica.com/wp-content/uploads/2018/12/renault.png"
+            src="~/assets/images/clients/ayuntamiento_granada.png"
           />
         </div>
         <div class="client">
           <img
             class="logo"
-            src="https://geographica.com/wp-content/uploads/2018/12/real-madrid.png"
+            src="~/assets/images/clients/ayuntamiento_cadiz.png"
           />
         </div>
         <div class="client">
           <img
             class="logo"
-            src="https://geographica.com/wp-content/uploads/2018/12/sorigue.png"
+            src="~/assets/images/clients/ayuntamiento_marbella.png"
           />
         </div>
         <div class="client">
           <img
             class="logo"
-            src="https://geographica.com/wp-content/uploads/2018/12/dpd.png"
+            src="~/assets/images/clients/ayuntamiento_mijas.png"
           />
         </div>
         <div class="client">
           <img
             class="logo"
-            src="https://geographica.com/wp-content/uploads/2017/07/G16_logo-bbvadata.png"
+            src="~/assets/images/clients/ayuntamiento_utrera.png"
           />
         </div>
         <div class="client">
           <img
             class="logo"
-            src="https://geographica.com/wp-content/uploads/2016/07/G16_logo-carto.png"
+            src="~/assets/images/clients/diputacion_malaga.png"
           />
         </div>
         <div class="client">
           <img
             class="logo"
-            src="https://geographica.com/wp-content/uploads/2017/07/G16_logo-posterscope.png"
-          />
-        </div>
-        <div class="client">
-          <img
-            class="logo"
-            src="https://geographica.com/wp-content/uploads/2016/07/G16_logo-elcorteingles.png"
-          />
-        </div>
-        <div class="client">
-          <img
-            class="logo"
-            src="https://geographica.com/wp-content/uploads/2018/12/dhl.png"
-          />
-        </div>
-        <div class="client">
-          <img
-            class="logo"
-            src="https://geographica.com/wp-content/uploads/2018/12/ayto-madrid.png"
-          />
-        </div>
-        <div class="client">
-          <img
-            class="logo"
-            src="https://geographica.com/wp-content/uploads/2016/06/G16_logo-unesco.png"
-          />
-        </div>
-        <div class="client">
-          <img
-            class="logo"
-            src="https://geographica.com/wp-content/uploads/2016/06/G16_logo-ogilvy.png"
-          />
-        </div>
-        <div class="client">
-          <img
-            class="logo"
-            src="https://geographica.com/wp-content/uploads/2016/06/G16_logo-rielcano.png"
-          />
-        </div>
-        <div class="client">
-          <img
-            class="logo"
-            src="https://geographica.com/wp-content/uploads/2016/06/G16_logo-eesa.png"
-          />
-        </div>
-        <div class="client">
-          <img
-            class="logo"
-            src="https://geographica.com/wp-content/uploads/2016/06/G16_logo-cdmx.png"
-          />
-        </div>
-        <div class="client">
-          <img
-            class="logo"
-            src="https://geographica.com/wp-content/uploads/2016/06/G16_logo-Europeanc.png"
-          />
-        </div>
-        <div class="client">
-          <img
-            class="logo"
-            src="https://geographica.com/wp-content/uploads/2017/07/G16_logo-aqualia.png"
-          />
-        </div>
-        <div class="client">
-          <img
-            class="logo"
-            src="https://geographica.com/wp-content/uploads/2016/07/G16_logo-acciona.png"
-          />
-        </div>
-        <div class="client">
-          <img
-            class="logo"
-            src="https://geographica.com/wp-content/uploads/2017/07/G16_logo-axa.png"
-          />
-        </div>
-        <div class="client">
-          <img
-            class="logo"
-            src="https://geographica.com/wp-content/uploads/2016/06/G16_logo-uicn.png"
-          />
-        </div>
-        <div class="client">
-          <img
-            class="logo"
-            src="https://geographica.com/wp-content/uploads/2016/07/G16_logo-gobespana.png"
-          />
-        </div>
-        <div class="client">
-          <img
-            class="logo"
-            src="https://geographica.com/wp-content/uploads/2016/06/G16_logo-drivethru.png"
-          />
-        </div>
-        <div class="client">
-          <img
-            class="logo"
-            src="https://geographica.com/wp-content/uploads/2016/06/G16_logo-millennium.png"
-          />
-        </div>
-        <div class="client">
-          <img
-            class="logo"
-            src="https://geographica.com/wp-content/uploads/2017/07/G16_logo-kendu.png"
-          />
-        </div>
-        <div class="client">
-          <img
-            class="logo"
-            src="https://geographica.com/wp-content/uploads/2017/07/G16_logo-O-HB.png"
-          />
-        </div>
-        <div class="client">
-          <img
-            class="logo"
-            src="https://geographica.com/wp-content/uploads/2016/06/G16_logo-everis.png"
-          />
-        </div>
-        <div class="client">
-          <img
-            class="logo"
-            src="https://geographica.com/wp-content/uploads/2016/06/G16_logo-dipusevilla.png"
-          />
-        </div>
-        <div class="client">
-          <img
-            class="logo"
-            src="https://geographica.com/wp-content/uploads/2016/06/G16_logo-uned.png"
-          />
-        </div>
-        <div class="client">
-          <img
-            class="logo"
-            src="https://geographica.com/wp-content/uploads/2016/06/G16_logo-fantasyflight.png"
-          />
-        </div>
-        <div class="client">
-          <img
-            class="logo"
-            src="https://geographica.com/wp-content/uploads/2016/06/G16_logo-unisevilla.png"
-          />
-        </div>
-        <div class="client">
-          <img
-            class="logo"
-            src="https://geographica.com/wp-content/uploads/2016/06/G16_logo-upo.png"
-          />
-        </div>
-        <div class="client">
-          <img
-            class="logo"
-            src="https://geographica.com/wp-content/uploads/2016/07/G16_logo-emasesa.png"
-          />
-        </div>
-        <div class="client">
-          <img
-            class="logo"
-            src="https://geographica.com/wp-content/uploads/2016/06/G16_logo-csic.png"
-          />
-        </div>
-        <div class="client">
-          <img
-            class="logo"
-            src="https://geographica.com/wp-content/uploads/2016/06/G16_logo-unitubingen.png"
-          />
-        </div>
-        <div class="client">
-          <img
-            class="logo"
-            src="https://geographica.com/wp-content/uploads/2016/07/G16_logo-uab.png"
-          />
-        </div>
-        <div class="client">
-          <img
-            class="logo"
-            src="https://geographica.com/wp-content/uploads/2016/06/G16_logo-iat.png"
-          />
-        </div>
-        <div class="client">
-          <img
-            class="logo"
-            src="https://geographica.com/wp-content/uploads/2016/06/G16_logo-racspa.png"
-          />
-        </div>
-        <div class="client">
-          <img
-            class="logo"
-            src="https://geographica.com/wp-content/uploads/2016/06/G16_logo-ay-sevilla.png"
-          />
-        </div>
-        <div class="client">
-          <img
-            class="logo"
-            src="https://geographica.com/wp-content/uploads/2016/07/G16_logo-easp.png"
-          />
-        </div>
-        <div class="client">
-          <img
-            class="logo"
-            src="https://geographica.com/wp-content/uploads/2016/07/G16_logo-dipuburgos.png"
-          />
-        </div>
-        <div class="client">
-          <img
-            class="logo"
-            src="https://geographica.com/wp-content/uploads/2016/06/G16_logo-eddea.png"
-          />
-        </div>
-        <div class="client">
-          <img
-            class="logo"
-            src="https://geographica.com/wp-content/uploads/2016/06/G16_logo-soomedialabs.png"
-          />
-        </div>
-        <div class="client">
-          <img
-            class="logo"
-            src="https://geographica.com/wp-content/uploads/2016/06/G16_logo-edge.png"
-          />
-        </div>
-        <div class="client">
-          <img
-            class="logo"
-            src="https://geographica.com/wp-content/uploads/2016/06/G16_logo-servinform.png"
-          />
-        </div>
-        <div class="client">
-          <img
-            class="logo"
-            src="https://geographica.com/wp-content/uploads/2016/07/G16_logo-aljarafesa.png"
+            src="~/assets/images/clients/diputacion_cadiz.png"
           />
         </div>
         <div class="client contact">
           <p>
-            {{ $t('title_caption') }}
             <a href="#" class="btn btn-primary">{{ $t('button') }}</a>
           </p>
         </div>
