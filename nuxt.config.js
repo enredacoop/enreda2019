@@ -85,14 +85,23 @@ export default {
         locales: [
           {
             code: 'en',
-            iso: 'en-GB'
+            iso: 'en-GB',
+            file: 'en-GB.js'
           },
           {
             code: 'es',
-            iso: 'es-ES'
+            iso: 'es-ES',
+            file: 'es-ES.js'
           }
         ],
-        defaultLocale: 'es'
+        defaultLocale: 'es',
+        vueI18n: {
+          fallbackLocale: 'es',
+          messages: {
+            en: require('./locales/en-GB.json'),
+            es: require('./locales/es-ES.json')
+          }
+        }
       }
     ],
     'cookie-universal-nuxt',

@@ -1,0 +1,18 @@
+{
+  "home": "Inicio",
+  "cooperative": "Cooperativa",
+  "projects": "Proyectos",
+  "blog": "Blog",
+  "lang": "Español",
+  "spanish": "Español",
+  "english": "English",
+  "services": {
+    "services": "Servicios",
+    "service_1": "Participación Digital",
+    "service_2": "Participación Ciudadana",
+    "service_3": "Diseño y Desarrollo de Productos",
+    "service_4": "Analítica - Big Data",
+    "service_5": "Transparencia",
+    "service_6": "Edusi"
+  }
+}
