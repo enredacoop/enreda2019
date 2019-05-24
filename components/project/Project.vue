@@ -72,6 +72,11 @@
                 {{ project.description }}
               </div>
             </div>
+            <div class="col-12 text-center">
+              <div class="project-description">
+                <p v-html="project.body"></p>
+              </div>
+            </div>
             <div class="col-12">
               <template v-if="project.media.length > 0">
                 <section id="media" class="media-line">

@@ -159,7 +159,11 @@
         </div>
         <div class="client contact">
           <p>
-            <a href="#" class="btn btn-primary">{{ $t('button') }}</a>
+            <nuxt-link
+              :to="localePath({ name: 'contact' })"
+              class="btn btn-primary"
+              >{{ $t('button') }}</nuxt-link
+            >
           </p>
         </div>
       </div>

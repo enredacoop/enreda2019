@@ -5,6 +5,7 @@ export const state = () => ({
       title: 'TIPI Ciudadano',
       class: 'tipi',
       subtitle: 'Transparencia, Información, Participación e Incidencia.',
+      body: "Ejemplo de body con <a href='/'>URL</a>.",
       description:
         'Proyecto que pretende fortalecer las capacidades de la sociedad civil, para incidir en los procesos de toma de decisión política y en la generación de un debate público informado sobre la pobreza y la justicia social en España.',
       logo: 'logo-tipi.png',
@@ -129,6 +130,7 @@ export const state = () => ({
       title: 'LaCentral.coop',
       class: 'lacentralcoop',
       subtitle: 'Productos y servicios cooperativos.',
+      body: "Ejemplo de body con <a href='/'>URL</a>.",
       description:
         'Plataforma digital que permite el consumo responsable de productos y servicios cooperativos. Además permite la intercooperación de sus usuarios y entidades desde un sistema altamente novedoso y sencillo de usar. Pensada para el valor más importante de las cooperativas: las personas.',
       logo: 'logo-lacentralcoop.png',
@@ -232,6 +234,7 @@ export const state = () => ({
       title: 'Somos.coop',
       class: 'somoscoop',
       subtitle: 'Somos cooperativistas, usa la marca coop.',
+      body: "Ejemplo de body con <a href='/'>URL</a>.",
       description:
         'Espacio web para difundir la marca cooperativa. Principios, identidad y recursos del cooperativismo.',
       logo: 'logo-somoscoop.png',
@@ -289,6 +292,7 @@ export const state = () => ({
       title: 'En la Órbita',
       class: 'enlaorbita',
       subtitle: 'Crea tu sitio web de forma fácil',
+      body: "Ejemplo de body con <a href='/'>URL</a>.",
       description:
         '¿Necesitas que te encuentren? Ponte en la órbita digital y asume el control de tu empresa u organización en internet. En la órbita es una herramienta online para mejorar la presencia digital de empresas y organizaciones. Tu entidad en la red de forma sencilla, accesible y profesional.',
       logo: 'logo-elo.png',
@@ -376,6 +380,7 @@ export const state = () => ({
       title: 'Social to Crowd',
       class: 'socialtocrowd',
       subtitle: 'El crowdfunding de las cosas',
+      body: "Ejemplo de body con <a href='/'>URL</a>.",
       description:
         'Plataforma para facilitar la solidaridad directa entre organizaciones y personas, sin la dependencia del dinero y generando un nuevo valor en la reutilización de las cosas.',
       logo: 'logo-stc.png',
@@ -485,6 +490,7 @@ export const state = () => ({
       title: 'Transparencia Presupuestaria',
       class: 'transparenciapresupuestaria',
       subtitle: 'Visualiza su presupuesto',
+      body: "Ejemplo de body con <a href='/'>URL</a>.",
       description:
         'Web de visualización de datos en la que se intenta hacer comprensible el presupuesto de cualquier entidad. Además se compara con años anteriores para generar referencias y contextos en los datos. Una oportunidad para empezar a explicar los números.',
       logo: 'logo-tp.png',
@@ -551,6 +557,7 @@ export const state = () => ({
       class: 'clic',
       subtitle:
         'Comercio online, internacionalización e integración de sistemas',
+      body: "Ejemplo de body con <a href='/'>URL</a>.",
       description:
         'Proyecto para la comercialización de productos del Instituto Cervantes en sus centros repartidos por el mundo. Un ejemplo de internacionalización y gestión coordinada de la información a través de Internet.',
       logo: 'logo-cervantes.png',
@@ -633,6 +640,7 @@ export const state = () => ({
       title: 'Conil Hospeda',
       class: 'conilhospeda',
       subtitle: 'El lugar donde empiezan tus vacaciones',
+      body: "Ejemplo de body con <a href='/'>URL</a>.",
       description:
         'Proyecto de desarrollo de un motor propio de reservas online para los alojamientos de Conil de la Frontera (Cádiz), con su toque de economía social.',
       logo: 'logo-conilhospeda.svg',
@@ -743,6 +751,7 @@ export const state = () => ({
       title: 'Poletika',
       class: 'poletika',
       subtitle: 'Vigilancia y presión ciudadana para el cambio político',
+      body: "Ejemplo de body con <a href='/'>URL</a>.",
       description:
         'Proyecto que pretende vigilar y presionar a los partidos políticos para que las personas estén en el centro de las políticas y alcanzar una sociedad más justa y menos desigual, vigilando el trabajo parlamentario y ejecutivo a través de organizaciones, plataformas y movimientos de la sociedad civil.',
       logo: 'logo-poletika.png',
@@ -851,6 +860,7 @@ export const state = () => ({
       title: 'ICAS',
       class: 'icas',
       subtitle: 'Instituto de la Cultura y las Artes de Sevilla',
+      body: "Ejemplo de body con <a href='/'>URL</a>.",
       description:
         'El portal institucional del Instituto de la Cultura y de las Artes que depende del Ayuntamiento de Sevilla, avanza desde un diseño descentralizado de espacios y áreas, para agrupar en un mismo portal todas las sedes culturales dependientes del ICAS. Este portal desarrollado sobre Plone/Zope permite la gestión de múltiples micro-sites y de la gestión completa de la comunicación del ICAS desde un mismo portal web.',
       logo: 'logo-icas.png',
@@ -930,6 +940,7 @@ export const state = () => ({
       title: 'Festival de Sevilla',
       class: 'festivalcine',
       subtitle: 'Festival de Sevilla de Cine Europeo',
+      body: "Ejemplo de body con <a href='/'>URL</a>.",
       description:
         'Portal del Festival de Cine Europeo de Sevilla, que tiene como objetivo promover y difundir la cinematografía europea, estableciéndose como un lugar de encuentro para los talentos europeos de cine, periodistas especializados y profesionales del sector. El portal ha sido desarrollado en Drupal y cuenta con una gestión completa de toda la información asociada al festival, secciones de películas, películas, parrilla de programación, noticias, contenidos relacionados, prensa, etc...',
       logo: 'logo-festivalcine.png',
@@ -999,6 +1010,7 @@ export const state = () => ({
       title: 'Consul - El Puerto de Santa María',
       class: 'aytoelpuerto',
       subtitle: 'Consul',
+      body: "Ejemplo de body con <a href='/'>URL</a>.",
       description:
         'Enreda ha desarrollado y mantenido el Portal de Participación ciudadana del Ayuntamiento de El Puerto de Santa María contando con el software más completo que existe actualmente; Consul. Usado por más de 60 ciudades a nivel mundial y premiado por Naciones Unidas. Este software permite la integración total con los sistemas Web del municipio y está preparado para generar todo tipo de procesos participativos...',
       logo: 'logo-consul-elpuerto.png',
@@ -1077,6 +1089,7 @@ export const state = () => ({
       title: 'Consul - Oviedo',
       class: 'decideoviedo',
       subtitle: 'Consul',
+      body: "Ejemplo de body con <a href='/'>URL</a>.",
       description:
         'Enreda ha desarrollado y mantenido el Portal de Participación ciudadana del Ayuntamiento de Oviedo contando con el  software más completo que existe actualmente, Consul. Usado por más de 60 ciudades a nivel mundial y premiado por Naciones Unidas. Este software permite la integración total con los sistemas Web del municipio y está preparado para generar todo tipo de procesos participativos...',
       logo: 'logo-ayto-oviedo.png',
@@ -1155,6 +1168,7 @@ export const state = () => ({
       title: 'Consul - Arcos de la Frontera',
       class: 'decidearcos',
       subtitle: 'Consul',
+      body: "Ejemplo de body con <a href='/'>URL</a>.",
       description:
         'Enreda ha desarrollado y mantenido el Portal de Participación ciudadana del Ayuntamiento de Arcos de la Frontera contando con el  software más completo que existe actualmente, Consul. Usado por más de 60 ciudades a nivel mundial y premiado por Naciones Unidas.Este software permite la integración total con los sistemas Web del municipio y está preparado para generar todo tipo de procesos participativos...',
       logo: 'logo-ayto-arcos.png',
@@ -1233,6 +1247,7 @@ export const state = () => ({
       title: 'Consul - Santiago de Compostela',
       class: 'decidesantiago',
       subtitle: 'Consul',
+      body: "Ejemplo de body con <a href='/'>URL</a>.",
       description:
         'Enreda ha desarrollado el Portal de Participación ciudadana del Ayuntamiento de Santiago de Compostela contando con el  software más completo que existe actualmente, Consul. Usado por más de 60 ciudades a nivel mundial y premiado por Naciones Unidas. Este software permite la integración total con los sistemas Web del municipio y está preparado para generar todo tipo de procesos participativos...',
       logo: 'logo-ayto-santiago.png',
@@ -1311,6 +1326,7 @@ export const state = () => ({
       title: 'decide.cadiz.es',
       class: 'decidecadiz',
       subtitle: 'Consul',
+      body: "Ejemplo de body con <a href='/'>URL</a>.",
       description:
         'Enreda ha desarrollado el Portal de Participación ciudadana del Ayuntamiento de Cádiz contando con el software más completo que existe actualmente, Consul. Usado por más de 60 ciudades a nivel mundial y premiado por Naciones Unidas. Este software permite la integración total con los sistemas Web del municipio y está preparado para generar todo tipo de procesos participativos..',
       logo: 'logo-ayto-cadiz.png',
@@ -1389,6 +1405,7 @@ export const state = () => ({
       title: 'Foro Andaluz de Gobiernos Locales y Procesos Participativos',
       class: 'foroparticipacion',
       subtitle: 'Foro Andaluz de Gobiernos Locales y Procesos Participativos',
+      body: "Ejemplo de body con <a href='/'>URL</a>.",
       description:
         'Enreda ha desarrollado distintos jornadas de formación sobre la Ley Andaluza de Participación Ciudadana y su adaptación a nivel local y provincial para multitud de organismos públicos (Junta de Andalucía, FAMP, Ayuntamiento de Cádiz, Diputación de Cádiz...',
       logo: 'logo-foro-participacion.png',
@@ -1426,6 +1443,7 @@ export const state = () => ({
       title: 'Reglamento de Participación de la Diputación de Cádiz',
       class: 'dipuparticipacioncadiz',
       subtitle: 'Reglamento de Participación de la Diputación de Cádiz',
+      body: "Ejemplo de body con <a href='/'>URL</a>.",
       description:
         'Foro para la reforma del reglamento de Participación Ciudadana y su adaptación a la nueva Ley Andaluza de Participación.',
       logo: 'logo-diputacion-cadiz.png',
@@ -1463,6 +1481,7 @@ export const state = () => ({
       title: 'Reglamento de Participación del Ayuntamiento de Cádiz',
       class: 'aytoparticipacioncadiz',
       subtitle: 'Reglamento de Participación del Ayuntamiento de Cádiz',
+      body: "Ejemplo de body con <a href='/'>URL</a>.",
       description:
         'Foros para la reforma del reglamento de Participación Ciudadana y su adaptación a la nueva Ley Andaluza de Participación.',
       logo: 'logo-ayto-cadiz.png',
@@ -1500,6 +1519,7 @@ export const state = () => ({
       title: 'Formación sobre la Ley Andaluza de Participación',
       class: 'formacionleyparticipacion',
       subtitle: 'Formación sobre la Ley Andaluza de Participación',
+      body: "Ejemplo de body con <a href='/'>URL</a>.",
       description:
         'Enreda ha desarrollado distintos jornadas de formación sobre la Ley Andaluza de Participación Ciudadana y su adaptación a nivel local y provincial para multitud de organismos públicos (Junta de Andalucía, FAMP, Ayuntamiento de Cádiz, Diputación de Cádiz…',
       logo: 'logo_junta.png',
@@ -1534,6 +1554,7 @@ export const state = () => ({
       title: 'Sistema Público de Participación Digital de Andalucía',
       class: 'sistemaparticipacion',
       subtitle: 'Sistema Público de Participación Digital de Andalucía',
+      body: "Ejemplo de body con <a href='/'>URL</a>.",
       description:
         'Desarrollo de la Prueba de Concepto para usar CONSUL como base del Sistema Público de Participación Digital de Andalucía.',
       logo: 'logo_junta.png',
@@ -1574,6 +1595,7 @@ export const state = () => ({
       title: 'Participación para la planificación urbanística',
       class: 'ciudadamable',
       subtitle: 'Participación para la planificación urbanística',
+      body: "Ejemplo de body con <a href='/'>URL</a>.",
       description:
         'Enreda ha desarrollado diferentes programas participativos para desarrollar elementos de planificación urbanísticas en municipios andaluces.',
       logo: 'logo-ayto-rota.png',
@@ -1611,6 +1633,7 @@ export const state = () => ({
       title: 'Presupuesto Participativo de Marbella',
       class: 'presupuestomarbella',
       subtitle: 'Presupuesto Participativo de Marbella',
+      body: "Ejemplo de body con <a href='/'>URL</a>.",
       description:
         'Enreda ha diseñado e implementado los Presupuestos Participativos del Ayuntamiento de Marbella durante dos años.',
       logo: 'logo_marbella.png',
@@ -1641,6 +1664,7 @@ export const state = () => ({
       title: 'Presupuesto Participativos de Mijas',
       class: 'presupuestomijas',
       subtitle: 'Presupuesto Participativos de Mijas',
+      body: "Ejemplo de body con <a href='/'>URL</a>.",
       description:
         'Enreda ha diseñado e implementado los Presupuestos Participativos del Ayuntamiento de Mijas en 2018.',
       logo: 'logo-ayto-mijas.png',
@@ -1671,6 +1695,7 @@ export const state = () => ({
       title: 'Plan de intervención',
       class: 'planintervencion',
       subtitle: 'Plan de intervención',
+      body: "Ejemplo de body con <a href='/'>URL</a>.",
       description:
         'Diseño y elaboración del plan local de intervención en zonas desfavorecidas de Coria del Río.',
       logo: 'logo-ayto-coria.png',
@@ -1701,6 +1726,7 @@ export const state = () => ({
       title: 'Presupuesto Participativo de Tarifa',
       class: 'presupuestotarifa',
       subtitle: 'Presupuesto Participativo de Tarifa',
+      body: "Ejemplo de body con <a href='/'>URL</a>.",
       description:
         'Diseño e implementación de procesos participativos del Área de Juventud y el Área de Cultura.',
       logo: 'logo-ayto-tarifa.png',
