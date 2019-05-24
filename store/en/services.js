@@ -98,7 +98,7 @@ export const state = () => ({
       subtitle: 'Diseño y desarrollo de productos',
       class: 'disenodesarrolloproducto',
       description: '',
-      logo: 'services/diseno_desarrollo.jpg',
+      logo: 'services/bg_participaciondigital.jpeg',
       url: '',
       images: [
         {
