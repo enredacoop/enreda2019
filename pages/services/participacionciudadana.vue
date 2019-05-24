@@ -2,7 +2,7 @@
   <div>
     <PageClaim
       :title="$t('services.service_2')"
-      background="bg_participaciondigital"
+      background="bg_participacionciudadana"
     />
     <Service slug="participacionciudadana" />
   </div>
