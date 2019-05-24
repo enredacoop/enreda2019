@@ -22,18 +22,8 @@
 </i18n>
 
 <template>
-  <div>
-    <div id="lines" class="wrapper-content">
-      <div class="intro-header cookies">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12 text-center">
-              <h2>{{ $t('title') }}</h2>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+  <div class="legal-page">
+    <PageClaim :title="$t('title')" background="bg_2" />
     <div
       v-for="(dialogue, index) in data.dialogues"
       :key="index"
@@ -43,8 +33,6 @@
       <div class="container">
         <div class="row">
           <div class="col-sm-8 col-sm-offset-2 col-xs-12">
-            <hr class="section-heading-spacer" />
-            <div class="clearfix"></div>
             <h3 class="section-heading">{{ $t(dialogue.ask) }}</h3>
           </div>
           <div class="col-sm-8 col-sm-offset-2 col-xs-12">
@@ -57,7 +45,11 @@
 </template>
 
 <script>
+import PageClaim from '~/components/layout/PageClaim.vue'
 export default {
+  components: {
+    PageClaim
+  },
   data() {
     return {
       data: {

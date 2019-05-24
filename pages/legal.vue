@@ -41,42 +41,54 @@
 }
 </i18n>
 <template>
-  <div>
-    <div id="legal" class="wrapper-content">
-      <div class="section-heading">
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12 text-center">
-              <h2>{{ $t('title') }}</h2>
-              <h3 class="text-muted">{{ $t('title') }}</h3>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+  <div class="legal-page">
+    <PageClaim :title="$t('title')" background="bg_2" />
     <div class="wrapper-content">
       <div class="container">
         <div class="row">
           <div class="col-sm-8 col-md-offset-2 col-xs-12">
             <p class="lead">{{ $t('description') }}</p>
 
-            <h4>{{ $t('head1') }}</h4>
-            <p class="lead">{{ $t('description1') }}</p>
-            <h4>{{ $t('head2') }}</h4>
-            <p class="lead">{{ $t('description2') }}</p>
-            <h4>{{ $t('head3') }}</h4>
-            <p class="lead">{{ $t('description3') }}</p>
-            <h4>{{ $t('head4') }}</h4>
-            <p class="lead">{{ $t('description4') }}</p>
-            <h4>{{ $t('head5') }}</h4>
-            <p class="lead">{{ $t('description5') }}</p>
-            <h4>{{ $t('head6') }}</h4>
-            <p class="lead">{{ $t('description6') }}</p>
-            <h4>{{ $t('head7') }}</h4>
-            <p class="lead">{{ $t('description7') }}</p>
+            <div class="content-section-a">
+              <h3 class="section-heading">{{ $t('head1') }}</h3>
+              <p class="lead">{{ $t('description1') }}</p>
+            </div>
+            <div class="content-section-a">
+              <h3 class="section-heading">{{ $t('head2') }}</h3>
+              <p class="lead">{{ $t('description2') }}</p>
+            </div>
+            <div class="content-section-a">
+              <h3 class="section-heading">{{ $t('head3') }}</h3>
+              <p class="lead">{{ $t('description3') }}</p>
+            </div>
+            <div class="content-section-a">
+              <h3 class="section-heading">{{ $t('head4') }}</h3>
+              <p class="lead">{{ $t('description4') }}</p>
+            </div>
+            <div class="content-section-a">
+              <h3 class="section-heading">{{ $t('head5') }}</h3>
+              <p class="lead">{{ $t('description5') }}</p>
+            </div>
+            <div class="content-section-a">
+              <h3 class="section-heading">{{ $t('head6') }}</h3>
+              <p class="lead">{{ $t('description6') }}</p>
+            </div>
+            <div class="content-section-a">
+              <h3 class="section-heading">{{ $t('head7') }}</h3>
+              <p class="lead">{{ $t('description7') }}</p>
+            </div>
           </div>
         </div>
       </div>
     </div>
   </div>
 </template>
+
+<script>
+import PageClaim from '~/components/layout/PageClaim.vue'
+export default {
+  components: {
+    PageClaim
+  }
+}
+</script>

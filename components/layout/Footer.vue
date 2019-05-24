@@ -76,24 +76,6 @@
         <div class="col-md-8">
           <ul class="list-inline pull-right">
             <li>
-              <nuxt-link :to="localePath({ name: 'cooperative' })">{{
-                $t('cooperative')
-              }}</nuxt-link>
-            </li>
-            <li class="footer-menu-divider">|</li>
-            <li>
-              <nuxt-link :to="localePath({ name: 'projects' })">{{
-                $t('projects')
-              }}</nuxt-link>
-            </li>
-            <li class="footer-menu-divider">|</li>
-            <li>
-              <a href="http://blog.enreda.coop" target="_blank">
-                {{ $t('blog') }}
-              </a>
-            </li>
-            <li class="footer-menu-divider">|</li>
-            <li>
               <nuxt-link :to="localePath({ name: 'legal' })">{{
                 $t('legal_warning')
               }}</nuxt-link>

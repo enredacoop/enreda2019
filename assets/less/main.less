@@ -33,6 +33,7 @@
     20. Contact page
     21. Clients
     22. Cooperative page
+    23. Legal pages
  
 ---------------------------------------------------------------- */
 /* ----------------------------------------------------------------
@@ -244,14 +245,15 @@ h6 {
     max-width: 100%;
     display: block;
     margin-bottom: 60px;
-    max-height: 350px;
+    height: 300px;
   }
   .card {
     display: block;
-    max-width: calc(50% - 60px);
+    max-width: 100%;
     margin: 30px;
     border: 0px;
     overflow: hidden;
+    height: 300px;
     .card-title, small {
       position: absolute;
       //position: relative;
@@ -272,6 +274,11 @@ h6 {
     a, a:hover {
       color: @white_color;
       text-decoration: none;
+    }
+  }
+  @media (min-width: 1200px) {
+    .card {
+      max-width: calc(50% - 60px);
     }
   }
   img {
@@ -310,13 +317,13 @@ h6 {
   &.loading {
     .card:first-child {
       background-color: @lightgrey_color;
-      height: 350px;
+      height: 300px;
       width: 100%;
     max-width: 100%;
     }
     .card {
       background-color: @lightgrey_color;
-      height: 250px;
+      height: 300px;
       width: calc(50% - 60px);
       .card-title, small {
         background-color: @white_color;
@@ -533,8 +540,8 @@ header {
     }
     .languages {
       border-left: 1px solid rgba(255,255,255,.13);
-      margin-left: 20px !important;
-      padding-left: 30px;
+      margin-left: 10px !important;
+      padding-left: 20px;
     }
     
     @media(max-width:991px) {
@@ -598,13 +605,49 @@ header {
       a, a.nav-link {
         color: @black_color !important;
       }
+      .languages {
+        border-left: 1px solid rgba(0,0,0,.06);
+      }
     }
     &.sticky + .content {
       padding-top: 102px;
     }
   }
 }
-
+#button-top {
+  position: fixed;
+  z-index: 999;
+  bottom: 15px;
+  right: 15px;
+  -webkit-transition: all .8s ease;
+  -moz-transition: all .8s ease;
+  -ms-transition: all .8s ease;
+  -o-transition: all .8s ease;
+  transition: all .8s ease;
+  a {
+    display: block;
+    background: @primary_color;
+    color: @white_color;
+    border-radius: 100%;
+    font-size: 25px;
+    padding: 0px 8px;
+    text-align: center;
+    -webkit-transition: all .8s ease;
+    -moz-transition: all .8s ease;
+    -ms-transition: all .8s ease;
+    -o-transition: all .8s ease;
+    transition: all .8s ease;
+    &:hover {
+      background: @black_color;
+    }
+  }
+  &.show {
+    opacity: 1;
+  }
+  &.hidden {
+    opacity: 0;
+  }
+}
 
 
 /* ----------------------------------------------------------------
@@ -2401,5 +2444,16 @@ ul.list-inline {
     padding-bottom: 120px;
     font-weight: normal;
     font-size: 30px;
+  }
+}
+
+
+/* ----------------------------------------------------------------
+    [ 23. Legal pages ]
+-----------------------------------------------------------------*/
+.legal-page {
+  .content-section-a {
+    margin-top: 60px;
+    margin-bottom: 60px;
   }
 }
