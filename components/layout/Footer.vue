@@ -7,6 +7,7 @@
     "projects": "Proyectos",
     "blog": "Blog",
     "legal_warning": "Aviso legal",
+    "cookies_policy": "Políticas de Cookies"
   },
   "en": {
     "site_name": "ENREDA Cooperative",
@@ -15,6 +16,7 @@
     "projects": "Projects",
     "blog": "Blog",
     "legal_warning": "Legal warning",
+    "cookies_policy": "Cookies policy"
   }
 }
 </i18n>
@@ -74,11 +76,15 @@
         <div class="col-md-8">
           <ul class="list-inline pull-right">
             <li>
-              <a :href="localePath('cooperative')">{{ $t('cooperative') }}</a>
+              <nuxt-link :to="localePath({ name: 'cooperative' })">{{
+                $t('cooperative')
+              }}</nuxt-link>
             </li>
             <li class="footer-menu-divider">|</li>
             <li>
-              <a :href="localePath('projects')">{{ $t('projects') }}</a>
+              <nuxt-link :to="localePath({ name: 'projects' })">{{
+                $t('projects')
+              }}</nuxt-link>
             </li>
             <li class="footer-menu-divider">|</li>
             <li>
@@ -87,9 +93,16 @@
               </a>
             </li>
             <li class="footer-menu-divider">|</li>
-            <li></li>
             <li>
-              <a href="/legal">{{ $t('legal_warning') }}</a>
+              <nuxt-link :to="localePath({ name: 'legal' })">{{
+                $t('legal_warning')
+              }}</nuxt-link>
+            </li>
+            <li class="footer-menu-divider">|</li>
+            <li>
+              <nuxt-link :to="localePath({ name: 'cookies' })">{{
+                $t('cookies_policy')
+              }}</nuxt-link>
             </li>
           </ul>
           <br />
