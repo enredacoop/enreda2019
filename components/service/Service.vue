@@ -61,7 +61,7 @@
           </div>
         </section>
       </template>
-      <section>
+      <section class="section-fix">
         <div class="row mt-60">
           <div class="col-12 text-center">
             <h2 class="section-heading">{{ $t('title') }}</h2>
