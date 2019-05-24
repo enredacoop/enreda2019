@@ -18,7 +18,11 @@ export default {
       { hid: 'description', name: 'description', content: pkg.description }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      {
+        rel: 'icon',
+        type: 'image/x-icon',
+        href: this.router.base + '/favicon.ico'
+      },
       {
         rel: 'stylesheet',
         href:
