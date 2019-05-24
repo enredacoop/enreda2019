@@ -1,7 +1,16 @@
+<i18n>
+{
+  "es": {
+    "title": "Proyectos relacionados"
+  },
+  "en": {
+    "title": "Related projects",
+  }
+}
+</i18n>
 <template>
   <div>
-    <PageClaim :title="service.title" background="bg_2" />
-    <div id="work" :class="service.class + ' wrapper'">
+    <div id="service" :class="service.class + ' wrapper'">
       <section id="data">
         <div class="container">
           <div class="row justify-content-center">
@@ -53,11 +62,16 @@
         </section>
       </template>
       <section>
+        <div class="row mt-60">
+          <div class="col-12 text-center">
+            <h2 class="section-heading">{{ $t('title') }}</h2>
+          </div>
+        </div>
         <div id="works" class="container">
           <div
             v-for="(work, index) in projects"
             :key="index"
-            :class="[work.category] + ' col-xs-12 col-sm-6 col-lg-4'"
+            :class="'item ' + [work.category] + ' col-xs-12 col-sm-6 col-lg-4'"
           >
             <nuxt-link
               :to="
@@ -98,12 +112,7 @@
 </template>
 
 <script>
-import PageClaim from '~/components/layout/PageClaim.vue'
-
 export default {
-  components: {
-    PageClaim
-  },
   props: {
     slug: { type: String, default: '/' }
   },

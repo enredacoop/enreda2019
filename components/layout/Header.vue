@@ -62,12 +62,27 @@
               "
               >{{ $t('services.service_5') }}</b-dropdown-item
             >
-            <b-dropdown-item href="http://edusi.eu/">{{
-              $t('services.service_6')
-            }}</b-dropdown-item>
+            <b-dropdown-item href="http://edusi.eu/"
+              >{{ $t('services.service_6') }}
+              <font-awesome-icon
+                :icon="['fas', 'external-link-alt']"
+                transform="shrink-6"
+            /></b-dropdown-item>
+            <b-dropdown-item href="http://lynxanalytica.com/"
+              >Lynx Analytica
+              <font-awesome-icon
+                :icon="['fas', 'external-link-alt']"
+                transform="shrink-6"
+            /></b-dropdown-item>
           </b-nav-item-dropdown>
-          <b-nav-item href="http://blog.enreda.coop" target="_blank">{{
-            $t('blog')
+          <b-nav-item href="http://blog.enreda.coop" target="_blank">
+            {{ $t('blog') }}
+            <font-awesome-icon
+              :icon="['fas', 'external-link-alt']"
+              transform="shrink-6"
+          /></b-nav-item>
+          <b-nav-item href="#" :to="localePath('contact')">{{
+            $t('contact')
           }}</b-nav-item>
           <b-nav-item
             v-for="locale in availableLocales"

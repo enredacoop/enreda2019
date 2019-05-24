@@ -122,6 +122,7 @@ h6 {
   font-size: 30px;
   text-transform: uppercase;
   font-weight: normal;
+  letter-spacing: 5px;
 }
 
 
@@ -192,15 +193,36 @@ h6 {
     background-image: url('~@~@/assets/images/bg_2.png');
     background-position: center center;
   }
+  &.bg_participaciondigital {
+    background-image: url('~@~@/assets/images/services/bg_participaciondigital.jpeg');
+    background-position: center center;
+  }
+  &.bg_participacionciudadana {
+    background-image: url('~@~@/assets/images/services/bg_participacionciudadana.jpeg');
+    background-position: center center;
+  }
+  &.bg_transparencia {
+    background-image: url('~@~@/assets/images/services/bg_transparencia.png');
+    background-position: center center;
+  }
+  &.bg_bigdata {
+    background-image: url('~@~@/assets/images/services/bg_bigdata.jpeg');
+    background-position: center center;
+  }
+  
 }
 
 .block-consul {
   margin-bottom: 120px;
   border: 1px solid rgba(68,63,63,.12);
   background: @lightgrey_color;
-
+  h2 {
+    font-weight: bold;
+    letter-spacing: 3px;
+  }
   .subtitle {
     font-size: 22px;
+    letter-spacing: 3px;
   }
 
   .btn-primary {
@@ -240,6 +262,7 @@ h6 {
       margin-right: 30px;
       cursor: pointer;
       color: @white_color;
+      letter-spacing: 0px !important;
     }
     small {
       bottom: 10px;
@@ -447,7 +470,7 @@ header {
         margin: 0px 10px;
         .dropdown button {
           background: transparent;
-          font-size: 13px;
+          font-size: 14px;
           font-weight: bold;
           border: 0px;
           box-shadow: none;
@@ -474,7 +497,7 @@ header {
     
     a, a.nav-link {
       font-weight: bolder;
-      font-size: 13px;
+      font-size: 14px;
       padding: 10px;
       margin: 0;
       transition: all ease .3s;
@@ -784,6 +807,10 @@ p.copyright {
   }
   .daystext {
     font-size: 2em;
+  }
+  .count-text {
+    font-size: 18px;
+    letter-spacing: 3px;
   }
 }
 
@@ -1306,7 +1333,11 @@ p.lead {
 #works {
   // background: @lightgrey_color;
   padding-top: 30px;
+  display: flex;
 
+  .item {
+    display: inline;
+  }
   .button-group {
     .dropdown {
       button {
@@ -1352,9 +1383,11 @@ p.lead {
   }
 
   .work {
-
     .work-header {
       height: 150px;
+      h4 {
+        margin: 15px;
+      }
     }
     .work-body {
       //background: @black_color;
@@ -1367,17 +1400,21 @@ p.lead {
         margin-left: 10px;
       }
     }
-    &.highlighted::before {
-      content: ' ';
-      background: @lightgrey_color;
-      display: block;
-      position: absolute;
-      height: 15px;
-      width: 15px;
-      border-radius: 100%;
-      top: 10px;
-      right: 25px;
-      z-index: 9;
+    &.highlighted {
+      border: 1px solid @primary_color;
+
+      &::before {
+        content: ' ';
+        background: @lightgrey_color;
+        display: block;
+        position: absolute;
+        height: 15px;
+        width: 15px;
+        border-radius: 100%;
+        top: 10px;
+        right: 25px;
+        z-index: 9;
+      }
     }
   }
 
@@ -1631,7 +1668,7 @@ p.lead {
   }
   .work.sistemaparticipacion .work-header {
     background-color: @sistemaparticipacion_color;
-    padding-top: 30px;
+    padding-top: 20px;
     img {
       width: 200px;
       padding-top: 45px;
@@ -1733,7 +1770,7 @@ p.lead {
     [ 10. Work page parts ]
 -----------------------------------------------------------------*/
 /********** WORK **********/
-#work {
+#work, #service {
   #intro {
     height: 250px;
     padding-top: 110px;
@@ -2056,6 +2093,9 @@ ul.list-inline {
   margin-top: 120px;
   margin-bottom: 120px;
 }
+.mt-60 {
+  margin-top: 60px;
+}
 
 
 /* ----------------------------------------------------------------
@@ -2090,7 +2130,9 @@ ul.list-inline {
   margin-top: 15px !important;
   min-width: 325px;
   max-width: 325px;
-
+  .card-title {
+    letter-spacing: 3px;
+  }
   .card-icon {
     height: 150px;
     font-size: 100px;
@@ -2130,6 +2172,7 @@ ul.list-inline {
       color: @primary_color;
     }
     img, .card-icon {
+      color: @primary_color;
       -ms-transform: scale(1.05);
       -moz-transform: scale(1.05);
       -webkit-transform: scale(1.05);

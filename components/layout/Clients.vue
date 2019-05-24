@@ -53,57 +53,6 @@
           />
         </div>
         <div class="client">
-          <img class="logo" src="~/assets/images/clients/oxfan_intermon.png" />
-        </div>
-        <div class="client">
-          <img class="logo" src="~/assets/images/clients/poletika.png" />
-        </div>
-        <div class="client">
-          <img
-            class="logo"
-            src="~/assets/images/clients/instituto_cervantes.png"
-          />
-        </div>
-        <div class="client">
-          <img class="logo" src="~/assets/images/clients/aneca.png" />
-        </div>
-        <div class="client">
-          <img class="logo" src="~/assets/images/clients/cje.png" />
-        </div>
-        <div class="client">
-          <img class="logo" src="~/assets/images/clients/agencia_idea.png" />
-        </div>
-        <div class="client">
-          <img class="logo" src="~/assets/images/clients/medialab_ugr.png" />
-        </div>
-        <div class="client">
-          <img
-            class="logo"
-            src="~/assets/images/clients/universidad_la_laguna.png"
-          />
-        </div>
-        <div class="client">
-          <img class="logo" src="~/assets/images/clients/som_energia.png" />
-        </div>
-        <div class="client">
-          <img class="logo" src="~/assets/images/clients/famp.png" />
-        </div>
-        <div class="client">
-          <img class="logo" src="~/assets/images/clients/ciecode.png" />
-        </div>
-        <div class="client">
-          <img class="logo" src="~/assets/images/clients/innoves.png" />
-        </div>
-        <div class="client">
-          <img class="logo" src="~/assets/images/clients/faecta.png" />
-        </div>
-        <div class="client">
-          <img class="logo" src="~/assets/images/clients/famsi.png" />
-        </div>
-        <div class="client">
-          <img class="logo" src="~/assets/images/clients/reas.png" />
-        </div>
-        <div class="client">
           <img
             class="logo"
             src="~/assets/images/clients/ayuntamiento_cordoba.png"
@@ -138,6 +87,63 @@
             class="logo"
             src="~/assets/images/clients/ayuntamiento_utrera.png"
           />
+        </div>
+        <div class="client">
+          <img class="logo" src="~/assets/images/clients/oxfan_intermon.png" />
+        </div>
+        <div class="client">
+          <img class="logo" src="~/assets/images/clients/poletika.png" />
+        </div>
+        <div class="client">
+          <img
+            class="logo"
+            src="~/assets/images/clients/instituto_cervantes.png"
+          />
+        </div>
+        <div class="client">
+          <img class="logo" src="~/assets/images/clients/aneca.png" />
+        </div>
+        <div class="client">
+          <img class="logo" src="~/assets/images/clients/cje.png" />
+        </div>
+        <div class="client">
+          <img class="logo" src="~/assets/images/clients/agencia_idea.png" />
+        </div>
+        <div class="client">
+          <img class="logo" src="~/assets/images/clients/medialab_ugr.png" />
+        </div>
+        <div class="client">
+          <img
+            class="logo"
+            src="~/assets/images/clients/universidad_la_laguna.png"
+          />
+        </div>
+        <div class="client">
+          <img
+            class="logo"
+            src="~/assets/images/clients/universidad_westminster.png"
+          />
+        </div>
+        <div class="client">
+          <img class="logo" src="~/assets/images/clients/som_energia.png" />
+        </div>
+        <div class="client">
+          <img class="logo" src="~/assets/images/clients/famp.png" />
+        </div>
+        <div class="client">
+          <img class="logo" src="~/assets/images/clients/ciecode.png" />
+        </div>
+        <div class="client">
+          <img class="logo" src="~/assets/images/clients/innoves.png" />
+        </div>
+        <div class="client">
+          <img class="logo" src="~/assets/images/clients/faecta.png" />
+        </div>
+        <div class="client">
+          <img class="logo" src="~/assets/images/clients/famsi.png" />
+        </div>
+        <div class="client">
+          <img class="logo" src="~/assets/images/clients/reas.png" />
         </div>
         <div class="client">
           <img
