@@ -212,6 +212,22 @@ export default {
           service => service.id === this.slug
         )
       }
+    },
+    meta() {
+      return this.$store.state.meta[this.slug]
+    }
+  },
+  head() {
+    return {
+      title: this.meta.title,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.meta.description
+        },
+        { hid: 'keywords', name: 'keywords', content: this.meta.keywords }
+      ]
     }
   }
 }

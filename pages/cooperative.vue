@@ -540,6 +540,11 @@ export default {
       }
     }
   },
+  computed: {
+    meta() {
+      return this.$store.state.meta.cooperativa
+    }
+  },
   methods: {
     getImgUrl(pic) {
       return require('../assets/images/cooperative/people/' + pic)
@@ -549,6 +554,19 @@ export default {
     paths: {
       es: '/cooperativa',
       en: '/cooperative'
+    }
+  },
+  head() {
+    return {
+      title: this.meta.title,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.meta.description
+        },
+        { hid: 'keywords', name: 'keywords', content: this.meta.keywords }
+      ]
     }
   }
 }

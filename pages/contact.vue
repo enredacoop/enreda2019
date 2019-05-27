@@ -184,6 +184,11 @@ export default {
       isSending: false
     }
   },
+  computed: {
+    meta() {
+      return this.$store.state.meta.contact
+    }
+  },
 
   methods: {
     /**
@@ -224,6 +229,19 @@ export default {
             console.log(e)
           })
       }, 1000)
+    }
+  },
+  head() {
+    return {
+      title: this.meta.title,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.meta.description
+        },
+        { hid: 'keywords', name: 'keywords', content: this.meta.keywords }
+      ]
     }
   }
 }

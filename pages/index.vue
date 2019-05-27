@@ -25,6 +25,24 @@ export default {
     News,
     HomeClaim,
     Clients
+  },
+  head() {
+    return {
+      title: this.meta.title,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.meta.description
+        },
+        { hid: 'keywords', name: 'keywords', content: this.meta.keywords }
+      ]
+    }
+  },
+  computed: {
+    meta() {
+      return this.$store.state.meta.home
+    }
   }
 }
 </script>
