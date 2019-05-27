@@ -26,13 +26,6 @@
             class="col-sm-12 col-md-3 col-lg-3"
           >
             <h3 class="city">{{ place.city }}</h3>
-            <template v-if="place.othercontact != ''">
-              <h5 class="officename">
-                <a :href="'mailto:' + place.othercontact" target="_blank">{{
-                  place.othercontact
-                }}</a>
-              </h5>
-            </template>
             <h5 class="officename">
               <a :href="place.officeurl" target="_blank">{{
                 place.officename
@@ -61,24 +54,21 @@ export default {
             address: 'Avda. República Argentina 25 Planta 9',
             zipcode: '41011',
             officename: 'Espacio RES',
-            officeurl: 'http://espaciores.org',
-            othercontact: ''
+            officeurl: 'http://espaciores.org'
           },
           {
             city: 'Málaga',
             address: 'Trinidad Grund 7, 1º derecha',
             zipcode: '29001',
             officename: 'DobleMitad',
-            officeurl: 'https://www.doblemitad.com',
-            othercontact: 'malaga@enreda.coop'
+            officeurl: 'https://www.doblemitad.com'
           },
           {
             city: 'Madrid',
             address: '',
             zipcode: '',
             officename: '',
-            officeurl: '',
-            othercontact: 'madrid@enreda.coop'
+            officeurl: ''
           }
         ]
       }
