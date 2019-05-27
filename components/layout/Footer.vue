@@ -131,7 +131,7 @@ export default {
     return {
       footer: {
         site_name_short: 'Enreda',
-        current_year: '2019',
+        current_year: new Date().getFullYear(),
         google_analytics: 'UA-18017706-1',
         phone: '+34 954 32 35 05',
         email: 'info@enreda.coop',
