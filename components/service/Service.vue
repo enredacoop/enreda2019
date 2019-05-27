@@ -47,7 +47,7 @@
         <section id="texts">
           <div class="container">
             <div class="row justify-content-center">
-              <div class="col-sm-12 col-md-12 col-lg-8">
+              <div class="col-sm-12 col-md-12 col-lg-12">
                 <div
                   v-for="(text, index) in service.texts"
                   :key="index"
@@ -62,7 +62,7 @@
         </section>
       </template>
       <section class="section-fix">
-        <div class="row mt-60">
+        <div class="row">
           <div class="col-12 text-center">
             <h2 class="section-heading">{{ $t('title') }}</h2>
           </div>

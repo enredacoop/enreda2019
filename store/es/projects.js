@@ -318,49 +318,41 @@ export const state = () => ({
         {
           technology: 'Python',
           url: 'https://www.python.org',
-          logo: '/assets/images/technologies/python.png',
           class: 'white'
         },
         {
           technology: 'Django',
           url: 'https://www.djangoproject.com',
-          logo: '/assets/images/technologies/django.png',
           class: 'white'
         },
         {
           technology: 'PostgreSQL',
           url: 'http://www.postgresql.org',
-          logo: '/assets/images/technologies/postgresql.png',
           class: ''
         },
         {
           technology: 'AngularJS',
           url: 'https://angularjs.org',
-          logo: '/assets/images/technologies/angular.png',
           class: ''
         },
         {
           technology: 'EJS',
           url: 'http://www.embeddedjs.com',
-          logo:
-            'http://3.bp.blogspot.com/-G1Nosx99Td0/UwtphL0KbxI/AAAAAAAAUP4/0P2mG3qjvB4/s1600/EJS.PNG'
+          class: ''
         },
         {
           technology: 'HTML',
           url: 'https://www.w3.org/html/',
-          logo: '/assets/images/technologies/html.png',
           class: ''
         },
         {
           technology: 'CSS',
           url: 'https://www.w3.org/Style/CSS/',
-          logo: '/assets/images/technologies/css.png',
           class: ''
         },
         {
           technology: 'JavaScript',
           url: 'https://www.javascript.com/',
-          logo: '/assets/images/technologies/js.png',
           class: ''
         }
       ],

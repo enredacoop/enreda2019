@@ -28,9 +28,9 @@
 <template>
   <div>
     <PageClaim :title="$t('contact')" background="" />
-    <section>
-      <div id="contact-form" class="contact-form">
-        <h1 class="section-heading text-center">{{ $t('social_networks') }}</h1>
+    <section class="mb-60">
+      <div class="container">
+        <h2 class="section-heading">{{ $t('social_networks') }}</h2>
         <div class="networks text-center mt-30">
           <a class="sn" href="http://twitter.com/enreda" target="_blank">
             <font-awesome-layers class="fa-3x">
@@ -57,39 +57,6 @@
             </font-awesome-layers>
           </a>
         </div>
-      </div>
-    </section>
-    <section>
-      <div id="contact-form" class="contact-form">
-        <h1 class="section-heading text-center">{{ $t('contact_form') }}</h1>
-
-        <div v-if="isSending" class="loading">{{ $t('sending') }}</div>
-
-        <form class="form" @submit="onSubmit">
-          <input
-            v-model="contact.name"
-            required
-            name="name"
-            :placeholder="$t('name')"
-            type="text"
-            autocomplete="off"
-          />
-          <input
-            v-model="contact.email"
-            required
-            name="email"
-            :placeholder="$t('email')"
-            type="email"
-            autocomplete="off"
-          />
-          <textarea
-            v-model="contact.message"
-            name="message"
-            rows="4"
-            :placeholder="$t('message')"
-          ></textarea>
-          <button class="button">{{ $t('send') }}</button>
-        </form>
       </div>
     </section>
     <Offices />

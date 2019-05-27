@@ -11,7 +11,7 @@
 
 <template>
   <div>
-    <section id="offices" class="mt-60">
+    <section id="offices">
       <div class="container">
         <div class="row">
           <div class="col-sm-12 text-center">

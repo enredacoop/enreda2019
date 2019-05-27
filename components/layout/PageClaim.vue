@@ -4,7 +4,7 @@
       <div class="row">
         <div class="col-md-12 col-sm-12 col-xs-12 text-center">
           <div class="claim wow fadeInLeft">
-            <h2>{{ title }}</h2>
+            <h1>{{ title }}</h1>
           </div>
         </div>
       </div>

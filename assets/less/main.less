@@ -18,22 +18,21 @@
     05. Footer
     06. Blog page
     07. Cooperative page
-    08. Lines page
-    09. Works page
-    10. Work page parts
-    11. Images
-    12. Lists
-    13. Paddings
-    14. Margins
-    15. Buttons
-    16. Cards
-    17. Backgrounds
-    18. Grid
-    19. Effects
-    20. Contact page
-    21. Clients
-    22. Cooperative page
-    23. Legal pages
+    08. Works page
+    09. Work page parts
+    10. Images
+    11. Lists
+    12. Paddings
+    13. Margins
+    14. Buttons
+    15. Cards
+    16. Backgrounds
+    17. Grid
+    18. Effects
+    19. Contact page
+    20. Clients
+    21. Cooperative page
+    22. Legal pages
  
 ---------------------------------------------------------------- */
 /* ----------------------------------------------------------------
@@ -57,6 +56,7 @@ html {
     width: 100%;
     height: 100%;
     font-family: @font, sans-serif;
+    color: @black_color;
 }
 .wrapper {
   padding-top: 70px;
@@ -74,6 +74,7 @@ section {
 }
 .section-fix {
   width: calc(100% - 15px);
+  padding-top: 0px;
 }
 
 .vcenter {
@@ -95,6 +96,10 @@ section {
 /* ----------------------------------------------------------------
     [ 02. Texts ]
 -----------------------------------------------------------------*/
+* {
+  letter-spacing: 2px !important;
+}
+
 h1,
 h2,
 h3,
@@ -121,12 +126,20 @@ h6 {
   background-color: @secondary_color;
   color: @lightgrey_color;
 }
-
 .section-heading {
-  font-size: 30px;
+  font-size: 40px;
   text-transform: uppercase;
   font-weight: normal;
-  letter-spacing: 5px;
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: left;
+  border-left: 3px solid @primary_color;
+  padding-left: 20px;
+  margin-bottom: 60px;
+}
+.section-body {
+  font-size: 20px;
+  text-align: justify;
 }
 
 
@@ -157,11 +170,10 @@ h6 {
     padding-top: 20%;
     text-transform: uppercase;
 
-    h2 {
-      font-size: 3.5em;
+    h1 {
+      font-size: 60px;
       background: @primary_color_trans;
       padding: 10px;
-      .title-letter-spacing;
     }
 
     #type-header {
@@ -178,13 +190,12 @@ h6 {
   .claim {
     padding: initial;
     padding-top: 60px;
-    h2 {
+    h1 {
       font-size: 30px;
       width: 60%;
       margin: 0 auto;
       display: inline;
       padding: 10px 30px;
-      letter-spacing: 3px;
     }
   }
   &.bg_none {
@@ -203,8 +214,8 @@ h6 {
     background-position: center center;
   }
   &.bg_participacionciudadana {
-    background-image: url('~@~@/assets/images/services/bg_participacionciudadana.jpeg');
-    background-position: center bottom;
+    background-image: url('~@~@/assets/images/services/bg_participacionciudadana.jpg');
+    background-position: center -930px;
   }
   &.bg_transparencia {
     background-image: url('~@~@/assets/images/services/bg_transparencia.jpeg');
@@ -220,14 +231,14 @@ h6 {
 .block-consul {
   margin-bottom: 120px;
   border: 1px solid rgba(68,63,63,.12);
-  background: @lightgrey_color;
+  background: @clean_color;
   h2 {
-    font-weight: bold;
-    letter-spacing: 3px;
+    font-size: 35px;
+    max-width: 60%;
   }
   .subtitle {
-    font-size: 22px;
-    letter-spacing: 3px;
+    font-size: 35px;
+    color: @gray_color;
   }
 
   .btn-primary {
@@ -268,7 +279,6 @@ h6 {
       margin-right: 30px;
       cursor: pointer;
       color: @white_color;
-      letter-spacing: 0px !important;
     }
     small {
       bottom: 10px;
@@ -280,7 +290,10 @@ h6 {
       text-decoration: none;
     }
   }
-  @media (min-width: 1200px) {
+  @media (min-width: 992px) {
+    .card:first-child {
+      height: 360px;
+    }
     .card {
       max-width: calc(50% - 60px);
     }
@@ -507,7 +520,6 @@ header {
     }
     
     a, a.nav-link {
-      font-weight: bolder;
       font-size: 14px;
       padding: 10px;
       margin: 0;
@@ -742,17 +754,6 @@ p.copyright {
   padding-bottom: 75px;
   padding-top: 120px;
 
-  #home-blog-title {
-    h2 {
-      color: @dark_color;
-      font-size: 30px;
-      margin-top: 15px;
-      margin-bottom: 45px;
-      text-transform: uppercase;
-      font-weight: normal;
-    }
-  }
-
   #home-blog-items {
     
     .itemnews {
@@ -848,18 +849,16 @@ p.copyright {
   .gradient(to left, @lightgrey_color,  @clean_color);
   color: @black_color;
   .daysnumber, h2 {
-    font-size: 50px;
+    font-size: 60px;
     font-weight: bold;
     color: @primary_color;
-    .title-letter-spacing;
     padding-right: 40px;
   }
   .daystext {
-    font-size: 2em;
+    font-size: 20px;
   }
   .count-text {
-    font-size: 18px;
-    letter-spacing: 3px;
+    font-size: 20px;
   }
 }
 
@@ -883,13 +882,11 @@ p.copyright {
 #cooperative {
   section {
     h2.section-heading {
-      font-size: 30px;
+      font-size: 40px;
       margin-top: 0;
       margin-bottom: 15px;
-      .title-letter-spacing;
       text-transform: uppercase;
       font-weight: normal;
-      letter-spacing: 3px;
     }
     h3.section-subheading {
       font-size: 16px;
@@ -901,7 +898,7 @@ p.copyright {
     .principle-heading {
       margin: 15px 0;
       text-transform: none;
-      font-size: 1.4em;
+      font-size: 25px;
     }
     .team-member {
       text-align: center;
@@ -951,7 +948,7 @@ p.copyright {
     .description {
       background: @primary_color;
       color: @clean_color;
-      font-size: 1.5em;
+      font-size: 20px;
       padding: 50px 15px 30px 15px;
       height: 240px;
     }
@@ -984,7 +981,7 @@ p.copyright {
   }
 
   #network {
-    background: @lightgrey_color;
+    background: @clean_color;
 
     img {
       position: absolute;
@@ -1002,11 +999,11 @@ p.copyright {
 
     a {
       .node {
-        background-color: @clean_color;
+        background-color: @white_color;
         text-align: center;
         padding: 5px;
         margin-bottom: 30px;
-        color: @black_color;
+        color: @gray_color;
         min-height: 300px;
         padding: 15px;
         font-size: 15px;
@@ -1016,9 +1013,10 @@ p.copyright {
       &:hover {
         text-decoration: none;
         .node {
-          background-color: @white_color;
+          background-color: @lightgrey_color;
+          color: @black_color;
           h3 {
-            color: @primary_color;
+            color: @black_color;
           }
         }
       }
@@ -1052,332 +1050,8 @@ p.copyright {
 }
 
 
-
 /* ----------------------------------------------------------------
-    [ 08. Lines page ]
------------------------------------------------------------------*/
-#lines {
-
-  background: @lightgrey_color;
-  padding-top: 120px;
-
-  .section-heading {
-    h2 {
-      font-size: 40px;
-      margin-top: 15px;;
-      margin-bottom: 15px;
-      .title-letter-spacing;
-    }
-    h3 {
-      font-size: 16px;
-      text-transform: none;
-      font-style: italic;
-      font-weight: 400;
-      margin-bottom: 75px;
-    }
-  }
-
-  a.jump {
-
-    text-decoration: none;
-
-    .container {
-      border: 10px solid @clean_color;
-      margin-bottom: 30px;
-    }
-
-    .line {
-      .image, .title {
-        height: 300px;
-      }
-    }
-
-    .line.economia-social {
-      .image {
-        background: url('~@/assets/images/lines/banner_economiasocial_intro.png') no-repeat top left;
-      }
-    }
-    .line.transparencia-participacion {
-      .image {
-        background: url('~@/assets/images/lines/banner_transparenciaparticipacion_intro.png') no-repeat top left;
-      }
-    }
-    .line.innovacion-social {
-      .image {
-        background: url('~@/assets/images/lines/banner_innovacionsocial_intro.png') no-repeat top center;
-      }
-    }
-    .line.comunicacion {
-      .image {
-        background: url('~@/assets/images/lines/banner_comunicacion_intro.png') no-repeat top left;
-      }
-    }
-
-    .line {
-
-      background: @clean_color;
-      
-      text-align: center;
-      color: @clean_color;
-
-      .title {
-
-        background-color: @primary_color;
-        padding-top: 100px;
-
-        h2 {
-          margin: 0;
-          font-size: 3em;
-        }
-
-      }
-
-    }
-
-  }
-
-  a.jump:hover {
-    .line {
-      .message {
-        background-color: @secondary_color;
-      }
-    }
-  }
-
-}
-
-@media(max-width:767px) {
-  #lines {
-    a {
-      .line {
-        .image {
-          height: 120px;
-        }
-        .title {
-          padding-top: 50px;
-          height: 120px;
-          h2 {
-            font-size: 1.8em;
-          }
-        }
-      }
-    }
-  }
-}
-
-/********** LINE SINGLE **********/
-p.lead {
-    font-size: 18px;
-    font-weight: 400;
-}
-
-#line {
-  .intro-header {
-    padding-bottom: 50px;
-    text-align: center;
-    color: @clean_color;
-    background: @dark_color;
-    background-size: cover;
-
-    .intro-message {
-      position: relative;
-      padding-top: 20%;
-      padding-bottom: 20%;
-
-      h1 {
-        margin: 0;
-        text-shadow: 2px 2px 3px rgba(0,0,0,1);
-        font-size: 4em;
-        text-transform: uppercase;
-      }
-
-      .intro-divider {
-        width: 400px;
-        border-top: 1px solid #f8f8f8;
-        border-bottom: 1px solid rgba(0,0,0,1);
-      }
-
-      h3 {
-        font-weight: 400;
-        text-shadow: 2px 2px 3px rgba(0,0,0,1);
-      }
-    }
-  }
-
-  .intro-header.economia-social {
-    background: url('~@/assets/images/lines/banner_economiasocial_large.png') no-repeat center center;
-  }
-  .intro-header.transparencia-participacion {
-    background: url('~@/assets/images/lines/banner_transparenciaparticipacion_large.png') no-repeat center center;
-  }
-  .intro-header.innovacion-social {
-    background: url('~@/assets/images/lines/banner_innovacionsocial_large.png') no-repeat center center;
-  }
-  .intro-header.comunicacion {
-    background: url('~@/assets/images/lines/banner_comunicacion_large.png') no-repeat center center;
-  }
-  .intro-header.cookies {
-    background-color: @primary_color;
-  }
-
-  .main-message {
-    padding: 50px 0;
-    background-color: @black_color;
-    color: @clean_color;
-    font-size: 18px;
-    font-weight: 400;
-  }
-
-  .works-line {
-    padding: 50px 0;
-    background-color: @dark_color;
-    color: @clean_color;
-    font-size: 18px;
-    font-weight: 400;
-  }
-
-  .services-line {
-    padding: 50px 0;
-    background-color: @primary_color;
-    color: @clean_color;
-    font-size: 18px;
-    font-weight: 400;
-  
-    ul {
-      list-style: none;
-      li {
-        padding-bottom: 20px;
-        .title {
-          font-weight: bold;
-        }
-      }
-    }
-  }
-  .content-section-a {
-    padding: 50px 0;
-    background-color: #f8f8f8;
-  }
-  .content-section-b {
-    padding: 50px 0;
-    border-top: 1px solid #e7e7e7;
-    border-bottom: 1px solid #e7e7e7;
-  }
-  .section-heading {
-    margin-bottom: 30px;
-    .title-letter-spacing;
-  }
-  .section-heading-spacer {
-    float: left;
-    width: 200px;
-    border-top: 6px solid @primary_color;
-  }
-
-  .call {
-    padding: 100px 0;
-    color: @clean_color;
-    background: @dark_color;
-    background-size: cover;
-
-    h2 {
-      margin: 0;
-      text-shadow: 2px 2px 3px rgba(0,0,0,1);
-      font-size: 3em;
-    }
-
-    ul {
-      margin-bottom: 0;
-    }
-
-    .call-social-buttons {
-      float: right;
-      margin-top: 0;
-
-      .btn-custom {
-        color: @clean_color;
-        background-color: @dark_color;
-        border-color: @black_color;
-        &:hover, &:active, &:visited {
-          color: @clean_color;
-          background-color: @black_color;
-        }
-      }
-    }
-
-    .network-name {
-      text-transform: uppercase;
-      font-size: 14px;
-      font-weight: 400;
-      letter-spacing: 2px;
-    }
-  }
-
-  .call.economia-social {
-    background: url('~@/assets/images/lines/banner_economiasocial_small.png') no-repeat center center;
-  }
-  .call.transparencia-participacion {
-    background: url('~@/assets/images/lines/banner_transparenciaparticipacion_small.png') no-repeat center center;
-  }
-  .call.innovacion-social {
-    background: url('~@/assets/images/lines/banner_innovacionsocial_small.png') no-repeat center center;
-  }
-  .call.comunicacion {
-    background: url('~@/assets/images/lines/banner_comunicacion_small.png') no-repeat center center;
-  }
-}
-
-@media(max-width:767px) {
-  #line {
-    .intro-header {
-      .intro-message {
-        padding-bottom: 15%;
-
-        h1 {
-         font-size: 3em;
-        }
-
-        .intro-divider {
-          width: 100%;
-        }
-      }
-    }
-
-    .call {
-      h2 {
-        margin: 0;
-        text-shadow: 2px 2px 3px rgba(0,0,0,0.6);
-        font-size: 3em;
-      }
-
-      ul.call-social-buttons {
-        li {
-          display: block;
-          margin-bottom: 20px;
-          padding: 0;
-
-          &:last-child {
-            margin-bottom: 0;
-          }
-        }
-      }
-    }
-  }
-}
-
-@media(max-width:1199px) {
-  #line {
-    .call {
-      ul.call-social-buttons {
-        float: left;
-        margin-top: 15px;
-      }
-    }
-  }
-}
-
-
-
-/* ----------------------------------------------------------------
-    [ 09. Works page ]
+    [ 08. Works page ]
 -----------------------------------------------------------------*/
 /********** WORKS **********/
 #works {
@@ -1395,6 +1069,7 @@ p.lead {
         border-color: @white_color;
         color: @black_color;
         border-radius: 0px;
+        font-size: 18px;
         &:hover, &:focus {
           background-color: @lightgrey_color;
           border-color: @lightgrey_color;
@@ -1440,18 +1115,21 @@ p.lead {
       }
     }
     .work-body {
-      //background: @black_color;
-      color: @black_color;
+      color: @dark_color;
       text-align: left;
       .work-title {
-        margin-top: 10px;
-        font-size: 18px;
-        font-weight: 700;
-        margin-left: 10px;
+        font-size: 20px;
+        font-weight: normal;
+        margin: 10px;
       }
     }
     &.highlighted {
-      border: 1px solid @primary_color;
+      border-bottom: 2px solid @primary_color;
+      box-shadow: 1px 1px 3px @lightgrey_color;
+      .work-title {
+        color: @black_color;
+      }
+
 
       &::before {
         content: ' ';
@@ -1464,6 +1142,12 @@ p.lead {
         top: 10px;
         right: 25px;
         z-index: 9;
+        -webkit-animation-name: loading;
+        -webkit-animation-duration: 2s;
+        -webkit-animation-iteration-count: infinite;
+        animation-name: loading;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
       }
     }
   }
@@ -1798,9 +1482,10 @@ p.lead {
       margin-bottom: 50px;
       text-align: center;
       color: @clean_color;
-      height: 250px;
+      height: 270px;
       border: 1px solid @lightgrey_color;
       border-radius: 3px;
+      overflow: hidden;
       img {
         padding: 40px 10px 40px 10px;
       }
@@ -1817,7 +1502,7 @@ p.lead {
 
 
 /* ----------------------------------------------------------------
-    [ 10. Work page parts ]
+    [ 09. Work page parts ]
 -----------------------------------------------------------------*/
 /********** WORK **********/
 #work, #service {
@@ -1889,6 +1574,17 @@ p.lead {
     }
     .block-text {
       margin-top: 50px;
+      margin-bottom: 80px;
+    }
+    .section-heading {
+      margin-bottom: 30px;
+    }
+    .section-body {
+      font-size: 20px;
+      max-width: 900px;
+      margin: 0 auto;
+      margin-right: 0px;
+      text-align: justify;
     }
   }
   &.wrapper {
@@ -2084,7 +1780,7 @@ p.lead {
 
 
 /* ----------------------------------------------------------------
-    [ 11. Images ]
+    [ 10. Images ]
 -----------------------------------------------------------------*/
 img.center {
   display: block;
@@ -2092,13 +1788,15 @@ img.center {
 }
 .logo_consul {
   width: 100%;
-  max-width: 250px;
+  max-width: 350px;
+  margin-top: 60px;
   //filter: contrast(0) brightness(100);
 }
 @media (min-width: 992px) {
   .logo_consul {
+    margin-top: 0px;
     float: right;
-    top: -35px;
+    top: -70px;
     right: 60px;
     position: relative;
   }
@@ -2113,7 +1811,7 @@ img.center {
 
 
 /* ----------------------------------------------------------------
-    [ 12. Lists ]
+    [ 11. Lists ]
 -----------------------------------------------------------------*/
 ul.list-inline {
   li {
@@ -2123,7 +1821,7 @@ ul.list-inline {
 
 
 /* ----------------------------------------------------------------
-    [ 13. Paddings ]
+    [ 12. Paddings ]
 -----------------------------------------------------------------*/
 .pt-120 { padding-top: 120px;}
 .pb-120 { padding-bottom: 120px;}
@@ -2134,7 +1832,7 @@ ul.list-inline {
 
 
 /* ----------------------------------------------------------------
-    [ 14. Margins ]
+    [ 13. Margins ]
 -----------------------------------------------------------------*/
 .m-0 {
   margin: 0;
@@ -2149,10 +1847,13 @@ ul.list-inline {
 .mt-60 {
   margin-top: 60px;
 }
+.mb-60 {
+  margin-bottom: 60px;
+}
 
 
 /* ----------------------------------------------------------------
-    [ 15. Buttons ]
+    [ 14. Buttons ]
 -----------------------------------------------------------------*/
 .btn-hidden {
   opacity: 0;;
@@ -2172,7 +1873,7 @@ ul.list-inline {
 
 
 /* ----------------------------------------------------------------
-    [ 16. Cards ]
+    [ 15. Cards ]
 -----------------------------------------------------------------*/
 .card-deck .card {
   margin: 0 auto;
@@ -2183,13 +1884,23 @@ ul.list-inline {
   margin-top: 15px !important;
   min-width: 325px;
   max-width: 325px;
-  .card-title {
-    letter-spacing: 3px;
+  .card-body a {
+    border-top: 2px solid @primary_color;
+    opacity: 1;
+    border-radius: 0px;
+    &:focus {
+      box-shadow: none;
+    }
   }
   .card-icon {
-    height: 150px;
     font-size: 100px;
     text-align: center;
+    svg {
+      background: @clean_color;
+      border-radius: 100%;
+      width: 120px;
+      height: 120px;
+    }
   }
   .card-image {
     position: relative;
@@ -2206,9 +1917,12 @@ ul.list-inline {
     }
     img.edusi {
       position: absolute;
-      height: 75px;
+      height: 110px;
       bottom: 25%;
       left: calc(25% + 35px);
+      background: @clean_color;
+      border-radius: 100%;
+      padding: 23px;
     }
   }
 
@@ -2244,7 +1958,7 @@ ul.list-inline {
 
 
 /* ----------------------------------------------------------------
-    [ 17. Backgrounds ]
+    [ 16. Backgrounds ]
 -----------------------------------------------------------------*/
 .bg-light {
   background: @lightgrey_color;
@@ -2252,7 +1966,7 @@ ul.list-inline {
 
 
 /* ----------------------------------------------------------------
-    [ 18. Grid ]
+    [ 17. Grid ]
 -----------------------------------------------------------------*/
 @media (min-width: 576px) {
   .container {
@@ -2277,7 +1991,7 @@ ul.list-inline {
 
 
 /* ----------------------------------------------------------------
-    [ 19. Effects ]
+    [ 18. Effects ]
 -----------------------------------------------------------------*/
 .loading {
   -webkit-animation-name: loading;
@@ -2301,7 +2015,7 @@ ul.list-inline {
 
 
 /* ----------------------------------------------------------------
-    [ 20. Contact page ]
+    [ 19. Contact page ]
 -----------------------------------------------------------------*/
 #contact-form.contact-form {
   margin: 0 auto;
@@ -2374,13 +2088,14 @@ ul.list-inline {
 }
 
 /* ----------------------------------------------------------------
-    [ 21. Clients ]
+    [ 20. Clients ]
 -----------------------------------------------------------------*/
 .clients {
   max-width: calc(100% - 30px);
   .wrapper {
     display: flex;
     flex-wrap: wrap;
+    padding-top: 0px;
     .client {
       display: flex;
       width: 48.66%;
@@ -2442,7 +2157,7 @@ ul.list-inline {
 
 
 /* ----------------------------------------------------------------
-    [ 22. Cooperative page ]
+    [ 21. Cooperative page ]
 -----------------------------------------------------------------*/
 .cooperative {
   .slogan {
@@ -2455,7 +2170,7 @@ ul.list-inline {
 
 
 /* ----------------------------------------------------------------
-    [ 23. Legal pages ]
+    [ 22. Legal pages ]
 -----------------------------------------------------------------*/
 .legal-page {
   .content-section-a {

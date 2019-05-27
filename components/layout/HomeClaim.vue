@@ -24,7 +24,7 @@
       <div class="row">
         <div class="col-md-12 col-sm-12 col-xs-12 text-center">
           <div class="claim wow fadeInLeft">
-            <h2>{{ $t('claim') }}</h2>
+            <h1>{{ $t('claim') }}</h1>
             <div id="type-header"></div>
           </div>
         </div>

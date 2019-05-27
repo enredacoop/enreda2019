@@ -16,8 +16,10 @@
   <div class="container">
     <div>
       <b-jumbotron class="block-consul">
-        <h2><b>13</b> {{ $t('title') }}</h2>
-        <p class="subtitle">{{ $t('subtitle') }}</p>
+        <h2>
+          <b>13 {{ $t('title') }} </b>
+          <span class="subtitle">{{ $t('subtitle') }}</span>
+        </h2>
         <b-button variant="primary" href="#">{{ $t('button') }}</b-button>
         <img
           src="~/assets/images/logo_consul.png"

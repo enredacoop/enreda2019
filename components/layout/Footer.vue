@@ -101,7 +101,7 @@
         <div class="col-lg-12">
           <p class="copyright text-muted small text-center">
             <img
-              src="~/assets/images/50x50gris777-01.png"
+              src="~/assets/images/enreda_footer.png"
               class="center img-responsive"
               alt="Logo de Enreda"
               width="50px"

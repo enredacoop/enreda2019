@@ -13,7 +13,7 @@
     <div id="home-blog-title" class="container">
       <div class="row">
         <div class="col-12 text-center">
-          <h2>{{ $t('title') }}</h2>
+          <h2 class="section-heading">{{ $t('title') }}</h2>
         </div>
       </div>
     </div>
