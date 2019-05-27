@@ -191,28 +191,36 @@ export const state = () => ({
   },
   // Services
   'analitica-bigdata': {
-    title: '',
-    description: '',
-    keywords: ''
+    title: 'Analítica y BigData',
+    description:
+      'análisis de datos y visualización de datos, en gráficas o mapas',
+    keywords: 'analisis, bigdata, mapas, graficos, maps, data, analytics, graph'
   },
   disenodesarrolloproducto: {
-    title: '',
-    description: '',
-    keywords: ''
+    title: 'Diseño y desarrollo de productos a medida',
+    description:
+      'Todo el proceso de diseño y desarrollo de productos de software a medida basados en software libre.',
+    keywords:
+      'software libre, free software, desarrollo, desarrollo web, portales, plataformas, pyhton, django, drupal, cms'
   },
   participacionciudadana: {
-    title: '',
-    description: '',
-    keywords: ''
+    title: 'Participación ciudadana',
+    description: 'Diseño y dinamización de procesos participativos',
+    keywords:
+      'consul, participacion ciudadana, participación, presupuestos participativos, reglamentos, planes urbanísticos, ciudad amable, votaciones, dinamización, consultoría, ods, participación ods'
   },
   participaciondigital: {
-    title: '',
-    description: '',
-    keywords: ''
+    title: 'Herramientas para la Participación Digital',
+    description:
+      'Desarrollo, implantación y mantenimiento de herramientas para la participación digital',
+    keywords:
+      'consul, decidim, decide, participa, decide madrid, ods, votaciones, consultas, votos, portales de participación, votaciones online, participacion ciudadana, participación, presupuestos participativos, reglamentos, planes urbanísticos, ciudad amable, votaciones, dinamización, consultoría, participación ods'
   },
   transparencia: {
-    title: '',
-    description: '',
-    keywords: ''
+    title: 'Herramientas y asesoramiento en Gobierno Abierto',
+    description:
+      'Consultoría, asesoramiento y desarrollo de herramientas digitales para Gobierno Abierto',
+    keywords:
+      'transparencia, transparencia presupuestaria, visualización, prespuestos, transparency, opengob, gobierno abierto'
   }
 })
