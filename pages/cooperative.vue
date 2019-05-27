@@ -218,7 +218,7 @@
             <div
               v-for="(place, index) in offices.places"
               :key="index"
-              class="col-sm-12 col-md-3 col-lg-3"
+              class="col-sm-12 col-md-6 col-lg-3"
             >
               <h3 class="city">{{ place.city }}</h3>
               <template v-if="place.othercontact != ''">
