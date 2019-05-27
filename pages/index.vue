@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div ondragstart="return false">
     <HomeClaim />
     <Services />
     <Consul />

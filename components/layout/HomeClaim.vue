@@ -1,10 +1,20 @@
 <i18n>
 {
   "es": {
-    "claim": "Tecnología para la Transformación Social"
+    "claim": "Tecnología para la Transformación Social",
+    "phrase_1": "Vota las propuestas de tu ciudad",
+    "phrase_2": "Participa en las decisiones de tu ciudad",
+    "phrase_3": "Consulta los presupuestos de tu ayuntamiento",
+    "phrase_4": "Lanza propuestas ciudadanas",
+    "phrase_5": "Tu ayuntamiento te necesita",
   },
   "en": {
-    "claim": "Technology for Social Transformation"
+    "claim": "Technology for Social Transformation",
+    "phrase_1": "Vote your city's proposals",
+    "phrase_2": "Participate in the decisions of your city",
+    "phrase_3": "Check the budgets of your town hall",
+    "phrase_4": "Launches citizen proposals",
+    "phrase_5": "Your city council needs you",
   }
 }
 </i18n>
@@ -27,43 +37,37 @@
 import TypeIt from 'typeit'
 export default {
   mounted() {
+    let translations = this.$i18n.messages.es
+    if (this.$i18n.locale === 'en') {
+      translations = this.$i18n.messages.en
+    }
     const myTypeItInstance = new TypeIt('#type-header')
       .options({
         speed: 100,
         deleteSpeed: 100
       })
-      .type('Vota las propuestas de tu ciudad')
-      .pause(1550)
-      .delete(6)
-      .type('pueblo')
+      .type(translations.phrase_1)
       .pause(1750)
-      .delete(6)
-      .type('cooperativa')
-      .pause(1750)
-      .options({ deleteSpeed: 75 })
       .delete(100)
-      .pause(1300)
-      .type('Participa en las decisiones de tu ciudad')
-      .pause(550)
-      .delete(6)
-      .type('<b>ciudad</b>')
-      .pause(1500)
+      .options({ deleteSpeed: 75 })
+      .pause(700)
+      .type(translations.phrase_2)
+      .pause(1700)
       .delete(100)
       .pause(500)
-      .type('Consulta los presupuestos de tu ayuntamiento')
-      .pause(1600)
-      .delete(15)
-      .type('TU AYUNTAMIENTO')
+      .type(translations.phrase_3)
       .pause(2000)
       .options({ deleteSpeed: 50, speed: 75 })
       .delete(100)
-      .pause(750)
-      .type('Lanza propuestas ciudadanas')
-      .pause(1300)
-      .type('<br><b>Tu ayuntamiento te necesita</b>')
-      .pause(1800)
-      .delete(200)
+      .pause(550)
+      .type(translations.phrase_4)
       .pause(1750)
+      .delete(100)
+      .pause(550)
+      .type(translations.phrase_5)
+      .pause(1800)
+      .delete(100)
+      .pause(550)
       .go()
 
     setTimeout(() => {

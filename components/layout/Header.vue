@@ -1,5 +1,5 @@
 <template>
-  <div id="#">
+  <div id="#" ondragstart="return false">
     <header>
       <b-navbar id="e-navbar" toggleable="lg" variant="info">
         <b-navbar-brand href="#" :to="localePath('index')">
@@ -133,7 +133,7 @@ export default {
         $('#navbar-brand-logo').addClass('sticky')
         $('#navbar-brand-logo').attr(
           'src',
-          require('~/assets/images/logo_enreda_horizontal.png')
+          require('~/assets/images/logo_enreda_naranja.png')
         )
       } else {
         $(header).removeClass('sticky')
