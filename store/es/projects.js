@@ -629,7 +629,7 @@ export const state = () => ({
       clientdescription:
         'Organismo público español para la promoción y enseñanza de la lengua española, y la difusión de la cultura de España e Hispanoamérica',
       clienturl: 'http://www.cervantes.es',
-      clientyear: '2011-2015',
+      clientyear: '2011-2017',
       calltoaction: {
         call: 'Te ayudamos a desarrollar tu estrategia de comercio online.'
       }

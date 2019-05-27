@@ -133,7 +133,7 @@ export default {
         site_name_short: 'Enreda',
         current_year: new Date().getFullYear(),
         google_analytics: 'UA-18017706-1',
-        phone: '+34 954 32 35 05',
+        phone: '+34 693 55 45 18',
         email: 'info@enreda.coop',
         address1: 'Avda. República Argentina 25 Planta 9',
         address2: 'Espacio RES',

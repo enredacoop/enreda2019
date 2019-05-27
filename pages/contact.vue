@@ -163,11 +163,11 @@ export default {
             othercontact: ''
           },
           {
-            city: 'Malaga',
+            city: 'Málaga',
             address: 'Trinidad Grund 7, 1º derecha',
             zipcode: '29001',
-            officename: '',
-            officeurl: '',
+            officename: 'DobleMitadpresupuesto participativos,',
+            officeurl: 'https://www.doblemitad.com',
             othercontact: 'malaga@enreda.coop'
           },
           {

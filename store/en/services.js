@@ -8,7 +8,7 @@ export const state = () => ({
       description:
         'CONSUL es la mejor plataforma de participación existente actualmente. Su potencia y versatilidad la ha llevado a ser usada por los Ayuntamientos de las principales capitales de España y Latinoamérica y recibir el Premio de Servicio Público 2018 de ONU. ENREDA instala, adapta, configura y desarrolla CONSUL a las necesidades de tu organización.',
       logo: 'logo_consul.png',
-      url: 'http://participacionyciudadania.com/',
+      url: 'http://demo.participacionyciudadania.com',
       images: [
         {
           url: 'works/screenshot-oviedo.png'

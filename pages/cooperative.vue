@@ -469,12 +469,12 @@ export default {
             othercontact: ''
           },
           {
-            city: 'Malaga',
+            city: 'Málaga',
             address: 'Trinidad Grund 7, 1º derecha',
             zipcode: '29001',
             officename: '',
             officeurl: '',
-            othercontact: 'malaga@enreda.coop'
+            othercontact: ''
           },
           {
             city: 'Madrid',
@@ -482,7 +482,7 @@ export default {
             zipcode: '',
             officename: '',
             officeurl: '',
-            othercontact: 'madrid@enreda.coop'
+            othercontact: ''
           }
         ]
       },
