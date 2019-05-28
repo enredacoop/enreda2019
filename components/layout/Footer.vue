@@ -34,7 +34,9 @@
               </a>
             </li>
             <li class="contact">
-              <a class="contact" href="tel: footer.phone">{{ footer.phone }}</a>
+              <a class="contact" :href="'tel:' + footer.phone">{{
+                footer.phone
+              }}</a>
             </li>
             <li class="contact md">
               <p>
@@ -108,7 +110,12 @@
             />
             <strong>{{ footer.current_year }}, {{ $t('site_name') }}</strong>
             <br />
-            {{ $t('copyleft') }}
+            <a
+              href="https://creativecommons.org/licenses/by-nc-nd/3.0/es/"
+              target="_blank"
+              class="text-muted"
+              >{{ $t('copyleft') }}</a
+            >
           </p>
         </div>
       </div>

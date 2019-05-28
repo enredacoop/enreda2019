@@ -33,6 +33,7 @@
     20. Clients
     21. Cooperative page
     22. Legal pages
+    23. Tables
  
 ---------------------------------------------------------------- */
 /* ----------------------------------------------------------------
@@ -91,7 +92,10 @@ section {
     float: right;
   }
 }
-
+hr {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
 
 /* ----------------------------------------------------------------
     [ 02. Texts ]
@@ -140,6 +144,7 @@ h6 {
 .section-body {
   font-size: 20px;
   text-align: justify;
+  font-weight: 300;
 }
 
 
@@ -239,6 +244,7 @@ h6 {
   .subtitle {
     font-size: 35px;
     color: @gray_color;
+    font-weight: 300;
   }
 
   .btn-primary {
@@ -450,13 +456,13 @@ header {
     border-radius: 0px;
     /*box-shadow: 0px 0px 13px #000;*/
     margin-bottom: -20px;
-    padding: 15px 0;
-    padding-top: 0px;
     z-index: 9999;
     height: 105px;
     -moz-transition: all ease .3s;
     -webkit-transition: all ease .3s;
     transition: all ease .3s;
+    padding: 15px 0px;
+    padding-bottom: 0px;
 
     .navbar-toggler {
       background: @white_color;
@@ -629,6 +635,11 @@ header {
     }
     &.sticky + .content {
       padding-top: 102px;
+    }
+  }
+  @media (min-width: 992px) {
+    .navbar {
+      padding: 0px 120px 15px 120px;
     }
   }
 }
@@ -1519,6 +1530,7 @@ p.copyright {
       }
       .description {
         color: @dark_color;
+        font-weight: 300;
       }
     }
     .screenshot {
@@ -1547,6 +1559,7 @@ p.copyright {
       margin-top: 50px;
       margin-bottom: 50px;
       font-size: 22px;
+      font-weight: 300;
     }
     #media {
       .section-heading {
@@ -1662,6 +1675,7 @@ p.copyright {
     }
     .description {
       font-size: 1.2em;
+      font-weight: 300;
     }
     .year {
       font-size: 1.2em;
@@ -2017,6 +2031,20 @@ ul.list-inline {
 /* ----------------------------------------------------------------
     [ 19. Contact page ]
 -----------------------------------------------------------------*/
+#contact-page {
+  #offices {
+    display: inline-block;
+    width: 100%;
+    margin-top: 60px;
+  }
+  a {
+    color: @primary_color;
+    &:hover {
+      color: @primary_color_hover;
+      text-decoration: none;
+    }
+  }
+}
 #contact-form.contact-form {
   margin: 0 auto;
   margin-top: 60px;
@@ -2176,5 +2204,38 @@ ul.list-inline {
   .content-section-a {
     margin-top: 60px;
     margin-bottom: 60px;
+  }
+  .section-body {
+    max-width: 900px;
+    margin: 0 auto;
+    margin-right: 0px;
+  }
+}
+
+
+
+/* ----------------------------------------------------------------
+    [ 23. Tables ]
+-----------------------------------------------------------------*/
+.enreda-table {
+  max-width: 900px;
+  margin: 0 auto;
+
+  dl {
+    width: 49%;
+    clear: left;
+    float: left;
+  }
+  dd {
+    width: 49%;
+    float: left;
+    text-align: right;
+  }
+  dl.first, dd.first {
+    border-top: 0px;
+  }
+  dl, dd {
+    padding-top: 10px; 
+    border-top: 1px solid @lightgrey_color;
   }
 }

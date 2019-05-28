@@ -45,37 +45,40 @@
     <PageClaim :title="$t('title')" background="bg_2" />
     <div class="wrapper-content">
       <div class="container">
-        <div class="row">
-          <div class="col-sm-8 col-md-offset-2 col-xs-12">
+        <div class="row justify-content-center">
+          <div class="col-xs-12 col-sm-12 col-md-6">
             <p class="lead">{{ $t('description') }}</p>
-
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12">
             <div class="content-section-a">
               <h3 class="section-heading">{{ $t('head1') }}</h3>
-              <p class="lead">{{ $t('description1') }}</p>
+              <p class="section-body">{{ $t('description1') }}</p>
             </div>
             <div class="content-section-a">
               <h3 class="section-heading">{{ $t('head2') }}</h3>
-              <p class="lead">{{ $t('description2') }}</p>
+              <p class="section-body">{{ $t('description2') }}</p>
             </div>
             <div class="content-section-a">
               <h3 class="section-heading">{{ $t('head3') }}</h3>
-              <p class="lead">{{ $t('description3') }}</p>
+              <p class="section-body">{{ $t('description3') }}</p>
             </div>
             <div class="content-section-a">
               <h3 class="section-heading">{{ $t('head4') }}</h3>
-              <p class="lead">{{ $t('description4') }}</p>
+              <p class="section-body">{{ $t('description4') }}</p>
             </div>
             <div class="content-section-a">
               <h3 class="section-heading">{{ $t('head5') }}</h3>
-              <p class="lead">{{ $t('description5') }}</p>
+              <p class="section-body">{{ $t('description5') }}</p>
             </div>
             <div class="content-section-a">
               <h3 class="section-heading">{{ $t('head6') }}</h3>
-              <p class="lead">{{ $t('description6') }}</p>
+              <p class="section-body">{{ $t('description6') }}</p>
             </div>
             <div class="content-section-a">
               <h3 class="section-heading">{{ $t('head7') }}</h3>
-              <p class="lead">{{ $t('description7') }}</p>
+              <p class="section-body">{{ $t('description7') }}</p>
             </div>
           </div>
         </div>

@@ -1,11 +1,11 @@
 <i18n>
 {
   "es": {
-    "title": "Clientes",
+    "title": "Clientes de referencia",
     "button": "Contacta"
   },
   "en": {
-    "title": "Clients",
+    "title": "Reference customers",
     "button": "Contact"
   }
 }

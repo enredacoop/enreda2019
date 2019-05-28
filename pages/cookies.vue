@@ -7,7 +7,7 @@
     "ask2": "Google Analytics cookies",
     "answer2": "Este sitio usa Google Analytics para entender mejor cómo usas el portal. El objetivo principal con Google Analytics es aprender y mejorar el sitio para así poder obtener lo mejor de este.",
     "ask3": "Deshabilitar cookies",
-    "answer3": "Sin embargo, si quieres puedes deshabilitar las cookies de este sitio o otro, recomendamos que compruebes la sección dea ayuda de tu navegador para así poder deshabilitarlas."
+    "answer3": "Sin embargo, si quieres puedes deshabilitar las cookies de este sitio o otro, recomendamos que compruebes la sección de ayuda de tu navegador para así poder deshabilitarlas."
   },
   "en": {
     "title": "Cookies policy",
@@ -32,11 +32,11 @@
     >
       <div class="container">
         <div class="row">
-          <div class="col-sm-8 col-sm-offset-2 col-xs-12">
+          <div class="col-12">
             <h3 class="section-heading">{{ $t(dialogue.ask) }}</h3>
           </div>
-          <div class="col-sm-8 col-sm-offset-2 col-xs-12">
-            <p class="lead">{{ $t(dialogue.answer) }}</p>
+          <div class="col-12">
+            <p class="section-body">{{ $t(dialogue.answer) }}</p>
           </div>
         </div>
       </div>

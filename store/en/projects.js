@@ -2,7 +2,7 @@ export const state = () => ({
   items: [
     {
       id: 'tipi-ciudadano',
-      title: 'TIPI Ciudadano EN',
+      title: 'TIPI Ciudadano',
       class: 'tipi',
       subtitle: 'Transparencia, Información, Participación e Incidencia. EN',
       body: "Example body with <a href='/'>URL</a>.",

@@ -8,9 +8,7 @@
     "presuspuestoparticipativo": "Presupuestos participativos",
     "transparencia": "Transparencia",
     "participacion": "Participación",
-    "ayuntamiento": "Ayuntamientos",
     "reglamento": "Reglamento",
-    "intervencion": "Intervención",
     "analisisdatos": "Análisis de datos",
     "desarrolloproducto": "Desarollo de producto",
     "economiasocial": "Economía social",
@@ -18,7 +16,6 @@
     "desarrollotecnologico": "Desarrollo tecnológico",
     "formacion": "Formación",
     "participaciondigital": "Participación digital",
-    "planificacion": "Planificación"
   },
   "en": {
     "projects": "Projects",
@@ -28,9 +25,7 @@
     "presuspuestoparticipativo": "Participatory budgets",
     "transparencia": "Transparency",
     "participacion": "Participation",
-    "ayuntamiento": "City Councils",
     "reglamento": "Regulation",
-    "intervencion": "Intervention",
     "analisisdatos": "Analysis of data",
     "desarrolloproducto": "Product development",
     "economiasocial": "Social economy",
@@ -38,7 +33,6 @@
     "desarrollotecnologico": "Technological development",
     "formacion": "Training",
     "participaciondigital": "Digital participation",
-    "planificacion": "Planning"
   }
 }
 </i18n>
@@ -47,7 +41,7 @@
   <div id="works" class="wrapper-content">
     <b-container>
       <div>
-        <div class="button-group text-center">
+        <div class="button-group">
           <b-dropdown
             id="dropdown-filter"
             :text="$t('apply_filter')"
@@ -160,14 +154,8 @@ export default {
           participacion: function(el) {
             return el.category.includes('participacion')
           },
-          ayuntamiento: function(el) {
-            return el.category.includes('ayuntamiento')
-          },
           reglamento: function(el) {
             return el.category.includes('reglamento')
-          },
-          intervencion: function(el) {
-            return el.category.includes('intervencion')
           },
           analisisdatos: function(el) {
             return el.category.includes('analisisdatos')
@@ -189,9 +177,6 @@ export default {
           },
           participaciondigital: function(el) {
             return el.category.includes('participaciondigital')
-          },
-          planificacion: function(el) {
-            return el.category.includes('planificacion')
           }
         }
       }

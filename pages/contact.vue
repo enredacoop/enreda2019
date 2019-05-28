@@ -26,36 +26,25 @@
 </i18n>
 
 <template>
-  <div>
+  <div id="contact-page">
     <PageClaim :title="$t('contact')" background="" />
-    <section class="mb-60">
+    <section class="mt-60">
       <div class="container">
-        <h2 class="section-heading">{{ $t('social_networks') }}</h2>
-        <div class="networks text-center mt-30">
-          <a class="sn" href="http://twitter.com/enreda" target="_blank">
-            <font-awesome-layers class="fa-3x">
-              <font-awesome-icon icon="circle" class="primary" />
-              <font-awesome-icon
-                :icon="['fab', 'twitter']"
-                transform="shrink-6"
-                class="white"
-              />
-            </font-awesome-layers>
-          </a>
-          <a
-            class="sn"
-            href="https://www.facebook.com/enreda.coop"
-            target="_blank"
-          >
-            <font-awesome-layers class="fa-3x">
-              <font-awesome-icon icon="circle" class="primary" />
-              <font-awesome-icon
-                :icon="['fab', 'facebook-f']"
-                transform="shrink-6"
-                class="white"
-              />
-            </font-awesome-layers>
-          </a>
+        <div class="enreda-table">
+          <dl class="first">Twitter</dl>
+          <dd class="first">
+            <a href="https://twitter.com/enreda">@enreda</a>
+          </dd>
+          <dl>Facebook</dl>
+          <dd>
+            <a href="https://www.facebook.com/enreda.coop">@enreda.coop</a>
+          </dd>
+          <dl>Email</dl>
+          <dd>
+            <a href="mailto:info@enreda.coop">info@enreda.coop</a>
+          </dd>
+          <dl>Phone</dl>
+          <dd><a href="tel:+34693554518">+34 693 55 45 18</a></dd>
         </div>
       </div>
     </section>

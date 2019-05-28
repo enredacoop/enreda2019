@@ -1,3 +1,19 @@
+<i18n>
+{
+  "es": {
+    "source_code": "Código fuente",
+    "watch_live": "Ver en vivo",
+    "technologies": "Tecnologías",
+    "some_appearances_media": "Algunas apariciones en medios",
+  },
+  "en": {
+    "source_code": "Source code",
+    "watch_live": "Watch live",
+    "technologies": "Technologies",
+    "some_appearances_media": "Some appearances in media",
+  }
+}
+</i18n>
 <template>
   <div>
     <div id="work" :class="project.class + ' wrapper'">
@@ -54,15 +70,15 @@
                     target="_blank"
                   >
                     <font-awesome-icon :icon="['fas', 'binoculars']" />
-                    Ver en vivo</a
+                    {{ $t('watch_live') }}</a
                   >
                   <a
                     v-if="project.sourcecode != ''"
                     :href="project.sourcecode"
                     class="btn btn-primary"
                     target="_blank"
-                    ><font-awesome-icon :icon="['fab', 'github']" /> Código
-                    fuente</a
+                    ><font-awesome-icon :icon="['fab', 'github']" />
+                    {{ $t('source_code') }}</a
                   >
                 </template>
               </div>
@@ -80,14 +96,12 @@
             <div class="col-12">
               <template v-if="project.media.length > 0">
                 <section id="media" class="media-line">
-                  <div class="section-heading">
-                    <div class="container wow fadeInUp">
-                      <div class="row">
-                        <div class="col-sm-12 text-center">
-                          <h4 class="section-heading">
-                            Algunas apariciones en medios
-                          </h4>
-                        </div>
+                  <div class="container wow fadeInUp">
+                    <div class="row">
+                      <div class="col-sm-12 text-center">
+                        <h4 class="section-heading">
+                          {{ $t('some_appearances_media') }}
+                        </h4>
                       </div>
                     </div>
                   </div>
@@ -125,7 +139,7 @@
             <template v-if="project.technologies != ''">
               <div class="col-12 text-center">
                 <div class="technologies">
-                  <h4 class="section-heading">Technologies</h4>
+                  <h4 class="section-heading">{{ $t('technologies') }}</h4>
                   <a
                     v-for="(technology, index) in project.technologies"
                     :key="index"
