@@ -21,7 +21,7 @@
         <div class="container">
           <div class="row">
             <div class="col-md-12 col-sm-12 col-xs-12 text-center">
-              <div class="claim wow fadeInLeft">
+              <div class="claim">
                 <h1>{{ project.title }}</h1>
                 <h4>{{ project.subtitle }}</h4>
               </div>
@@ -96,7 +96,7 @@
             <div class="col-12">
               <template v-if="project.media.length > 0">
                 <section id="media" class="media-line">
-                  <div class="container wow fadeInUp">
+                  <div class="container">
                     <div class="row">
                       <div class="col-sm-12 text-center">
                         <h4 class="section-heading">
@@ -105,7 +105,7 @@
                       </div>
                     </div>
                   </div>
-                  <div class="container wow fadeInUp">
+                  <div class="container">
                     <div class="row">
                       <div
                         v-for="(media, index) in project.media"
@@ -163,7 +163,7 @@
               <div
                 v-for="(key, index) in project.keys"
                 :key="index"
-                class="col-sm-4 wow pulse"
+                class="col-sm-4"
               >
                 <div class="key">{{ key.key }}</div>
               </div>

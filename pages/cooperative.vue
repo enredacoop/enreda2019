@@ -99,7 +99,7 @@
             <div
               v-for="(item, index) in principles.items"
               :key="index"
-              class="col-sm-4"
+              class="col-sm-12 col-md-4"
               :v-if="principles.items != null"
             >
               <font-awesome-layers class="fa-6x">

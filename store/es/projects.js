@@ -1545,7 +1545,7 @@ export const state = () => ({
       id: 'sistema-participacion',
       title: 'Sistema Público de Participación Digital de Andalucía',
       class: 'sistemaparticipacion',
-      subtitle: 'Sistema Público de Participación Digital de Andalucía',
+      subtitle: '',
       body: "Ejemplo de body con <a href='/'>URL</a>.",
       description:
         'Desarrollo de la Prueba de Concepto para usar CONSUL como base del Sistema Público de Participación Digital de Andalucía.',

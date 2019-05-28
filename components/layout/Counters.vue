@@ -16,7 +16,7 @@
   <div id="home-days" class="wrapper-content">
     <div class="container">
       <div class="row">
-        <div class="col-xs-12 col-sm-4">
+        <div class="col-sm-12 col-md-4">
           <div class="counter">
             <h2 class="count-title daysnumber"></h2>
             <p class="count-text ">
@@ -24,13 +24,13 @@
             </p>
           </div>
         </div>
-        <div class="col-xs-12 col-sm-4">
+        <div class="col-sm-12 col-md-4">
           <div class="counter">
             <h2 class="count-title">+ 50</h2>
             <p class="count-text ">{{ $t('counter_2') }}</p>
           </div>
         </div>
-        <div class="col-xs-12 col-sm-4">
+        <div class="col-sm-12 col-md-4">
           <div class="counter">
             <h2 class="count-title">+ 30</h2>
             <p class="count-text ">

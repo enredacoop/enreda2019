@@ -85,7 +85,7 @@ section {
 }
 
 .pull-right {
-  float: initial;
+  float: right;
 }
 @media(min-width:991px) {
   .pull-right {
@@ -160,7 +160,8 @@ h6 {
 }
 /********** HOME **********/
 #home-claim, #page-claim {
-
+  width: 100%;
+  min-width: 356px;
   background-image: url('~@~@/assets/images/banner_main_extra.jpeg');
   background-color: @white_color;
   background-size: cover;
@@ -176,9 +177,12 @@ h6 {
     text-transform: uppercase;
 
     h1 {
-      font-size: 60px;
+      font-size: 25px;
       background: @primary_color_trans;
       padding: 10px;
+      @media (min-width: 768px) {
+        font-size: 60px;
+      }
     }
 
     #type-header {
@@ -196,11 +200,14 @@ h6 {
     padding: initial;
     padding-top: 60px;
     h1 {
-      font-size: 30px;
+      font-size: 25px;
       width: 60%;
       margin: 0 auto;
       display: inline;
       padding: 10px 30px;
+      @media (min-width:768px) {
+        font-size: 30px;
+      }
     }
   }
   &.bg_none {
@@ -239,7 +246,10 @@ h6 {
   background: @clean_color;
   h2 {
     font-size: 35px;
-    max-width: 60%;
+    max-width: 100%;
+    @media (min-width: 768px) {
+      max-width: 60%;
+    }
   }
   .subtitle {
     font-size: 35px;
@@ -248,11 +258,14 @@ h6 {
   }
 
   .btn-primary {
-    margin: 50px 50px 0px 0px;
+    margin: 30px;
     background-color: @primary_color;
     border-color: @primary_color;
     color: @white_color;
     text-transform: uppercase;
+    @media (min-width: 768px) {
+      margin: 50px 50px 0px 0px;
+    }
     &:hover {
       background-color: @primary_color_hover !important;
       border-color: @primary_color_hover !important;
@@ -466,9 +479,15 @@ header {
 
     .navbar-toggler {
       background: @white_color;
-      margin-right: 10px;
+      margin-right: 20px;
       width: 30px;
       height: 30px;
+      position: relative;
+      top: -20px;
+      @media (min-width: 992px) {
+        margin-right: 10px;
+        top: 5px;
+      }
 
       .navbar-toggler-icon {
         width: 19px;
@@ -520,6 +539,7 @@ header {
           border-radius: 3px;
           a {
             color: @black_color !important;
+            background-color: @white_color !important;
           }
         }
       }
@@ -576,7 +596,7 @@ header {
         color: @black_color !important;
       }
       &.sticky .navbar-collapse {
-        top: -5px !important;
+        top: -26px !important;
       }
 
       ul.navbar-nav li {
@@ -611,7 +631,10 @@ header {
         -webkit-transition: all ease .3s;
         transition: all ease .3s;
         position: relative;
-        top: 5px;
+        top: -20px;
+        @media (min-width: 992px) {
+          top: 5px;
+        }
       }
       .dropdown {
         button {
@@ -971,12 +994,31 @@ p.copyright {
 
   #offices {
     color: inherit;
+    div.col-sm-12:first-child {
+      margin-top: 0px;
+    }
+    div.col-sm-12 {
+      margin-top: 25px;
+      @media (min-width: 768px) {
+        margin-top: 0px;
+      }
+    }
   }
 
   #partof {
     background-color: @white_color;
     color: @black_color;
     margin-top: 30px;
+    margin-bottom: 60px;
+    @media (min-width:768px){
+      margin-bottom: initial;
+    }
+    #collaborate {
+      margin-top: 60px;
+      @media (min-width:768px){
+        margin-top: initial;
+      }
+    }
     h5 {
       color: @black_color;
       font-size: 30px;
@@ -1015,10 +1057,12 @@ p.copyright {
         padding: 5px;
         margin-bottom: 30px;
         color: @gray_color;
-        min-height: 300px;
         padding: 15px;
         font-size: 15px;
         border-radius: 3px;
+        @media (min-width:768px){
+          min-height: 300px;
+        }
       }
       
       &:hover {
@@ -1517,6 +1561,18 @@ p.copyright {
 -----------------------------------------------------------------*/
 /********** WORK **********/
 #work, #service {
+  h1 {
+    font-size: 25px;
+    @media (min-width:768px) {
+      font-size: 30px;
+    }
+  }
+  h4 {
+    font-size: 20px;
+    @media (min-width:768px) {
+      font-size: 25px;
+    }
+  }
   #intro {
     height: 250px;
     padding-top: 110px;
@@ -1803,7 +1859,10 @@ img.center {
 .logo_consul {
   width: 100%;
   max-width: 350px;
-  margin-top: 60px;
+  margin-top: 30px;
+  @media (min-width: 768px) {
+    margin-top: 60px;
+  }
   //filter: contrast(0) brightness(100);
 }
 @media (min-width: 992px) {
