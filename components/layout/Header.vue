@@ -102,9 +102,9 @@
       </b-navbar>
     </header>
     <div id="button-top" class="hidden">
-      <a href="#">
+      <button>
         <font-awesome-icon :icon="['fas', 'chevron-up']" transform="shrink-6" />
-      </a>
+      </button>
     </div>
   </div>
 </template>
@@ -122,6 +122,9 @@ export default {
       navbarControl()
       buttonTopControl()
     }
+    $('#button-top').on('click', function() {
+      $('html').animate({ scrollTop: 0 }, 'medium')
+    })
 
     let header = document.getElementById('e-navbar')
     let buttonTop = document.getElementById('button-top')
