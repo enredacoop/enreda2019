@@ -42,7 +42,7 @@
 </i18n>
 <template>
   <div class="legal-page">
-    <PageClaim :title="$t('title')" background="bg_2" />
+    <PageClaim :title="$t('title')" background="bg_default" />
     <div class="wrapper-content">
       <div class="container">
         <div class="row justify-content-center">

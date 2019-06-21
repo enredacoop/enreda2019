@@ -31,20 +31,20 @@
     <section class="mt-60">
       <div class="container">
         <div class="enreda-table">
-          <dl class="first">Twitter</dl>
+          <dl class="first">Email</dl>
           <dd class="first">
+            <a href="mailto:info@enreda.coop">info@enreda.coop</a>
+          </dd>
+          <dl>Phone</dl>
+          <dd><a href="tel:+34693554518">+34 693 55 45 18</a></dd>
+          <dl>Twitter</dl>
+          <dd>
             <a href="https://twitter.com/enreda">@enreda</a>
           </dd>
           <dl>Facebook</dl>
           <dd>
             <a href="https://www.facebook.com/enreda.coop">@enreda.coop</a>
           </dd>
-          <dl>Email</dl>
-          <dd>
-            <a href="mailto:info@enreda.coop">info@enreda.coop</a>
-          </dd>
-          <dl>Phone</dl>
-          <dd><a href="tel:+34693554518">+34 693 55 45 18</a></dd>
         </div>
       </div>
     </section>

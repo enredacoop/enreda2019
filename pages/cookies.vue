@@ -23,7 +23,7 @@
 
 <template>
   <div class="legal-page">
-    <PageClaim :title="$t('title')" background="bg_2" />
+    <PageClaim :title="$t('title')" background="bg_default" />
     <div
       v-for="(dialogue, index) in data.dialogues"
       :key="index"

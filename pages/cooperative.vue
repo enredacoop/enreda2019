@@ -33,7 +33,7 @@
     "join_up_title": "Únete",
     "join_up_description": "Si quieres trabajar con nosotras, y desarrollar tu empleabilidad haciendo lo que más te gusta, <a href='mailto:info@enreda.coop' target='_blank'>ponte en contacto con nosotras</a>.",
     "collaborate_title": "Colabora",
-    "collaborate_description": "Si quieres colaborar en proyectos de transformación social, puedes hacerlo a través de <a href='https://www.loomio.org/g/VcGPxekv/socialinn' target='_blank'> nuestro correo electrónico o redes sociales</a>, un espacio de creación colectiva enfocado a la innovación social.",
+    "collaborate_description": "Si quieres colaborar en proyectos de transformación social, puedes hacerlo a través de <b>nuestro correo electrónico o redes sociales</b>, un espacio de creación colectiva enfocado a la innovación social.",
   },
   "en": {
     "title": "Cooperative",
@@ -68,7 +68,7 @@
     "join_up_title": "Join up",
     "join_up_description": "If you want to work with us, and develop your employability by doing what you like most, <a href='mailto:info@enreda.coop' target='_blank'>get in touch with us</a>.",
     "collaborate_title": "Collaborate",
-    "collaborate_description": "If you want to collaborate in social transformation projects, you can do it through <a href='https://www.loomio.org/g/VcGPxekv/socialinn' target='_blank'> our email or social networks</a>, a collective creation space focused on social innovation.",
+    "collaborate_description": "If you want to collaborate in social transformation projects, you can do it through <b>our email or social networks</b>, a collective creation space focused on social innovation.",
   }
 }
 </i18n>

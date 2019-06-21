@@ -98,7 +98,7 @@ export const state = () => ({
       subtitle: 'Diseño y desarrollo de productos',
       class: 'disenodesarrolloproducto',
       description: '',
-      logo: 'services/bg_participaciondigital.jpeg',
+      logo: '',
       url: '',
       images: [
         {
@@ -161,7 +161,7 @@ export const state = () => ({
       subtitle: 'Analitica - Big data',
       class: 'analitica-bigdata',
       description: '',
-      logo: 'services/big_data.jpg',
+      logo: 'services/pagina_analiticaenreda.png',
       url: 'http://lynxanalytica.com/',
       images: [
         {

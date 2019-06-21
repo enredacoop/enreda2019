@@ -19,7 +19,7 @@
                 <span class="description">{{ service.description }}</span>
               </div>
             </div>
-            <div class="col-12">
+            <div v-if="service.logo != ''" class="col-12">
               <div class="screenshot text-center">
                 <img :src="getImageUrl(service.logo)" :alt="service.title" />
               </div>
@@ -180,7 +180,9 @@ export default {
   },
   methods: {
     getImageUrl(imageId) {
-      return require(`~/assets/images/${imageId}`)
+      if (imageId !== '') {
+        return require(`~/assets/images/${imageId}`)
+      }
     },
     getImageUrlAUX(imageId) {
       return require(`~/assets/images/works/${imageId}`)
