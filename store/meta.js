@@ -189,6 +189,19 @@ export const state = () => ({
     keywords:
       'ayuntamiento, participacion, ciudadana, ciudadania, votaciones, decide, ciudad, gobierno, publico, institucion, proceso, participacion, participativo, tarifa, presupuesto'
   },
+  'protocolo-ae': {
+    title: 'Protocolo Andalucía Emprende',
+    description: 'Web para el Plan de Acogida de Andalucía Emprende',
+    keywords:
+      'andalucia, emprende, empendimiento, ciudadania, cade, empresa, publico, institucion, proceso'
+  },
+  'mantenimiento-apps-laguna': {
+    title: 'Mantenimiento Aplicaciones Institucionales ULL',
+    description:
+      'Mantenimiento de aplicaciones institucionales de la Universidad de La Laguna',
+    keywords:
+      'institucion, universidad, publico, entidad, mantenimiento, evolutivo, mejora, aplicacion'
+  },
   // Services
   'analitica-bigdata': {
     title: 'Analítica y BigData',

@@ -1522,7 +1522,6 @@ p.copyright {
       color: make-contrast(@planintervencion_color);
     }
   }
-
   .work.presupuestotarifa .work-header {
     background-color: @presupuestotarifa_color;
     img {
@@ -1534,6 +1533,29 @@ p.copyright {
       color: make-contrast(@presupuestotarifa_color);
     }
   }
+  .work.protocoloae .work-header {
+    background-color: @protocoloae_color;
+    img { 
+      width: 310px;
+      padding-top: 45px;
+    }
+    .title {
+      background-color: darken(@protocoloae_color, 5%);
+      color: make-contrast(@protocoloae_color);
+    }
+  }
+  .work.maiull .work-header {
+    background-color: @maiull_color;
+    img {
+      width: 250px;
+      padding-top: 30px;
+    }
+    .title {
+      background-color: darken(@maiull_color, 5%);
+      color: make-contrast(@maiull_color);
+    }
+  }
+
   a {
     text-decoration: none;
     /*font-size: 2em;*/
@@ -1622,6 +1644,11 @@ p.copyright {
       margin-bottom: 50px;
       font-size: 22px;
       font-weight: 300;
+
+      p > p, p > ul, p > ol {
+        font-size: 18px;
+        text-align: justify;
+      }
     }
     #media {
       .section-heading {
@@ -1834,6 +1861,12 @@ p.copyright {
 }
 #work.presupuestotarifa {
   .work_styling(@presupuestotarifa_color);
+}
+#work.protocoloae {
+  .work_styling(@protocoloae_color);
+}
+#work.maiull {
+  .work_styling(@maiull_color);
 }
 
 @media(max-width:767px) {

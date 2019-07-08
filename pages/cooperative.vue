@@ -144,13 +144,13 @@
                 />
                 <h4>{{ people.name }}</h4>
                 <p class="text-muted">{{ people.position }}</p>
-                <p>
+                <p :v-if="people.role != null">
                   <span class="label label-custom-primary">{{
                     $t(people.role)
                   }}</span>
                 </p>
                 <ul class="list-inline social-buttons">
-                  <li :v-if="people.web != null">
+                  <li :v-if="people.web != 'null'">
                     <a
                       :href="people.web"
                       target="_blank"
@@ -299,8 +299,9 @@ export default {
             twitter: 'pablov2',
             linkedin: '',
             github: 'pablovg2',
-            role: 'partner'
+            role: ''
           },
+          /*
           {
             name: 'José Rubén Garrido',
             position: ' ',
@@ -310,8 +311,8 @@ export default {
             twitter: 'joserubengar',
             linkedin: '',
             github: '',
-            role: 'partner'
-          },
+            role: ''
+          }, */
           {
             name: 'David Aurusa',
             position: ' ',
@@ -321,7 +322,7 @@ export default {
             twitter: 'aurusa',
             linkedin: '',
             github: '',
-            role: 'partner'
+            role: ''
           },
           {
             name: 'Lucía Cano',
@@ -332,7 +333,7 @@ export default {
             twitter: '',
             linkedin: '',
             github: '',
-            role: 'trabajadora'
+            role: ''
           },
           {
             name: 'Arantza Lozano',
@@ -343,18 +344,7 @@ export default {
             twitter: '',
             linkedin: '',
             github: '',
-            role: 'trabajadora'
-          },
-          {
-            name: 'Alejandro Rodríguez',
-            position: ' ',
-            photo: 'alerodrom.jpg',
-            email: 'alejandro.rodriguez@enreda.coop',
-            web: '',
-            twitter: '',
-            linkedin: 'https://www.linkedin.com/in/alerodrom/',
-            github: 'alerodrom',
-            role: 'trabajador'
+            role: ''
           },
           {
             name: 'Carlos Campos',
@@ -365,7 +355,7 @@ export default {
             twitter: '',
             linkedin: 'https://www.linkedin.com/in/carcamcue/',
             github: 'carcamcue',
-            role: 'trabajador'
+            role: ''
           },
           {
             name: 'Manuel Barbadillo',
@@ -376,7 +366,7 @@ export default {
             twitter: '',
             linkedin: '',
             github: '',
-            role: 'becario'
+            role: ''
           },
           {
             name: 'Azahara Martín',
@@ -387,7 +377,7 @@ export default {
             twitter: '4everAza',
             linkedin: '',
             github: '',
-            role: 'trabajadora'
+            role: ''
           },
           {
             name: 'Patricia García',

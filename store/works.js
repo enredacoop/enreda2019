@@ -57,14 +57,6 @@ export const state = () => ({
       favourite: false
     },
     {
-      title: 'Somos.coop',
-      logo: 'logo-somoscoop.png',
-      class: 'somoscoop',
-      url: 'somoscoop',
-      category: ['economiasocial', 'desarrolloproducto'],
-      favourite: false
-    },
-    {
       title: 'Poletika',
       logo: 'logo-poletika.png',
       class: 'poletika',
@@ -116,6 +108,7 @@ export const state = () => ({
       category: ['desarrolloproducto', 'desarrollotecnologico'],
       favourite: false
     },
+    /*
     {
       title: 'ICAS',
       logo: 'logo-icas.png',
@@ -123,7 +116,7 @@ export const state = () => ({
       url: 'icas',
       category: ['desarrollotecnologico'],
       favourite: false
-    },
+    }, */
     {
       title: 'Festival de Sevilla de Cine',
       logo: 'logo-festivalcine.png',
@@ -224,6 +217,22 @@ export const state = () => ({
       logo: 'logo-ayto-tarifa.png',
       class: 'presupuestotarifa',
       url: 'presupuesto-tarifa',
+      category: ['presuspuestoparticipativo', 'participacion', 'ayuntamiento'],
+      favourite: false
+    },
+    {
+      title: 'Protocolo Andalucía Emprende',
+      logo: 'logo-andalucia-emprende.svg',
+      class: 'protocoloae',
+      url: 'protocolo-ae',
+      category: ['presuspuestoparticipativo', 'participacion', 'ayuntamiento'],
+      favourite: true
+    },
+    {
+      title: 'Mantenimiento Aplicaciones Institucionales ULL',
+      logo: 'logo-universidad-laguna.png',
+      class: 'maiull',
+      url: 'mantenimiento-apps-laguna',
       category: ['presuspuestoparticipativo', 'participacion', 'ayuntamiento'],
       favourite: false
     }
