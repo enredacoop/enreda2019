@@ -51,17 +51,17 @@ export default {
         places: [
           {
             city: 'Sevilla',
-            address: 'Avda. República Argentina 25 Planta 9',
-            zipcode: '41011',
-            officename: 'Espacio RES',
-            officeurl: 'http://espaciores.org'
+            address: '',
+            zipcode: '',
+            officename: '',
+            officeurl: ''
           },
           {
             city: 'Málaga',
-            address: 'Trinidad Grund 7, 1º derecha',
-            zipcode: '29001',
-            officename: 'DobleMitad',
-            officeurl: 'https://www.doblemitad.com'
+            address: '',
+            zipcode: '',
+            officename: '',
+            officeurl: ''
           },
           {
             city: 'Madrid',

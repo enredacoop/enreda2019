@@ -144,10 +144,12 @@
                 />
                 <h4>{{ people.name }}</h4>
                 <p class="text-muted">{{ people.position }}</p>
-                <p :v-if="people.role != null">
-                  <span class="label label-custom-primary">{{
-                    $t(people.role)
-                  }}</span>
+                <p>
+                  <span
+                    v-if="people.role != ''"
+                    class="label label-custom-primary"
+                    >{{ $t(people.role) }}</span
+                  >
                 </p>
                 <ul class="list-inline social-buttons">
                   <li :v-if="people.web != 'null'">

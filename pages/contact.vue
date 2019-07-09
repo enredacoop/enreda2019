@@ -6,6 +6,7 @@
     "sending": "Enviando...",
     "name": "Nombre",
     "email": "E-mail",
+    "phone": "Teléfono",
     "message": "Mensaje",
     "send": "Enviar",
     "social_networks": "Síguenos",
@@ -17,6 +18,7 @@
     "sending": "Sending...",
     "name": "Name",
     "email": "E-mail",
+    "phone": "Phone",
     "message": "Message",
     "send": "Send",
     "social_networks": "Follow us",
@@ -35,7 +37,7 @@
           <dd class="first">
             <a href="mailto:info@enreda.coop">info@enreda.coop</a>
           </dd>
-          <dl>Phone</dl>
+          <dl>{{ $t('phone') }}</dl>
           <dd><a href="tel:+34693554518">+34 693 55 45 18</a></dd>
           <dl>Twitter</dl>
           <dd>
