@@ -2,7 +2,7 @@ import webpack from 'webpack'
 
 export default {
   router: {
-    base: '/enreda2019/'
+    base: '/'
   },
   mode: 'universal',
 
