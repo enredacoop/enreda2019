@@ -142,21 +142,18 @@ export default {
       }
     },
     projects() {
-      const tags = []
       const res = []
+      const tags = []
       const newThis = this
       switch (this.slug) {
         case 'participaciondigital':
           tags.push('participaciondigital')
-          tags.push('consul')
           break
         case 'participacionciudadana':
-          tags.push('participacion')
-          tags.push('reglamento')
-          tags.push('intervencion')
+          tags.push('participacionciudadana')
           break
         case 'disenodesarrolloproducto':
-          tags.push('desarrolloproducto')
+          tags.push('disenodesarrolloproducto')
           break
         case 'analitica-bigdata':
           tags.push('analisisdatos')
@@ -165,14 +162,16 @@ export default {
           tags.push('transparencia')
           break
       }
+
       tags.forEach(function(element) {
         res.push(
-          newThis.$store.state.works.items.find(work =>
+          newThis.$store.state.works.items.filter(work =>
             work.category.includes(element)
           )
         )
       })
-      return res
+
+      return res[0]
     },
     meta() {
       return this.$store.state.meta[this.slug]
