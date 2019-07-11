@@ -65,7 +65,8 @@ export const state = () => ({
       category: [
         'desarrolloproducto',
         'economiasocial',
-        'desarrollotecnologico'
+        'desarrollotecnologico',
+        'disenodesarrolloproducto'
       ],
       favourite: false
     },
@@ -77,7 +78,8 @@ export const state = () => ({
       category: [
         'participaciondigital',
         'desarrolloproducto',
-        'desarrollotecnologico'
+        'desarrollotecnologico',
+        'disenodesarrolloproducto'
       ],
       favourite: false
     },
@@ -89,7 +91,8 @@ export const state = () => ({
       category: [
         'innovacionsocial',
         'desarrolloproducto',
-        'desarrollotecnologico'
+        'desarrollotecnologico',
+        'disenodesarrolloproducto'
       ],
       favourite: false
     },
@@ -106,7 +109,11 @@ export const state = () => ({
       logo: 'logo-cervantes.png',
       class: 'clic',
       url: 'clic-cervantes',
-      category: ['desarrollotecnologico', 'desarrolloproducto'],
+      category: [
+        'desarrollotecnologico',
+        'desarrolloproducto',
+        'disenodesarrolloproducto'
+      ],
       favourite: false
     },
     {
@@ -117,7 +124,8 @@ export const state = () => ({
       category: [
         'desarrolloproducto',
         'economiasocial',
-        'desarrollotecnologico'
+        'desarrollotecnologico',
+        'disenodesarrolloproducto'
       ],
       favourite: false
     },
@@ -129,7 +137,8 @@ export const state = () => ({
       category: [
         'desarrolloproducto',
         'desarrollotecnologico',
-        'economiasocial'
+        'economiasocial',
+        'disenodesarrolloproducto'
       ],
       favourite: false
     },
@@ -155,7 +164,12 @@ export const state = () => ({
       logo: 'logo-foro-participacion.png',
       class: 'foroparticipacion',
       url: 'foro-participacion',
-      category: ['reglamento', 'participacion', 'innovacionsocial'],
+      category: [
+        'reglamento',
+        'participacion',
+        'innovacionsocial',
+        'participacionciudadana'
+      ],
       favourite: false
     },
     {
@@ -163,7 +177,7 @@ export const state = () => ({
       logo: 'logo-diputacion-cadiz.png',
       class: 'dipuparticipacioncadiz',
       url: 'dipu-participacion-cadiz',
-      category: ['participacion', 'reglamento'],
+      category: ['participacion', 'reglamento', 'participacionciudadana'],
       favourite: false
     },
     {
@@ -171,7 +185,7 @@ export const state = () => ({
       logo: '',
       class: 'aytoparticipacioncadiz',
       url: 'ayto-participacion-cadiz',
-      category: ['participacion', 'reglamento'],
+      category: ['participacion', 'reglamento', 'participacionciudadana'],
       favourite: false
     },
     {
@@ -179,7 +193,7 @@ export const state = () => ({
       logo: '',
       class: 'formacionleyparticipacion',
       url: 'formacion-ley-participacion',
-      category: ['reglamento', 'participacion'],
+      category: ['reglamento', 'participacion', 'participacionciudadana'],
       favourite: false
     },
     {
@@ -201,7 +215,7 @@ export const state = () => ({
       logo: 'logo-ayto-rota.png',
       class: 'ciudadamable',
       url: 'ciudad-amable',
-      category: ['participacion'],
+      category: ['participacion', 'participacionciudadana'],
       favourite: false
     },
     {
@@ -209,7 +223,11 @@ export const state = () => ({
       logo: 'logo_marbella.png',
       class: 'presupuestomarbella',
       url: 'presupuesto-marbella',
-      category: ['presuspuestoparticipativo', 'participacion'],
+      category: [
+        'presuspuestoparticipativo',
+        'participacion',
+        'participacionciudadana'
+      ],
       favourite: false
     },
     {
@@ -217,7 +235,11 @@ export const state = () => ({
       logo: 'logo-ayto-mijas.png',
       class: 'presupuestomijas',
       url: 'presupuesto-mijas',
-      category: ['participacion', 'presuspuestoparticipativo'],
+      category: [
+        'participacion',
+        'presuspuestoparticipativo',
+        'participacionciudadana'
+      ],
       favourite: false
     },
     {
@@ -225,7 +247,7 @@ export const state = () => ({
       logo: 'logo-ayto-coria.png',
       class: 'planintervencion',
       url: 'plan-intervencion',
-      category: ['participacion', 'innovacionsocial'],
+      category: ['participacion', 'innovacionsocial', 'participacionciudadana'],
       favourite: false
     },
     {
@@ -233,7 +255,11 @@ export const state = () => ({
       logo: 'logo-ayto-tarifa.png',
       class: 'presupuestotarifa',
       url: 'presupuesto-tarifa',
-      category: ['presuspuestoparticipativo', 'participacion'],
+      category: [
+        'presuspuestoparticipativo',
+        'participacion',
+        'participacionciudadana'
+      ],
       favourite: false
     },
     {
@@ -241,7 +267,11 @@ export const state = () => ({
       logo: 'logo-andalucia-emprende.svg',
       class: 'protocoloae',
       url: 'protocolo-ae',
-      category: ['desarrolloproducto', 'innovacionsocial'],
+      category: [
+        'desarrolloproducto',
+        'innovacionsocial',
+        'disenodesarrolloproducto'
+      ],
       favourite: true
     },
     {
@@ -249,7 +279,11 @@ export const state = () => ({
       logo: 'logo-universidad-laguna.png',
       class: 'maiull',
       url: 'mantenimiento-apps-laguna',
-      category: ['desarrolloproducto', 'desarrollotecnologico'],
+      category: [
+        'desarrolloproducto',
+        'desarrollotecnologico',
+        'disenodesarrolloproducto'
+      ],
       favourite: false
     }
   ]
