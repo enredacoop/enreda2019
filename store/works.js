@@ -285,6 +285,14 @@ export const state = () => ({
         'disenodesarrolloproducto'
       ],
       favourite: false
+    },
+    {
+      title: 'Reforma constitucional de Somalia',
+      logo: 'unpd_somalia.png',
+      class: 'unpdsomalia',
+      url: 'unpd-somalia',
+      category: ['consul', 'participacion', 'participaciondigital'],
+      favourite: true
     }
   ]
 })

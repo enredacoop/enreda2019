@@ -202,6 +202,13 @@ export const state = () => ({
     keywords:
       'institucion, universidad, publico, entidad, mantenimiento, evolutivo, mejora, aplicacion'
   },
+  'unpd-somalia': {
+    title: 'Reforma constitucional de Somalia',
+    description: 'Reforma constitucional de Somalia',
+    keywords:
+      'consul, ayuntamiento, participacion, ciudadana, ciudadania, votaciones, decide, ciudad, gobierno, publico, onu, constitución, unpd, pnud'
+  },
+
   // Services
   'analitica-bigdata': {
     title: 'Analítica y BigData',

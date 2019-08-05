@@ -2,7 +2,7 @@ import webpack from 'webpack'
 
 export default {
   router: {
-    base: '/'
+    base: '/' /* GitHub: '/enreda2019' | Producción: '/' */
   },
   mode: 'universal',
 

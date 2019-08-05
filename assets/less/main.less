@@ -1370,6 +1370,18 @@ p.copyright {
       color: make-contrast(@decideoviedo_color);
     }
   }
+  .work.unpdsomalia .work-header {
+    background-color: @unpdsomalia_color;
+    img {
+      padding-top: 10px;
+      height: 180px;
+      width: auto;
+    }
+    .title {
+      background-color: darken(@decideoviedo_color, 5%);
+      color: make-contrast(@unpdsomalia_color);
+    }
+  }
   .work.decidearcos .work-header {
     background-color: @decidearcos_color;
     img {
@@ -1822,6 +1834,9 @@ p.copyright {
 }
 #work.decideoviedo {
   .work_styling(@decideoviedo_color);
+}
+#work.unpdsomalia {
+  .work_styling(@unpdsomalia_color);
 }
 #work.decidearcos {
   .work_styling(@decidearcos_color);

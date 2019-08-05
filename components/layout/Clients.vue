@@ -21,6 +21,9 @@
       <div class="container">
         <div class="wrapper">
           <div class="client">
+            <img class="logo" src="~/assets/images/clients/unpd_somalia.png" />
+          </div>
+          <div class="client">
             <img
               class="logo"
               src="~/assets/images/clients/junta_andalucia.png"
