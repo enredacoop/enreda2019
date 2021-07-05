@@ -6,7 +6,7 @@ export const state = () => ({
       subtitle: 'Participación Digital EN - CONSUL',
       class: 'participaciondigital',
       description:
-        'CONSUL es la mejor plataforma de participación existente actualmente. Su potencia y versatilidad la ha llevado a ser usada por los Ayuntamientos de las principales capitales de España y Latinoamérica y recibir el Premio de Servicio Público 2018 de ONU. ENREDA instala, adapta, configura y desarrolla CONSUL a las necesidades de tu organización.',
+        'CONSUL is the best participation platform currently available. Its power and versatility has led it to be used by the City Councils of the main capitals of Spain and Latin America and receive the 2018 UN Public Service Award. ENREDA installs, adapts, configures and develops CONSUL to the needs of your organization.',
       logo: 'logo_consul.png',
       url: 'http://demo.participacionyciudadania.com',
       images: [

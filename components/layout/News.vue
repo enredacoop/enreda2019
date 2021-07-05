@@ -71,8 +71,7 @@
 import Parser from 'rss-parser'
 
 const parser = new Parser()
-const CORS_PROXY = 'https://cors-anywhere.herokuapp.com/'
-const BLOG_URL = 'http://blog.enreda.coop/rss/'
+const BLOG_URL = 'https://blog.enreda.coop/rss/'
 
 export default {
   data() {
@@ -85,7 +84,7 @@ export default {
   },
   mounted() {
     this.$nextTick(() => {
-      parser.parseURL(CORS_PROXY + BLOG_URL).then(response => {
+      parser.parseURL(BLOG_URL).then(response => {
         this.data.feeds = response.items.slice(0, 3)
         this.data.dataReady = true
       })
