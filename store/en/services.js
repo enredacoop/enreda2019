@@ -6,9 +6,10 @@ export const state = () => ({
       subtitle: 'Participación Digital EN - CONSUL',
       class: 'participaciondigital',
       description:
-        'CONSUL is the best participation platform currently available. Its power and versatility has led it to be used by the City Councils of the main capitals of Spain and Latin America and receive the 2018 UN Public Service Award. ENREDA installs, adapts, configures and develops CONSUL to the needs of your organization.',
-      logo: 'logo_consul.png',
-      url: 'http://demo.participacionyciudadania.com',
+        'ENREDA is a certified company and collaborator of the Consul Democracy Foundation to help public and private institutions worldwide to use CONSUL, the best digital participation platform currently in existence. CONSUL is a [free] software developed by the Madrid City Council in 2015, a powerful and versatile tool used by the Local Governments of the main cities of Spain and Latin America, extending its use to nearly 40 countries around the world. CONSUL has today become a key piece in the development of the digitization of citizen participation, and it was recognized with the United Nations Public Service Award for its ability to face the challenge of establishing new governance models that lead to more open, transparent, participatory, and inclusive governments.',
+      logo: 'award_nacUni.png',
+      url:
+        'https://publicadministration.un.org/unpsa/database/Winners/2018-winners/Citizen-participation-project',
       images: [
         {
           url: 'works/screenshot-oviedo.png'
@@ -162,17 +163,17 @@ export const state = () => ({
       class: 'analitica-bigdata',
       description: '',
       logo: 'services/pagina_analiticaenreda.png',
-      url: 'http://lynxanalytica.com/',
+      url: '',
       images: [
         {
-          url: 'services/lynx_analytica.png'
+          url: ''
         }
       ],
       texts: [
         {
-          title: 'Lynx Analytica',
+          title: 'Big-Data',
           body:
-            'Esta herramienta de geomarketing electoral, desarrollada por Lynx Analytica, te ofrece la información y las capacidades del Big Data para microsegmentar y geolocalizar a cualquier público que busques. Millones de datos analizados y optimizados para ser usados de forma sencilla, y ayudarte a anticipar el comportamiento político de cualquier territorio. Con esta herramienta podrás diseñar una campaña más eficiente y persuasiva, priorizar los territorios donde tendrás más éxito, microsegmentar tus mensajes según los públicos, encontrar a esos públicos allí donde viven y conseguir, en definitiva, mejorar tus resultados electorales a la vez que reduces costes. Pasa de decisiones basadas en la intuición a decisiones guiadas por la información y adelántate a tus competidores.'
+            'ENREDA has led and developed multiple Big Data projects in recent years related to data analysis, data processing, and data visualization. These projects have given us highly relevant experience and capabilities for future projects. Nowadays, many technological solutions are based on the capacity to process large volumes of data and manage the potential of this data to develop highly advanced technology products and applications. Some of the uses and objectives of the developed projects are related to the massive Robotic Process Automation data processing through RPA- or the massive exploitation of data for the generation of complex analytics. And in line with our values, one of the main objectives is to develop OpenData (Open Data) projects that aim to open and make data freely available to everyone, without restrictions; as is the case of the projects developed together with OpenODS, to generate applications that allow access to data related to the 2030 Agenda and the United Nations Sustainable Development Goals.'
         }
       ]
     }

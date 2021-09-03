@@ -35,9 +35,14 @@
             <div class="col-12 text-center">
               <template v-if="project.own == 'no' || project.own == ''">
                 <div class="client">
-                  <a class="name" :href="project.clienturl" target="_blank">{{
-                    project.clientname
-                  }}</a>
+                  <a
+                    class="name"
+                    :href="project.clienturl"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    {{ project.clientname }}
+                  </a>
                   <br />
                   <span class="description">{{
                     project.clientdescription
@@ -68,6 +73,7 @@
                     :href="project.url"
                     class="btn btn-primary"
                     target="_blank"
+                    rel="noopener noreferrer"
                   >
                     <font-awesome-icon :icon="['fas', 'binoculars']" />
                     {{ $t('watch_live') }}</a
@@ -77,6 +83,7 @@
                     :href="project.sourcecode"
                     class="btn btn-primary"
                     target="_blank"
+                    rel="noopener noreferrer"
                     ><font-awesome-icon :icon="['fab', 'github']" />
                     {{ $t('source_code') }}</a
                   >
@@ -117,6 +124,7 @@
                           :alt="media.name"
                           :title="media.name"
                           target="_blank"
+                          rel="noopener noreferrer"
                         >
                           <div
                             v-if="media.image != ''"
@@ -144,6 +152,7 @@
                     v-for="(technology, index) in project.technologies"
                     :key="index"
                     target="_blank"
+                    rel="noopener noreferrer"
                     :href="technology.url"
                   >
                     <span class="badge badge-primary">

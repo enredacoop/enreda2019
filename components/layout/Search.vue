@@ -2,38 +2,12 @@
 {
   "es": {
     "projects": "Proyectos",
-    "apply_filter": "Aplicar filtro",
     "show all": "Mostrar todos",
-    "consul": "Consul",
-    "presuspuestoparticipativo": "Presupuestos participativos",
-    "transparencia": "Transparencia",
-    "participacion": "Participación",
-    "reglamento": "Reglamento",
-    "analisisdatos": "Análisis de datos",
-    "desarrolloproducto": "Desarollo de producto",
-    "economiasocial": "Economía social",
-    "innovacionsocial": "Innovación social",
-    "desarrollotecnologico": "Desarrollo tecnológico",
-    "formacion": "Formación",
-    "participaciondigital": "Participación digital",
     "label-search": "Búsqueda por proyecto..."
   },
   "en": {
     "projects": "Projects",
-    "apply_filter": "Apply filter",
     "show all": "Show all",
-    "consul": "Consul",
-    "presuspuestoparticipativo": "Participatory budgets",
-    "transparencia": "Transparency",
-    "participacion": "Participation",
-    "reglamento": "Regulation",
-    "analisisdatos": "Analysis of data",
-    "desarrolloproducto": "Product development",
-    "economiasocial": "Social economy",
-    "innovacionsocial": "Social innovation",
-    "desarrollotecnologico": "Technological development",
-    "formacion": "Training",
-    "participaciondigital": "Digital participation",
     "label-search": "Search by proyect..."
   }
 }
@@ -118,6 +92,13 @@
               </div>
             </div>
           </nuxt-link>
+          <b-pagination
+             v-model="currentPage"
+             :total-rows="rows"
+             :per-page="perPage"
+              aria-controls="my-table"
+          >
+          </b-pagination>
         </div>
       </isotope>
     </b-container>

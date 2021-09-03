@@ -41,16 +41,39 @@
           <dd><a href="tel:+34693554518">+34 693 55 45 18</a></dd>
           <dl>Twitter</dl>
           <dd>
-            <a href="https://twitter.com/enreda">@enreda</a>
+            <a
+              href="https://twitter.com/enreda"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              @enreda
+            </a>
           </dd>
           <dl>Facebook</dl>
           <dd>
-            <a href="https://www.facebook.com/enreda.coop">@enreda.coop</a>
+            <a
+              href="https://www.facebook.com/enreda.coop"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              @enreda.coop
+            </a>
+          </dd>
+          <dl>LinkedIn</dl>
+          <dd>
+            <a
+              href="https://www.linkedin.com/company/enreda"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              company/enreda
+            </a>
           </dd>
         </div>
       </div>
     </section>
     <Offices />
+    <!-- <ContactForm /> -->
   </div>
 </template>
 
@@ -58,11 +81,13 @@
 /* eslint-disable no-console */
 import PageClaim from '~/components/layout/PageClaim.vue'
 import Offices from '~/components/layout/Offices.vue'
+// import ContactForm from '~/components/layout/ContactForm.vue'
 
 export default {
   components: {
     PageClaim,
     Offices
+    // ContactForm
   },
   nuxtI18n: {
     paths: {

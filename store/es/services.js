@@ -6,9 +6,9 @@ export const state = () => ({
       subtitle: 'Participación Digital - CONSUL',
       class: 'participaciondigital',
       description:
-        'CONSUL es la mejor plataforma de participación existente actualmente. Su potencia y versatilidad la ha llevado a ser usada por los Ayuntamientos de las principales capitales de España y Latinoamérica y recibir el Premio de Servicio Público 2018 de ONU. ENREDA instala, adapta, configura y desarrolla CONSUL a las necesidades de tu organización.',
-      logo: 'logo_consul.png',
-      url: 'http://demo.participacionyciudadania.com',
+        'ENREDA es una empresa certificada y colaboradora de Consul Democracy Foundation para ayudar a instituciones públicas y privadas en todo el mundo a utilizar CONSUL, la mejor plataforma de participación digital existente actualmente. CONSUL, cuyo software [libre] original fue desarrollado por el Ayuntamiento de Madrid en 2015, cuenta con una potencia y versatilidad que pronto le llevaron a ser usada por los Gobiernos Locales de las principales capitales de España y Latinoamérica, hasta extenderse por cerca de 40 países. CONSUL se ha convertido hoy en una pieza clave en el desarrollo de la digitalización de la participación ciudadana, siendo reconocida con el Premio de Servicio Público de Naciones Unidas por su capacidad para afrontar el desafío de establecer nuevos modelos de gobernanza que conduzcan a gobiernos más abiertos, transparentes, participativos e inclusivos.',
+      logo: 'premio_nacUni.png',
+      url: '',
       images: [
         {
           url: 'works/screenshot-oviedo.png'
@@ -162,17 +162,17 @@ export const state = () => ({
       class: 'analitica-bigdata',
       description: '',
       logo: 'services/pagina_analiticaenreda.png',
-      url: 'http://lynxanalytica.com/',
+      url: '',
       images: [
         {
-          url: 'services/lynx_analytica.png'
+          url: ''
         }
       ],
       texts: [
         {
-          title: 'Lynx Analytica',
+          title: 'Big-Data',
           body:
-            'Esta herramienta de geomarketing electoral, desarrollada por Lynx Analytica, te ofrece la información y las capacidades del Big Data para microsegmentar y geolocalizar a cualquier público que busques. Millones de datos analizados y optimizados para ser usados de forma sencilla, y ayudarte a anticipar el comportamiento político de cualquier territorio. Con esta herramienta podrás diseñar una campaña más eficiente y persuasiva, priorizar los territorios donde tendrás más éxito, microsegmentar tus mensajes según los públicos, encontrar a esos públicos allí donde viven y conseguir, en definitiva, mejorar tus resultados electorales a la vez que reduces costes. Pasa de decisiones basadas en la intuición a decisiones guiadas por la información y adelántate a tus competidores.'
+            'ENREDA ha liderado y desarrollado en los últimos años múltiples proyectos de Big Data, relacionados con el análisis, procesamiento y visualización de datos. Estos proyectos nos han aportado una experiencia y capacidades muy relevantes para futuros proyectos. En la actualidad, multitud de soluciones tecnológicas se basan en la capacidad de procesar grandes volúmenes de datos y poder utilizar el potencial de estos datos, para desarrollar aplicaciones y productos tecnológicos muy avanzados. Algunos de los usos y objetivos de los proyectos desarrollados, están relacionados con el procesamiento masivo de datos mediante Robotic Process Automation –RPA- o la explotación masiva de datos para la generación de analíticas complejas. Y en línea con nuestros valores, uno de los principales objetivo es desarrollar proyectos OpenData (Datos abiertos) que tengan como objetivo abrir y facilitar que los datos estén disponibles de forma libre para todo el mundo, sin restricciones; como es el caso del los proyectos desarrollados junto con OpenODS, para generar aplicaciones que permiten a acceder a  los datos relacionados con a la Agenda 2030 y los Objetivos de Desarrollo Sostenible de las Naciones Unidas.'
         }
       ]
     }

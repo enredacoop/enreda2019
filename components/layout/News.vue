@@ -17,7 +17,7 @@
         </div>
       </div>
     </div>
-    <div id="home-blog-items" class="container">
+    <div id="home-blog-items" class="container news-responsive">
       <!-- load RSS feeds via JS -->
       <template v-if="data.dataReady">
         <div class="row block-news">
@@ -26,13 +26,22 @@
             :key="index"
             class="card bg-dark text-white"
           >
-            <img :src="getImage(feed.content)" :alt="feed.title" />
+            <img
+              :src="getImage(JSON.stringify(feed.media))"
+              :alt="feed.title"
+            />
             <div class="card-img-overlay">
-              <a :href="feed.url">
+              <a :href="feed.link" target="_blank" rel="noopener noreferrer">
                 <h5 class="card-title">{{ feed.title }}</h5>
               </a>
               <small>{{ feed.pubDate | moment('DD/MM/YYYY') }}</small>
-              <a :href="feed.link" class="btn btn-hidden stretched-link"></a>
+              <a
+                :href="feed.link"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="btn btn-hidden stretched-link"
+              >
+              </a>
             </div>
           </div>
         </div>
@@ -70,7 +79,11 @@
 <script>
 import Parser from 'rss-parser'
 
-const parser = new Parser()
+const parser = new Parser({
+  customFields: {
+    item: [['media:content', 'media']]
+  }
+})
 const BLOG_URL = 'https://blog.enreda.coop/rss/'
 
 export default {
@@ -92,7 +105,8 @@ export default {
   },
   methods: {
     getImage(content) {
-      return content.match(/(<img.*?>)/gi)[0].split('"')[1]
+      const urlR = /(https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|www\.[a-zA-Z0-9][a-zA-Z0-9-]+[a-zA-Z0-9]\.[^\s]{2,}|https?:\/\/(?:www\.|(?!www))[a-zA-Z0-9]+\.[^\s]{2,}|www\.[a-zA-Z0-9]+\.[^\s]{2,})(?=(",))/gi
+      return content.match(urlR)
     }
   }
 }

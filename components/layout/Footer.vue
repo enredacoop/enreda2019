@@ -3,11 +3,11 @@
   "es": {
     "site_name": "ENREDA Cooperativa",
     "copyleft": "Creative Commons, Algunos Derechos Reservados",
-    "cooperative": "Cooperativa",
     "projects": "Proyectos",
     "blog": "Blog",
     "legal_warning": "Aviso legal",
-    "cookies_policy": "Políticas de Cookies"
+    "cookies_policy": "Políticas de Cookies",
+    "cooperative": "Cooperativa",
   },
   "en": {
     "site_name": "ENREDA Cooperative",
@@ -16,7 +16,7 @@
     "projects": "Projects",
     "blog": "Blog",
     "legal_warning": "Legal warning",
-    "cookies_policy": "Cookies policy"
+    "cookies_policy": "Cookies policy",
   }
 }
 </i18n>
@@ -48,7 +48,12 @@
               </p>
             </li>
             <li class="contact">
-              <a class="sn" href="http://twitter.com/enreda" target="_blank">
+              <a
+                class="sn"
+                href="http://twitter.com/enreda"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <font-awesome-layers class="fa-2x">
                   <font-awesome-icon icon="circle" class="primary" />
                   <font-awesome-icon
@@ -62,6 +67,7 @@
                 class="sn"
                 href="https://www.facebook.com/enreda.coop"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 <font-awesome-layers class="fa-2x">
                   <font-awesome-icon icon="circle" class="primary" />
@@ -72,10 +78,28 @@
                   />
                 </font-awesome-layers>
               </a>
+              <a
+                class="sn"
+                href="https://www.linkedin.com/company/enreda"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <font-awesome-layers class="fa-2x">
+                  <font-awesome-icon icon="circle" class="primary" />
+                  <font-awesome-icon
+                    :icon="['fab', 'linkedin-in']"
+                    transform="shrink-6"
+                    class="white"
+                  />
+                </font-awesome-layers>
+              </a>
             </li>
           </ul>
         </div>
-        <div class="col-md-8">
+        <div class="col-md-4" style="margin-left: 5px">
+          <MenuFooter />
+        </div>
+        <div class="col-md-12 col-sm-12 col-lg-12">
           <ul class="list-inline pull-right">
             <li>
               <nuxt-link :to="localePath({ name: 'legal' })">{{
@@ -91,12 +115,44 @@
           </ul>
           <br />
           <br />
-          <img
-            src="~/assets/images/coop.png"
-            class="pull-right img-black"
-            width="150px"
-            alt="Logo de la identidad de las cooperativas"
-          />
+          <div class="logos-footer">
+            <a
+              href="https://www.ica.coop/es"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="~/assets/images/coop.png"
+                class="pull-right img-black"
+                width="140px"
+                alt="Logo de la identidad de las cooperativas"
+              />
+            </a>
+            <a
+              href="https://www.ica.coop/es"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="~/assets/images/consul_logo.png"
+                class="pull-right img-black"
+                width="140px"
+                alt="Logo de Consul Democracy Foundation"
+              />
+            </a>
+            <a
+              href="https://openods.es/es/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                src="~/assets/images/ods.png"
+                class="pull-right img-black"
+                width="140px"
+                alt="Logo de Open ODS"
+              />
+            </a>
+          </div>
         </div>
       </div>
       <div class="row">
@@ -113,6 +169,7 @@
             <a
               href="https://creativecommons.org/licenses/by-nc-nd/3.0/es/"
               target="_blank"
+              rel="noopener noreferrer"
               class="text-muted"
               >{{ $t('copyleft') }}</a
             >
@@ -128,11 +185,13 @@
 <script>
 import Cookies from '~/components/layout/Cookies.vue'
 import Newsletter from '~/components/layout/Newsletter.vue'
+import MenuFooter from '~/components/layout/MenuFooter.vue'
 
 export default {
   components: {
     Newsletter,
-    Cookies
+    Cookies,
+    MenuFooter
   },
   data() {
     return {

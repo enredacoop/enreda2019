@@ -156,6 +156,7 @@
                     <a
                       :href="people.web"
                       target="_blank"
+                      rel="noopener noreferrer"
                       :title="'web de ' + people.name"
                     >
                       <i class="fa fa-external-link-square"></i>
@@ -165,6 +166,7 @@
                     <a
                       :href="'mailto:' + people.email"
                       target="_blank"
+                      rel="noopener noreferrer"
                       :title="people.email"
                     >
                       <i class="fa fa-envelope"></i>
@@ -174,6 +176,7 @@
                     <a
                       :href="'https://twitter.com/' + people.twitter"
                       target="_blank"
+                      rel="noopener noreferrer"
                       :title="'Twitter de' + people.name"
                     >
                       <i class="fa fa-twitter"></i>
@@ -183,6 +186,7 @@
                     <a
                       :href="people.linkedin"
                       target="_blank"
+                      rel="noopener noreferrer"
                       :title="'Linkedin de ' + people.name"
                     >
                       <i class="fa fa-linkedin"></i>
@@ -192,6 +196,7 @@
                     <a
                       :href="'https://github.com/' + people.github"
                       target="_blank"
+                      rel="noopener noreferrer"
                       :title="'Github de ' + people.name"
                     >
                       <i class="fa fa-github"></i>
@@ -225,7 +230,7 @@
               :key="index"
               class="col-sm-12 col-md-4 col-lg-3"
             >
-              <a :href="node.url" target="_blank">
+              <a :href="node.url" target="_blank" rel="noopener noreferrer">
                 <div class="node">
                   <h3>{{ node.name }}</h3>
                   <p>{{ $t(node.description) }}</p>
@@ -326,6 +331,7 @@ export default {
             github: '',
             role: ''
           },
+          /*
           {
             name: 'Lucía Cano',
             position: ' ',
@@ -337,6 +343,7 @@ export default {
             github: '',
             role: ''
           },
+          */
           {
             name: 'Arantza Lozano',
             position: ' ',
@@ -349,6 +356,75 @@ export default {
             role: ''
           },
           {
+            name: 'José Manuel Palacios López',
+            position: ' ',
+            photo: 'jose.jpg',
+            email: 'jmanuel.palacios@enreda.coop',
+            web: '',
+            twitter: '',
+            linkedin: '',
+            github: '',
+            role: ''
+          },
+          {
+            name: 'Elvira Ramírez',
+            position: ' ',
+            photo: 'elvira.jpg',
+            email: 'elvira.ramirez@enreda.coop',
+            web: '',
+            twitter: '',
+            linkedin: '',
+            github: '',
+            role: ''
+          },
+          {
+            name: 'Samuel Molina',
+            position: ' ',
+            photo: 'samuel.jpg',
+            email: 'samuel.molina@enreda.coop',
+            web: '',
+            twitter: '',
+            linkedin: '',
+            github: '',
+            role: ''
+          },
+          /*
+          {
+            name: 'María Ozámiz',
+            position: ' ',
+            photo: 'maria.jpg',
+            email: 'maria.ozamiz@enreda.coop',
+            web: '',
+            twitter: '',
+            linkedin: '',
+            github: '',
+            role: ''
+          },
+          */
+          {
+            name: 'Diego Calvo Castillo',
+            position: ' ',
+            photo: 'diego.jpg',
+            email: 'diego.calvo@enreda.coop',
+            web: '',
+            twitter: '',
+            linkedin: '',
+            github: '',
+            role: ''
+          },
+          {
+            name: 'Cynthia Gorosito',
+            position: ' ',
+            photo: 'cynthia.jpg',
+            email: 'c.elizabeth.gorosito@enreda.coop',
+            web: '',
+            twitter: '',
+            linkedin: '',
+            github: '',
+            role: ''
+          }
+          /*
+          {
             name: 'Carlos Campos',
             position: ' ',
             photo: 'carloscampos.jpg',
@@ -359,6 +435,7 @@ export default {
             github: 'carcamcue',
             role: ''
           },
+          
           {
             name: 'Manuel Barbadillo',
             position: ' ',
@@ -370,6 +447,7 @@ export default {
             github: '',
             role: ''
           },
+          
           {
             name: 'Azahara Martín',
             position: ' ',
@@ -382,28 +460,6 @@ export default {
             role: ''
           },
           {
-            name: 'Patricia García',
-            position: ' ',
-            photo: 'patriciagarciaespin.jpg',
-            email: '',
-            web: 'http://csic.academia.edu/PatriciaGarciaEsp%C3%ADn',
-            twitter: '',
-            linkedin: '',
-            github: '',
-            role: 'colaboradora'
-          },
-          {
-            name: 'Soledad Maldonado',
-            position: ' ',
-            photo: 'sole.jpg',
-            email: 'soledad.maldonado@enreda.coop',
-            web: 'http://hazloparticipativo.es/',
-            twitter: 'solemalpe',
-            linkedin: '',
-            github: '',
-            role: 'colaboradora'
-          },
-          {
             name: 'Javier Moreno',
             position: ' ',
             photo: 'user_placeholder.png',
@@ -414,6 +470,7 @@ export default {
             github: '',
             role: 'colaborador'
           }
+          */
         ]
       },
       network: {

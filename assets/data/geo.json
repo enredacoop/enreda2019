@@ -1,0 +1,135 @@
+[
+ {
+   "id": 1,
+   "cliente": "PNUD PERÚ",
+   "latitud": "-12.120239645040728",
+   "longitud": "-77.03676646955259",
+   "link": "crear"
+ },
+ {
+   "id": 2,
+   "cliente": "Ministerio de Asuntos Constitucionales del Gobierno de Somalia",
+   "latitud": "8.453357184509084",
+   "longitud": "48.449780004893555",
+   "link": "https://blog.enreda.coop/desarrollo-de-la-plataforma-de-participacion-para-la-reforma-constitucional-de-somalia/"
+ },
+ {
+   "id": 3,
+   "cliente": "ART PNUD",
+   "latitud": "50.84940261959613",
+   "longitud": "4.367860935452165",
+   "link": "crear"
+ },
+ {
+   "id": 4,
+   "cliente": "Ayuntamiento de Mogadiscio",
+   "latitud": "2.0506189048892143",
+   "longitud": "45.319712999132015",
+   "link": "https://blog.enreda.coop/desarrollo-de-la-plataforma-de-participacion-para-la-reforma-constitucional-de-somalia/"
+ },
+ {
+   "id": 5,
+   "cliente": "Ayuntamiento de Garoowe",
+   "latitud": "8.40742620797984",
+   "longitud": "48.482043782862206",
+   "link": "https://blog.enreda.coop/desarrollo-de-la-plataforma-de-participacion-para-la-reforma-constitucional-de-somalia/"
+ },
+ {
+   "id": 6,
+   "cliente": "Junta de Andalucía",
+   "latitud": "37.38087387893982",
+   "longitud": "-5.993557726438879 ",
+   "link": "https://enreda.coop/proyectos/sistema-participacion"
+ },
+ {
+   "id": 7,
+   "cliente": "Fundación Carlos de Amberes",
+   "latitud": "40.43203352529426",
+   "longitud": "-3.6858463000000006",
+   "link": "crear"
+ },
+ {
+   "id": 8,
+   "cliente": "Cabildo de Gran Canaria",
+   "latitud": "28.108466554369304",
+   "longitud": "-15.419978130689811",
+   "link": "https://blog.enreda.coop/gran-canaria-confia-a-enreda-su-portal-de-participacion-ciudadana/"
+ },
+ {
+   "id": 9,
+   "cliente": "Cabildo de Tenerife",
+   "latitud": "28.466265989743988",
+   "longitud": "-16.24694088503879",
+   "link": "crear"
+ },
+ {
+   "id": 10,
+   "cliente": "Ayuntamiento de Palma",
+   "latitud": "39.56958407960223",
+   "longitud": "2.650115318596497",
+   "link": "crear"
+ },
+ {
+   "id": 11,
+   "cliente": "Ayuntamiento de Andújar",
+   "latitud": "38.037024032708636",
+   "longitud": "-4.054392146181832",
+   "link": "crear"
+ },
+ {
+   "id": 12,
+   "cliente": "Ayuntamiento de Cádiz",
+   "latitud": "36.52986288603547",
+   "longitud": "-6.292999444147041",
+   "link": "https://enreda.coop/proyectos/consul-cadiz"
+ },
+ {
+   "id": 13,
+   "cliente": "Ayuntamiento de Santiago de Compostela",
+   "latitud": "42.88049356837947",
+   "longitud": "-8.546223501858876",
+   "link": "https://blog.enreda.coop/santiago-de-compostela-confia-a-enreda-su-portal-de-participacion/"
+ },
+ {
+   "id": 14,
+   "cliente": "Ayuntamiento de Granada",
+   "latitud": "37.19121821289346",
+   "longitud": "-3.6123370228463276",
+   "link": "https://blog.enreda.coop/consul-presentamos-la-plataforma-de-participacion-digital-del-ayuntamiento-de-granada/"
+ },
+ {
+   "id": 15,
+   "cliente": "Ayuntamiento de Córdoba",
+   "latitud": "37.885937190936",
+   "longitud": "-4.776120469160532",
+   "link": "crear"
+ },
+ {
+   "id": 16,
+   "cliente": "Ayuntamiento de Oviedo",
+   "latitud": "43.36071398751825",
+   "longitud": "-5.8447768748614575",
+   "link": "https://blog.enreda.coop/consul-presupuestos-participativos-oviedo/"
+ },
+ {
+   "id": 17,
+   "cliente": "Ayuntamiento de Arcos de la Frontera",
+   "latitud": "36.752790223917835",
+   "longitud": "-5.819470834429667",
+   "link": "https://blog.enreda.coop/enreda-desarrollara-la-plataforma-de-participacion-consul-de-arcos-de-la-frontera/"
+ },
+ {
+   "id": 18,
+   "cliente": "Ayuntamiento de El Puerto de Santa María",
+   "latitud": "36.600633799588515",
+   "longitud": "-6.225373600960779",
+   "link": "https://enreda.coop/proyectos/consul-puerto-santa-maria"
+ },
+ {
+   "id": 19,
+   "cliente": "Ayuntamiento de Tarifa",
+   "latitud": "36.01188837923823",
+   "longitud": "-5.602035415547077",
+   "link": "crear"
+ }
+]

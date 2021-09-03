@@ -202,11 +202,22 @@ export const state = () => ({
     keywords:
       'institucion, universidad, publico, entidad, mantenimiento, evolutivo, mejora, aplicacion'
   },
+  proyectoindex: {
+    title: 'Desarrollo OpenODS Index para PNUD',
+    description:
+      'Plataforma de calificación y transparencia para la alianza local por los Objetivos de Desarrollo Sostenible',
+    keywords: 'consul, ayuntamiento, participacion'
+  },
   'unpd-somalia': {
     title: 'Reforma constitucional de Somalia',
     description: 'Reforma constitucional de Somalia',
     keywords:
       'consul, ayuntamiento, participacion, ciudadana, ciudadania, votaciones, decide, ciudad, gobierno, publico, onu, constitución, unpd, pnud'
+  },
+  eurovelo: {
+    title: 'Desarrollo Wordpress para la Junta de Andalucía',
+    description: 'Plataforma de rutas geolocalizadas EUROVELO 8',
+    keywords: 'institucion, publico, andalucia'
   },
 
   // Services

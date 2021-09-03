@@ -27,9 +27,13 @@
           >
             <h3 class="city">{{ place.city }}</h3>
             <h5 class="officename">
-              <a :href="place.officeurl" target="_blank">{{
-                place.officename
-              }}</a>
+              <a
+                :href="place.officeurl"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                {{ place.officename }}
+              </a>
             </h5>
             <p v-if="place.address != ''" class="text-muted">
               {{ place.address }}

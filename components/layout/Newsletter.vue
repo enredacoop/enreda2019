@@ -25,6 +25,7 @@
             name="mc-embedded-subscribe-form"
             class="form-inline validate pull-right"
             target="_blank"
+            rel="noopener noreferrer"
             novalidate
           >
             <div id="mc_embed_signup_scroll">

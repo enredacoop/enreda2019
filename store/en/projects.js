@@ -398,7 +398,7 @@ export const state = () => ({
           Este proyecto se ha desarrollado gracias al trabajo de muchas personas y, especialmente, de los equipos de ENREDA y Wadobo, que han participado en el desarrollo de la idea de manera desinteresada para poder aportar una solución tecnológica a la sociedad.
         </p>
         <p>
-          Social to crowd, es totalmente gratis y abierto, el código fuente se puede encontrar en el repositorio [<a href="https://github.com/socialinn/socialtocrowd" target="_blank">https://github.com/socialinn/socialtocrowd</a>] 
+          Social to crowd, es totalmente gratis y abierto, el código fuente se puede encontrar en el repositorio [<a href="https://github.com/socialinn/socialtocrowd" target="_blank" rel="noopener noreferrer">https://github.com/socialinn/socialtocrowd</a>] 
         </p>
       `,
       description:
@@ -1539,7 +1539,7 @@ export const state = () => ({
           El Concello de Santiago de Compostela ha decidido confiar a la Cooperativa ENREDA la asistencia técnica para la instalación y configuración de una plataforma de participación ciudadana, basada en Consul [http://consulproject.org/en/],
         </p>
         <p>
-          Consul es el software -libre - desarrollado por el Ayuntamiento de Madrid para su conocido portal Decide Madrid [<a href="https://decide.madrid.es/" target="_blank">https://decide.madrid.es/</a>] que ya está siendo usado en más de 70 ayuntamientos e instituciones públicas tanto a nivel nacional como internacional.
+          Consul es el software -libre - desarrollado por el Ayuntamiento de Madrid para su conocido portal Decide Madrid [<a href="https://decide.madrid.es/" target="_blank" rel="noopener noreferrer">https://decide.madrid.es/</a>] que ya está siendo usado en más de 70 ayuntamientos e instituciones públicas tanto a nivel nacional como internacional.
         </p>
         <p>
           Santiago se suma así a la larga lista de instituciones que han confiado en ENREDA para el desarrollo o gestión de sus portales web, ya sean de participación ciudadana, como los Ayuntamientos de Oviedo y Cádiz; de transparencia presupuestaria, como Córdoba o Marbella; o culturales, como el Ayuntamiento de Sevilla.
@@ -1631,7 +1631,7 @@ export const state = () => ({
           ENREDA ha desarollado para el Ayuntamiento de Cádiz el portal de participación ciudadana, basado en el software CONSUL.
         </p>
         <p>
-          Consul es el software libre desarrollado por el Ayuntamiento de Madrid para su conocido portal Decide Madrid [<a href="https://decide.madrid.es/" target="_blank">https://decide.madrid.es/</a>] que ya está siendo usado en más de 70 ayuntamientos e instituciones públicas tanto a nivel nacional como internacional.
+          Consul es el software libre desarrollado por el Ayuntamiento de Madrid para su conocido portal Decide Madrid [<a href="https://decide.madrid.es/" target="_blank" rel="noopener noreferrer">https://decide.madrid.es/</a>] que ya está siendo usado en más de 70 ayuntamientos e instituciones públicas tanto a nivel nacional como internacional.
         </p>
         <p>
           El proyecto ha implicado el desarrollo e integración con el padrón municipal del Ayuntamiento de Cádiz para la validación de los usuarios.
@@ -1749,22 +1749,22 @@ export const state = () => ({
         <p>
           Las conclusiones del foro se articularon en torno a tres documentos: 
             <li>
-              <a href="http://www.famp.es/export/sites/famp/.galleries/documentos-proyectos/EstadoDeLaCuestion.pdf" target="_blank">
+              <a href="http://www.famp.es/export/sites/famp/.galleries/documentos-proyectos/EstadoDeLaCuestion.pdf" target="_blank" rel="noopener noreferrer">
                 Análisis de la situación actual en torno a los modelos de gobierno abierto y procesos participativos en los ayuntamientos de Andalucía: Estado de la Cuestión.
               </a>
             </li>
             <li>
-              <a href="http://www.famp.es/export/sites/famp/.galleries/documentos-proyectos/HojaDeRuta.pdf" target="_blank">
+              <a href="http://www.famp.es/export/sites/famp/.galleries/documentos-proyectos/HojaDeRuta.pdf" target="_blank" rel="noopener noreferrer">
                 Hoja de ruta para la implantación de la Estrategia Local de Gobierno Abierto y Procesos Participativos de la Administración Local en Andalucía.
               </a>
             </li>
             <li>
-              <a href="http://www.famp.es/export/sites/famp/.galleries/documentos-proyectos/EstrategiaLocal.pdf" target="_blank">
+              <a href="http://www.famp.es/export/sites/famp/.galleries/documentos-proyectos/EstrategiaLocal.pdf" target="_blank" rel="noopener noreferrer">
                 Estrategia Local de Gobierno Abierto y Procesos Participativos.
               </a>
             </li>
         <p>
-          Además se creó un <a href="http://www.famp.es/es/proyectos/proyectos-en-ejecucion/proyectos-autonomicos/foro-participacion/herramientas/" target="_blank">Banco de Talentos</a> y un <a href="http://www.famp.es/es/proyectos/proyectos-en-ejecucion/proyectos-autonomicos/foro-participacion/mercado-de-ideas/" target="_blank">Mercado de ideas</a> de la participación en Andalucía
+          Además se creó un <a href="http://www.famp.es/es/proyectos/proyectos-en-ejecucion/proyectos-autonomicos/foro-participacion/herramientas/" target="_blank" rel="noopener noreferrer">Banco de Talentos</a> y un <a href="http://www.famp.es/es/proyectos/proyectos-en-ejecucion/proyectos-autonomicos/foro-participacion/mercado-de-ideas/" target="_blank" rel="noopener noreferrer">Mercado de ideas</a> de la participación en Andalucía
         </p>
       `,
       description:
@@ -2515,7 +2515,7 @@ export const state = () => ({
           </ul>
         </p>
         <p>
-          En este marco, se crearon los distintos grupos motores y comisiones de seguimiento y se ha trabajado en los diferentes núcleos poblacionales que componen el municipio de Tarifa, logrando un impacto en el conjunto de la población y de todo el término municipal. Asimismo, se ha facilitado una herramienta digital para apoyar el proceso de recogida de propuestas on line <a href="http://hazloparticipativo.org/tarifa/" target="_blank">hazloparticipativo.org/tarifa/</a>
+          En este marco, se crearon los distintos grupos motores y comisiones de seguimiento y se ha trabajado en los diferentes núcleos poblacionales que componen el municipio de Tarifa, logrando un impacto en el conjunto de la población y de todo el término municipal. Asimismo, se ha facilitado una herramienta digital para apoyar el proceso de recogida de propuestas on line <a href="http://hazloparticipativo.org/tarifa/" target="_blank" rel="noopener noreferrer">hazloparticipativo.org/tarifa/</a>
         </p>
       `,
       description:
@@ -2697,6 +2697,151 @@ export const state = () => ({
       clientdescription: '',
       clienturl: 'https://www.ull.es/',
       clientyear: '2019',
+      calltoaction: {
+        call: ''
+      }
+    },
+    {
+      id: 'eurovelo',
+      title: 'Eurovelo',
+      class: 'eurovelo',
+      subtitle: 'Plataforma de rutas geolocalizadas EUROVELO 8',
+      body: `
+      <p>
+      The platform gets geo-referenced information of the road between Cádiz and the Province of Murcia. The road is divided into several parts, and each of these parts has a detailed map of the road with information about the area, with geo-referenced information (points of interest or accommodation).      </p>
+      <p>
+      Los trazados que se aportan para cada etapa corresponden al registro de un itinerario real en bicicleta realizado durante la fase de evaluación del estado de la ruta en el proyecto MEDCYCLETOUR, en el segundo semestre de 2017. Por lo tanto, son recorridos que actualmente pueden realizarse, pero que no corresponden necesariamente con el trazado que finalmente se vaya ejecutando en diferentes proyectos para la EuroVelo 8 
+      </p>
+      <p>
+      El proyecto está desarrollado sobre Wordpress con una integración de Openstreetmap y leafletjs para integrar toda la funcionalidad de puntos y rutas geolocalizados. 
+      </p>
+      <p>
+      Además la plataforma permite la colaboración ciudadana permitiendo a los usuarios crear nuevos puntos de interés geolocalizados añadiendo imágenes e información.
+      </p>
+      <p>
+      En definitiva este proyecto es un ejemplo práctico de cómo combinar en una plataforma información útil y accesible con una interacción con el usuario para convertir el portal en una herramienta de uso accesible a la ciudadanía.
+      </p>
+      `,
+      description: `
+      ENREDA desarrolló en su totalidad, tanto el desarrollo tecnológico como el proceso inicial de carga de datos, la plataforma de la Red EUROVELO  para la ruta correspondiente a Andalucía dentro de la Eurovelo 8.
+      `,
+      logo: 'logo-eurovelo.png',
+      name: 'Eurovelo',
+      screenshot: 'screenshot-eurovelo.png',
+      url: 'https://ev8.eurovelospain.comamp-eL3e2ia/es/red-eurovelo/',
+      sourcecode: '',
+      metrics: [
+        { metric: '', value: '' },
+        { metric: '', value: '' },
+        { metric: '', value: '' }
+      ],
+      metricsinfo: '',
+      technologies: [
+        {
+          technology: 'Wordpress',
+          url: 'https://www.wordpress.com',
+          logo: '/assets/images/technologies/wordpress.png',
+          class: 'white'
+        },
+        {
+          technology: 'Openstreetmap',
+          url: 'https://www.openstreetmap.org/',
+          logo: '/assets/images/technologies/openstreetmap.png',
+          class: ''
+        },
+        {
+          technology: 'Leaflet.js',
+          url: 'https://leafletjs.com',
+          logo: '/assets/images/technologies/css.png',
+          class: ''
+        }
+      ],
+      media: [],
+      own: 'no',
+      clientname: 'Junta de Andalucía',
+      clientdescription: '',
+      clienturl: 'https://www.juntadeandalucia.es/',
+      clientyear: '2019',
+      calltoaction: {
+        call: ''
+      }
+    },
+    {
+      id: 'proyectoindex',
+      title: 'Index PNUD',
+      class: 'proyectoindex',
+      subtitle: 'OpenODS Index development for UNDP',
+      body: `
+      <p>
+      This project has been called the Local SDG Alliance, is a system that allows obtaining a complete vision of how an entity is implementing the 2030 Agenda and what path it can follow to integrate the SDGs into its structure, plans, and strategies. In addition, it offers information on all the entities registered on the platform, providing an overview to disseminate the progress of the 2030 Agenda in a territory.
+      </p>
+      <p>
+      Compliance with the 2030 Agenda is the greatest challenge facing our societies. But as you already know, the most efficient way to tackle a big task is to divide it into smaller and more concrete ones. For this reason, we have developed a progressive, accessible, and proven roadmap that makes it easier for any entity to move up, step by step, on its way to achieving the SDGs.
+      </p>
+      <p>
+      This roadmap outlines the fastest way to move towards a model aligned with sustainable development. To achieve this mission, the roadmap is divide into 4 phases, regarding 38 challenges in total. Each challenge is the minimum unit the 2030 Agenda can be split. Overcoming each of these challenges brings you closer to your sustainability goals. Likewise, the correlation between them means that the greater the number of challenges achieved, the greater the acceleration of your progress curve.
+      </p>
+      `,
+      description: `
+      ENREDA has developed this project in conjunction with the company OpenODS to adapt the OpenODS Index product for the ART-UNDP initiative, based on the work carried out in collaboration with its team.`,
+      logo: 'logo-proyectoindex.png',
+      name: 'Index PNUD',
+      screenshot: 'screenshot-index.jpg',
+      url: '',
+      sourcecode: '',
+      metrics: [
+        { metric: '', value: '' },
+        { metric: '', value: '' },
+        { metric: '', value: '' }
+      ],
+      metricsinfo: '',
+      technologies: [
+        {
+          technology: 'Python',
+          url: 'https://www.python.org',
+          logo: '/assets/images/technologies/python.png',
+          class: 'white'
+        },
+        {
+          technology: 'HTML',
+          url: 'https://www.w3.org/html/',
+          logo: '/assets/images/technologies/html.png',
+          class: ''
+        },
+        {
+          technology: 'CSS',
+          url: 'https://www.w3.org/Style/CSS/',
+          logo: '/assets/images/technologies/css.png',
+          class: ''
+        },
+        {
+          technology: 'JavaScript',
+          url: 'https://www.javascript.com/',
+          logo: '/assets/images/technologies/js.png',
+          class: ''
+        },
+        {
+          technology: 'D3js',
+          url: 'http://d3js.org',
+          logo: 'https://raw.githubusercontent.com/d3/d3-logo/master/d3.png'
+        },
+        {
+          technology: 'Django',
+          url: 'https://www.djangoproject.com',
+          class: 'white'
+        },
+        {
+          technology: 'Vue3',
+          url: 'https://www.djangoproject.com',
+          class: 'white'
+        }
+      ],
+      media: [],
+      own: 'no',
+      clientname: 'PNUD',
+      clientdescription: 'United Nations Development Program',
+      clienturl: 'https://www1.undp.org/content/undp/es/home.html',
+      clientyear: '2021',
       calltoaction: {
         call: ''
       }

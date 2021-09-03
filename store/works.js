@@ -182,7 +182,7 @@ export const state = () => ({
     },
     {
       title: 'Reglamento de Participación del Ayuntamiento de Cádiz',
-      logo: '',
+      logo: 'logo-ayuntamiento-cadiz.png',
       class: 'aytoparticipacioncadiz',
       url: 'ayto-participacion-cadiz',
       category: ['participacion', 'reglamento', 'participacionciudadana'],
@@ -190,7 +190,7 @@ export const state = () => ({
     },
     {
       title: 'Formación sobre la Ley Andaluza de Participación',
-      logo: '',
+      logo: 'formacionleyparticipacion.png',
       class: 'formacionleyparticipacion',
       url: 'formacion-ley-participacion',
       category: ['reglamento', 'participacion', 'participacionciudadana'],
@@ -198,7 +198,7 @@ export const state = () => ({
     },
     {
       title: 'Sistema Público de Participación Digital de Andalucía',
-      logo: '',
+      logo: 'logo-junta-andalucia.png',
       class: 'sistemaparticipacion',
       url: 'sistema-participacion',
       category: [
@@ -292,6 +292,22 @@ export const state = () => ({
       class: 'unpdsomalia',
       url: 'unpd-somalia',
       category: ['consul', 'participacion', 'participaciondigital'],
+      favourite: true
+    },
+    {
+      title: 'Index PNUD',
+      logo: 'logo-proyectoindex.png',
+      class: 'proyectoindex',
+      url: 'proyectoindex',
+      category: ['analisisdatos', 'innovacionsocial'],
+      favourite: true
+    },
+    {
+      title: 'Eurovelo',
+      logo: 'logo-eurovelo.png',
+      class: 'eurovelo',
+      url: 'eurovelo',
+      category: ['analisisdatos', 'innovacionsocial'],
       favourite: true
     }
   ]

@@ -113,7 +113,8 @@ export default {
       }
     ],
     'cookie-universal-nuxt',
-    '@nuxtjs/moment'
+    '@nuxtjs/moment',
+    'nuxt-leaflet'
   ],
 
   /*

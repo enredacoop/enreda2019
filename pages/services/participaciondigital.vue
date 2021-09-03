@@ -5,17 +5,27 @@
       background="bg_participaciondigital"
     />
     <Service slug="participaciondigital" />
+    <div class="container">
+      <!-- <Functionalities /> -->
+      <!-- <GeneralCharacteristicsConsul /> -->
+      <!-- <ServiciosConsul /> -->
+    </div>
   </div>
 </template>
-
 <script>
 import PageClaim from '~/components/layout/PageClaim.vue'
 import Service from '~/components/service/Service.vue'
+// import Functionalities from '~/components/layout/Functionalities.vue'
+// import GeneralCharacteristicsConsul from '~/components/layout/GeneralCharacteristicsConsul.vue'
+// import ServiciosConsul from '~/components/layout/ServiciosConsul.vue'
 
 export default {
   components: {
     PageClaim,
     Service
+    // Functionalities,
+    // GeneralCharacteristicsConsul,
+    // ServiciosConsul
   },
   nuxtI18n: {
     paths: {

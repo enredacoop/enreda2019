@@ -23,7 +23,8 @@
                 name: 'services-participaciondigital'
               })
             "
-          ></nuxt-link>
+          >
+          </nuxt-link>
         </div>
       </div>
       <div class="card">
@@ -108,7 +109,7 @@
           ></nuxt-link>
         </div>
       </div>
-      <div class="card">
+      <!-- <div class="card">
         <div class="card-image text-center">
           <img
             :src="require('~/assets/images/services/edusi.png')"
@@ -123,7 +124,7 @@
             class="btn btn-hidden stretched-link"
           ></a>
         </div>
-      </div>
+      </div> -->
     </div>
   </div>
 </template>

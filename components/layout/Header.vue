@@ -62,20 +62,24 @@
                 "
                 >{{ $t('services.service_5') }}</b-dropdown-item
               >
-              <b-dropdown-item href="http://edusi.eu/"
+              <!-- <b-dropdown-item href="http://edusi.eu/"
                 >{{ $t('services.service_6') }}
                 <font-awesome-icon
                   :icon="['fas', 'external-link-alt']"
                   transform="shrink-6"
-              /></b-dropdown-item>
+              /></b-dropdown-item> 
               <b-dropdown-item href="http://lynxanalytica.com/"
                 >Lynx Analytica
                 <font-awesome-icon
                   :icon="['fas', 'external-link-alt']"
                   transform="shrink-6"
-              /></b-dropdown-item>
+              /></b-dropdown-item> -->
             </b-nav-item-dropdown>
-            <b-nav-item href="http://blog.enreda.coop" target="_blank">
+            <b-nav-item
+              href="http://blog.enreda.coop"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               {{ $t('blog') }}
               <font-awesome-icon
                 :icon="['fas', 'external-link-alt']"
