@@ -2788,7 +2788,7 @@ export const state = () => ({
       logo: 'logo-proyectoindex.png',
       name: 'Index PNUD',
       screenshot: 'screenshot-index.jpg',
-      url: '',
+      url: 'https://demo.alianzalocalods.org/',
       sourcecode: '',
       metrics: [],
       metricsinfo: '',
