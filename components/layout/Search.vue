@@ -1,0 +1,200 @@
+<i18n>
+{
+  "es": {
+    "projects": "Proyectos",
+    "show all": "Mostrar todos",
+    "label-search": "Búsqueda por proyecto..."
+  },
+  "en": {
+    "projects": "Projects",
+    "show all": "Show all",
+    "label-search": "Search by proyect..."
+  }
+}
+</i18n>
+
+<template>
+  <div id="works" class="wrapper-content">
+    <b-container>
+      <div class="display-group">
+        <div class="button-group">
+          <b-dropdown
+            id="dropdown-filter"
+            :text="$t('apply_filter')"
+            class="m-md-2"
+          >
+            <b-dropdown-item
+              v-for="(val, key) in option.getFilterData"
+              :key="key"
+              class="button"
+              :class="[key === filterOption ? 'selected' : '']"
+              @click="filter(key)"
+            >
+              {{ $t(key) }}
+            </b-dropdown-item>
+          </b-dropdown>
+          <span id="filter-selected" class="primary"></span>
+        </div>
+        <div class="search-wrapper">
+          <label>{{ $t('label-search') }}</label>
+          <input
+            v-model="search"
+            type="text"
+            :placeholder="$t('label-search')"
+          />
+        </div>
+      </div>
+      <hr />
+
+      <isotope
+        id="root_isotope1"
+        ref="cpt"
+        :item-selector="'element-item'"
+        :list="orderedWorks"
+        :options="option"
+        @filter="filterOption = arguments[0]"
+        @sort="sortOption = arguments[0]"
+        @layout="currentLayout = arguments[0]"
+      >
+        <div
+          v-for="(work, index) in orderedWorks"
+          :key="index"
+          :class="[work.category] + ' col-xs-12 col-sm-6 col-lg-4'"
+        >
+          <nuxt-link
+            :to="
+              localePath({
+                name: `projects-${work.url}`
+              })
+            "
+          >
+            <div
+              :key="work.name"
+              class="work"
+              :class="
+                work.favourite === true
+                  ? 'highlighted ' + work.class
+                  : work.class
+              "
+            >
+              <div class="work-header">
+                <b-img
+                  v-if="work.logo != ''"
+                  :src="getImageUrl(work.logo)"
+                  :alt="work.title"
+                />
+                <h4 v-else>{{ work.title }}</h4>
+              </div>
+              <div class="work-body">
+                <div class="work-title">
+                  {{ work.title }}
+                </div>
+              </div>
+            </div>
+          </nuxt-link>
+          <b-pagination
+             v-model="currentPage"
+             :total-rows="rows"
+             :per-page="perPage"
+              aria-controls="my-table"
+          >
+          </b-pagination>
+        </div>
+      </isotope>
+    </b-container>
+  </div>
+</template>
+
+<script>
+/* eslint-disable no-undef */
+/* eslint-disable no-console */
+
+import _ from 'lodash'
+
+export default {
+  nuxtI18n: {
+    paths: {
+      es: '/proyectos',
+      en: '/projects'
+    }
+  },
+  data() {
+    return {
+      currentLayout: 'masonry',
+      selected: null,
+      sortOption: 'original-order',
+      filterOption: 'show all',
+      cellsByRow: {
+        rowHeight: 270
+      },
+      search: '',
+      option: {
+        itemSelector: '.element-item',
+        getFilterData: {
+          'show all': function() {
+            return true
+          },
+          consul: function(el) {
+            return el.category.includes('consul')
+          },
+          presuspuestoparticipativo: function(el) {
+            return el.category.includes('presuspuestoparticipativo')
+          },
+          transparencia: function(el) {
+            return el.category.includes('transparencia')
+          },
+          participacion: function(el) {
+            return el.category.includes('participacion')
+          },
+          reglamento: function(el) {
+            return el.category.includes('reglamento')
+          },
+          analisisdatos: function(el) {
+            return el.category.includes('analisisdatos')
+          },
+          desarrolloproducto: function(el) {
+            return el.category.includes('desarrolloproducto')
+          },
+          economiasocial: function(el) {
+            return el.category.includes('economiasocial')
+          },
+          innovacionsocial: function(el) {
+            return el.category.includes('innovacionsocial')
+          },
+          desarrollotecnologico: function(el) {
+            return el.category.includes('desarrollotecnologico')
+          },
+          formacion: function(el) {
+            return el.category.includes('formacion')
+          },
+          participaciondigital: function(el) {
+            return el.category.includes('participaciondigital')
+          }
+        }
+      }
+    }
+  },
+  computed: {
+    orderedWorks: function() {
+      return _.orderBy(this.$store.state.works.items, 'favourite').reverse()
+    },
+    searchWork: function() {
+      return el.title.includes(this.search)
+    }
+  },
+  mounted() {
+    $('#dropdown-filter ul li').on('click', function() {
+      const filter = this.firstElementChild.innerText
+      $('#filter-selected')[0].innerText = filter
+    })
+  },
+  methods: {
+    filter: function(key) {
+      this.$refs.cpt.filter(key)
+    },
+    getImageUrl(imageId) {
+      return require(`~/assets/images/works/${imageId}`)
+    }
+  }
+}
+</script>
