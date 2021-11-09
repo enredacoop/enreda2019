@@ -2845,6 +2845,62 @@ export const state = () => ({
       calltoaction: {
         call: ''
       }
+    },
+    {
+      id: 'redpublica',
+      title: 'Redpública',
+      class: 'redpublica',
+      subtitle: 'Digital participation platform for citizens of Peru',
+      body: `
+      <p>
+      The platform is part of the project "Innovation for citizen political participation: beyond the recovery after COVID-19", which aims to contribute to the strengthening of democracy and social cohesion in Peru, through innovative solutions to the challenges of governance and digital disruption.</p>
+      <p>
+      The aim is to promote new ways of citizen participation, within the framework of the promotion of digital democracy, in order to meet the challenges of governance, transparency and accountability.        </p>
+      <p>
+      UNDP will design a Digital Public Agenda (DPA) - a digital, interactive, and up-to-date platform - with the support of civil society to promote civic engagement and inform civil society.       </p>
+      <p>
+      This agenda will make visible the priority issues, demands, needs, and concerns of citizens and promote their inclusion in the plans and priorities of political organizations and the State.             </p>
+      <p>
+      The DPA is built with high participation of the young population and involves civil society organizations through online focus groups, e-forums, and digital forums.      </p>
+      <p>
+      This effort will be complemented by the recent activation of the Forum of the National Agreement for the creation of the pact Perú2 while distinguishing itself from the latter in its form and elaboration.           </p>
+      `,
+      description: `
+      ENREDA has developed the Redpública platform for the United Nations Development Program (UNDP) to promote citizen participation and gather proposals from Peruvians to create a "country agenda"      `,
+      logo: 'logo-redpublica.png',
+      name: 'Redpública',
+      screenshot: 'screenshot-redpublica.png',
+      url: 'https://redpublica.pe/',
+      sourcecode: '',
+      metrics: [
+        { metric: '', value: '' },
+        { metric: '', value: '' },
+        { metric: '', value: '' }
+      ],
+      metricsinfo: '',
+      technologies: [
+        {
+          technology: 'Wordpress',
+          url: 'https://www.wordpress.com',
+          logo: '/assets/images/technologies/wordpress.png',
+          class: 'white'
+        },
+        {
+          technology: 'Consul',
+          url: 'http://consulproject.org/es/',
+          logo: 'http://consulproject.org/img/consul_logo.svg',
+          class: ''
+        }
+      ],
+      media: [],
+      own: 'no',
+      clientname: 'PNUD Perú',
+      clientdescription: '',
+      clienturl: 'https://www.pe.undp.org/',
+      clientyear: '2021',
+      calltoaction: {
+        call: ''
+      }
     }
   ]
 })

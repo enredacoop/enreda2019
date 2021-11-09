@@ -219,6 +219,11 @@ export const state = () => ({
     description: 'Plataforma de rutas geolocalizadas EUROVELO 8',
     keywords: 'institucion, publico, andalucia'
   },
+  redpublica: {
+    title: 'Desarrollo Wordpress y Consul para PNUD Perú',
+    description: 'Plataforma de participación ciudadana Redpública',
+    keywords: 'participacion, ciudadana, ciudadania, publico, peru, onu, pnud'
+  },
 
   // Services
   'analitica-bigdata': {

@@ -309,6 +309,14 @@ export const state = () => ({
       url: 'eurovelo',
       category: ['analisisdatos', 'innovacionsocial'],
       favourite: true
+    },
+    {
+      title: 'Redpública',
+      logo: 'logo-redpublica.png',
+      class: 'redpublica',
+      url: 'redpublica',
+      category: ['consul', 'participacion', 'participaciondigital'],
+      favourite: true
     }
   ]
 })

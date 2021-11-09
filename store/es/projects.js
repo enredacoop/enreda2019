@@ -2840,6 +2840,68 @@ export const state = () => ({
       clienturl: 'https://www1.undp.org/content/undp/es/home.html',
       clientyear: '2021',
       calltoaction: {}
+    },
+    {
+      id: 'redpublica',
+      title: 'Redpública',
+      class: 'redpublica',
+      subtitle: 'Plataforma de participación ciudadana de Perú',
+      body: `
+      <p>
+      La plataforma se enmarca dentro del proyecto  “Innovación para la participación política ciudadana: más allá de la recuperación del COVID-19”, que tiene como propósito contribuir al fortalecimiento de la democracia y la cohesión social en el Perú, a través de soluciones innovadoras frente a los desafíos de gobernanza y disrupción digital.</p>
+      <p>
+      Se busca potenciar nuevas formas de participación ciudadana, en el marco del impulso de la democracia digital, para hacer frente a los desafíos de la gobernanza, transparencia y rendición de cuentas.  
+      </p>
+      <p>
+      El  PNUD, diseñará una Agenda Pública Digital (APD) – una plataforma digital, interactiva y actualizada – con el apoyo de la sociedad civil destinada a promover el compromiso cívico e informar a la sociedad civil. 
+      </p>
+      <p>
+      Esta agenda visibilizará, los temas prioritarios, demandas, necesidades y preocupaciones de la ciudadanía, y promoverá su inclusión en los planes y prioridades programáticas de las organizaciones políticas y el Estado.       
+      </p>
+      <p>
+      La APD se construye con una alta participación de la población joven e involucrando a organizaciones de la sociedad civil, a través de grupos focales online, e-foros y cabildos digitales.      
+      </p>
+      <p>
+      Este esfuerzo se complementará con la reciente activación del Foro del Acuerdo Nacional para la construcción del Pacto Perú2 , a la vez que se distingue de éste en su forma y participantes en la elaboración.      
+      </p>
+      `,
+      description: `
+      ENREDA ha desarrollado para el Programa de las Naciones Unidas para el Desarrollo (PNUD),  la plataforma Redpública, Con el fin de impulsar la participación ciudadana y reunir las propuestas de los peruanos y peruanas para crear una “agenda país”.
+      `,
+      logo: 'logo-redpublica.png',
+      name: 'Redpública',
+      screenshot: 'screenshot-redpublica.png',
+      url: 'https://redpublica.pe/',
+      sourcecode: '',
+      metrics: [
+        { metric: '', value: '' },
+        { metric: '', value: '' },
+        { metric: '', value: '' }
+      ],
+      metricsinfo: '',
+      technologies: [
+        {
+          technology: 'Wordpress',
+          url: 'https://www.wordpress.com',
+          logo: '/assets/images/technologies/wordpress.png',
+          class: 'white'
+        },
+        {
+          technology: 'Consul',
+          url: 'http://consulproject.org/es/',
+          logo: 'http://consulproject.org/img/consul_logo.svg',
+          class: ''
+        }
+      ],
+      media: [],
+      own: 'no',
+      clientname: 'PNUD Perú',
+      clientdescription: '',
+      clienturl: 'https://www.pe.undp.org/',
+      clientyear: '2021',
+      calltoaction: {
+        call: ''
+      }
     }
   ]
 })
