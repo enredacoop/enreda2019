@@ -4,7 +4,7 @@
     "title": "Cooperativa",
     "slogan": "En ENREDA tenemos una mirada distinta de la realidad, de la tecnología y de la comunicación; y eso suele ser el primer paso para poder transformar las cosas.",
     "beginnings_title": "Nuestros principios",
-    "beginnings_subtitle": "...y si no te gustan, son los únicos que orgullosamente tenemos.", 
+    "beginnings_subtitle": "...y si no te gustan, son los únicos que orgullosamente tenemos.",
     "beginnings_1_title": "Cooperativismo",
     "beginnings_1_description": "Creemos en el valor social y democrático de las empresas. Mejor cooperar que competir.",
     "beginnings_2_title": "Libertad tecnológica",
@@ -38,7 +38,7 @@
   "en": {
     "title": "Cooperative",
     "slogan": "In ENREDA we have a different view of reality, of technology and communication; and that is usually the first step to be able to transform things.",
-    "beginnings_title": "Our beginnings",
+    "beginnings_title": "Our Principles",
     "beginnings_subtitle": "... and if you do not like them, they are the only ones we proudly have.",
     "beginnings_1_title": "Cooperativism",
     "beginnings_1_description": "We believe in the social and democratic value of companies. Better to cooperate than to compete.",
@@ -435,7 +435,7 @@ export default {
             github: 'carcamcue',
             role: ''
           },
-          
+
           {
             name: 'Manuel Barbadillo',
             position: ' ',
@@ -447,7 +447,7 @@ export default {
             github: '',
             role: ''
           },
-          
+
           {
             name: 'Azahara Martín',
             position: ' ',

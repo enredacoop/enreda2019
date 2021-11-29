@@ -10,6 +10,11 @@ export const state = () => ({
       'ENREDA Cooperativa. Sus principios. Sus personas. Una forma de trabajar en red.',
     keywords: 'cooperativa, tecnología, social'
   },
+  objetivos: {
+    title: 'Portal ODS Enreda',
+    description: `Enreda está comprometida con la Agenda 2030.`,
+    keywords: 'cooperativa, desarrollo, 2030'
+  },
   legal: {
     title: 'Política de seguridad de ENREDA',
     description: 'Política de seguridad de ENREDA',
@@ -223,6 +228,11 @@ export const state = () => ({
     title: 'Desarrollo Wordpress y Consul para PNUD Perú',
     description: 'Plataforma de participación ciudadana Redpública',
     keywords: 'participacion, ciudadana, ciudadania, publico, peru, onu, pnud'
+  },
+  villalba: {
+    title: `Programa de acciones para el fomento de la movilidad sostenible en Villalba de Alcor`,
+    description: 'Plataforma de participación ciudadana Redpública',
+    keywords: 'participacion, ciudadana, innovacion, social, ciudadania'
   },
 
   // Services

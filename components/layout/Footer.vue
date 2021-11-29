@@ -100,6 +100,11 @@
           <MenuFooter />
         </div>
         <div class="col-md-12 col-sm-12 col-lg-12">
+          <div class="pull-right">
+            <Goals />
+          </div>
+        </div>
+        <div class="col-md-12 col-sm-12 col-lg-12">
           <ul class="list-inline pull-right">
             <li>
               <nuxt-link :to="localePath({ name: 'legal' })">{{
@@ -185,11 +190,13 @@
 <script>
 import Cookies from '~/components/layout/Cookies.vue'
 import Newsletter from '~/components/layout/Newsletter.vue'
+import Goals from '~/components/layout/Goals.vue'
 import MenuFooter from '~/components/layout/MenuFooter.vue'
 
 export default {
   components: {
     Newsletter,
+    Goals,
     Cookies,
     MenuFooter
   },

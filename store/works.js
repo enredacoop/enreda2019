@@ -317,6 +317,14 @@ export const state = () => ({
       url: 'redpublica',
       category: ['consul', 'participacion', 'participaciondigital'],
       favourite: true
+    },
+    {
+      title: 'Proyecto Villalba',
+      logo: 'logo-ayto-villalba.png',
+      class: 'villalba',
+      url: 'villalba',
+      category: ['innovacionsocial', 'participacion', 'participacionciudadana'],
+      favourite: true
     }
   ]
 })

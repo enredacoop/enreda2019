@@ -9,7 +9,7 @@
 /* ----------------------------------------------------------------
 
     Table Of Content
-        
+
     00. Imports
     01. Basics
     02. Texts
@@ -39,7 +39,8 @@
         25.1 - Process
         25.2 - General Characteristics CONSUL
         25.3 - Services CONSUL
- 
+    26. Objetivos Desarrollo Sostenible
+
 ---------------------------------------------------------------- */
 /* ----------------------------------------------------------------
     [ 00. Imports ]
@@ -246,7 +247,11 @@ h6 {
     background-image: url('~@~@/assets/images/services/bg_bigdata.jpeg');
     background-position: center center;
   }
-  
+  &.bg_objetivos {
+    background-image: url('~@~@/assets/images/bg_3.png');
+    background-position: center center;
+  }
+
 }
 
 .block-consul {
@@ -553,7 +558,7 @@ header {
         }
       }
     }
-    
+
     a, a.nav-link {
       font-size: 14px;
       padding: 10px;
@@ -594,7 +599,7 @@ header {
       margin-left: 10px !important;
       padding-left: 20px;
     }
-    
+
     @media(max-width:991px) {
       .navbar-collapse {
         top: 15px;
@@ -657,7 +662,7 @@ header {
           color: @white_color !important;
         }
       }
-      
+
       a, a.nav-link {
         color: @black_color !important;
       }
@@ -800,7 +805,7 @@ p.copyright {
   padding-top: 120px;
 
   #home-blog-items {
-    
+
     .itemnews {
       background-color: @white_color;
       border: 6px solid @clean_color;
@@ -1052,11 +1057,11 @@ p.copyright {
       margin-top: -40px;
       width: 50%;
     }
-    
+
     h2.section-heading {
       color: @black_color;
     }
-    
+
     h3.section-subheading {
       color: @lightgrey_color;
     }
@@ -1075,7 +1080,7 @@ p.copyright {
           min-height: 300px;
         }
       }
-      
+
       &:hover {
         text-decoration: none;
         .node {
@@ -1109,7 +1114,7 @@ p.copyright {
   #cooperative {
     #intro {
       .description {
-        background: @primary_color url('~@/assets/images/cooperative/banner_corp.png') no-repeat top left; 
+        background: @primary_color url('~@/assets/images/cooperative/banner_corp.png') no-repeat top left;
       }
     }
   }
@@ -1411,7 +1416,7 @@ p.copyright {
       background-color: darken(@decidesantiago_color, 5%);
       color: make-contrast(@decidesantiago_color);
     }
-  }  
+  }
   .work.decidecadiz .work-header {
     background-color: @decidecadiz_color;
     padding-top: 45px;
@@ -1436,7 +1441,7 @@ p.copyright {
       background-color: darken(@foroparticipacion_color, 5%);
       color: make-contrast(@foroparticipacion_color);
     }
-    
+
   }
   .work.dipuparticipacioncadiz .work-header {
     background-color: @dipuparticipacioncadiz_color;
@@ -1554,7 +1559,7 @@ p.copyright {
   }
   .work.protocoloae .work-header {
     background-color: @protocoloae_color;
-    img { 
+    img {
       width: 310px;
       padding-top: 45px;
     }
@@ -1605,6 +1610,18 @@ p.copyright {
     .title {
       background-color: darken(@redpublica_color, 5%);
       color: make-contrast(@redpublica_color);
+    }
+  }
+
+  .work.villalba .work-header {
+    background-color: @villalba_color;
+    img {
+      width: 280px;
+      padding-top: 25px;
+    }
+    .title {
+      background-color: darken(@villalba_color, 5%);
+      color: make-contrast(@villalba_color);
     }
   }
 
@@ -1782,7 +1799,7 @@ p.copyright {
   &.wrapper {
     padding-top: 0px;
   }
-  
+
   #info {
     p {
       font-size: 1.5em;
@@ -1971,6 +1988,9 @@ p.copyright {
   .work_styling(@redpublica_color);
 }
 
+#work.villalba {
+  .work_styling(@villalba_color);
+}
 @media(max-width:767px) {
   #work {
     section {
@@ -2222,7 +2242,7 @@ ul.list-inline {
   animation-duration: 3s;
   animation-iteration-count: infinite;
 }
-@-webkit-keyframes loading { 
+@-webkit-keyframes loading {
   0% { opacity: 0.6; }
   50% { opacity: 1; }
   100% { opacity: 0.6; }
@@ -2368,7 +2388,7 @@ ul.list-inline {
         }
         .btn {
           display: block;
-          max-width: 100px; 
+          max-width: 100px;
           margin: 0 auto;
           margin-top: 15px;
           &:hover {
@@ -2455,7 +2475,7 @@ ul.list-inline {
     border-top: 0px;
   }
   dl, dd {
-    padding-top: 10px; 
+    padding-top: 10px;
     border-top: 1px solid @lightgrey_color;
   }
 }
@@ -2486,17 +2506,17 @@ ul.list-inline {
         margin-top:20px;
         margin-bottom:20px;
         margin-left:30px
-      }  
+      }
   }
 
 
   @media (min-width: 320px) and (max-width: 767px) {
-    
+
     .logos-footer {
         width:100%;
         justify-content: center;
     }
-    
+
   }
 
 
@@ -2504,12 +2524,12 @@ ul.list-inline {
       [ 25. Digital Participation ]
   -----------------------------------------------------------------*/
   /* ----------------------------------------------------------------
-      [ 25.1 
+      [ 25.1
         Digital Participation - Process]
   -----------------------------------------------------------------*/
 
   .process {
-      margin:20px;
+      margin:0 auto;
       width: 50rem;
   }
 
@@ -2551,7 +2571,7 @@ ul.list-inline {
       bottom: -0.5rem;
       border-radius: 50%;
       z-index: -1;
-      border: 0.18rem dashed #58CCED; 
+      border: 0.18rem dashed #58CCED;
   }
 
   .text-circle {
@@ -2600,6 +2620,10 @@ ul.list-inline {
       display: none;
   }
 
+  .icon-black {
+    display: none;
+  }
+
   .middle-icon {
       font-size:2.5rem;
       color: lightblue;
@@ -2635,8 +2659,12 @@ ul.list-inline {
   @media (min-width: 321px) and (max-width: 728px){
 
       .process {
-          margin:0px;
-          width: 350px;
+          margin:0 auto;
+          width: 290px;
+      }
+
+      .text-circle {
+        margin-top:30px;
       }
 
       .content-icon{
@@ -2646,6 +2674,14 @@ ul.list-inline {
       .icon-responsive {
           font-size:2rem;
           color: black;
+      }
+
+      .icon-black {
+        display:inline;
+        font-size:2rem;
+        color: black;
+        text-align:center;
+        margin-top:10px;
       }
 
       .content-circle{
@@ -2661,12 +2697,22 @@ ul.list-inline {
             margin-right: 0px;
       }
 
+      #circle-two {
+        margin-top: 45px;
+        margin-left:18px;
+      }
+
+      #circle-six {
+        margin-top: 45px;
+        margin-left:30px;
+      }
+
   }
 
   @media screen and (min-width: 767px) and (max-width: 1024px){
 
       .process {
-          margin:0px;
+          margin:0 auto;
           width: 100%;
       }
 
@@ -2691,6 +2737,7 @@ ul.list-inline {
           margin-left: 0px;
           margin-right: 0px;
       }
+
   }
 
   @media (min-width: 280px) and (max-width: 320px){
@@ -2709,18 +2756,42 @@ ul.list-inline {
           justify-content: space-evenly;
       }
 
+      .text-circle {
+        margin-top:30px;
+      }
+
       .content-icon{
           display: none;
       }
 
+      .icon-black {
+        display:inline;
+        font-size:2rem;
+        color: black;
+        text-align:center;
+        margin-top:10px;
+      }
+
+      #circle-two {
+        margin-top: 45px;
+        margin-left:18px;
+      }
+
+      #circle-six {
+        margin-top: 45px;
+        margin-left:30px;
+      }
+
   }
   /* ----------------------------------------------------------------
-      [ 25.2 
+      [ 25.2
         Digital Participation - General Characteristics CONSUL]
   -----------------------------------------------------------------*/
 
   #section-size-gen-charact {
-      width: 1200px;
+
+      margin: 0 auto;
+      padding-top: 50px;
   }
 
   .icon-gen-charact {
@@ -2752,22 +2823,30 @@ ul.list-inline {
       line-height: 1.8rem;
       font-size: 15px;
       font-weight: 300;
-      width: 300px;
+      width: 16rem;
+
   }
 
+  .row-digital {
+    margin: 0 auto;
+  }
   #first-square, #second-square, #thrid-square, #fourth-square, #fifth-square, #sixth-square {
       margin-top: 20px;
+
   }
 
+  .square-responsive {
+    margin: 0 auto;
+  }
   /* ----------------------------------------------------------------
-      [ 25.3 
+      [ 25.3
         Digital Participation - Services CONSUL]
   -----------------------------------------------------------------*/
 
   .section-consul-services {
       width: 50rem;
   }
-  
+
   /*
   #offices {
   .officename {
@@ -2778,7 +2857,7 @@ ul.list-inline {
         }
     }
   }
-} 
+}
   */
 
   .servicios-desplegable .panel-title > a::before {
@@ -2797,14 +2876,14 @@ ul.list-inline {
       float: right !important;
       content: "\f055";
       font-size: 3rem;
-      color: #fc3d0f;  
+      color: #fc3d0f;
   }
 
   .servicios-desplegable a {
       text-decoration: none;
       display: block;
   }
-  
+
   .servicios-desplegable a:hover {
       text-decoration: none;
   }
@@ -2813,50 +2892,188 @@ ul.list-inline {
   .servicios-desplegable a:active {
       text-decoration: none;
   }
-  
-  
+
+
   .servicios-desplegable:focus {
       text-decoration: none;
   }
-  
+
   .servicios-desplegable .panel-default > .panel-heading {
       background-color: white;
       border-left: 2px solid #fc3d0f;
       height: 50px;
       border-radius: 0px;
   }
-  
+
   .title-section-consul-services {
       height: 50px;
       box-shadow: none;
   }
-  
+
   .title-section-consul-services > h3 {
       margin-top: 7px;
       font-family: Open Sans,sans-serif;
       font-weight: 400;
       text-transform: uppercase;
       letter-spacing: 2px;
-      font-size: 18px;  
+      font-size: 18px;
   }
 
   .panel-body{
-    
+
       border-top-width: 0px;
-      border-left: 2px solid #fc3d0f; 
+      border-left: 2px solid #fc3d0f;
       font-family: Open Sans,sans-serif;
       letter-spacing: 2px;
       font-weight: 300;
       font-size: 17px;
       color: #333;
   }
-  
+
   .space-acc {
       height: 30px;
   }
-  
+
   #panel-one,#panel-two,#panel-three,#panel-four,#panel-five,#panel-six,#panel-seven,#panel-eight {
       border: 0px;-webkit-box-shadow: none;
       -moz-box-shadow: none;
       box-shadow: none;
   }
+
+  /* ----------------------------------------------------------------
+    [ 26. Objetivos page ]
+  -----------------------------------------------------------------*/
+
+  .ods-web {
+    .slogan {
+      padding-top: 120px;
+      padding-bottom: 120px;
+      font-weight: normal;
+      font-size: 30px;
+    }
+  }
+
+  .ods-description {
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    font-size: 22px;
+    font-weight: 300;
+    text-align: justify;
+  }
+  .ods-description p {
+    padding-bottom:10px;
+  }
+  .agenda {
+    max-width:350px;
+    text-align: justify;
+  }
+
+  #ods-prior {
+      .section-heading {
+        font-size: 40px;
+        margin-top: 0;
+        margin-bottom: 15px;
+        text-transform: uppercase;
+        font-weight: normal;
+      }
+      .section-subheading {
+        font-size: 22px;
+        text-transform: none;
+        text-align: justify;
+        font-style: italic;
+        font-weight: 400;
+        margin-bottom: 75px;
+        margin-top:35px;
+      }
+
+      .element {
+        max-width:250px;
+      }
+      p {
+        font-size: 16px;
+      }
+      .ods-heading {
+        margin: 15px 0;
+        text-transform: none;
+        font-size: 25px;
+      }
+
+  }
+  .meta-priority-title h4{
+    background:@primary_color_trans;
+    color:white;
+    padding: 5px;
+  }
+
+  .img-agenda {
+    max-width: 788px;
+    width: 100%;
+    height: auto;
+  }
+.table-matrix-titles {
+  display: flex;
+  justify-content: space-between;
+  max-width:700px;
+  font-size: 1.4rem;
+  text-align: center;
+}
+.table-matrix-images {
+  margin:10px;
+}
+.table-matrix-meta {
+  margin-top:10px;
+  padding-top:35%;
+  margin-bottom:20px;
+  height:100px;
+  display:table;
+  width:100px;
+}
+
+.table-matrix-service {
+  margin-top:10px;
+  margin-bottom:20px;
+  padding-top:8%;
+  height:100px;
+  display:table;
+  text-align: left;
+}
+.table-matrix-link {
+  text-decoration: none;
+  color: @primary_color_trans;
+}
+.table-matrix-link:hover {
+  color: @primary_color_trans;
+}
+@media (min-width: 320px) and (max-width: 420px) {
+
+  .hide-title {
+    display:none;
+  }
+  .table-matrix-titles {
+    font-size: 0.85rem;
+    margin-left: 5px;
+    margin-right:40px;
+  }
+ .table-matrix-images {
+   margin:5px 5px 56px 5px;
+   width: 60px;
+   height:60px;
+ }
+ .table-matrix-service {
+  margin-bottom:21px;
+ }
+ .table-matrix-meta {
+  margin-left:-10px;
+  margin-right:-20px;
+}
+.ods-description p {
+  padding-bottom:10px;
+  font-size: 1.1rem;
+}
+.section-heading {
+  font-size: 2rem;
+}
+}

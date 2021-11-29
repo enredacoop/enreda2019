@@ -67,7 +67,7 @@
                 <font-awesome-icon
                   :icon="['fas', 'external-link-alt']"
                   transform="shrink-6"
-              /></b-dropdown-item> 
+              /></b-dropdown-item>
               <b-dropdown-item href="http://lynxanalytica.com/"
                 >Lynx Analytica
                 <font-awesome-icon

@@ -7,7 +7,7 @@ export const state = () => ({
       subtitle: 'Transparencia, Información, Participación e Incidencia.',
       body: `
         <p>
-          TIPI Ciudadano es una herramienta on line de transparencia, acceso a la información y rendición de cuentas focalizada en el seguimiento de la toda la actividad parlamentaria española relacionada con la pobreza, la justicia social y el desarrollo sostenible. 
+          TIPI Ciudadano es una herramienta on line de transparencia, acceso a la información y rendición de cuentas focalizada en el seguimiento de la toda la actividad parlamentaria española relacionada con la pobreza, la justicia social y el desarrollo sostenible.
         </p>
         <p>
           TIPI (acrónimo de transparencia, información, participación e incidencia) está diseñada para responder a las necesidades específicas de los usuarios, ya sean ciudadanos, periodistas, movimientos sociales o representantes políticos. Para ello:
@@ -30,7 +30,7 @@ export const state = () => ({
           </ul>
         </p>
         <p>
-          TIPI fue desarrollado por ENREDA para CIECODE (Centro de Investigación y Estudios sobre Coherencia y Desarrollo), una organización española especializada en el análisis de políticas públicas, en la coherencia de políticas para el desarrollo y en proyectos de transparencia, rendición de cuentas y participación ciudadana. La primera versión de TIPI (mayo 2014 - septiembre 2015) fue financiada por el Programa de Ciudadanía Activa de los EEA Grants y tuvo como socios a UNICEF-comité español, EAPN España, EAPN Castilla la Mancha y Fundación porCausa.      
+          TIPI fue desarrollado por ENREDA para CIECODE (Centro de Investigación y Estudios sobre Coherencia y Desarrollo), una organización española especializada en el análisis de políticas públicas, en la coherencia de políticas para el desarrollo y en proyectos de transparencia, rendición de cuentas y participación ciudadana. La primera versión de TIPI (mayo 2014 - septiembre 2015) fue financiada por el Programa de Ciudadanía Activa de los EEA Grants y tuvo como socios a UNICEF-comité español, EAPN España, EAPN Castilla la Mancha y Fundación porCausa.
         </p>
       `,
       description:
@@ -302,10 +302,10 @@ export const state = () => ({
           Esta plataforma, que ayuda a crear espacios webs propios, trabaja bajo dos premisas fundamentales: responsive y posicionamiento. Éstas son dos de las características fundamentales que deben tener las páginas web a día de hoy para que los usuarios finales (consumidores, clientes, etc.) localicen con facilidad a estas empresas, asociaciones u organizaciones y que éstas consigan sus objetivos.
         </p>
         <p>
-          Este proyecto ha sido desarrollado desde la Cooperativa ENREDA en el marco de un proyecto de innovación impulsado por RED.es. 
+          Este proyecto ha sido desarrollado desde la Cooperativa ENREDA en el marco de un proyecto de innovación impulsado por RED.es.
         </p>
         <p>
-          El desarrollo ha sido realizado en varias tecnologías e integrando servicios externos. El backend y el sistema de gestión está desarrollado en Django/python, el frontend está completamente realizado sobre Angular JS y el despliegue de sitios web está implementado mediante el uso de la Api de github.com 
+          El desarrollo ha sido realizado en varias tecnologías e integrando servicios externos. El backend y el sistema de gestión está desarrollado en Django/python, el frontend está completamente realizado sobre Angular JS y el despliegue de sitios web está implementado mediante el uso de la Api de github.com
         </p>
       `,
       description:
@@ -398,7 +398,7 @@ export const state = () => ({
           Este proyecto se ha desarrollado gracias al trabajo de muchas personas y, especialmente, de los equipos de ENREDA y Wadobo, que han participado en el desarrollo de la idea de manera desinteresada para poder aportar una solución tecnológica a la sociedad.
         </p>
         <p>
-          Social to crowd, es totalmente gratis y abierto, el código fuente se puede encontrar en el repositorio [<a href="https://github.com/socialinn/socialtocrowd" target="_blank" rel="noopener noreferrer">https://github.com/socialinn/socialtocrowd</a>] 
+          Social to crowd, es totalmente gratis y abierto, el código fuente se puede encontrar en el repositorio [<a href="https://github.com/socialinn/socialtocrowd" target="_blank" rel="noopener noreferrer">https://github.com/socialinn/socialtocrowd</a>]
         </p>
       `,
       description:
@@ -515,7 +515,7 @@ export const state = () => ({
           ENREDA ha creado una aplicación de transparencia presupuestaria, pensada para que cualquier institución pueda facilitar de forma accesible y pedagógica sus cuentas anuales. Esta aplicación es usada actualmente por los Ayuntamientos de Córdoba y Marbella.
         </p>
         <p>
-          La aplicación permite que cualquier ciudadano podrá navegar entre las diferentes partidas presupuestarias, a través de gráficas interactivas, y comprobar cómo ha ido evolucionando cada una de ellas en los últimos tres años. 
+          La aplicación permite que cualquier ciudadano podrá navegar entre las diferentes partidas presupuestarias, a través de gráficas interactivas, y comprobar cómo ha ido evolucionando cada una de ellas en los últimos tres años.
         </p>
         <p>
           Para facilitar la compresión del presupuesto, la herramienta facilita una definición sencilla de las partidas por las que está navegando, además de un glosario donde se explica de forma más detallada los principales conceptos de un presupuesto municipal.
@@ -530,7 +530,7 @@ export const state = () => ({
           Secciones:
           <ul>
             <li>
-              Página de inicio con presentación del proyecto 
+              Página de inicio con presentación del proyecto
             </li>
             <li>
               Presupuestos globales: proporciona una visión genérica de cómo están estructurados y el tamãno de cada partida presupuestaria en relación al total
@@ -764,7 +764,7 @@ export const state = () => ({
           <b>Han trabajado en el proyecto más de 13 personas</b>
         </p>
         <p>
-          Para poder abordar un proyecto de tal envergadura, la cooperativa ENREDA ha colaborado con numerosos perfiles técnicos con objeto de cumplir los objetivos marcados por el cliente. En este sentido, la implicación de los miembros de la Cooperativa Turística de Conil ha sido fundamental para el diseño e implementación del producto. 
+          Para poder abordar un proyecto de tal envergadura, la cooperativa ENREDA ha colaborado con numerosos perfiles técnicos con objeto de cumplir los objetivos marcados por el cliente. En este sentido, la implicación de los miembros de la Cooperativa Turística de Conil ha sido fundamental para el diseño e implementación del producto.
         </p>
         <p>
           El desarrollo se ha realizado en Django, siendo uno de los desarrollos más complejos abordados por la Cooperativa, para situar el producto final en un mercado tan exigente como es el de los portales digitales turísticos.
@@ -894,7 +894,7 @@ export const state = () => ({
           El proyecto ha sido desarrollado basándose en el CMS Drupal 7 para implementar un conjunto de entidades de información relacionadas entre ellas y con fuentes de origen muy diversas.
         </p>
         <p>
-          El sistem además está integrado con una API del proyecto TipiCiudadano [enlace a /proyectos/tipi-ciudadano/]  para importar información de manera automática. 
+          El sistem además está integrado con una API del proyecto TipiCiudadano [enlace a /proyectos/tipi-ciudadano/]  para importar información de manera automática.
         </p>
       `,
       description:
@@ -1100,7 +1100,7 @@ export const state = () => ({
           El proyecto ha implicado un desarrollo a medida para la gestión de toda la parrilla de información del festival, con más de 500 pases y más de 200 películas para que pudiera automatizarse mediante la importación de los contenidos desde una base de datos externa.
         </p>
         <p>
-          Además se han desarrollado múltiples funcionalidades para permitir a los editores de contenidos crear páginas a medida para la comunicación del evento.      
+          Además se han desarrollado múltiples funcionalidades para permitir a los editores de contenidos crear páginas a medida para la comunicación del evento.
         </p>
       `,
       description:
@@ -1355,20 +1355,20 @@ export const state = () => ({
       subtitle: 'Consul',
       body: `
         <p>
-          El proyecto se basa en el desarrollo de la plataforma, el diseño e implementación de un plan de formación, coaching y mentorización a desarrolladores somalíes, con objeto de garantizar la soberanía y autogestión de la plataforma durante el proceso. 
+          El proyecto se basa en el desarrollo de la plataforma, el diseño e implementación de un plan de formación, coaching y mentorización a desarrolladores somalíes, con objeto de garantizar la soberanía y autogestión de la plataforma durante el proceso.
         </p>
         <p>
-          La base de la plataforma será  Consul,  el software libre desarrollado por el Ayuntamiento de Madrid para su conocido portal https://decide.madrid.es/ que ya está siendo usado en más de 100 instituciones públicas tanto a nivel nacional como internacional. 
+          La base de la plataforma será  Consul,  el software libre desarrollado por el Ayuntamiento de Madrid para su conocido portal https://decide.madrid.es/ que ya está siendo usado en más de 100 instituciones públicas tanto a nivel nacional como internacional.
         </p>
-        <p>      
+        <p>
           ENREDA ya ha trabajado en más de 15 proyectos relacionados con esta plataforma en el ámbito nacional y con este proyecto abre la vía para trabajar en el ámbito internacional en el desarrollo de portales de participación digital.
         </p>
-        <p>     
-          La plataforma será de gran ayuda para facilitar la participación en el proceso de los somalíes residentes en el exterior del país, que según datos de Naciones Unidas son entorno a dos millones de personas (un 13% de la población total del país). 
+        <p>
+          La plataforma será de gran ayuda para facilitar la participación en el proceso de los somalíes residentes en el exterior del país, que según datos de Naciones Unidas son entorno a dos millones de personas (un 13% de la población total del país).
         </p>
-        <p>      
+        <p>
           Además de la plataforma para el Ministerio de Asuntos Constitucionales, se realizarán adaptaciones para (crear 3 plataformas de participación ciudadana locales) que sean usadas (inicialmentente) por el  gobierno local de Mogadiscio y (posteriormente por) otras ciudades del país. Estas plataformas locales se enmarcan dentro del plan estratégico  para mejorar la resiliencia de las ciudades del país a través de la búsqueda colaborativa de soluciones, involucrando a los ciudadanos, particularmente mujeres y jóvenes, en el proceso de establecimiento de prioridades.
-        </p>      
+        </p>
       `,
       description:
         'Enreda va a trabajar junto con la oficina somalí del Programa de las Naciones Unidas para el Desarrollo (PNUD -UNDP) para desarrollar una plataforma de participación digital, que será usada por Ministerio de Asuntos Constitucionales del Gobierno de Somalia para recibir propuestas ciudadanas en el proceso de reforma constitucional.',
@@ -1626,7 +1626,7 @@ export const state = () => ({
       title: 'decide.cadiz.es',
       class: 'decidecadiz',
       subtitle: 'Consul',
-      body: ` 
+      body: `
         <p>
           ENREDA ha desarollado para el Ayuntamiento de Cádiz el portal de participación ciudadana, basado en el software CONSUL.
         </p>
@@ -1738,7 +1738,7 @@ export const state = () => ({
               Formar/Capacitar a Responsables Políticos y el personal técnico respecto a herramientas y procesos útiles/testados para la puesta en marcha de Proyectos de Participación Ciudadana en el ámbito local.
             </li>
             <li>
-              Asesorar a los Gobiernos Locales de Andalucía para la puesta en marcha de actuaciones vinculadas con los Procesos Participativos (desde la Unidad de Gestión FAMP). 
+              Asesorar a los Gobiernos Locales de Andalucía para la puesta en marcha de actuaciones vinculadas con los Procesos Participativos (desde la Unidad de Gestión FAMP).
             </li>
             <li>
               Constituir el Foro Andaluz de Gobiernos Locales y Procesos Participativos en Andalucía.
@@ -1747,7 +1747,7 @@ export const state = () => ({
         </p>
         <p>
         <p>
-          Las conclusiones del foro se articularon en torno a tres documentos: 
+          Las conclusiones del foro se articularon en torno a tres documentos:
             <li>
               <a href="http://www.famp.es/export/sites/famp/.galleries/documentos-proyectos/EstadoDeLaCuestion.pdf" target="_blank" rel="noopener noreferrer">
                 Análisis de la situación actual en torno a los modelos de gobierno abierto y procesos participativos en los ayuntamientos de Andalucía: Estado de la Cuestión.
@@ -1882,7 +1882,7 @@ export const state = () => ({
       subtitle: 'Reglamento de Participación del Ayuntamiento de Cádiz',
       body: `
         <p>
-          ENREDA diseñó y desarrolló durante noviembre de 2018 los foros #DecideCádiz con el objetivo de abrir a la ciudadanía la reforma del Reglamento de Participación Ciudadana del Ayuntamiento de Cádiz, en el marco de su adaptación a la nueva Ley de Participación Ciudadana de Andalucía 
+          ENREDA diseñó y desarrolló durante noviembre de 2018 los foros #DecideCádiz con el objetivo de abrir a la ciudadanía la reforma del Reglamento de Participación Ciudadana del Ayuntamiento de Cádiz, en el marco de su adaptación a la nueva Ley de Participación Ciudadana de Andalucía
         </p>
         <p>
           Los foros se desarrollaron durante cuatro sesiones con el siguiente programa :
@@ -2080,7 +2080,7 @@ export const state = () => ({
       subtitle: '',
       body: `
         <p>
-          ENREDA realizó entre 2018 y 2019 la primera “prueba de concepto” para definir las necesidades del Sistema Público de Participación de Andalucía, cuya creación supondrá un verdadero hito en la historia de la participación digital de la Comunidad autónoma. 
+          ENREDA realizó entre 2018 y 2019 la primera “prueba de concepto” para definir las necesidades del Sistema Público de Participación de Andalucía, cuya creación supondrá un verdadero hito en la historia de la participación digital de la Comunidad autónoma.
         </p>
         <p>
           La creación del Sistema Público de Participación Digital es un mandato de la Ley 7/2017 de Participación Ciudadana de Andalucía. La norma especifica que el sistema debe basarse en Software Libre y que tiene que estar provisto de herramientas y funcionalidades suficientes para dar soporte a todos los procesos de participación ciudadana previstos en la Ley: presupuestos participativos, consultas populares, elaboración de políticas públicas, etc.
@@ -2100,7 +2100,7 @@ export const state = () => ({
           </ul>
         </p>
         <p>
-          Los trabajos realizados por parte de ENREDA han consistido principalmente en: 
+          Los trabajos realizados por parte de ENREDA han consistido principalmente en:
           <ul>
             <li>
               Estudio de los requisitos funcionales que debe tener el Sistema Público de Participación de Andalucía para adaptarse a la  Ley 7/2017, de 27 de diciembre, de Participación Ciudadana de Andalucía.
@@ -2109,7 +2109,7 @@ export const state = () => ({
               Análisis de los requisitos técnicos del Sistema Público de Participación de Andalucía.
             </li>
             <li>
-              Documentación de las funcionalidades actuales de CONSUL 
+              Documentación de las funcionalidades actuales de CONSUL
             </li>
             <li>
               Documentación técnica sobre CONSUL y su adaptación a distintas Administraciones públicas
@@ -2165,7 +2165,7 @@ export const state = () => ({
       subtitle: 'Participación para la planificación urbanística',
       body: `
         <p>
-          ENREDA llevó a cabo, en agosto de 2018, unas jornadas participativas y de dinamización en la fase del anteproyecto para la remodelación urbanística que facilite mejora de la movilidad en el casco urbano de Rota. Esta iniciativa se enmarca en la convocatoria de subvenciones “Ciudad Amable”, una iniciativa de concurrencia competitiva puesta en marcha por la Junta de Andalucía. 
+          ENREDA llevó a cabo, en agosto de 2018, unas jornadas participativas y de dinamización en la fase del anteproyecto para la remodelación urbanística que facilite mejora de la movilidad en el casco urbano de Rota. Esta iniciativa se enmarca en la convocatoria de subvenciones “Ciudad Amable”, una iniciativa de concurrencia competitiva puesta en marcha por la Junta de Andalucía.
         </p>
         <p>
           La propuesta que presentó el consistorio a la convocatoria de subvenciones preveía actuaciones en las calles Maria Auxiliadora, Castelar y Aviador Durán, reduciendo la presencia de vehículos y ganando espacio para el peatón. Asimismo, se propone la creación de una zona comercial abierta en una arteria importante del centro de la localidad involucrando a un amplio sector de la población. Las actuaciones requerían presentar el proyecto en la calle para informar, medir las reacciones  y también para la recogida de propuestas y mejoras.
@@ -2216,7 +2216,7 @@ export const state = () => ({
       subtitle: 'Presupuesto Participativo de Marbella',
       body: `
         <p>
-          ENREDA ha diseñado y ejercido la dirección técnica de en la implementación de los Presupuestos Participativos del Ayuntamiento de Marbella durante 2016 y 2017. 
+          ENREDA ha diseñado y ejercido la dirección técnica de en la implementación de los Presupuestos Participativos del Ayuntamiento de Marbella durante 2016 y 2017.
         </p>
         <p>
           Para desarrollar el proceso se decidió asumir los principios básicos de la Red Estatal por los Presupuestos Participativos. La partida presupuestaria que  se acordó someter a presupuestos participativos fueron 2.000.000€ y se dividió la ciudad en cinco zonas geográficas que servirían de base al proceso.
@@ -2228,7 +2228,7 @@ export const state = () => ({
           La difusión previa de los Presupuestos Participativos se inició el 8 de abril, con la organización de una jornadas abiertas en el Cortijo de Miraflores, en la que participaron diferentes autoridades en la materia. El lanzamiento oficial se realizó el 20 julio, a través de una rueda de prensa en la que concejal de Participación Ciudadana y el concejal de Hacienda explicaron la hoja de ruta del proceso.
         </p>
         <p>
-          Durante esta fase se realizaron además talleres de formación técnica sobre el proceso al personal municipal tanto de los distritos/tenencias como de las áreas implicadas. Se impartieron 12 horas de formación inicial, principalmente en presupuestos participativos y dinamización participativa. Además se planificó el plan de comunicación para todo el curso, se diseñaron los materiales gráficos de la presentación pública y también se asignaron los distintos roles que tendrían en el proceso los asesores, técnicos y distintos trabajadores municipales.    
+          Durante esta fase se realizaron además talleres de formación técnica sobre el proceso al personal municipal tanto de los distritos/tenencias como de las áreas implicadas. Se impartieron 12 horas de formación inicial, principalmente en presupuestos participativos y dinamización participativa. Además se planificó el plan de comunicación para todo el curso, se diseñaron los materiales gráficos de la presentación pública y también se asignaron los distintos roles que tendrían en el proceso los asesores, técnicos y distintos trabajadores municipales.
         </p>
         <p>
           <h3>Fase informativa y constitución de los grupos motores</h3>
@@ -2258,7 +2258,7 @@ export const state = () => ({
           Para la promoción de la votación se realizaron 11 actos de calle con los grupos motores y se generaron acciones publicitarias específicas en televisión, radio, prensa y mupis.
         </p>
         <p>
-          La gran novedad en la promoción de esta fase fue el uso del particicamión, que se convirtió en un elemento altamente llamativo en los actos de calle y facilitó el registro de numerosas personas en las web municipal. 
+          La gran novedad en la promoción de esta fase fue el uso del particicamión, que se convirtió en un elemento altamente llamativo en los actos de calle y facilitó el registro de numerosas personas en las web municipal.
         </p>
         <p>
           El sistema electoral elegido fue otorgar hasta un máximo de tres votos a cada ciudadano empadronado, que podía emplearse a propuestas de cualquiera de las cinco zonas. No se aplicó ningún criterio de priorización corrector al número de votos.
@@ -2270,7 +2270,7 @@ export const state = () => ({
               Durante tres días a través de internet. El software de votación se mantuvo perfectamente funcional durante toda la votación, registrándose 1009 votos de 425 votantes,.
             </li>
             <li>
-              Durante un día, de 9h a 21h,  de manera presencial, para lo que se habilitaron seis mesas electorales repartidas por distintas sedes municipales. Se contabilizaron 1322 votos de 556 votantes. 
+              Durante un día, de 9h a 21h,  de manera presencial, para lo que se habilitaron seis mesas electorales repartidas por distintas sedes municipales. Se contabilizaron 1322 votos de 556 votantes.
             </li>
           </ul>
         </p>
@@ -2331,19 +2331,19 @@ export const state = () => ({
               Derecho a voto de cualquier persona empadronada mayor de 16 años
             </li>
             <li>
-              Protagonismo ciudadano garantizado por la gestión del proceso a través de unos “grupos de impulso” abiertos 
+              Protagonismo ciudadano garantizado por la gestión del proceso a través de unos “grupos de impulso” abiertos
             </li>
             <li>
               Necesidad de 15 avales para presentar una propuesta
             </li>
             <li>
-              Fase deliberativa con asambleas por zonas 
+              Fase deliberativa con asambleas por zonas
             </li>
             <li>
               Método de votación  presencial y digital, este último a través de CONSUL
             </li>
           </ul>
-        </p> 
+        </p>
         <p>
           Una vez diseñada la estructura del proceso se realizaron acciones de formación al personal municipal de todas las áreas implicadas de una forma u otra en el proceso.
         </p>
@@ -2351,7 +2351,7 @@ export const state = () => ({
           <h3>Fase de propuestas</h3>
         </p>
         <p>
-          Durante la fase de recogida de propuestas se implementaron diferentes tipos de acciones por todo el municipio: (actuaciones informativas de calles, talleres informativos, asambleas, etc) recogiéndose un total de 54 propuestas válidas. 
+          Durante la fase de recogida de propuestas se implementaron diferentes tipos de acciones por todo el municipio: (actuaciones informativas de calles, talleres informativos, asambleas, etc) recogiéndose un total de 54 propuestas válidas.
         </p>
         <p>
           <h3>Fase de deliberación</h3>
@@ -2366,10 +2366,10 @@ export const state = () => ({
           ENREDA desarrolló acciones formativas y acompañó a todas las áreas municipales para desarrollar los estudios de viabilidad sobre cada una de las propuestas presentadas. En estos estudios fueron declaradas viables un total de 41 propuestas.
         </p>
         <p>
-          <h3>Votación</h3>  
+          <h3>Votación</h3>
         </p>
         <p>
-          La votación final se desarrolló durante un mes (del 20 de septiembre al 20 de octubre) a través de internet, y de forma forma presencial a través de diferentes urnas dispuestas por la localidad. Los resultados de la votación pueden verse en https://participa.mijas.es  
+          La votación final se desarrolló durante un mes (del 20 de septiembre al 20 de octubre) a través de internet, y de forma forma presencial a través de diferentes urnas dispuestas por la localidad. Los resultados de la votación pueden verse en https://participa.mijas.es
         </p>
         <p>
           <h3>Ejecución y seguimiento</h3>
@@ -2410,16 +2410,16 @@ export const state = () => ({
       subtitle: 'Plan de intervención',
       body: `
       <p>
-        ENREDA realizó durante el año 2018 el Plan Local de Intervención en Zonas Desfavorecidas de Coria del Río (Sevilla). 
+        ENREDA realizó durante el año 2018 el Plan Local de Intervención en Zonas Desfavorecidas de Coria del Río (Sevilla).
       </p>
       <p>
         El objetivo principal de la Estrategia implementada era mejorar la situación y la inserción de las personas en situación o riesgo de  exclusión social. Para ello, se desarrolló una metodología con enfoque integral basada en la comunidad, utilizando los métodos del trabajo social comunitario, la intervención comunitaria y el desarrollo a escala humana. El aspecto territorial es una factor importante en las situaciones de pobreza, marginación y exclusión social pero a su vez puede ser el motor, un factor catalizador de cambio para sus habitantes.
       </p>
       <p>
-        La metodología participativa ha sido clave en el diagnóstico y en la definición de los objetivos y medidas a llevar a cabo, así como en el conjunto del proceso. Fundamental para la eficacia en la consecución de los objetivos, para la apropiación por parte de los destinatarios de la intervención y para provocar el empoderamiento personal y comunitario necesario para facilitar el acceso a los sistemas de protección social. 
+        La metodología participativa ha sido clave en el diagnóstico y en la definición de los objetivos y medidas a llevar a cabo, así como en el conjunto del proceso. Fundamental para la eficacia en la consecución de los objetivos, para la apropiación por parte de los destinatarios de la intervención y para provocar el empoderamiento personal y comunitario necesario para facilitar el acceso a los sistemas de protección social.
       </p>
       <p>
-        El Plan Local elaborado se materializó en el siguiente contenido: 
+        El Plan Local elaborado se materializó en el siguiente contenido:
       <ol>
         <li>
           Contexto municipal
@@ -2431,10 +2431,10 @@ export const state = () => ({
           Plan de la zona desfavorecida
         </li>
         <li>
-          Análisis integral de la zona 
+          Análisis integral de la zona
         </li>
         <li>
-          Diagnóstico compartido de la situación 
+          Diagnóstico compartido de la situación
         </li>
         <li>
           Principios rectores del plan local
@@ -2495,10 +2495,10 @@ export const state = () => ({
         Las partidas destinadas a este proyecto se han ido incrementando cada año y si bien el primer año se inició como un presupuesto participativo dedicado exclusivamente a los jóvenes, en las siguientes ediciones ya ha participado toda la población.
       </p>
       <p>
-        ENREDA ha realizado el diseño metodológico adaptando el proceso a las partidas con las que se dotó y a los sectores implicados en cada una de ellas. En este sentido,  se ha otorgado una especial importancia al proceso juvenil con el objeto de afianzar una base pedagógica en participación ciudadana y democracia directa entre los jóvenes del municipio. 
+        ENREDA ha realizado el diseño metodológico adaptando el proceso a las partidas con las que se dotó y a los sectores implicados en cada una de ellas. En este sentido,  se ha otorgado una especial importancia al proceso juvenil con el objeto de afianzar una base pedagógica en participación ciudadana y democracia directa entre los jóvenes del municipio.
       </p>
       <p>
-        Las acciones que se desarrollaron y que fueron ejecutadas por ENREDA comprenden: 
+        Las acciones que se desarrollaron y que fueron ejecutadas por ENREDA comprenden:
         <ul>
           <li>
             el diseño de todo el proceso
@@ -2558,7 +2558,7 @@ export const state = () => ({
           Protocolo de acogida, recepción e información de Andalucía Emprende
         </p>
         <p>
-          ENREDA realizó durante 2019 el Protocolo de acogida a nuevas personas usuarias de Andalucía Emprende. Andalucía Emprende es una Fundación Pública Andaluza dependiente de la Consejería de Empleo, Formación y Trabajo Autónomo de la Junta de Andalucía y cuya misión es promover la iniciativa emprendedora y el desarrollo empresarial a lo largo y ancho de la Comunidad Autónoma. Cuenta con más de 260 Centros Andaluces de Emprendimiento (CADE) repartidos por toda Andalucía. 
+          ENREDA realizó durante 2019 el Protocolo de acogida a nuevas personas usuarias de Andalucía Emprende. Andalucía Emprende es una Fundación Pública Andaluza dependiente de la Consejería de Empleo, Formación y Trabajo Autónomo de la Junta de Andalucía y cuya misión es promover la iniciativa emprendedora y el desarrollo empresarial a lo largo y ancho de la Comunidad Autónoma. Cuenta con más de 260 Centros Andaluces de Emprendimiento (CADE) repartidos por toda Andalucía.
         </p>
         <p>
           En su empeño por mejorar el servicio a profesionales y empresas, así como a toda persona que se acerque a un centro o punto de información, se están valorando una serie de mejoras.
@@ -2569,7 +2569,7 @@ export const state = () => ({
         <p>
           El trabajo de ENREDA consistió en la creación de:
           <ul><li>
-            Plan de acogida y protocolo de actuación: 
+            Plan de acogida y protocolo de actuación:
           </li></ul>
         </p>
         <p>
@@ -2582,7 +2582,7 @@ export const state = () => ({
           Se desarrolló una herramienta web creada para entregar información de manera digitalizada y sencilla a las nuevas personas usuarias de los servicios de Andalucía Emprende.
         </p>
         <p>
-          La solución pasa por ofrecer un  generador de landings personalizadas (webs) que ofrezcan de manera visual toda la información fundamental establecida para las diferentes rutas detalladas en este protocolo de actuación, y a las que además se le pueda incorporar información personalizada para la persona usuaria. 
+          La solución pasa por ofrecer un  generador de landings personalizadas (webs) que ofrezcan de manera visual toda la información fundamental establecida para las diferentes rutas detalladas en este protocolo de actuación, y a las que además se le pueda incorporar información personalizada para la persona usuaria.
         </p>
         <p>
           Esta herramienta permite al personal de los CADE crear, a través de un simple formulario, una web personalizada a cada persona usuaria con información adaptada a su perfil. Para ello la herramienta incorpora:
@@ -2663,7 +2663,7 @@ export const state = () => ({
           ENREDA ha participado en el Servicio de Mantenimiento de las aplicaciones institucionales con tecnología Django/Python de Universidad de la Laguna.
         </p>
         <p>
-          Este proyecto ha consistido en el mantenimiento de aplicaciones corporativas internas de la Universidad, y durante el periodo de desarrollo del mismo se han realizado tareas de mantenimiento y desarrollo evolutivo de los sistemas.        
+          Este proyecto ha consistido en el mantenimiento de aplicaciones corporativas internas de la Universidad, y durante el periodo de desarrollo del mismo se han realizado tareas de mantenimiento y desarrollo evolutivo de los sistemas.
         </p>
     `,
       description: '',
@@ -2711,10 +2711,10 @@ export const state = () => ({
       La plataforma recopila información georeferenciada de la ruta correspondiente entre Cádiz  y la Provincia de Murcia. Dividida en etapas, para cada sección se muestra un mapa en detalle de la ruta con información sobre la zona y el trazado, con información georeferenciada de puntos de interés, puntos culturales o para hospedarse.
       </p>
       <p>
-      Los trazados que se aportan para cada etapa corresponden al registro de un itinerario real en bicicleta realizado durante la fase de evaluación del estado de la ruta en el proyecto MEDCYCLETOUR, en el segundo semestre de 2017. Por lo tanto, son recorridos que actualmente pueden realizarse, pero que no corresponden necesariamente con el trazado que finalmente se vaya ejecutando en diferentes proyectos para la EuroVelo 8 
+      Los trazados que se aportan para cada etapa corresponden al registro de un itinerario real en bicicleta realizado durante la fase de evaluación del estado de la ruta en el proyecto MEDCYCLETOUR, en el segundo semestre de 2017. Por lo tanto, son recorridos que actualmente pueden realizarse, pero que no corresponden necesariamente con el trazado que finalmente se vaya ejecutando en diferentes proyectos para la EuroVelo 8
       </p>
       <p>
-      El proyecto está desarrollado sobre Wordpress con una integración de Openstreetmap y leafletjs para integrar toda la funcionalidad de puntos y rutas geolocalizados. 
+      El proyecto está desarrollado sobre Wordpress con una integración de Openstreetmap y leafletjs para integrar toda la funcionalidad de puntos y rutas geolocalizados.
       </p>
       <p>
       Además la plataforma permite la colaboración ciudadana permitiendo a los usuarios crear nuevos puntos de interés geolocalizados añadiendo imágenes e información.
@@ -2850,19 +2850,19 @@ export const state = () => ({
       <p>
       La plataforma se enmarca dentro del proyecto  “Innovación para la participación política ciudadana: más allá de la recuperación del COVID-19”, que tiene como propósito contribuir al fortalecimiento de la democracia y la cohesión social en el Perú, a través de soluciones innovadoras frente a los desafíos de gobernanza y disrupción digital.</p>
       <p>
-      Se busca potenciar nuevas formas de participación ciudadana, en el marco del impulso de la democracia digital, para hacer frente a los desafíos de la gobernanza, transparencia y rendición de cuentas.  
+      Se busca potenciar nuevas formas de participación ciudadana, en el marco del impulso de la democracia digital, para hacer frente a los desafíos de la gobernanza, transparencia y rendición de cuentas.
       </p>
       <p>
-      El  PNUD, diseñará una Agenda Pública Digital (APD) – una plataforma digital, interactiva y actualizada – con el apoyo de la sociedad civil destinada a promover el compromiso cívico e informar a la sociedad civil. 
+      El  PNUD, diseñará una Agenda Pública Digital (APD) – una plataforma digital, interactiva y actualizada – con el apoyo de la sociedad civil destinada a promover el compromiso cívico e informar a la sociedad civil.
       </p>
       <p>
-      Esta agenda visibilizará, los temas prioritarios, demandas, necesidades y preocupaciones de la ciudadanía, y promoverá su inclusión en los planes y prioridades programáticas de las organizaciones políticas y el Estado.       
+      Esta agenda visibilizará, los temas prioritarios, demandas, necesidades y preocupaciones de la ciudadanía, y promoverá su inclusión en los planes y prioridades programáticas de las organizaciones políticas y el Estado.
       </p>
       <p>
-      La APD se construye con una alta participación de la población joven e involucrando a organizaciones de la sociedad civil, a través de grupos focales online, e-foros y cabildos digitales.      
+      La APD se construye con una alta participación de la población joven e involucrando a organizaciones de la sociedad civil, a través de grupos focales online, e-foros y cabildos digitales.
       </p>
       <p>
-      Este esfuerzo se complementará con la reciente activación del Foro del Acuerdo Nacional para la construcción del Pacto Perú2 , a la vez que se distingue de éste en su forma y participantes en la elaboración.      
+      Este esfuerzo se complementará con la reciente activación del Foro del Acuerdo Nacional para la construcción del Pacto Perú2 , a la vez que se distingue de éste en su forma y participantes en la elaboración.
       </p>
       `,
       description: `
@@ -2898,6 +2898,50 @@ export const state = () => ({
       clientname: 'PNUD Perú',
       clientdescription: '',
       clienturl: 'https://www.pe.undp.org/',
+      clientyear: '2021',
+      calltoaction: {
+        call: ''
+      }
+    },
+    {
+      id: 'villalba',
+      title: 'Proyecto Villalba - Camino escolar seguro',
+      class: 'villalba',
+      subtitle: `Programa de acciones para el fomento de la movilidad sostenible en Villalba de Alcor`,
+      body: `
+      <p>
+      Estas actuaciones están ligadas a la reordenación y rediseño urbano qué ha realizado el Ayuntamiento del entorno de este colegio para favorecer el uso de modos de transporte no motorizados de forma segura hacia el colegio CEIP Francisco Alcalá. Una obras enmarcadas dentro del  programa de subvenciones a proyectos singulares de entidades locales que favorezcan el paso a una economía baja en carbono, cofinanciado al 80% por el fondo europeo de desarrollo regional  (FEDER) en el marco del programa operativo pluriregional de españa 2014-2020.</p>
+      <p>
+      Para ello Enreda ha desarollada un programa para fomentar un camino escolar, a través de actividades de formación y educación en materia de movilidad, promoviendo la movilidad sostenible hacia el CEIP Francisco Alcalá,  potenciando la movilidad de tránsito (desplazamientos peatonales y ciclistas), creando un itinerario seguro, accesible y atractivo.</p>
+      <p>
+      Este programa ha incluido acciones informativas dirigidas a toda la población de Villalba de Alcor: acciones de participación dirigidas a los vecinos y vecinas de las calles afectadas por las obras; así cómo acciones especialmente dirigidas a la población escolar del   CEIP Francisco Alcalá.</p>
+      <p>
+      La guinda de este programa ha tenido lugar este mes de noviembre cuando, una vez finalizadas las obras, se ha realizado una visita con el alumnado por las calles renovadas, así cómo  -con la colaboración de Estudio 96 - un mural para fomentar la movilidad sostenible  en la rotonda de acceso al colegio. Este Mural, incluye a un grupo diverso de niños y niñas yendo hacia el colegio caminando o en bicicleta y es coronado por un slogan, qué fue elegido por el propio alumnado del colegio en un proceso participativo enfocado a qué los niños y niñas se apropien del nuevo espacio tras la obras.   </p>
+      `,
+      description: `
+      ENREDA ha desarrollado para el Ayuntamiento de Villalba de Alcor un intenso programa de acciones para el fomento de la movilidad sostenible en el entorno del CEIP Francisco Alcalá.`,
+      logo: 'logo-ayto-villalba.png',
+      name: 'Proyecto Villalba',
+      screenshot: 'screenshot-villalba-project.jpeg',
+      url: `https://blog.enreda.coop/fomentamos-la-movilidad-sostenible-entre-los-escolares-de-villalba-de-alcor/`,
+      sourcecode: '',
+      metrics: [
+        { metric: '', value: '' },
+        { metric: '', value: '' },
+        { metric: '', value: '' }
+      ],
+      metricsinfo: '',
+      technologies: [],
+      keys: [
+        { key: 'Investigación Acción Participativa (IAP)' },
+        { key: 'Encuestas' },
+        { key: 'Talleres' }
+      ],
+      media: [],
+      own: 'no',
+      clientname: 'Ayuntamiento  de Villalba de Alcor',
+      clientdescription: '',
+      clienturl: 'http://www.villalbadelalcor.es/es/',
       clientyear: '2021',
       calltoaction: {
         call: ''

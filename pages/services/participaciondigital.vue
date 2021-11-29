@@ -6,24 +6,24 @@
     />
     <Service slug="participaciondigital" />
     <!-- <Functionalities /> -->
-    <GeneralCharacteristicsConsul />
-    <ServiciosConsul />
+    <!-- <GeneralCharacteristicsConsul /> -->
+    <!-- <ServiciosConsul /> -->
   </div>
 </template>
 <script>
 import PageClaim from '~/components/layout/PageClaim.vue'
 import Service from '~/components/service/Service.vue'
 // import Functionalities from '~/components/layout/Functionalities.vue'
-import GeneralCharacteristicsConsul from '~/components/layout/GeneralCharacteristicsConsul.vue'
-import ServiciosConsul from '~/components/layout/ServiciosConsul.vue'
+// import GeneralCharacteristicsConsul from '~/components/layout/GeneralCharacteristicsConsul.vue'
+// import ServiciosConsul from '~/components/layout/ServiciosConsul.vue'
 
 export default {
   components: {
     PageClaim,
-    Service,
+    Service
     // Functionalities,
-    GeneralCharacteristicsConsul,
-    ServiciosConsul
+    // GeneralCharacteristicsConsul
+    // ServiciosConsul
   },
   nuxtI18n: {
     paths: {
