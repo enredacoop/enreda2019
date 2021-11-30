@@ -11,6 +11,7 @@
     "beginnings_2_description": "Apostamos por el Software Libre y la libertad tecnológica en todos los ámbitos.",
     "beginnings_3_title": "Compromiso social",
     "beginnings_3_description": "Todas y todos podemos y debemos ser parte del cambio social para mejorar el mundo en el que vivimos. Desde lo local hacia lo global.",
+    "ods_contributions":"Nuestro aporte a los Objetivos de Desarrollo Sostenible",
     "team_title": "Equipo",
     "team_subtitle": "Las personas como centro de toda actividad empresarial.",
     "partner": "Socio",
@@ -46,6 +47,7 @@
     "beginnings_2_description": "We bet on Free Software and technological freedom in all areas.",
     "beginnings_3_title": "Social commitment",
     "beginnings_3_description": "All of us can and must be part of the social change to improve the world in which we live. From the local to the global.",
+    "ods_contributions":"Our contribution to achieving the Sustainable Development Goals",
     "team_title": "Team",
     "team_subtitle": "People as the center of all business activity.",
     "partner": "Partner",
@@ -116,7 +118,16 @@
           </div>
         </div>
       </section>
-
+      <section id="ods">
+        <div class="container">
+          <div class="row justify-content-center">
+            <div class="col-sm-12 text-center">
+              <h2 class="section-heading">{{ $t('ods_contributions') }}</h2>
+              <Goals />
+            </div>
+          </div>
+        </div>
+      </section>
       <section id="team">
         <div class="container">
           <div class="row">
@@ -265,11 +276,13 @@
 <script>
 import PageClaim from '~/components/layout/PageClaim.vue'
 import Offices from '~/components/layout/Offices.vue'
+import Goals from '~/components/layout/Goals.vue'
 
 export default {
   components: {
     PageClaim,
-    Offices
+    Offices,
+    Goals
   },
   data() {
     return {

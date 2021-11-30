@@ -484,7 +484,8 @@ export default {
             title: 'ods_prior_1_title',
             description: 'ods_prior_1_description',
             picture: '17.png',
-            link: 'ods_prior_1_link'
+            link:
+              'https://www.un.org/sustainabledevelopment/es/globalpartnerships/'
           },
           {
             title: 'ods_prior_2_title',

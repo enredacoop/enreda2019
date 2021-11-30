@@ -8,6 +8,7 @@
     "legal_warning": "Aviso legal",
     "cookies_policy": "Políticas de Cookies",
     "cooperative": "Cooperativa",
+    "image_ods": "ods_logo.png"
   },
   "en": {
     "site_name": "ENREDA Cooperative",
@@ -17,6 +18,7 @@
     "blog": "Blog",
     "legal_warning": "Legal warning",
     "cookies_policy": "Cookies policy",
+    "image_ods": "ods_logo_english.png"
   }
 }
 </i18n>
@@ -99,10 +101,16 @@
         <div class="col-md-4" style="margin-left: 5px">
           <MenuFooter />
         </div>
-        <div class="col-md-12 col-sm-12 col-lg-12">
-          <div class="pull-right">
-            <Goals />
-          </div>
+        <div class="col-md-3">
+          <nuxt-link :to="localePath({ name: 'ods' })">
+            <img
+              :src="require('~/assets/images/' + $t('image_ods'))"
+              width="240px"
+              class="pull-right"
+              alt="Logo de ODS"
+              style="margin-top:20px;"
+            />
+          </nuxt-link>
         </div>
         <div class="col-md-12 col-sm-12 col-lg-12">
           <ul class="list-inline pull-right">
@@ -157,6 +165,11 @@
                 alt="Logo de Open ODS"
               />
             </a>
+            <!--   <div class="col-md-12 col-sm-12 col-lg-12">
+              <div class="pull-right">
+                <Goals />
+              </div>
+            </div> -->
           </div>
         </div>
       </div>
@@ -190,13 +203,13 @@
 <script>
 import Cookies from '~/components/layout/Cookies.vue'
 import Newsletter from '~/components/layout/Newsletter.vue'
-import Goals from '~/components/layout/Goals.vue'
+// import Goals from '~/components/layout/Goals.vue'
 import MenuFooter from '~/components/layout/MenuFooter.vue'
 
 export default {
   components: {
     Newsletter,
-    Goals,
+    // Goals,
     Cookies,
     MenuFooter
   },
