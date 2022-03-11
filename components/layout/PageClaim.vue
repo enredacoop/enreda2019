@@ -20,3 +20,10 @@ export default {
   }
 }
 </script>
+
+<style lang="less" scoped>
+.urbandata {
+  background-image: url('~@~@/assets/images/bg_urbandata.jpg') !important;
+  background-position: bottom center !important;
+}
+</style>

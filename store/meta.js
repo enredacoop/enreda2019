@@ -1,3 +1,4 @@
+/* eslint-disable */
 export const state = () => ({
   home: {
     title: 'Tecnología para la Transformación Social',

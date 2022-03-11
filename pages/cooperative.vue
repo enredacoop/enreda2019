@@ -321,18 +321,6 @@ export default {
             github: 'pablovg2',
             role: ''
           },
-          /*
-          {
-            name: 'José Rubén Garrido',
-            position: ' ',
-            photo: 'joserubengar.jpeg',
-            email: 'joser.garrido@enreda.coop',
-            web: 'http://joserubengr.com',
-            twitter: 'joserubengar',
-            linkedin: '',
-            github: '',
-            role: ''
-          }, */
           {
             name: 'David Aurusa',
             position: ' ',
@@ -344,19 +332,6 @@ export default {
             github: '',
             role: ''
           },
-          /*
-          {
-            name: 'Lucía Cano',
-            position: ' ',
-            photo: 'luciacano.png',
-            email: 'lucia.cano@enreda.coop',
-            web: '',
-            twitter: '',
-            linkedin: '',
-            github: '',
-            role: ''
-          },
-          */
           {
             name: 'Arantza Lozano',
             position: ' ',
@@ -369,7 +344,7 @@ export default {
             role: ''
           },
           {
-            name: 'José Manuel Palacios López',
+            name: 'José Manuel Palacios',
             position: ' ',
             photo: 'jose.jpg',
             email: 'jmanuel.palacios@enreda.coop',
@@ -380,10 +355,10 @@ export default {
             role: ''
           },
           {
-            name: 'Elvira Ramírez',
+            name: 'Juana Barrera',
             position: ' ',
-            photo: 'elvira.jpg',
-            email: 'elvira.ramirez@enreda.coop',
+            photo: 'juana.jpg',
+            email: 'juana.barrera@enreda.coop',
             web: '',
             twitter: '',
             linkedin: '',
@@ -391,31 +366,7 @@ export default {
             role: ''
           },
           {
-            name: 'Samuel Molina',
-            position: ' ',
-            photo: 'samuel.jpg',
-            email: 'samuel.molina@enreda.coop',
-            web: '',
-            twitter: '',
-            linkedin: '',
-            github: '',
-            role: ''
-          },
-          /*
-          {
-            name: 'María Ozámiz',
-            position: ' ',
-            photo: 'maria.jpg',
-            email: 'maria.ozamiz@enreda.coop',
-            web: '',
-            twitter: '',
-            linkedin: '',
-            github: '',
-            role: ''
-          },
-          */
-          {
-            name: 'Diego Calvo Castillo',
+            name: 'Diego Calvo',
             position: ' ',
             photo: 'diego.jpg',
             email: 'diego.calvo@enreda.coop',
@@ -426,64 +377,16 @@ export default {
             role: ''
           },
           {
-            name: 'Cynthia Gorosito',
+            name: 'María Sanz',
             position: ' ',
-            photo: 'cynthia.jpg',
-            email: 'c.elizabeth.gorosito@enreda.coop',
+            photo: 'maria.jpg',
+            email: 'maria.sanz@enreda.coop',
             web: '',
             twitter: '',
             linkedin: '',
             github: '',
             role: ''
           }
-          /*
-          {
-            name: 'Carlos Campos',
-            position: ' ',
-            photo: 'carloscampos.jpg',
-            email: 'carlos.campos@enreda.coop',
-            web: 'https://www.instagram.com/carcamcue/',
-            twitter: '',
-            linkedin: 'https://www.linkedin.com/in/carcamcue/',
-            github: 'carcamcue',
-            role: ''
-          },
-
-          {
-            name: 'Manuel Barbadillo',
-            position: ' ',
-            photo: 'manbarser.jpg',
-            email: 'manuel.barbadillo@enreda.coop',
-            web: '',
-            twitter: '',
-            linkedin: '',
-            github: '',
-            role: ''
-          },
-
-          {
-            name: 'Azahara Martín',
-            position: ' ',
-            photo: 'aza.jpg',
-            email: 'azahara.martin@enreda.coop',
-            web: 'http://hazloparticipativo.es/',
-            twitter: '4everAza',
-            linkedin: '',
-            github: '',
-            role: ''
-          },
-          {
-            name: 'Javier Moreno',
-            position: ' ',
-            photo: 'user_placeholder.png',
-            email: 'javier@enreda.coop',
-            web: '',
-            twitter: 'javimoga',
-            linkedin: '',
-            github: '',
-            role: 'colaborador'
-          }
-          */
         ]
       },
       network: {

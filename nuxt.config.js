@@ -1,5 +1,6 @@
 import webpack from 'webpack'
 
+/* eslint-disable */
 export default {
   router: {
     base: '/' /* GitHub: '/enreda2019' | Producción: '/' */
