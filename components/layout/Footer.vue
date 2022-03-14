@@ -141,7 +141,7 @@
               />
             </a>
             <a
-              href="https://www.ica.coop/es"
+              href="https://consulproject.org/en/"
               target="_blank"
               rel="noopener noreferrer"
             >
