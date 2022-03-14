@@ -25,7 +25,6 @@
 <template>
   <!-- footer -->
   <footer>
-    <Newsletter />
     <div class="container">
       <div class="row">
         <div class="col-md-4">
@@ -202,14 +201,10 @@
 
 <script>
 import Cookies from '~/components/layout/Cookies.vue'
-import Newsletter from '~/components/layout/Newsletter.vue'
-// import Goals from '~/components/layout/Goals.vue'
 import MenuFooter from '~/components/layout/MenuFooter.vue'
 
 export default {
   components: {
-    Newsletter,
-    // Goals,
     Cookies,
     MenuFooter
   },
@@ -230,3 +225,9 @@ export default {
   }
 }
 </script>
+
+<style lang="less" scoped>
+footer {
+  padding: 40px;
+}
+</style>
