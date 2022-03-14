@@ -62,6 +62,14 @@
                 "
                 >{{ $t('services.service_5') }}</b-dropdown-item
               >
+              <b-dropdown-item
+                :to="
+                  localePath({
+                    name: 'services-sostenibilidad'
+                  })
+                "
+                >{{ $t('services.service_7') }}</b-dropdown-item
+              >
               <!-- <b-dropdown-item href="http://edusi.eu/"
                 >{{ $t('services.service_6') }}
                 <font-awesome-icon

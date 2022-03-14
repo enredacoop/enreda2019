@@ -54,7 +54,17 @@
                   class="block-text"
                 >
                   <h2 class="section-heading">{{ text.title }}</h2>
-                  <p class="section-body">{{ text.body }}</p>
+                  <p class="section-body" v-html="text.body"></p>
+                  <br />
+                  <div v-if="text.projects">
+                    <p
+                      v-for="(project, i) in text.projects"
+                      :key="i"
+                      class="section-body"
+                    >
+                      <a :href="project.url">{{ project.title }}</a>
+                    </p>
+                  </div>
                 </div>
               </div>
             </div>
@@ -160,6 +170,9 @@ export default {
           break
         case 'transparencia':
           tags.push('transparencia')
+          break
+        case 'sostenibilidad':
+          tags.push('sostenibilidad')
           break
       }
 

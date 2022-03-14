@@ -300,7 +300,7 @@ export const state = () => ({
       logo: 'logo-proyectoindex.png',
       class: 'proyectoindex',
       url: 'proyectoindex',
-      category: ['analisisdatos', 'innovacionsocial'],
+      category: ['analisisdatos', 'innovacionsocial', 'sostenibilidad'],
       favourite: true
     },
     {
@@ -324,7 +324,12 @@ export const state = () => ({
       logo: 'logo-ayto-villalba.png',
       class: 'villalba',
       url: 'villalba',
-      category: ['innovacionsocial', 'participacion', 'participacionciudadana'],
+      category: [
+        'innovacionsocial',
+        'participacion',
+        'participacionciudadana',
+        'sostenibilidad'
+      ],
       favourite: true
     }
   ]
