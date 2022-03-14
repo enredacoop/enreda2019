@@ -18,6 +18,19 @@ export const state = () => ({
       favourite: true
     },
     {
+      title: 'Consul SDG',
+      logo: 'logo-consulsdg.png',
+      class: 'consulsdg',
+      url: 'consulsdg',
+      category: [
+        'consul',
+        'participacion',
+        'participaciondigital',
+        'sostenibilidad'
+      ],
+      favourite: true
+    },
+    {
       title: 'Consul - Arcos de la Frontera',
       logo: 'logo-ayto-arcos.png',
       class: 'decidearcos',

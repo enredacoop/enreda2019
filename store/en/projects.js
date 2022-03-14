@@ -1,3 +1,5 @@
+import { consulsdg } from '../projects/consulsdg'
+
 export const state = () => ({
   items: [
     {
@@ -316,12 +318,16 @@ export const state = () => ({
       url: 'http://enlaorbita.com',
       sourcecode: '',
       keys: [
-        { key: 'Facilita posicionamiento digital a empresas y entidades.' },
+        {
+          key: 'Facilita posicionamiento digital a empresas y entidades.'
+        },
         {
           key:
             'Solución responsive para la visualización en todo tipo de dispositivos.'
         },
-        { key: 'Funcionalidades avanzadas con precios muy reducidos.' }
+        {
+          key: 'Funcionalidades avanzadas con precios muy reducidos.'
+        }
       ],
       metrics: [
         { metric: '', value: '' },
@@ -662,8 +668,12 @@ export const state = () => ({
           key:
             'Integración de sistemas de gestión propios del cliente y con diversos servicios de banca online'
         },
-        { key: 'Internacionalización de los centros en múltiples idiomas' },
-        { key: 'Gestión de múltiples sitios desarrollados en Drupal' }
+        {
+          key: 'Internacionalización de los centros en múltiples idiomas'
+        },
+        {
+          key: 'Gestión de múltiples sitios desarrollados en Drupal'
+        }
       ],
       metrics: [
         { metric: 'Portales operativos', value: '47' },
@@ -1111,12 +1121,16 @@ export const state = () => ({
       url: 'http://festivalcinesevilla.eu',
       sourcecode: '',
       keys: [
-        { key: 'Portal en múltiples idiomas con proyección internacional' },
+        {
+          key: 'Portal en múltiples idiomas con proyección internacional'
+        },
         {
           key:
             'Presencia digital y punto de referencia de todo lo relacionado con el Festival'
         },
-        { key: 'Facilita la gestión de la comunicación del Festival' }
+        {
+          key: 'Facilita la gestión de la comunicación del Festival'
+        }
       ],
       metrics: [
         { metric: 'películas', value: '+200' },
@@ -2135,7 +2149,9 @@ export const state = () => ({
           key:
             'Estudio pormenorizado de las necesidades soporte digital de la Ley Andaluza de Participación.'
         },
-        { key: 'Integración con los sistemas de la Junta de Andalucía.' },
+        {
+          key: 'Integración con los sistemas de la Junta de Andalucía.'
+        },
         {
           key:
             'Adaptación de CONSUL a necesidades  de una administración autonómica.'
@@ -2190,7 +2206,9 @@ export const state = () => ({
           key: 'Proyecto  “Ciudad Amable” de la Junta de Andalucía en Rota.'
         },
         { key: 'Modificación del PGOU.' },
-        { key: 'Estrategias de Desarrollo Urbano Sostenible (EDUSI).' }
+        {
+          key: 'Estrategias de Desarrollo Urbano Sostenible (EDUSI).'
+        }
       ],
       metrics: [
         { metric: '', value: '' },
@@ -2945,6 +2963,7 @@ export const state = () => ({
       calltoaction: {
         call: ''
       }
-    }
+    },
+    { ...consulsdg }
   ]
 })
